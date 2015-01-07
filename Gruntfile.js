@@ -7,9 +7,9 @@ module.exports = function(grunt) {
         tasks: ['sass:dist']
       },
       livereload: {
-        files: ['*.html', '*.php', 'public/js/**/*.{js,json}', 'public/stylesheets/*.css','img/**/*.{png,jpg,jpeg,gif,webp,svg}'],
+        files: ['*.html', '*.jade', 'public/javascripts/**/*.{js,json}', 'public/stylesheets/*.css','public/images/**/*.{png,jpg,gif,svg}'],
         options: {
-          livereload: true
+          livereload: 3000
         }
       }
     },
@@ -20,12 +20,12 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'public/stylesheets/styles.css': 'public/stylesheets/styles.scss'
+          'public/stylesheets/styles.css': 'public/stylesheets/app.scss'
         }
       }
     }
   });
   grunt.registerTask('default', ['sass:dist', 'watch']);
-  grunt.loadNpmTasks('grunt-libsass');
+  grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
 };
