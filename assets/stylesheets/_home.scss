@@ -9,8 +9,8 @@ body.index {
     color: white;
 
     .row {
-      @include display(flex);
-      @include align-items(flex-end);
+      display: flex;
+      align-items: flex-end;
     }
 
     button {
@@ -121,8 +121,8 @@ body.index {
       font-family: $font-family-serif;
 
       @media #{$medium-up} {
-        @include display(flex);
-        @include align-items(center);
+        display: flex;
+        align-items: center;
       }
 
       blockquote {

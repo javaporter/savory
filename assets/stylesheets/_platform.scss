@@ -22,7 +22,7 @@ body.platform {
         right: .5rem;
         padding: .5rem;
         background: $opaque-dark-1;
-        @include transition(.2s, all);
+        transition: all .2s;
         font-size: rem-calc(22);
         border-radius: .3rem;
         line-height: 1rem;
@@ -31,7 +31,7 @@ body.platform {
         &:hover {
           background: black;
           color: white;
-          @include transition(.2s, all);
+          transition: all .2s;
         }
       }
 

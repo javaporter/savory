@@ -99,5 +99,5 @@ $hero-height: 550px;
 }
 
 @mixin primary-nav-you-are-here {
-  @include linear-gradient(white, $smoke);
+  background: linear-gradient(white, $smoke);
 }

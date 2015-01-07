@@ -22,11 +22,11 @@ nav.primary-nav {
         display: block;
         color: $terra;
         position: relative;
-        @include transition(color, .3s);
+        transition: color .3s;
 
         &:hover {
           color: $elf;
-          @include transition(color, .3s);
+          transition: color .3s;
         }
       }
 
@@ -46,11 +46,11 @@ nav.primary-nav {
 
       a {
         color: $poppy;
-        @include transition(color, .3s);
+        transition: color .3s;
 
         &:hover {
           color: lighten($poppy, 15);
-          @include transition(color, .3s);
+          transition: color .3s;
         }
       }
     }

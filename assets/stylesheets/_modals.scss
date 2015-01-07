@@ -30,11 +30,11 @@
       top: 7px;
       right: -43px;
       font-size: 17px;
-      @include transition(color, .2s);
+      transition: color .2s;
 
       &:hover {
         color: lighten($terra, 30);
-        @include transition(color, .2s);
+        transition: color .2s;
       }
     }
   }

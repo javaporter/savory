@@ -28,7 +28,7 @@ figcaption {
 // links
 
 a, a:hover {
-  @include transition(color, .35s);
+  transition: color .35s;
 }
 
 

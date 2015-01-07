@@ -7,14 +7,14 @@
   img {
     position: relative;
     display: block;
-    @include transition(opacity 0.35s, transform 0.35s);
-    @include backface-visibility(hidden);
+    transition: opacity .35s, transform .35s;
+    backface-visibility: hidden;
   }
 
   figcaption {
     padding: .5rem;
     color: white;
-    @include backface-visibility(hidden);
+    backface-visibility: hidden;
     position: absolute;
     left: 0;
     width: 100%;
@@ -36,8 +36,8 @@
   &:hover {
     img {
       opacity: 0.25;
-      @include transform(translate3d(-10px,10px,0) scale(1.12));
-      @include transition(opacity 0.35s, transform 0.35s);
+      transform: translate3d(-10px,10px,0) scale(1.12);
+      transition: opacity .35s, transform .35s;
     }
   }
 }
@@ -49,8 +49,8 @@ figure.hover-effect-std {
 
   .hidden-content {
     opacity: 0;
-    @include transition(opacity .35s, transform 0.35s);
-    @include transform(translate3d(-40px,0,0));
+    transition: opacity .35s, transform .35s;
+    transform: translate3d(-40px,0,0);
     color: white;
     font-family: $font-family-sans-serif;
   }
@@ -58,7 +58,7 @@ figure.hover-effect-std {
   &:hover {
     .hidden-content {
       opacity: 1;
-      @include transform(translate3d(0,0,0));
+      transform: translate3d(0,0,0);
     }
   }
 }
@@ -100,7 +100,7 @@ figure.img-love {
   width: 100%;
   bottom: 0;
   left: 0;
-  @include linear-gradient(rgba(black, 0), black);
+  background: linear-gradient(rgba(black, 0), black);
 }
 
 

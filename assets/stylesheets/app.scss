@@ -6,25 +6,21 @@
 @import 'owl.carousel';
 @import 'owl.theme.default';
 
-// @import 'scaffolding';
-// @import 'buttons';
-// @import 'images';
-// @import 'typography';
-// @import 'nav';
-// @import 'footer';
-// @import 'maps';
-// @import 'modals';
-// @import 'ie9';
-// @import 'forms';
-//
-// @import 'home';
-// @import 'styleguide';
-// @import 'institute';
-// @import 'network';
-// @import 'platform';
-// @import 'get-involved';
-// @import 'news';
+@import 'scaffolding';
+@import 'buttons';
+@import 'images';
+@import 'typography';
+@import 'nav';
+@import 'footer';
+@import 'maps';
+@import 'modals';
+@import 'ie9';
+@import 'forms';
 
-body {
-	background: pink !important;
-}
+@import 'home';
+@import 'styleguide';
+@import 'institute';
+@import 'network';
+@import 'platform';
+@import 'get-involved';
+@import 'news';
