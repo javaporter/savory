@@ -3,24 +3,25 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     watch: {
       sass: {
-        files: ['public/stylesheets/**/*.{scss,sass}','public/stylesheets/_partials/**/*.{scss,sass}'],
+        files: ['public/assets/stylesheets/**/*.{scss,sass}','public/assets/stylesheets/_partials/**/*.{scss,sass}'],
         tasks: ['sass:dist']
       },
       livereload: {
-        files: ['*.html', '*.jade', 'public/javascripts/**/*.{js,json}', 'public/stylesheets/*.css','public/images/**/*.{png,jpg,gif,svg}'],
+        files: ['*.html', '*.jade', 'public/assets/javascripts/**/*.{js,json}', 'public/assets/stylesheets/*.css','public/assets/images/**/*.{png,jpg,gif,svg}'],
         options: {
-          livereload: 3000
+          livereload: true
         }
       }
     },
     sass: {
       options: {
+        includePaths: ['public/assets/bower_components/foundation/scss'],
         sourceMap: true,
         outputStyle: 'compressed'
       },
       dist: {
         files: {
-          'public/stylesheets/styles.css': 'public/stylesheets/app.scss'
+          'public/assets/stylesheets/styles.css': 'public/assets/stylesheets/app.scss'
         }
       }
     }
