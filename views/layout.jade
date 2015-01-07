@@ -2,8 +2,9 @@ block variables
 doctype html
 html
   head
-    - var title = title || "Savory"
+    - var title = title || 'Savory'
     title #{title} | Savory
     link(rel='stylesheet', href='/app.css')
+  
   body
     block content
