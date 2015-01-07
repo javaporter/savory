@@ -1,3 +1,3 @@
 - npm install
-- grunt watch
 - npm start
+- gulp
