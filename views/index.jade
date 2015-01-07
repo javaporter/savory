@@ -4,9 +4,109 @@ block variables
 extends layout
 
 block content
-  .row
-    .small-12.columns
-      h1= title
-      p Welcome to #{title}
-      p I'm a cupcake; a pretty, pretty cupcake.
-      blockquote I am the lizard king, I can do anything
+  section.main.outcomes
+    .case-study-01
+      .gradient
+      .case-study-content
+        .row
+          .large-9.medium-8.small-10.columns
+            img(src='home/case-study-01.svg', alt='Case Study 01')
+            p Better land management grows a sustainable ranching practice, which creates more jobs, which builds a better economy, which promotes a better community. It's all connected.
+  
+          .medium-1.small-2.columns
+            button.simple
+              a(href='#') +
+  
+          .large-2.medium-3.stats-column.columns
+            .stats
+              ul(data-orbit='')
+                li
+                  figure
+                    .number 56
+                    figcaption Increase in litter cover
+                li
+                  figure
+                    .number 31
+                    figcaption Decrease in bare ground
+                li
+                  figure
+                    .number 21
+                    figcaption Decrease in less desirable annual grasses
+                li
+                  figure
+                    .number 12
+                    figcaption Increase in perennial grass plants
+  
+  
+  
+  
+  section.main.about
+    .row.allan-savory-quote
+      .medium-3.medium-offset-1.small-6.columns
+        figure
+          img(src='home/allan-savory.jpg')
+          figcaption
+            .hidden-content
+              h2 About
+            button.simple
+              a(href='#') +
+  
+      .medium-7.end.small-6.columns
+        blockquote
+          Ultimately, the only wealth that can sustain any community, economy or nation is derived from the photosynthetic process—green plants growing on regenerating soil.
+          footer Allan Savory
+  
+  
+  
+  
+  section.main.hubs
+    #map.hubs-map
+      button.simple
+        a(href='/network') +
+  
+  
+  
+  
+  section.main.news
+    .row
+      .small-12.columns
+        h2.
+          What's New
+          small
+            a(href='#') View All <span>[</span>+<span>]</span>
+  
+        ol.news-grid
+          //- -homepage_news.each do |article|
+          //-   li
+          //-     =link_to "news/#{article.slug}" do
+          //-       .marker
+          //-       =image_tag article.image_url_for("homepage")
+          //-       =article.shortlede
+  
+  
+  
+  
+  
+  section.main.get-involved-and-tools
+    .row
+      .medium-6.columns
+        figure
+          img(src='home/crate.jpg')
+          figcaption
+            .hidden-content
+              p Education is not the filling of a pail, but the lighting of a fire. William Butler Yeats
+  
+            h2 Products and Tools
+            button.simple
+              a(href='/platform') +
+  
+      .medium-6.columns
+        figure
+          img(src='home/field.jpg')
+          figcaption
+            .hidden-content
+              p As Shakespeare put it: "Words are easy, like the wind; faithful friends are hard to find." Take the next step and help us to spread the word.
+            
+            h2 Get Involved
+            button.simple
+              a(href='/get-involved') +

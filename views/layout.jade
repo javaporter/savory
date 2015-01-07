@@ -2,9 +2,99 @@ block variables
 doctype html
 html
   head
+    meta(charset='utf-8')
+    meta(content='width=device-width, initial-scale=1', name='viewport')
+    meta(content='IE=Edge', http-equiv='X-UA-Compatible')
+    
+    //- stylesheets
+    link(rel='stylesheet', href='/app.css')
+    
+    //- mapbox
+    script(src='//api.tiles.mapbox.com/mapbox.js/v2.1.2/mapbox.js', type='text/javascript')
+    link(href='//api.tiles.mapbox.com/mapbox.js/v2.1.2/mapbox.css', rel='stylesheet', type='text/css')
+    
+    //- favicons
+    link(rel='apple-touch-icon', sizes='57x57', href='/apple-touch-icon-57x57.png')
+    link(rel='apple-touch-icon', sizes='114x114', href='/apple-touch-icon-114x114.png')
+    link(rel='apple-touch-icon', sizes='72x72', href='/apple-touch-icon-72x72.png')
+    link(rel='apple-touch-icon', sizes='144x144', href='/apple-touch-icon-144x144.png')
+    link(rel='apple-touch-icon', sizes='60x60', href='/apple-touch-icon-60x60.png')
+    link(rel='apple-touch-icon', sizes='120x120', href='/apple-touch-icon-120x120.png')
+    link(rel='apple-touch-icon', sizes='76x76', href='/apple-touch-icon-76x76.png')
+    link(rel='apple-touch-icon', sizes='152x152', href='/apple-touch-icon-152x152.png')
+    link(rel='apple-touch-icon', sizes='180x180', href='/apple-touch-icon-180x180.png')
+    link(rel='icon', type='image/png', href='/favicon-192x192.png', sizes='192x192')
+    link(rel='icon', type='image/png', href='/favicon-160x160.png', sizes='160x160')
+    link(rel='icon', type='image/png', href='/favicon-96x96.png', sizes='96x96')
+    link(rel='icon', type='image/png', href='/favicon-16x16.png', sizes='16x16')
+    link(rel='icon', type='image/png', href='/favicon-32x32.png', sizes='32x32')
+    meta(name='msapplication-TileColor', content='#ffffff')
+    meta(name='msapplication-TileImage', content='/mstile-144x144.png')
+    
+    //- fonts
+    link(href='//fonts.googleapis.com/css?family=Roboto+Slab:400,300,700', rel='stylesheet', type='text/css')
+    link(href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', rel='stylesheet', type='text/css')
+    script(src='//use.typekit.net/tye8vow.js')
+    script.
+      try{Typekit.load();}catch(e){}
+
+
+    //- title
     - var title = title || 'Savory'
     title #{title} | Savory
-    link(rel='stylesheet', href='/app.css')
+    
+    //if lt IE 9
+      html.lt-ie9(xml:lang='en', xmlns:ng='http://angularjs.org', xmlns='http://www.w3.org/1999/xhtml')
+      script.
+        window.location = "/ie8.css"
+
+  
+  //if IE 9
+    body.ie9
+  
   
   body
-    block content
+    .off-canvas-wrap('data-offcanvas')
+      .inner-wrap
+      
+        //- off canvas menu icon
+        .off-canvas-menu-holder.hidden-for-large-up
+          .row
+            .small-12.columns
+              a.header-logo(href='/') Savory
+              a.left-off-canvas-toggle.right(href='#').
+                i.fa.fa-bars
+                Menu
+
+        //- off canvas menu
+        aside.left-off-canvas-menu
+          ul.site-nav.off-canvas-list
+            include ./partials/nav.jade
+        a.exit-off-canvas
+
+
+        //- top bar nav (desktop)
+        #top('data-magellan-destination=top')
+        nav.primary-nav.show-for-large-up
+          .row
+            ul
+              .large-12.columns
+                li
+                  a.header-logo(href='/') Savory
+                include ./partials/nav.jade
+  
+        block content
+      
+        footer.site-footer
+          .row
+            .large-8.medium-6.columns
+              ul.site-map
+                include ./partials/nav.jade
+              
+            .large-4.medium-6.columns
+              ul.social
+                include ./partials/social.jade
+        
+    script(src='js/app.js')
+    script(src='js/analytics.js')
+

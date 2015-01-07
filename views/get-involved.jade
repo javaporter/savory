@@ -1,0 +1,58 @@
+block variables
+  - title = 'Get Involved'
+
+extends layout
+
+block content
+  
+  section.main
+    .row
+      .small-12.columns
+        h1 Get Involved
+  
+  
+  #join-the-tribe(data-magellan-destination='join-the-tribe')
+  section.main.join-the-tribe
+    .row
+      .small-12.columns
+        h2 Join the Tribe
+        p One of the best ways you can get involved is to follow us on social media.
+        ul.inline-list
+          include ./partials/social.jade
+  
+  
+  #donate(data-magellan-destination='donate')
+  section.main.donation
+    .row
+      .small-12.columns
+        h2 Donate
+        p The Savory Institute is dedicated to large scale restoration of the world's grasslands. Our work takes many forms, such as the empowerment and education of pastoralists around the world, and removing barriers that hinder the adoption of regenerative land management practices which include flawed policies and lack of market incentives.
+        p Donating to the Savory Institute will help support our global impact strategy of impacting 1 Billion hectares of land by 2025 through the establishment of 100 Savory Hubs across the globe carrying out our mission in their own holistic contexts.
+        p For individual gifts, please choose an option of donating online or sending us a check at the address below.  Currently, the Savory Institute is a US registered 501c3 charitable organization. We have provided organizational information below. You will also receive this information in your email receipt after a donation online.
+  
+        button.button
+          a(href='#') Donate
+  
+  
+  #volunteer(data-magellan-destination='volunteer')
+  section.main.volunteer
+    .row
+      .small-12.columns
+        h2 Volunteer
+        p Due to incredible response, we are not currently accepting additional volunteers. Please check back in early 2015.
+  
+  
+  #careers(data-magellan-destination='careers')
+  section.main.careers
+    .row
+      .small-12.columns
+        h2 Careers
+        p The Savory Institute welcomes contact and CVs from professionals in the communications, land management, and livestock management fields.
+  
+        h3 We currently have the following openings:
+        ul.plus
+          li
+            a(href='/get-involved/job') Savory Institute Executive Assistant
+  
+  
+  
