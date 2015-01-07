@@ -7,11 +7,11 @@ var server = require('gulp-express');
 
 
 sassPaths = [
-  'public/assets/bower_components/foundation/scss',
+  'assets/bower_components/foundation/scss',
 ]
 
 gulp.task('sass', function() {
-  return gulp.src('./public/assets/stylesheets/app.scss')
+  return gulp.src('assets/stylesheets/app.scss')
     .pipe(sass({
       includePaths: sassPaths,
       outputStyle: 'compressed',
@@ -20,17 +20,19 @@ gulp.task('sass', function() {
     .pipe(autoprefixer({
       browsers: ['last 2 versions', 'ie 10']
     }))
-    .pipe(concat('styles.css'))
-    .pipe(gulp.dest('./public/assets/stylesheets'))
+    .pipe(concat('app.css'))
+    .pipe(gulp.dest('public'))
     .pipe(livereload());
 });
 
+function notify_live_reload(e) {
+  gulp.src(e.path, {read: false})
+    .pipe(livereload());
+}
+
 gulp.task('watch', function() {
-  gulp.watch(['views/**/*.jade'], function(e) {
-    gulp.src(e.path, {read: false})
-      .pipe(livereload());
-  })
-  gulp.watch(['./public/assets/stylesheets/**/*.scss'], ['sass']);
+  gulp.watch(['views/**/*.jade'], notify_live_reload);
+  gulp.watch(['assets/stylesheets/**/*.scss'], ['sass']);
 });
 
 gulp.task('default', ['sass', 'watch'], function() {
