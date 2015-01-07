@@ -1,0 +1,41 @@
+.reveal-modal {
+  @include smaller-font;
+
+  p, li {
+    @include smaller-font;
+  }
+
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+
+  img {
+    margin-bottom: .75rem;
+  }
+
+  // corner triangle
+  a.close-reveal-modal {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 55px 55px 0;
+    border-color: transparent $opaque-dark-1 transparent transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: $smoke;
+
+    i {
+      position: absolute;
+      top: 7px;
+      right: -43px;
+      font-size: 17px;
+      @include transition(color, .2s);
+
+      &:hover {
+        color: lighten($terra, 30);
+        @include transition(color, .2s);
+      }
+    }
+  }
+}

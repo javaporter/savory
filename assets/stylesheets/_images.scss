@@ -1,0 +1,115 @@
+// hover effects patterned off this: http://tympanus.net/Development/HoverEffectIdeas/
+%hover-effect {
+  z-index: 1;
+  overflow: hidden;
+  background: $terra;
+
+  img {
+    position: relative;
+    display: block;
+    @include transition(opacity 0.35s, transform 0.35s);
+    @include backface-visibility(hidden);
+  }
+
+  figcaption {
+    padding: .5rem;
+    color: white;
+    @include backface-visibility(hidden);
+    position: absolute;
+    left: 0;
+    width: 100%;
+
+    &::before, &::after {
+      pointer-events: none;
+    }
+
+    p {
+      @include smaller-font;
+    }
+
+    h2 {
+      color: $opaque-light-1;
+      margin: 10px 0 0 0;
+    }
+  }
+
+  &:hover {
+    img {
+      opacity: 0.25;
+      @include transform(translate3d(-10px,10px,0) scale(1.12));
+      @include transition(opacity 0.35s, transform 0.35s);
+    }
+  }
+}
+
+
+// if we want the paragraph to animate as well
+figure.hover-effect-std {
+  @extend %hover-effect;
+
+  .hidden-content {
+    opacity: 0;
+    @include transition(opacity .35s, transform 0.35s);
+    @include transform(translate3d(-40px,0,0));
+    color: white;
+    font-family: $font-family-sans-serif;
+  }
+
+  &:hover {
+    .hidden-content {
+      opacity: 1;
+      @include transform(translate3d(0,0,0));
+    }
+  }
+}
+
+
+figure.img-love {
+  background: white;
+  border: $border;
+  padding: .7rem;
+  margin-bottom: 1rem;
+
+  img {
+    display: block;
+    margin: 0;
+  }
+}
+
+
+// dark figcaption
+.dark-figcaption {
+  margin: 0;
+
+  figcaption {
+    position: absolute;
+    background: $opaque-dark-1;
+    bottom: 0;
+    width: 100%;
+    padding: .5rem;
+    color: white;
+  }
+
+}
+
+
+// big gradient that overlays images/sections
+.gradient {
+  position: absolute;
+  height: 30%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  @include linear-gradient(rgba(black, 0), black);
+}
+
+
+// image grids
+ul.image-grid {
+  figure {
+    border-radius: $global-radius;
+    overflow: hidden;
+    @extend .dark-figcaption;
+  }
+}
+

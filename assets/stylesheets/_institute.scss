@@ -1,0 +1,74 @@
+body.institute {
+
+  .primary-nav .institute-link  {
+    @include primary-nav-you-are-here;
+  }
+
+  dl.our-team-subnav {
+    @extend .clearfix;
+    margin: 0;
+
+    dt, dd {
+      float: left;
+      margin-right: 1rem;
+      @include smaller-font;
+    }
+  }
+
+  .company-position {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  section.our-team {
+    figure {
+      position: relative;
+      background: none;
+      @include transition(all, .2s);
+
+      .plus {
+        color: white;
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 1.85rem;
+        font-weight: 300;
+        height: 1.75rem;
+        width: 1.75rem;
+        top: .5rem;
+        right: .5rem;
+        position: absolute;
+        background: $opaque-dark-1;
+        border: $border-opaque-lighter;
+        @include transition(all, .2s);
+      }
+
+      img {
+        @include transition(all, .2s);
+        position: relative;
+        z-index: -1;
+      }
+
+      &:hover {
+        @include transition(all, .2s);
+
+        img {
+          @include filter(blur(3px));
+          @include transition(all, .2s);
+        }
+
+        .plus {
+          border: $border-opaque-light;
+          background: $opaque-dark-2;
+          @include transition(all, .2s);
+        }
+      }
+    }
+
+  }
+
+  figure.colorado:hover {
+    background: image_url('institute/locations/colorado.svg') rgba(black, .45);
+  }
+
+}

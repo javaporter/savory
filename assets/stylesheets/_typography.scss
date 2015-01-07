@@ -1,0 +1,146 @@
+body, input, button, select, textarea {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+blockquote {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: $font-family-serif;
+  font-size: 107%;
+
+  footer {
+    font-size: .7em;
+    margin-top: .5em;
+    color: lighten($terra, 20%);
+  }
+
+  @media #{$medium-up} {
+    font-size: 115%;
+  }
+}
+
+figcaption {
+  @include smaller-font;
+}
+
+
+// links
+
+a, a:hover {
+  @include transition(color, .35s);
+}
+
+
+// lists
+
+ul, ol {
+  h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+    margin-top: .5rem;
+  }
+}
+
+ul.smaller, ol.smaller {
+  @include smaller-font;
+
+  li {
+    margin-bottom: .7rem;
+    @include avoid-break;
+  }
+}
+
+ul.plus {
+  @extend .no-bullet;
+  padding-left: 1rem;
+  text-indent: -1rem;
+
+  li {
+    margin: .3rem 0;
+    @include smaller-font;
+
+    &::before {
+      content: '+';
+      font-size: .7em;
+      margin-right: .7rem;
+    }
+  }
+}
+
+ul.bordered-list {
+  @extend .no-bullet;
+  border-left: $border-dotted;
+  padding-left: .5rem;
+
+  li {
+    margin-bottom: .4rem;
+
+    &:nth-child(even) {
+      color: lighten($body-font-color, 25);
+    }
+  }
+}
+
+ul.icon-list {
+  @extend .no-bullet;
+  @include smaller-font;
+  margin-left: .2rem;
+  padding-left: 31px;
+
+  li {
+    margin-bottom: .4em;
+  }
+
+  i {
+    width: 1.3rem;
+    border-right: $border-dotted;
+    margin-right: .3rem;
+    margin-left: -31px;
+  }
+}
+
+ol {
+  list-style-type: decimal-leading-zero;
+  margin-left: 2rem;
+}
+
+ol, ul {
+  ol, ul {
+    margin-left: 1.1rem;
+    margin-top: .25rem;
+    @include smaller-font;
+  }
+}
+
+
+// headers
+
+h1 {
+  color: $poppy;
+}
+
+h2 {
+  color: $elf;
+}
+
+h3 {
+  color: lighten($terra, 25);
+}
+
+p {
+  margin-top: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+h5 {
+  font-weight: 400;
+}
+
+
+
+
+
+

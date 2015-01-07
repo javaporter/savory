@@ -1,0 +1,21 @@
+@import 'variables';
+@import 'settings';
+
+body {
+  background: $smoke;
+  font-family: $body-font-family;
+  color: $terra;
+}
+
+img {
+  max-width: 100%;
+}
+
+.ie-container {
+  width: 90%;
+  max-width: 1440px;
+  background: white;
+  padding: 20px;
+  border: 1px solid $iron;
+  margin: 20px auto;
+}

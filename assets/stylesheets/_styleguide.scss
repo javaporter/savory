@@ -1,0 +1,137 @@
+body.styles {
+
+  section.core-beliefs {
+    padding-bottom: 0;
+    padding-top: 0;
+    background-image: image_url('styleguide/flatirons.jpg');
+    color: white;
+
+    header {
+      background: $opaque-dark-1;
+      padding: 1rem 0;
+
+      @media #{$medium-up} {
+        background: none;
+        position: absolute;
+        padding: 0;
+        top: 3rem;
+        width: 100%;
+        z-index: 10;
+      }
+
+      h2 {
+        color: white;
+      }
+    }
+
+    .flex {
+
+      .columns {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+
+      @media #{$medium-up} {
+        height: 600px;
+
+        .columns {
+          border-right: $border-opaque-lighter;
+          padding-top: 370px;
+
+          &:last-child {
+            border-right: 0;
+          }
+        }
+      }
+
+      .one { background: rgba($elf, .5); }
+      .two { background: rgba($terra, .5); }
+      .three { background: rgba($poppy, .5); }
+    }
+
+    h4 {
+      font-family: $font-family-serif;
+      color: $opaque-light-1;
+      font-weight: 700;
+      font-size: 5rem;
+      line-height: 1em;
+      margin: 0;
+    }
+  }
+
+
+  // branding
+  section.branding {
+    .section-header {
+      background-image: image_url('styleguide/branding.jpg');
+    }
+  }
+
+
+  // market
+  section.market {
+    .section-header {
+      background-image: image_url('styleguide/market.jpg');
+    }
+  }
+
+
+  // si branding
+  section.si-assets {
+
+    h2 {
+      margin: 0;
+    }
+
+    h3 {
+      margin-top: 2rem;
+    }
+
+    figure.color {
+      height: 200px;
+      border: $border;
+      position: relative;
+
+      figcaption {
+        @include smaller-font;
+        padding: .5rem;
+        background: white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+      }
+    }
+
+    .smoke { background-color: $smoke; }
+    .iron { background-color: $iron; }
+    .aluminum { background-color: $aluminum; }
+    .terra { background-color: $terra; }
+    .elf { background-color: $elf; }
+    .verdant { background-color: $verdant; }
+    .poppy { background-color: $poppy; }
+  }
+
+  // fonts
+  .serif, .sans { font-size: 2rem; }
+  .serif { font-family: $font-family-serif; }
+  .sans { font-family: $font-family-sans-serif; }
+
+
+  // logos
+  figure.logos {
+    border: $border;
+    background: white;
+    margin: 1rem 0;
+
+    img {
+      padding: 1rem;
+    }
+
+    figcaption {
+      border-top: $border;
+      padding: .5rem;
+    }
+  }
+}
+

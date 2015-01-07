@@ -1,0 +1,68 @@
+body.platform {
+
+  .primary-nav .platform-link  {
+    @include primary-nav-you-are-here;
+  }
+
+
+  section.course-catalog {
+
+    figure {
+      background: white;
+      border: $border;
+      padding-bottom: 50px;
+
+      figcaption {
+        padding: .5rem;
+      }
+
+      .price {
+        position: absolute;
+        top: .5rem;
+        right: .5rem;
+        padding: .5rem;
+        background: $opaque-dark-1;
+        @include transition(.2s, all);
+        font-size: rem-calc(22);
+        border-radius: .3rem;
+        line-height: 1rem;
+        color: $opaque-light-1;
+
+        &:hover {
+          background: black;
+          color: white;
+          @include transition(.2s, all);
+        }
+      }
+
+      footer {
+        background: $silver;
+        padding: .5em;
+        border-top: $border;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+
+        i {
+          margin-right: .3rem;
+        }
+      }
+
+      h5 {
+        margin-bottom: .25rem;
+      }
+    }
+
+    .course-objectives {
+      ul {
+        @extend .plus;
+        @include half-space(top);
+        border-top: $border-dashed;
+
+        li {
+          font-size: .85rem;
+        }
+      }
+    }
+  }
+}

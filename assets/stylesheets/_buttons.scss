@@ -1,0 +1,77 @@
+button {
+  padding: 0;
+  background: none;
+
+  a {
+    padding: 0 .65rem;
+    font-size: 1rem;
+    line-height: $learn-more-simple-size;
+    color: white;
+    min-width: $learn-more-simple-size;
+    display: inline-block;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+button.no-link {
+  font-size: 1rem;
+  line-height: $learn-more-simple-size;
+  color: white;
+  min-width: $learn-more-simple-size;
+  display: inline-block;
+  padding: 0 .65rem;
+  border: 1px solid $elf;
+  background: rgba($elf, .75);
+
+  &:hover {
+    background: $elf;
+  }
+}
+
+button.simple {
+  border: $border-opaque-light;
+
+  a {
+    @include transition(background, .35s);
+    background: $opaque-light-3;
+    font-size: $learn-more-simple-size * .7;
+    color: white;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  &:hover {
+    background: $opaque-light-2;
+    @include transition(background, .35s);
+  }
+}
+
+button.dark {
+  background: $opaque-dark-2;
+  border: 1px solid $terra;
+
+  &:hover {
+    background: $opaque-dark-1;
+  }
+}
+
+button.primary {
+
+  a {
+    border: 1px solid $elf;
+    background: rgba($elf, .75);
+  }
+
+  &:hover {
+    background: $elf;
+  }
+}

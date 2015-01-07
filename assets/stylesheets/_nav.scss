@@ -1,0 +1,134 @@
+nav.primary-nav {
+  background: white;
+  border-top: 4px solid $verdant;
+  border-bottom: $border-light;
+
+  ul {
+    @extend .no-bullet;
+    @extend .inline-list;
+    margin: 0;
+
+    li {
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: rem-calc(14);
+
+      a {
+        line-height: 55px;
+        padding: .3rem .75rem;
+        margin: 0;
+        position: relative;
+        bottom: -5px;
+        display: block;
+        color: $terra;
+        position: relative;
+        @include transition(color, .3s);
+
+        &:hover {
+          color: $elf;
+          @include transition(color, .3s);
+        }
+      }
+
+      ul {
+        display: none;
+      }
+    }
+
+    li.about-link {
+      border-left: $border;
+      margin-left: .5rem;
+    }
+
+    li.get-involved-link {
+      @extend .right;
+      margin-right: -.75rem;
+
+      a {
+        color: $poppy;
+        @include transition(color, .3s);
+
+        &:hover {
+          color: lighten($poppy, 15);
+          @include transition(color, .3s);
+        }
+      }
+    }
+  }
+}
+
+.header-logo {
+  width: 125px;
+  text-indent: -9999px;
+  background: image_url('logo.svg') no-repeat left center;
+  background-size: 100% auto;
+  padding-right: 0;
+  margin-right: 0;
+  position: relative;
+  top: 0px;
+}
+
+
+// off canvas stuff
+.off-canvas-menu-holder {
+
+  .header-logo {
+    display: inline-block;
+    padding: .75rem 0;
+    width: 100px;
+  }
+
+  .left-off-canvas-toggle {
+    color: $terra;
+    line-height: 45px;
+
+    &:hover {
+      color: lighten($terra, 20%);
+    }
+
+    i {
+      margin-right: .15rem;
+    }
+  }
+}
+
+
+.left-off-canvas-menu {
+
+  ul.site-nav li {
+    border-bottom: $border-opaque-lighter;
+    font-size: .85rem;
+
+    a {
+      padding: 0 1rem;
+      display: block;
+      width: 100%;
+      line-height: 40px;
+
+      &:hover {
+        background: darken($oil, 10%);
+      }
+    }
+  }
+
+  a {
+    color: $silver;
+  }
+}
+
+
+// style fixes for foundation off canvas
+ul.off-canvas-list li a {
+  border: none;
+}
+
+.left-submenu .back > a::before, .left-off-canvas-menu ul.off-canvas-list li.has-submenu > a::after {
+  top: -1px;
+  position: relative;
+}
+
+
+// fixing magellan padding
+[data-magellan-expedition] {
+  padding: 0 !important;
+}

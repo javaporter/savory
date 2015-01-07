@@ -1,0 +1,103 @@
+// neutrals
+$smoke: #efefef;
+$iron: #ccc;
+$aluminum: #999;
+$mud: #3F3F3D;
+
+// colors
+$terra: #4f483f;
+$elf: #38b3bc;
+$verdant: #b5c034;
+$poppy: #e35825;
+
+// transparent colors
+$opaque-dark-1: rgba(black, .8);
+$opaque-dark-2: rgba(black, .5);
+$opaque-dark-3: rgba(black, .15);
+
+$opaque-light-1: rgba(white, .8);
+$opaque-light-2: rgba(white, .5);
+$opaque-light-3: rgba(white, .15);
+
+
+
+// borders
+$border: 1px solid $iron;
+$border-light: 1px solid $smoke;
+$border-dark: 1px solid $aluminum;
+
+$border-opaque-light: 1px solid $opaque-light-2;
+$border-opaque-lighter: 1px solid $opaque-light-3;
+
+$border-dotted-lighter: 1px dotted $opaque-light-3;
+$border-dotted-light: 1px dotted $opaque-light-2;
+$border-dotted: 1px dotted $opaque-dark-3;
+
+$border-dashed-lighter: 1px dashed $opaque-light-3;
+$border-dashed: 1px dashed $opaque-dark-3;
+
+
+
+// buttons
+$learn-more-simple-size: 40px;
+
+
+
+// spacing
+$section-padding: 4rem;
+$base-spacing: 1rem;
+
+@mixin space($direction) {
+  margin-#{$direction}: $base-spacing;
+  padding-#{$direction}: $base-spacing;
+}
+
+@mixin half-space($direction) {
+  margin-#{$direction}: $base-spacing/2;
+  padding-#{$direction}: $base-spacing/2;
+}
+
+
+// main home page hero height (used on hubs too)
+$hero-height: 550px;
+
+
+// lists
+@mixin avoid-break {
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  -o-column-break-inside: avoid;
+  -ms-column-break-inside: avoid;
+  column-break-inside: avoid;
+}
+
+
+// because sass won't let you extend in a media query
+@mixin inline-list {
+  @extend .inline-list;
+}
+
+
+// typography
+@mixin smaller-font {
+  font-size: 90%;
+}
+
+@mixin smallest-font {
+  font-size: .85rem;
+}
+
+@mixin biggify-font {
+  font-size: 110%;
+}
+
+
+
+// nav active state
+@mixin nav-active {
+  color: $elf;
+}
+
+@mixin primary-nav-you-are-here {
+  @include linear-gradient(white, $smoke);
+}
