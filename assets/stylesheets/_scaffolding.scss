@@ -98,8 +98,8 @@ figure {
 // flex goodness
 .flex {
   @media #{$medium-up} {
-    @include display(flex);
-    @include align-items(stretch);
+    // @include display(flex);
+    // @include align-items(stretch);
   }
 }
 

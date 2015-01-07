@@ -39,7 +39,7 @@ button.simple {
   border: $border-opaque-light;
 
   a {
-    @include transition(background, .35s);
+    // @include transition(background, .35s);
     background: $opaque-light-3;
     font-size: $learn-more-simple-size * .7;
     color: white;
@@ -51,7 +51,7 @@ button.simple {
 
   &:hover {
     background: $opaque-light-2;
-    @include transition(background, .35s);
+    // @include transition(background, .35s);
   }
 }
 
