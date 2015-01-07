@@ -26,7 +26,11 @@ gulp.task('sass', function() {
 });
 
 gulp.task('watch', function() {
-  return gulp.watch(['./public/assets/stylesheets/**/*.scss'], ['sass']);
+  gulp.watch(['views/**/*.jade'], function(e) {
+    gulp.src(e.path, {read: false})
+      .pipe(livereload());
+  })
+  gulp.watch(['./public/assets/stylesheets/**/*.scss'], ['sass']);
 });
 
 gulp.task('default', ['sass', 'watch'], function() {
