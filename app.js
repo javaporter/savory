@@ -4,6 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var middleware = require('./lib/middleware');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -23,6 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.locals.basedir = path.join(__dirname, 'views');
 
+app.use(middleware.body_class);
 app.use('/', routes);
 app.use('/users', users);
 app.get('/test', function(req, res) {
