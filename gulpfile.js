@@ -18,7 +18,7 @@ var sass_include_paths = [
 var js_assets = [
   'assets/bower_components/modernizr/modernizr.js',
   'assets/bower_components/jquery/dist/jquery.js',
-  'assets/bower_components/foundation/js/foundation/foundation.js',
+  'assets/bower_components/foundation/js/foundation.js',
   'assets/bower_components/fastclick/lib/fastclick.js',
   'assets/javascripts/owl.carousel.min.js',
   'assets/javascripts/app.js'
