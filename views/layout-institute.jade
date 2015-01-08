@@ -1,0 +1,15 @@
+extends /layout
+
+block subnav
+	.contain-to-grid.hide-for-small(data-magellan-expedition='fixed')
+		nav.top-bar(data-topbar, role='navigation')
+			.top-bar-section
+				ul
+					+institute-subnav
+
+				ul.right
+					li.divider
+					li
+						a(href='#top')
+							i.fa.fa-caret-up
+							| &nbsp;Top
