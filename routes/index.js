@@ -13,6 +13,10 @@ router.get('/institute', function(req, res) {
   res.render('institute/index', { title: 'Institute' });
 });
 
+router.get('/institute/our-team', function(req, res) {
+  res.render('institute/our-team', { title: 'Our Team' });
+});
+
 router.get('/platform', function(req, res) {
   res.render('platform/index', { title: 'Platform' });
 });
