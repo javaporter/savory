@@ -1,11 +1,4 @@
-//= require modernizr
-//= require jquery
-//= require foundation.min
-//= require fastclick
-//= require owl.carousel.min
-
 $(function() {
-
   $(document).foundation();
 
   // smooth scrolling
