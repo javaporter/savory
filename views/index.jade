@@ -78,7 +78,7 @@ block content
         ol.news-grid
           //- -homepage_news.each do |article|
           //-   li
-          //-     =link_to "news/#{article.slug}" do
+          //-     a(href='news/#{article.slug}')
           //-       .marker
           //-       =image_tag article.url_for("homepage")
           //-       =article.shortlede
