@@ -105,10 +105,10 @@ body.index {
     // case study 01 (Zimbabwe)
     .case-study-01 {
       @extend %case-study;
-      background-image: image_url('home/herd.jpg');
+      background-image: url('/assets/images/home/herd.jpg');
 
       @media #{$medium-up} {
-        background-image: image_url('home/herd-lg.jpg');
+        background-image: url('/assets/images/home/herd-lg.jpg');
       }
     }
   }

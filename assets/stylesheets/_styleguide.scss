@@ -3,7 +3,7 @@ body.styles {
   section.core-beliefs {
     padding-bottom: 0;
     padding-top: 0;
-    background-image: image_url('styleguide/flatirons.jpg');
+    background-image: url('styleguide/flatirons.jpg');
     color: white;
 
     header {
@@ -63,7 +63,7 @@ body.styles {
   // branding
   section.branding {
     .section-header {
-      background-image: image_url('styleguide/branding.jpg');
+      background-image: url('styleguide/branding.jpg');
     }
   }
 
@@ -71,7 +71,7 @@ body.styles {
   // market
   section.market {
     .section-header {
-      background-image: image_url('styleguide/market.jpg');
+      background-image: url('styleguide/market.jpg');
     }
   }
 
