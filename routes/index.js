@@ -21,4 +21,8 @@ router.get('/network', function(req, res) {
   res.render('network/index', { title: 'Network' });
 });
 
+router.get('/styles', function(req, res) {
+  res.render('styles/index', { title: 'Styles' });
+});
+
 module.exports = router;
