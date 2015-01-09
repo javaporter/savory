@@ -25,6 +25,14 @@ router.get('/network', function(req, res) {
   res.render('network/index', { title: 'Network' });
 });
 
+router.get('/network', function(req, res) {
+  res.render('network/index', { title: 'Network' });
+});
+
+router.get('/network/hub-application', function(req, res) {
+  res.render('network/hub-application', { title: 'Network' });
+});
+
 router.get('/styles', function(req, res) {
   res.render('styles/index', { title: 'Styles' });
 });

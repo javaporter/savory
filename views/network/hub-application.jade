@@ -1,0 +1,171 @@
+block variables
+  - title = 'Thank You'
+
+extends /layout-network
+
+block content
+
+  form("accept-charset"="UTF-8", :action="https://formkeep.com/f/ab746650cd85", :method="POST", 'data-abide'='')
+    input(name="utf8", type="hidden", :value="✓")
+
+    section.main
+      .row
+        .small-12.columns
+          h1 Hub Application
+          p We are now opening applications for 2016 Hub Candidates. We are looking for entrepreneurial, innovative, and passionate organizations or individuals who desire to create local solutions to land degradation. If you are interested in bringing Holistic Management to your region, partner with the Savory Institute in forming a local Savory Institute affiliated Hub. Hubs can be an extension of an existing organization or a completely new organization. We encourage for-profits, NGOs, and cooperatives to apply. We expect Hubs to be sustainable through providing local solutions to land degradation, food and water security and community empowerment. Each Hub will partner with the Savory Institute in providing education, training, management and consulting to practitioners, land owners, governments, and NGOs. We have Hubs forming on six different continents. In 2013, we received 90+ applications for the 2015 Hubs. After a very detailed selection process, Savory will only choose 10 to become official Hubs each year.
+          p We will close the application process in the late fall and make a decision for the 2016 Hubs by the end of December. Because of the volume of applications, we are unable to respond to each application individually. We are looking forward to hearing your story and partnering with you in restoring the grasslands of the world.
+
+          hr
+          p All fields marked with * are required.
+
+    section.main
+      .row
+        .small-12.columns
+          h2 1. General Info
+
+      .row
+        .medium-6.columns
+          label First Name*
+          input(name='first-name', type='text', required='true')
+        .medium-6.columns
+          label Last Name*
+          input(name='last-name', type='text', required='true')
+
+      .row
+        .medium-6.columns
+          label Email*
+          .row.collapse
+            .small-3.medium-1.columns
+              span.prefix
+                i.fa.fa-envelope
+            .small-9.medium-11.columns
+              input(name='email', type='email', required='true')
+        .medium-6.columns
+          label Phone*
+          .row.collapse
+            .small-3.medium-1.columns
+              span.prefix
+                i.fa.fa-phone
+            .small-9.medium-11.columns
+              input(name='phone', type='tel', required='true')
+
+      .row
+        .medium-6.columns
+          label LinkedIn
+          .row.collapse
+            .small-3.medium-1.columns
+              span.prefix
+                i.fa.fa-linkedin
+            .small-9.medium-11.columns
+              input(name='linkedin', type='text')
+        .medium-6.columns
+          label Personal Website
+          .row.collapse
+            .small-3.medium-1.columns
+              span.prefix
+                i.fa.fa-globe
+            .small-9.medium-11.columns
+              input(name='website', type='text')
+
+      .row
+        .small-12.columns
+          #widgetContainer
+            label Upload your Resumé or CV*
+            input(data-fp-apikey='AeHcbXmqNSqm3so4GBSWoz', data-fp-container='modal', data-fp-mimetypes='*/*', "data-fp-multiple"="true", :onchange="out='';for(var i=0;i<event.fpfiles.length;i++)(out+=event.fpfiles[i].url;out+=' ')", type="filepicker-dragdrop", 'data-fp-button-class'='no-link', 'data-fp-services'='COMPUTER', 'data-fp-drag-class'='filepicker-drag', required='true')
+
+
+
+
+    section.main
+      .row
+        .small-12.columns
+          h2 2. Address
+
+      .row
+        .small-12.columns
+          label Address*
+          input(name='address', type='text', required='true')
+
+      .row
+        .medium-6.columns
+          label City*
+          input(name='city', type='text', required='true')
+        .medium-3.columns
+          label State/Province*
+          input(name='state', type='text', required='true')
+        .medium-3.columns
+          label Postal Code*
+          input(name='postal-code', type='text', required='true')
+
+    section.main
+      .row
+        .small-12.columns
+          h2 3. Citizenship and Location
+      .row
+        .medium-6.columns
+          label Citizenship*
+          input(name='citizenship', type='text', required='true')
+        .medium-6.columns
+          label Country of Residence*
+          input(name='country-of-residence', type='text', required='true')
+
+      .row
+        .small-12.columns
+          label What language(s) do you speak and at what proficiency?*
+          textarea(name='languages', rows='4', placeholder='English — Native; Spanish — Fluent; etc.', required='true')
+
+      .row
+        .small-12.columns
+          label Do you have any websites or links you would like to include? If so, please do so here.*
+          textarea(name='links', rows='4')
+
+    section.main
+      .row
+        .small-12.columns
+          h2 4. Your Interest in Savory Hubs
+
+      .row
+        .small-12.columns
+          label Do you have any experience in marketing educational or training services or products? If so, please explain.*
+          textarea(name='marketing-experience', rows='4', required='true')
+
+      .row
+        .small-12.columns
+          label How did you learn about Savory Hubs?*
+          textarea(name='how-did-you-learn', rows='4', required='true')
+
+      .row
+        .small-12.columns
+          label Please describe the area the Savory Hub would serve.*
+          textarea(name='service-area', rows='4', required='true')
+
+      .row
+        .small-12.columns
+          label Please explain why a Savory Hub would be beneficial in your area.*
+          textarea(name='benefit-in-your-area', rows='4', required='true')
+
+      .row
+        .small-12.columns
+          label Does your team have access to local accredited educators with the Savory Institute?*
+          textarea(name='marketing-experience', rows='4', placeholder='First and last name, years of experience teaching Holistic Management, and location.', required='true')
+
+    section.main
+      .row
+        .small-12.columns
+          h2 5. Personal Essay
+
+      .row
+        .small-12.columns
+          label Explain your interest in leading a Savory Hub, your long-term goals, and your interest in Holistic Management.*
+          textarea(name='personal-essay', rows='12', required='true')
+
+      .row
+        .small-12.columns
+          button.button(type='submit') Submit
+
+
+  //- filepicker
+  script(src="//api.filepicker.io/v1/filepicker.js", type="text/javascript")
+
+
+

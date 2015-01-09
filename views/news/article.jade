@@ -1,0 +1,23 @@
+block variables
+  - title = 'Article'
+
+extends /layout-network
+
+block content
+
+  section.main.news-post
+    .row
+      .small-12.columns
+        figure.img-love
+          =image_tag(article.image_url)
+          figcaption=article.figcaption
+        header
+          .row
+            .small-2.columns
+              .date=article.date_as_html
+
+            .small-10.columns
+              h1
+                =article.title
+                small=article.location
+        p=article.body
