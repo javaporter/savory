@@ -37,4 +37,8 @@ router.get('/styles', function(req, res) {
   res.render('styles/index', { title: 'Styles' });
 });
 
+router.get('/news', function(req, res) {
+  res.render('news/index', { title: 'News' });
+});
+
 module.exports = router;
