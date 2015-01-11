@@ -162,6 +162,10 @@ body.index {
   section.news {
     border-bottom: $border;
 
+    h2 small {
+      margin-left: .65rem;
+    }
+
     // fixing bracket positioning in header
     h2 small span {
       top: -1px;
