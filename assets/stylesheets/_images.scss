@@ -119,5 +119,12 @@ ul.image-grid {
 }
 
 
-// image slider
+// global image slider adjustments
+.orbit-container {
+
+  .orbit-slide-number, .orbit-timer, .orbit-timer-paused {
+    display: none;
+  }
+
+}
 

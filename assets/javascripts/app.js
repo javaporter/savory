@@ -37,13 +37,6 @@ $(function() {
     if (map.tap) map.tap.disable();
   }
 
-  // http://www.owlcarousel.owlgraphic.com/docs
-  $(".owl-carousel").owlCarousel({
-    items: 1,
-    nav: true
-  });
-
-
 
 });
 
