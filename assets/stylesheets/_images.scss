@@ -74,6 +74,11 @@ figure.img-love {
     display: block;
     margin: 0;
   }
+
+  figcaption {
+    margin: 0;
+    line-height: 1.1rem;
+  }
 }
 
 
@@ -112,4 +117,7 @@ ul.image-grid {
     @extend .dark-figcaption;
   }
 }
+
+
+// image slider
 

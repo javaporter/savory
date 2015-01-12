@@ -41,4 +41,8 @@ router.get('/news', function(req, res) {
   res.render('news/index', { title: 'News' });
 });
 
+router.get('/network/hub', function(req, res) {
+  res.render('network/hub', { title: 'Hub' });
+});
+
 module.exports = router;

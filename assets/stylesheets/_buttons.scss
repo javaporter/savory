@@ -74,4 +74,9 @@ button.primary {
   &:hover {
     background: $elf;
   }
+
+  i {
+    font-size: .9rem;
+    margin-right: .75rem;
+  }
 }
