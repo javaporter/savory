@@ -9,13 +9,21 @@ html, body, .inner-wrap {
   }
 }
 
+section {
+  position: relative;
+}
+
 section.main {
   padding: $section-padding 0;
-  position: relative;
 
   &:nth-of-type(odd) {
     background: white;
   }
+}
+
+section.dark {
+  padding: $section-padding 0;
+  background: $mud url('/assets/images/noise.png');
 }
 
 figure {

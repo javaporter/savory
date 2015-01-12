@@ -19,9 +19,14 @@ body.network {
       padding: .5rem;
       border: $border-light;
     }
+  }
 
-    .hub-videos {
-      margin-bottom: .5rem;
+
+  section.videos {
+    @extend .dark;
+
+    .flex-video {
+      margin-bottom: 0;
     }
   }
 
