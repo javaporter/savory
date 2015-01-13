@@ -84,6 +84,7 @@ body.platform {
 
     p {
       color: white;
+      @include biggify-font;
     }
 
     input {
@@ -99,6 +100,17 @@ body.platform {
       border: none;
       font-weight: 300;
       height: 3.25rem;
+    }
+
+    button.primary {
+      border: none;
+      height: 3.25rem;
+      margin-left: .5rem;
+
+      a {
+        height: 3.25rem;
+        line-height: 3.25rem;
+      }
     }
   }
 }

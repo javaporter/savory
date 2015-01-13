@@ -418,17 +418,21 @@ block content
   
   #donate(data-magellan-destination='donate')
   section.main.donate
+    .overlay
     .row
       .medium-6.columns
         h2 Donate
-        p Help spread our message. Donating to Savory helps to support our global impact strategy of impacting One Billion hectares of land by 2025 through the establishment of 100 Savory Hubs across the globe carrying out our mission in their own holistic contexts.
+        p Help spread our message. Donating to Savory helps to support our global impact strategy of impacting one billion hectares of land by 2025 through the establishment of 100 Savory Hubs across the globe carrying out our mission in their own holistic contexts.
         
-        .row
+        .row.collapse
           .large-6.columns
             .row.collapse.prefix
               .small-4.columns
                 span $
               .small-8.columns
                 input(name='donate-amount', type='number')
+          .large-4.columns.end
+            button.primary 
+              a(href='#') Add to Cart
   
   
