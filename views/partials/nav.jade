@@ -25,6 +25,18 @@ mixin network-subnav
 mixin platform-subnav
 	li('data-magellan-arrival=classes')
 		a.close-off-canvas(href='/platform/#classes') Classes
+	li('data-magellan-arrival=consulting')
+		a.close-off-canvas(href='/platform/#consulting') Consulting
+	li('data-magellan-arrival=renew')
+		a.close-off-canvas(href='/platform/#renew') Renew Accredidation
+	li('data-magellan-arrival=gift-cards')
+		a.close-off-canvas(href='/platform/#gift-cards') Gift Cards
+	li('data-magellan-arrival=ebooks')
+		a.close-off-canvas(href='/platform/#ebooks') Ebooks
+	li('data-magellan-arrival=tools')
+		a.close-off-canvas(href='/platform/#tools') Tools
+	li('data-magellan-arrival=donate')
+		a.close-off-canvas(href='/platform/#donate') Donate
 		
 
 mixin get-involved-subnav
@@ -52,7 +64,7 @@ li.network-link
 		li.back
 			a(href='#') Back
 		+network-subnav
-
+		
 li.platform-link
 	a(href='/platform') Savory Platform
 	ul.left-submenu
