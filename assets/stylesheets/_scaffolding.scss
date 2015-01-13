@@ -115,16 +115,18 @@ figure {
 
 // panels
 .grid-panel {
-  background: white;
+  background: lighten($mud, 20%);
   border: $border;
   padding: 1rem;
 
   p {
     @include smaller-font;
+    color: white;
   }
 
   h4 {
     margin-bottom: .5rem;
+    color: white;
   }
 
   figure {
@@ -139,7 +141,7 @@ figure {
   }
 
   header {
-    border-bottom: $border-dashed;
+    border-bottom: $border-dashed-lighter;
     margin-bottom: .5rem;
   }
 }
