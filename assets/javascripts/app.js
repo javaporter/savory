@@ -38,6 +38,13 @@ $(function() {
   }
 
 
+
+  // masonry
+  $('#masonry-container').masonry({
+    itemSelector: '#masonry-container .block'
+  });
+
+
 });
 
 

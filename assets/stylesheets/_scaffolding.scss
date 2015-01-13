@@ -145,7 +145,6 @@ figure {
 
 
 // filepicker stuff
-
 .filepicker-drag {
   line-height: $learn-more-simple-size !important;
   background-color: white !important;
@@ -169,3 +168,8 @@ figure {
   }
 }
 
+
+// for block rows (callouts, etc.)
+.block-row {
+  margin-top: 1rem;
+}
