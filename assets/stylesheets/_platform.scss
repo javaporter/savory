@@ -5,7 +5,7 @@ body.platform {
   }
 
 
-  section.course-catalog {
+  section.store-items {
 
     figure {
       background: white;
@@ -75,6 +75,30 @@ body.platform {
           font-size: .85rem;
         }
       }
+    }
+  }
+
+  section.donate {
+    @extend .photo-background;
+    background: url('/assets/images/platform/donate.jpg');
+
+    p {
+      color: white;
+    }
+
+    input {
+      height: 3.25rem;
+      font-size: 2rem;
+    }
+
+    .prefix {
+      background: lighten($mud, 20%);
+      line-height: 3.25rem;
+      color: $opaque-light-2;
+      font-size: 2rem;
+      border: none;
+      font-weight: 300;
+      height: 3.25rem;
     }
   }
 }
