@@ -32,6 +32,12 @@ a, a:hover {
 }
 
 
+// paragraphs
+p.fine-print {
+  @include smaller-font;
+}
+
+
 // lists
 
 ul, ol {

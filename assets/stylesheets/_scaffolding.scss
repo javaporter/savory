@@ -114,10 +114,17 @@ figure {
 
 
 // panels
-.panel {
+.grid-panel {
+  background: white;
+  border: $border;
+  padding: 1rem;
 
   p {
     @include smaller-font;
+  }
+
+  h4 {
+    margin-bottom: .5rem;
   }
 
   figure {
