@@ -36,22 +36,34 @@ body.platform {
       }
 
       footer {
-        background: $silver;
-        padding: .5em;
         border-top: $border;
         position: absolute;
         bottom: 0;
         width: 100%;
 
         i {
-          margin-right: .3rem;
+          margin-right: .5rem;
         }
-      }
+
+        a, {
+          color: white;
+          padding: .5em;
+          background: $elf;
+          transition: background .2s;
+          display: block;
+          width: 100%;
+
+          &:hover {
+            background: $verdant;
+            transition: background .2s;
+          }
+        }
 
       h5 {
         margin-bottom: .25rem;
       }
     }
+  }
 
     .course-objectives {
       ul {
