@@ -12,11 +12,11 @@ block content
           .large-9.medium-8.small-10.columns
             img(src='/assets/images/home/case-study-01.svg', alt='Case Study 01')
             p Better land management grows a sustainable ranching practice, which creates more jobs, which builds a better economy, which promotes a better community. It's all connected.
-  
+
           .medium-1.small-2.columns
             button.simple
               a(href='#') +
-  
+
           .large-2.medium-3.stats-column.columns
             .stats
               ul(data-orbit='')
@@ -36,10 +36,10 @@ block content
                   figure
                     .number 12%
                     figcaption Increase in perennial grass plants
-  
-  
-  
-  
+
+
+
+
   section.main.about
     .row.allan-savory-quote
       .medium-3.medium-offset-1.small-6.columns
@@ -50,23 +50,23 @@ block content
               h2 About
             button.simple
               a(href='#') +
-  
+
       .medium-7.end.small-6.columns
         blockquote
           | Ultimately, the only wealth that can sustain any community, economy or nation is derived from the photosynthetic process—green plants growing on regenerating soil.
           footer Allan Savory
-  
-  
-  
-  
+
+
+
+
   section.main.hubs
     #map.hubs-map
       button.simple
         a(href='/network') +
-  
-  
-  
-  
+
+
+
+
   section.main.news
     .row
       .small-12.columns
@@ -74,51 +74,15 @@ block content
           | What's New
           small
             a(href='#') View All <span>[</span>+<span>]</span>
-  
+
         ol.news-grid
-          //- -homepage_news.each do |article|
-          //-   li
-          //-     a(href='news/#{article.slug}')
-          //-       .marker
-          //-       img(src'article.url_for("homepage")')
-          //-       =article.shortlede
-          
-          //- these are just placeholders, ok to delete once prismic is in
-          li 
-            a(href='#')
-              .marker
-              img(src='/assets/images/news/ny-comp.jpg')
-              p In early November, a 3-day Holistic Management workshop was held for agricultural producers in the Hudson Valley region of New York.
-          li 
-            a(href='#')
-              .marker
-              img(src='/assets/images/news/ny-comp.jpg')
-              p In early November, a 3-day Holistic Management workshop was held for agricultural producers in the Hudson Valley region of New York.
-          li 
-            a(href='#')
-              .marker
-              img(src='/assets/images/news/ny-comp.jpg')
-              p In early November, a 3-day Holistic Management workshop was held for agricultural producers in the Hudson Valley region of New York.
-          li 
-            a(href='#')
-              .marker
-              img(src='/assets/images/news/ny-comp.jpg')
-              p In early November, a 3-day Holistic Management workshop was held for agricultural producers in the Hudson Valley region of New York.
-          li 
-            a(href='#')
-              .marker
-              img(src='/assets/images/news/ny-comp.jpg')
-              p In early November, a 3-day Holistic Management workshop was held for agricultural producers in the Hudson Valley region of New York.
-          li 
-            a(href='#')
-              .marker
-              img(src='/assets/images/news/ny-comp.jpg')
-              p In early November, a 3-day Holistic Management workshop was held for agricultural producers in the Hudson Valley region of New York.
-  
-  
-  
-  
-  
+          each article in news
+            li
+              a(href='#')
+                .marker
+                img(src=article.getImage('news.image').views['homepage'].url)
+                !=article.getStructuredText('news.shortlede').asHtml()
+
   section.main.get-involved-and-tools
     .row
       .medium-6.columns
@@ -127,20 +91,20 @@ block content
           figcaption
             .hidden-content
               p
-                | Education is not the filling of a pail, but the lighting of a fire. 
+                | Education is not the filling of a pail, but the lighting of a fire.
                 footer William Butler Yeats
-  
+
             h2 Products and Tools
             button.simple
               a(href='/platform') +
-  
+
       .medium-6.columns
         figure
           img(src='/assets/images/home/field.jpg')
           figcaption
             .hidden-content
               p As Shakespeare put it: "Words are easy, like the wind; faithful friends are hard to find." Take the next step and help us to spread the word.
-            
+
             h2 Get Involved
             button.simple
               a(href='/get-involved') +
