@@ -78,7 +78,7 @@ block content
         ol.news-grid
           each article in news
             li
-              a(href='#')
+              a(href='/news/'+article.getText('news.slug'))
                 .marker
                 img(src=article.getImage('news.image').views['homepage'].url)
                 !=article.getStructuredText('news.shortlede').asHtml()

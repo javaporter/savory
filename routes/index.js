@@ -44,8 +44,17 @@ router.get('/styles', function(req, res) {
   res.render('styles/index', { title: 'Styles' });
 });
 
-router.get('/news', function(req, res) {
-  res.render('news/index', { title: 'News' });
+router.get('/news/:slug', function(req, res) {
+  prismic.api()
+    .then(function(api) {
+      return prismic.newsArticle(api, req.params.slug);
+    })
+    .then(function(article) {
+      res.render('news/article', {article: article});
+    })
+    .catch(function(err) {
+      res.send('not found', 400);
+    })
 });
 
 router.get('/network/hub', function(req, res) {

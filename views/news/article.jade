@@ -9,15 +9,17 @@ block content
     .row
       .small-12.columns
         figure.img-love
-          =image_tag(article.image_url)
-          figcaption=article.figcaption
+          img(src=article.getImage('news.image').main.url)
+          figcaption!=article.getStructuredText('news.figcaption').asHtml()
         header
           .row
             .small-2.columns
-              .date=article.date_as_html
-
+              - date = momentDate(article.getDate('news.date'))
+              .date
+                .month=date.format('MMM')
+                .day=date.format('DD')
+                .year=date.format('YYYY')
             .small-10.columns
               h1
-                =article.title
-                small=article.location
-        p=article.body
+                =article.getText('news.title')
+        !=article.getStructuredText('news.body').asHtml()

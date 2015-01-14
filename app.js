@@ -5,6 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var middleware = require('./lib/middleware');
+var moment = require('moment');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -23,6 +24,11 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.locals.basedir = path.join(__dirname, 'views');
+
+// TODO: Move all helpers into a module somewhere and pass APP in
+app.locals.momentDate = function(date) {
+  return moment(date);
+}
 
 app.use(middleware.body_class);
 app.use('/', routes);
