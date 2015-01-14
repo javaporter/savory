@@ -37,14 +37,6 @@ $(function() {
     if (map.tap) map.tap.disable();
   }
 
-
-
-  // masonry
-  $('.masonry-container').masonry({
-    itemSelector: '.masonry-container .block'
-  });
-
-
 });
 
 
