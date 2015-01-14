@@ -9,9 +9,10 @@ set :keep_releases, 2
 set :linked_dirs, %w{node_modules}
 
 namespace :deploy do
-  after :restart, :clear_cache do
+  task :restart do
     on roles(:web), in: :groups, limit: 3, wait: 10 do
       execute :sudo, :service, :savory, :restart
     end
   end
+  after :publishing, :restart
 end
