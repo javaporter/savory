@@ -1,8 +1,15 @@
 var express = require('express');
 var router = express.Router();
+var prismic = require('../lib/prismic');
 
 router.get('/', function(req, res) {
-  res.render('index', { title: 'Savory' });
+  prismic.api()
+    .then(function(api) {
+      return prismic.homepageNews(api);
+    })
+    .then(function(news) {
+      res.render('index', { title: 'Savory', news: news});
+    })
 });
 
 router.get('/get-involved', function(req, res) {
