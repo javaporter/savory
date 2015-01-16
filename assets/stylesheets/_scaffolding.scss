@@ -16,7 +16,7 @@ section {
 section.main {
   padding: $section-padding 0;
 
-  &:nth-of-type(odd) {
+  &:nth-of-type(even) {
     background: white;
   }
 }
