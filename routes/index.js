@@ -24,6 +24,10 @@ router.get('/institute/our-team', function(req, res) {
   res.render('institute/our-team', { title: 'Our Team' });
 });
 
+router.get('/institute/history', function(req, res) {
+  res.render('institute/history', { title: 'History' });
+});
+
 router.get('/platform', function(req, res) {
   res.render('platform/index', { title: 'Platform' });
 });
