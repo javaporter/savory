@@ -29,7 +29,16 @@ router.get('/institute/history', function(req, res) {
 });
 
 router.get('/platform', function(req, res) {
-  res.render('platform/index', { title: 'Platform' });
+  prismic.api()
+    .then(function(api) {
+      return prismic.platformClasses(api);
+    })
+    .then(function(classes) {
+      res.render('platform/index', {platform_classes: classes});
+    })
+    .catch(function(err) {
+      res.send('error', 500);
+    });
 });
 
 router.get('/network', function(req, res) {

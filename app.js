@@ -31,6 +31,10 @@ app.locals.momentDate = function(date) {
   return moment(date);
 }
 
+app.locals.pricify = function(price) {
+  return '$' + price;
+}
+
 app.use(middleware.body_class);
 app.use('/', routes);
 
