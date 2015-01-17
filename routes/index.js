@@ -2,6 +2,12 @@ var express = require('express');
 var router = express.Router();
 var prismic = require('../lib/prismic');
 
+function notFound(res) {
+  return function(err) {
+    res.status(404).send('Page not found');
+  }
+}
+
 router.get('/', function(req, res) {
   prismic.api()
     .then(function(api) {
@@ -58,10 +64,7 @@ router.get('/platform', function(req, res) {
     })
     .then(function(classes) {
       res.render('platform/index', {platform_classes: classes});
-    })
-    .catch(function(err) {
-      res.send('error', 500);
-    });
+    }, notFounfd(res));
 });
 
 router.get('/network', function(req, res) {
@@ -88,10 +91,7 @@ router.get('/news/:slug', function(req, res) {
     })
     .then(function(article) {
       res.render('news/article', {article: article});
-    })
-    .catch(function(err) {
-      res.send('not found', 400);
-    })
+    }, notFound(res));
 });
 
 // Get hub by slug
@@ -105,9 +105,7 @@ router.get('/network/hub/:slug', function(req, res) {
         title: 'Hub',
         hub: hub,
       });
-    }, function(err) {
-      res.status(500).send('Error: ' + err);
-    });
+    },notFound(res));
 });
 
 // Hub index
