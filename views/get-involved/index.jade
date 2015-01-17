@@ -4,7 +4,7 @@ block variables
 extends /layout-get-involved
 
 block content
-  
+
   section.main
     .row
       .small-12.columns
@@ -13,62 +13,60 @@ block content
         p Donating to the Savory Institute will help support our global impact strategy of impacting one billion hectares of land by 2025 through the establishment of 100 Savory Hubs across the globe carrying out our mission in their own holistic contexts.
         p In the past three years, leaders from 30 communities around the world have come together to be part of the solution. They are our first 30 Savory Hubs.  
         p From Patagonia to Mexico, to the USA and Canada; from South Africa to Kenya, to Turkey and Scandinavia; this global network of Hubs are the impetus that will help put an end to desertification, food and water insecurity, and climate change.
-  
-  
+
+
   #join-the-tribe(data-magellan-destination='join-the-tribe')
   section.main.join-the-tribe
     .row
       .small-12.columns
         h2 Join the Tribe
-        p One of the best ways you can get involved is to follow us on social media. Together we can change the world. 
+        p One of the best ways you can get involved is to follow us on social media. Together we can change the world.
         ul.inline-list
           include /partials/social.jade
-  
-  
+
+
   #donate(data-magellan-destination='donate')
   section.main.donation
     .row
       .small-12.columns
         h2 Donate
-        p What if we all became investors in the success of this global network? 
+        p What if we all became investors in the success of this global network?
         p Your investment will help more communities to become part of the Savory Hub network. More Hubs means more farmers, ranchers, and pastoralists trained, equipped, and empowered and more hectares of land being restored; and with that... 
         ul
-          li more carbon being removed from the atmosphere and into the soil by green growing plants; 
+          li more carbon being removed from the atmosphere and into the soil by green growing plants;
           li more water supporting life and recharging rivers; 
-          li more prosperity and wellbeing for rural communities; 
+          li more prosperity and wellbeing for rural communities;
           li more resilience for the surrounding urban populations. 
 
         p We've made the cultivation of this global network our top priority. Your investment will help us seed its growth.
         p It starts with each of us believing, supporting, and committing.
         p 25 50 100
         p I believe  $250 or 25/mo
-        p I support $500 or 50/mo 
+        p I support $500 or 50/mo
         p I commit $1000 or 100/mo
         p I’d like to give another amount
 
         button.primary
           a(href='#') Donate
-  
-  
+
+
   #volunteer(data-magellan-destination='volunteer')
   section.main.volunteer
     .row
       .small-12.columns
         h2 Volunteer
         p Due to incredible response, we are not currently accepting additional volunteers. Please check back in early 2015.
-  
-  
+
+
   #careers(data-magellan-destination='careers')
   section.main.careers
     .row
       .small-12.columns
         h2 Careers
         p The Savory Institute welcomes contact and CVs from professionals in the communications, land management, and livestock management fields.
-  
+
         h3 We currently have the following openings:
         ul.plus
-          li
-            a(href='/get-involved/job') Savory Institute Executive Assistant
-  
-  
-  
+          each career in careers
+            li
+              a(href='/get-involved/jobs/'+career.id)=career.getStructuredText('careers.title').asText()

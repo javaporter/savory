@@ -12,8 +12,31 @@ router.get('/', function(req, res) {
     })
 });
 
+router.get('/get-involved/jobs/:id', function(req, res) {
+  prismic.api()
+    .then(function(api) {
+      return prismic.career(api, req.params.id);
+    })
+    .then(function(career) {
+      res.render('get-involved/careers-template', {
+        career_title: career.getStructuredText('careers.title').asText(),
+        career: career,
+      });
+    })
+    .catch(function(err) {
+      console.log(err);
+      res.send('error', 500);
+    })
+});
+
 router.get('/get-involved', function(req, res) {
-  res.render('get-involved/index', { title: 'Express' });
+  prismic.api()
+    .then(function(api) {
+      return prismic.careers(api);
+    })
+    .then(function(careers) {
+      res.render('get-involved/index', {careers: careers});
+    });
 });
 
 router.get('/institute', function(req, res) {
