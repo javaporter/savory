@@ -80,6 +80,7 @@ router.get('/styles', function(req, res) {
   res.render('styles/index', { title: 'Styles' });
 });
 
+// News article
 router.get('/news/:slug', function(req, res) {
   prismic.api()
     .then(function(api) {
@@ -93,6 +94,23 @@ router.get('/news/:slug', function(req, res) {
     })
 });
 
+// Get hub by slug
+router.get('/network/hub/:slug', function(req, res) {
+  prismic.api()
+    .then(function(api) {
+      return prismic.hub(api, req.params.slug);
+    })
+    .then(function(hub) {
+      res.render('network/hub', {
+        title: 'Hub',
+        hub: hub,
+      });
+    }, function(err) {
+      res.status(500).send('Error: ' + err);
+    });
+});
+
+// Hub index
 router.get('/network/hub', function(req, res) {
   res.render('network/hub', { title: 'Hub' });
 });
