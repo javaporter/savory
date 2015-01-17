@@ -19,7 +19,7 @@ router.get('/get-involved/jobs/:id', function(req, res) {
     })
     .then(function(career) {
       res.render('get-involved/careers-template', {
-        career_title: career.getStructuredText('careers.title').asText(),
+        title: career.getStructuredText('careers.title').asText(),
         career: career,
       });
     })
