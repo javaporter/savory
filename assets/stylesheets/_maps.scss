@@ -5,6 +5,10 @@
 section.hubs {
   height: $hero-height;
 
+  @media #{$small-only} {
+    height: 300px;
+  }
+
   .legend {
     position: absolute;
     bottom: 1rem;

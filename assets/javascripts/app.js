@@ -28,13 +28,8 @@ $(function() {
     L.mapbox.accessToken = 'pk.eyJ1Ijoic2F2b3J5aW5zdGl0dXRlIiwiYSI6ImFJbDI3Qm8ifQ.usgK1Wk7eQAbG6Jjp7knGQ';
     var map = L.mapbox.map('map', 'savoryinstitute.jjdf51a0');
 
-    map.dragging.disable();
     map.touchZoom.disable();
-    // map.doubleClickZoom.disable();
     map.scrollWheelZoom.disable();
-
-    // Disable tap handler, if present.
-    if (map.tap) map.tap.disable();
   }
 
 });
