@@ -7,18 +7,21 @@ section.hubs {
 
   .legend {
     position: absolute;
-    display: block;
     bottom: 1rem;
-    left: 1rem;
-    z-index: 10000;
+    left: 0;
+    z-index: 10;
     color: white;
-    // font-weight: 300;
-    // font-family: $font-family-sans-serif;
     margin: 0;
     width: 100%;
 
     ul {
       @extend .no-bullet;
+      background: $opaque-dark-2;
+      display: inline-block;
+      margin: 0;
+      padding: 1rem;
+      @include smaller-font;
+      border-radius: 4px;
     }
 
     li {
@@ -26,6 +29,10 @@ section.hubs {
       border-width: 1.25rem;
       border-left-style: solid;
       margin-top: .5rem;
+
+      &:first-child {
+        margin-top: 0;
+      }
     }
 
     .elf {
