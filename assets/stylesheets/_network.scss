@@ -4,6 +4,28 @@ body.network {
       @include primary-nav-you-are-here;
   }
 
+  section.overview {
+    background: url('/assets/images/network/hero.jpg');
+    background-size: cover;
+    height: 500px;
+
+    .content {
+      position: absolute;
+      bottom: 2rem;
+      width: 100%;
+    }
+
+    h1, p {
+      color: white;
+    }
+
+    .network-logo {
+      max-width: 75px;
+      float: left;
+      margin-right: 1rem;
+    }
+  }
+
 
   // hub landing page
   .hub-overview {
