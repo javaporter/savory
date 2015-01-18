@@ -2,19 +2,24 @@
   display: none;
 }
 
-.hubs-map {
+section.hubs {
+  height: $hero-height;
 
   .legend {
     position: absolute;
     display: block;
     bottom: 1rem;
     left: 1rem;
-    z-index: 1000;
+    z-index: 10000;
     color: white;
-    font-weight: 300;
-    font-family: $font-family-sans-serif;
-    @extend .no-bullet;
+    // font-weight: 300;
+    // font-family: $font-family-sans-serif;
     margin: 0;
+    width: 100%;
+
+    ul {
+      @extend .no-bullet;
+    }
 
     li {
       padding-left: .5rem;
@@ -34,5 +39,19 @@
     .poppy {
       border-color: $poppy;
     }
+  }
+
+  button {
+    position: absolute;
+    right: 1rem;
+    bottom: 0;
+    z-index: 100;
+  }
+
+  .hubs-map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
   }
 }
