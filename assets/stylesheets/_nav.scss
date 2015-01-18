@@ -16,7 +16,6 @@ nav.primary-nav {
       a {
         line-height: 55px;
         padding: .3rem .75rem;
-        margin: 0;
         position: relative;
         bottom: -5px;
         display: block;
@@ -63,7 +62,7 @@ nav.primary-nav {
   background: url('/assets/images/logo.svg') no-repeat left center;
   background-size: 100% auto;
   padding-right: 0;
-  margin-right: 0;
+  margin-right: 1rem;
   position: relative;
   top: 0px;
 }
