@@ -26,7 +26,12 @@ $(function() {
   // calling in mapbox
   if( document.getElementById('map') != null ) {
     L.mapbox.accessToken = 'pk.eyJ1Ijoic2F2b3J5aW5zdGl0dXRlIiwiYSI6ImFJbDI3Qm8ifQ.usgK1Wk7eQAbG6Jjp7knGQ';
-    var map = L.mapbox.map('map', 'savoryinstitute.jjdf51a0');
+    var map = L.mapbox.map('map', 'savoryinstitute.jjdf51a0', {
+      tileLayer: {
+        continuousWorld: false,
+        noWrap: true
+      }
+    });
 
     map.touchZoom.disable();
     map.scrollWheelZoom.disable();
