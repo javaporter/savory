@@ -64,7 +64,7 @@ router.get('/platform', function(req, res) {
     })
     .then(function(classes) {
       res.render('platform/index', {platform_classes: classes});
-    }, notFounfd(res));
+    }, notFound(res));
 });
 
 router.get('/network', function(req, res) {
