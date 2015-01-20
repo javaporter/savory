@@ -39,6 +39,7 @@ section.half-color {
   }
 
   .art {
+    @extend .show-for-medium-up;
     @extend .nested;
     right: 50%;
     background: url('/assets/images/aspen.svg') no-repeat $smoke right center;
@@ -47,8 +48,12 @@ section.half-color {
 
   .color {
     @extend .nested;
-    background: #8a8077;
-    left: 50%;
+    background: lighten($stone, 20%);
+
+    @media #{$medium-up} {
+      background: $stone;
+      left: 50%;
+    }
   }
 }
 

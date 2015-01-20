@@ -5,9 +5,15 @@ body.network {
   }
 
   section.overview {
-    background: url('/assets/images/network/hero.jpg');
+    background: url('/assets/images/network/hero.jpg') center top;
     background-size: cover;
-    height: 500px;
+    height: 300px;
+
+    @media #{$medium-up} {
+      background: url('/assets/images/network/hero-lg.jpg') center top;
+      height: 500px;
+      background-size: cover;
+    }
 
     .content {
       position: absolute;
