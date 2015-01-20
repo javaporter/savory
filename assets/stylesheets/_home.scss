@@ -1,6 +1,14 @@
 body.index {
 
+  // overview
+  .key-points {
+    margin-top: -.5rem;
+  }
 
+  .strategy {
+    border-top: $border-dashed;
+    padding-top: 1rem;
+  }
 
   // outcomes and case study
   section.outcomes {
