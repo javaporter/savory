@@ -2,7 +2,9 @@ body.index {
 
   // overview
   .key-points {
-    margin-top: -.5rem;
+    @media #{$medium-up} {
+      margin-top: -.5rem;
+    }
   }
 
   .strategy {
@@ -183,25 +185,32 @@ body.index {
 
     .news-grid {
       $tri-size: 15px;
-      @include block-grid(2, 0);
+      @include block-grid(1, 0);
       counter-reset: item;
       list-style-type: decimal;
+
+      @media #{$medium-up} {
+        @include block-grid(2, 0);
+      }
 
       li {
         margin: 0;
         padding: 0;
         position: relative;
 
-        &:before {
-          content: counter(item, decimal);
-          counter-increment: item;
-          position: absolute;
-          top: 0rem;
-          left: 50%;
-          margin-left: 1rem;
-          z-index: 1000;
-          font-weight: 700;
-          font-size: 2.5rem;
+        @media #{$medium-up} {
+
+          &:before {
+            content: counter(item, decimal);
+            counter-increment: item;
+            position: absolute;
+            top: 0rem;
+            left: 50%;
+            margin-left: 1rem;
+            z-index: 1000;
+            font-weight: 700;
+            font-size: 2.5rem;
+          }
         }
 
         img {
@@ -211,8 +220,12 @@ body.index {
         }
 
         p {
-          padding: 3rem 1rem 1rem 1rem;
+          padding: .5rem;
           @include smaller-font;
+
+          @media #{$medium-up} {
+            padding: 3rem 1rem 1rem 1rem;
+          }
         }
 
         a {
@@ -236,6 +249,7 @@ body.index {
           left: 50%;
           margin-top: -$tri-size;
           margin-left: -$tri-size;
+          @extend .hide-for-small;
         }
       }
 

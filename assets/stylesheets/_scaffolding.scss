@@ -277,8 +277,10 @@ img.section-hero {
     padding: 1rem 0;
     @include smaller-font;
 
-    &:first-child {
-      border-top: none;
+    @media #{$medium-up} {
+      &:first-child {
+        border-top: none;
+      }
     }
 
     p {
