@@ -57,6 +57,13 @@ section.dark {
   background: $mud url('/assets/images/noise.png');
 }
 
+section.call-to-action {
+  padding: $section-padding*.7 0;
+  background: lighten($mud, 70%);
+  border-top: $border-dashed;
+  margin-top: -2rem;
+}
+
 figure {
   margin: 0 0 2rem 0;
   position: relative;
