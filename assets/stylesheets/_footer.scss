@@ -20,6 +20,12 @@ footer.site-footer {
   }
 
   ul.site-map {
+    column-count: 2;
+    column-gap: 1rem;
+
+    li {
+      break-inside: avoid-column;
+    }
 
     .left-submenu {
       position: relative;
@@ -39,7 +45,7 @@ footer.site-footer {
     }
 
     @media #{$large-up} {
-      @include inline-list;
+      column-count: 4;
     }
   }
 
