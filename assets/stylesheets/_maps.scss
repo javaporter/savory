@@ -22,6 +22,14 @@ section.hubs {
     margin: 0;
     width: 100%;
 
+    a {
+      color: white;
+
+      &:hover {
+        color: $opaque-light-2;
+      }
+    }
+
     ul {
       @extend .no-bullet;
       background: $opaque-dark-2;

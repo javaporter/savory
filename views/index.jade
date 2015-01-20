@@ -90,9 +90,12 @@ block content
       .row
         .small-12.columns
           ul
-            li.poppy Accredited
-            li.verdant Candidates
-            li.elf Special Projects
+            li.poppy
+              a(href='#', data-reveal-id='accredited-hubs') Accredited Hubs
+            li.verdant
+              a(href='#', data-reveal-id='hub-candidates') Hub Candidates
+            li.elf
+              a(href='#', data-reveal-id='special-projects') Special Projects
 
     #map.hubs-map
 
@@ -139,3 +142,26 @@ block content
             h2 Get Involved
             button.simple
               a(href='/get-involved') +
+
+
+
+
+
+  //- modals
+  #accredited-hubs.reveal-modal(data-reveal='')
+    h2 Acredited Hubs
+    p blah
+    a.close-reveal-modal
+      i.fa.fa-close
+
+  #hub-candidates.reveal-modal(data-reveal='')
+    h2 Hub Candidates
+    p blah
+    a.close-reveal-modal
+      i.fa.fa-close
+
+  #special-projects.reveal-modal(data-reveal='')
+    h2 Special Projects
+    p blah
+    a.close-reveal-modal
+      i.fa.fa-close
