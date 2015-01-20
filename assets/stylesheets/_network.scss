@@ -26,6 +26,17 @@ body.network {
     }
   }
 
+  section.technology-platform {
+
+    .tech-platform-points {
+      margin-top: 1rem;
+
+      p, li {
+        @include smaller-font;
+      }
+    }
+  }
+
 
   // hub landing page
   .hub-overview {
