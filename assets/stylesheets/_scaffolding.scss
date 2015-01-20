@@ -42,7 +42,7 @@ section.half-color {
     @extend .nested;
     right: 50%;
     background: url('/assets/images/aspen.svg') no-repeat $smoke right center;
-    background-size: 50px;
+    background-size: cover;
   }
 
   .color {
