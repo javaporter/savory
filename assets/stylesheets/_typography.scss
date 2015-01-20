@@ -130,8 +130,17 @@ h2 {
 }
 
 h3 {
+  color: $verdant;
+  margin-bottom: .2rem;
+}
+
+h4 {
   color: lighten($terra, 25);
   margin-bottom: .2rem;
+}
+
+h5 {
+  font-weight: 400;
 }
 
 p {
@@ -141,11 +150,6 @@ p {
     margin-bottom: 0;
   }
 }
-
-h5 {
-  font-weight: 400;
-}
-
 
 
 
