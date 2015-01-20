@@ -253,6 +253,7 @@ img.section-hero {
   left: 50%;
   border-left: $border;
   height: 100%;
+  @extend .hide-for-small-only;
 }
 
 .key-points {
@@ -274,14 +275,18 @@ img.section-hero {
   }
 
   .left .point {
-    h4, p {
-      padding-right: 1rem;
+    @media #{$medium-up} {
+      h4, p {
+        padding-right: 1rem;
+      }
     }
   }
 
   .right .point {
-    h4, p {
-      padding-left: 1rem;
+    @media #{$medium-up} {
+      h4, p {
+        padding-left: 1rem;
+      }
     }
   }
 }
