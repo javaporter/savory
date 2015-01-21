@@ -51,8 +51,69 @@ body.network {
     .tech-platform-points {
       margin-top: 1rem;
 
-      p, li {
-        @include smaller-font;
+      .panel {
+        position: relative;
+        padding-top: 4rem;
+        padding-bottom: 2.5rem;
+
+        header, footer {
+          position: absolute;
+          width: 100%;
+          left: 0;
+        }
+
+        header {
+          padding: 0 1rem;
+          border-bottom: $border;
+          top: 0;
+          background: $smoke;
+          height: 3rem;
+
+          h3, i {
+            line-height: 3rem;
+            margin: 0;
+          }
+
+          i {
+            float: left;
+            margin-right: .5rem;
+            font-size: 1.5rem;
+            color: $stone;
+            border-right: $border;
+            padding-right: .5em;
+          }
+        }
+
+        footer {
+          bottom: 0;
+          height: 2rem;
+          line-height: 2rem;
+
+          a {
+            display: block;
+            background: $elf;
+            transition: background .2s;
+            color: white;
+            padding: 0 1rem;
+
+            &:hover {
+              background: darken($elf, 10%);
+              transition: background .2s;
+            }
+          }
+
+          i {
+            margin-right: .5rem;
+          }
+
+          a.no-link {
+            background: lighten($elf, 20%);
+          }
+        }
+
+        p, li {
+          @include smaller-font;
+        }
       }
     }
   }

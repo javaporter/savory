@@ -31,6 +31,10 @@ a, a:hover {
   transition: color .35s;
 }
 
+a.no-link {
+  cursor: default;
+}
+
 
 // paragraphs
 p.fine-print {
