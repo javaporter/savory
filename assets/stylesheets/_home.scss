@@ -199,7 +199,6 @@ body.index {
         position: relative;
 
         @media #{$medium-up} {
-
           &:before {
             content: counter(item, decimal);
             counter-increment: item;
@@ -253,26 +252,39 @@ body.index {
         }
       }
 
-      // for the middle row
-      li:nth-child(3), li:nth-child(4) {
-
-        &:before {
-          left: 0;
-        }
-
-        img {
-          float: right;
-          margin-right: 0;
-          margin-left: .5rem;
-        }
-
-        .marker {
-          border-width: $tri-size 0 $tri-size $tri-size;
-          border-color: transparent transparent transparent white;
-          margin-left: auto;
-          margin-right: -$tri-size;
+      @media #{$small-only} {
+        li:nth-child(even) {
+          img {
+            float: right;
+            margin-right: 0;
+            margin-left: .5rem;
+          }
         }
       }
+
+      @media #{$medium-up} {
+        // for the middle row
+        li:nth-child(3), li:nth-child(4) {
+
+          &:before {
+            left: 0;
+          }
+
+          img {
+            float: right;
+            margin-right: 0;
+            margin-left: .5rem;
+          }
+
+          .marker {
+            border-width: $tri-size 0 $tri-size $tri-size;
+            border-color: transparent transparent transparent white;
+            margin-left: auto;
+            margin-right: -$tri-size;
+          }
+        }
+      }
+
     }
   }
 
