@@ -32,6 +32,20 @@ body.network {
     }
   }
 
+
+  ul.application-process {
+    @extend .no-bullet;
+    border-top: $border-dashed;
+
+    li p {
+      @include smaller-font;
+    }
+
+    .bordered-list {
+      margin-left: 0;
+    }
+  }
+
   section.technology-platform {
 
     .tech-platform-points {
