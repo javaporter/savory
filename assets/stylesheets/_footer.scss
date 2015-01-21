@@ -2,6 +2,7 @@ footer.site-footer {
   background: $terra;
   padding: 3em 0;
   border-top: $border-opaque-lighter;
+  color: $opaque-light-2;
 
   ul {
     @extend .no-bullet;
@@ -12,10 +13,10 @@ footer.site-footer {
   }
 
   a {
-    color: $opaque-light-2;
+    color: $opaque-light-1;
 
     &:hover {
-      color: $opaque-light-1;
+      color: $opaque-light-2;
     }
   }
 
@@ -54,8 +55,19 @@ footer.site-footer {
     margin: 1em 0 0 0;
 
     @media #{$medium-up} {
-      float: right;
+      // float: right;
       margin: 0;
     }
+  }
+
+  .address {
+    @include smaller-font;
+    margin-top: 1em;
+  }
+
+  .charity-text {
+    @include smallest-font;
+    border-top: $border-opaque-lighter;
+    padding-top: .25rem;
   }
 }
