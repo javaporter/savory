@@ -1,5 +1,6 @@
 .reveal-modal {
   @include smaller-font;
+  border: 1px solid lighten($mud, 20%);
 
   p, li {
     @include smaller-font;
@@ -41,6 +42,5 @@
 }
 
 .reveal-modal-bg {
-  height: 100%;
-  position: fixed;
+  position: fixed; // not sure why, but we need this to fix the background for the modal
 }
