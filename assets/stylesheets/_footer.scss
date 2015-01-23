@@ -26,6 +26,7 @@ footer.site-footer {
 
     li {
       break-inside: avoid-column;
+      display: inline-block; // you need this to get the columns to line up at the top
     }
 
     .left-submenu {
