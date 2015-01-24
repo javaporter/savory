@@ -109,6 +109,21 @@ ul.icon-list {
   }
 }
 
+ul.inline-listing {
+  @extend .no-bullet;
+  margin-top: 0;
+
+  li {
+    margin-right: .5rem;
+    @include smaller-font;
+    display: inline;
+
+    &:nth-child(even) {
+      color: lighten($terra, 30%);
+    }
+  }
+}
+
 ol {
   list-style-type: decimal-leading-zero;
   margin-left: 2rem;

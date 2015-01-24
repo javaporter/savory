@@ -5,11 +5,17 @@ extends /layout-institute
 
 block content
 
-  section.main
+  section.overview
+
+  section.half-color
+    .art
+    .color
     .row
-      .small-12.columns
+      .medium-6.columns
         h1= title
-        p The Savory Institute promotes large-scale restoration of the world’s grasslands through holistic management. We use properly managed livestock to heal the land and empower others to do the same. We also remove barriers on the path to large-scale success through activities such as conducting research, creating market incentives and raising public awareness.
+
+      .medium-6.columns
+        p The Savory Institute promotes large-scale restoration of the world’s grasslands through Holistic Management. We use properly managed livestock to heal the land and empower others to do the same. We also remove barriers on the path to large-scale success by conducting research, creating market incentives, and raising public awareness.
 
 
   #healing-the-land(data-magellan-destination='healing-the-land')
@@ -36,10 +42,10 @@ block content
         h3 Monitoring, Curating and Conducting Research
         p The Savory Institute conducts, coordinates and supports comprehensive social, ecological, and financial monitoring.
         p The Savory Institute has compiled and curated a portfolio of peer reviewed papers, articles, white papers and case study that represents the scientific and ground-truthed evidence basis of our work. We work in collaboration with organizations, scientists, and academic institutions to collect and conduct research that will increase our understanding of how properly managed livestock in the grasslands of the world contribute to removing carbon from the atmosphere and addressing problems such as drought, poverty, hunger and social violence.
-        p We are currently working in collaborations with:
-        ul
+        h5 We are currently working in collaborations with:
+        ul.inline-listing
           li The Nature Conservancy
-          li University of Wyoming – Haub School of Natural Resources and the Environment.
+          li University of Wyoming – Haub School of Natural Resources and the Environment
           li Princeton University – Ecology and Evolutionary Biology
           li Texas A&M University – Texas AgriLife Research
           li Idaho State University’s – GIS Training and Research Center
@@ -55,7 +61,7 @@ block content
 
         h3 Informing Policy and Programs
         p Policies and development programs concerning grasslands and livestock management in many countries are often flawed – and they are a major reason why desertification is expanding so rapidly around the world. The Savory Institute informs policymakers and stakeholders of the need to shift current agriculture and land management policies and programs. Savory Institute is a member of several global roundtables and dialogues, such as:
-        ul
+        ul.inline-listing
           li United Nations Convention to Combat Desertification (UNCCD)
           li United Nations Global Compact (UNGC) - Core Advisory Group - Member.
           li Food and Agriculture Organization (FAO) Global Agenda for Action – Restoring the Value of Grasslands and Multi-Stakeholder Action for Sustainable Livestock – Member.
@@ -67,14 +73,14 @@ block content
 
         h3 Identifying and Establishing Market Incentives
         p The Savory Institute works to identify and establish strategies to create market-based incentives to encourage people to use Holistic Management to create environmental, economic and social benefits.  For example: Patagonia Inc.: we have joined a collaboration of sheep producers in Argentina which represent one of our first Savory Hubs in the Patagonia region, working with Patagonia, Inc. and The Nature Conservancy on a land management project that will restore 10 million acres of the Patagonia grasslands and add value to the wool produced on these estancias, Argentina.
-        ul
+        ul.inline-listing
           li US Beef Stewardship Collaboration - Sustainable Food Lab, USA
           li Armonia Sustainable Beef Program, USA
           li Massmart – South Africa
           li Marfrig – Latinamerica.
           li Increasing Public Awareness
-          li The Savory Institute engages many different audiences to change public perception that livestock itself causes the degradation and/or desertification of grasslands. It is actually the way humans manage livestock that is the culprit. This fundamental shift in thinking must happen to drive needed policy and market shifts.
 
+        p The Savory Institute engages many different audiences to change public perception that livestock itself causes the degradation and/or desertification of grasslands. It is actually the way humans manage livestock that is the culprit. This fundamental shift in thinking must happen to drive needed policy and market shifts.
         p Many different key environmental activists and thought leaders are supporting our efforts to increase public awareness such as TED, HRH Prince of Wales, Deepak Chopra, Ian Somerhalder, Hazel Henderson, Gretel Erlich, and Peter Byck among others.
         p Media venues have featured the work of the Savory Institute, and several film producers, writers and independent journalists are working closely with the Savory Institute team to spread this knowledge.
         p The Savory Institute team is also available to speak at conferences, meetings and other gatherings.
@@ -93,7 +99,7 @@ block content
         p We'll do a masonry grid here of the case studies.
 
         h3 We are currently working in collaborations with:
-        ul
+        ul.inline-listing
           li The Nature Conservancy
           li University of Wyoming – Haub School of Natural Resources and the Environment.
           li Princeton University – Ecology and Evolutionary Biology
@@ -111,110 +117,114 @@ block content
 
         h3 Papers and Research
 
-        h5 Papers by Allan Savory
-        ul.icon-list
-          li
-            a(href='/assets/docs/evidence-papers/science-methodology.pdf', target='_blank')
-              i.fa.fa-file-pdf-o
-              | Response to Request for Information on the “science” and “methodology” Underpinning Holistic Management and Holistic Planned Grazing (Updated 2013)
-          li
-            a(href='/assets/docs/evidence-papers/new-context.pdf', target='_blank')
-              i.fa.fa-file-pdf-o
-              | A New Framework, a New Context by Allan Savory (2012)
-          li
-            a(href='http://www.un.org/esa/dsd/dsd_sd21st/21_pdf/agriculture_and_food_the_future_of_sustainability_web.pdf', target='_blank')
-              i.fa.fa-file-pdf-o
-              | Food and Agriculture: The future of sustainability, by United Nations Department of Economic and Social Affairs, Division for Sustainable Development, Allan Savory contributor (2012)
-          li
-            a(href='/assets/docs/evidence-papers/brief-overview.pdf', target='_blank')
-              i.fa.fa-file-pdf-o
-              | A Brief Overview of Holistic Management and Holistic Decision Making (2011)
-          li
-            a(href='/assets/docs/evidence-papers/award.pdf', target='_blank')
-              i.fa.fa-file-pdf-o
-              | The Buckminster Fuller Award and the Afghanistan War (2010)
-          li
-            a(href='/assets/docs/evidence-papers/climate-change.pdf', target='_blank')
-              i.fa.fa-file-pdf-o
-              | A Global Strategy for Addressing Climate Change (2008)
-          li
-            a(href='/assets/docs/evidence-papers/holistic-resource-management.pdf', target='_blank')
-              i.fa.fa-file-pdf-o
-              | Holistic Resource Management: A Conceptual Framework for Ecologically Sound Economic Modeling (2008)
-          li
-            a(href='/assets/docs/evidence-papers/good-governance.pdf', target='_blank')
-              i.fa.fa-file-pdf-o
-              | Good Governance (2008)
+        .row
+          .medium-4.columns
+            h5 Papers by Allan Savory
+            ul.icon-list
+              li
+                a(href='/assets/docs/evidence-papers/science-methodology.pdf', target='_blank')
+                  i.fa.fa-file-pdf-o
+                  | Response to Request for Information on the “science” and “methodology” Underpinning Holistic Management and Holistic Planned Grazing (Updated 2013)
+              li
+                a(href='/assets/docs/evidence-papers/new-context.pdf', target='_blank')
+                  i.fa.fa-file-pdf-o
+                  | A New Framework, a New Context by Allan Savory (2012)
+              li
+                a(href='http://www.un.org/esa/dsd/dsd_sd21st/21_pdf/agriculture_and_food_the_future_of_sustainability_web.pdf', target='_blank')
+                  i.fa.fa-file-pdf-o
+                  | Food and Agriculture: The future of sustainability, by United Nations Department of Economic and Social Affairs, Division for Sustainable Development, Allan Savory contributor (2012)
+              li
+                a(href='/assets/docs/evidence-papers/brief-overview.pdf', target='_blank')
+                  i.fa.fa-file-pdf-o
+                  | A Brief Overview of Holistic Management and Holistic Decision Making (2011)
+              li
+                a(href='/assets/docs/evidence-papers/award.pdf', target='_blank')
+                  i.fa.fa-file-pdf-o
+                  | The Buckminster Fuller Award and the Afghanistan War (2010)
+              li
+                a(href='/assets/docs/evidence-papers/climate-change.pdf', target='_blank')
+                  i.fa.fa-file-pdf-o
+                  | A Global Strategy for Addressing Climate Change (2008)
+              li
+                a(href='/assets/docs/evidence-papers/holistic-resource-management.pdf', target='_blank')
+                  i.fa.fa-file-pdf-o
+                  | Holistic Resource Management: A Conceptual Framework for Ecologically Sound Economic Modeling (2008)
+              li
+                a(href='/assets/docs/evidence-papers/good-governance.pdf', target='_blank')
+                  i.fa.fa-file-pdf-o
+                  | Good Governance (2008)
 
-        h5 Research by Savory Institute
-        ul.icon-list
-          li
-            a(href='/assets/docs/evidence-papers/portfolio-of-findings.pdf', target='_blank')
-              i.fa.fa-file-pdf-o
-              | Holistic Management: Portfolio of Scientific Findings (2014)
-          li
-            a(href='/assets/docs/evidence-papers/holistic-management-overview.pdf', target='_blank')
-              i.fa.fa-file-pdf-o
-              | Holistic Management Overview (2013)
-          li
-            a(href='/assets/docs/evidence-papers/exploration-of-methane.pdf', target='_blank')
-              i.fa.fa-file-pdf-o
-              | An Exploration of Methane and Properly Managed Livestock through Holistic Management (2013)
-          li
-            a(href='/assets/docs/evidence-papers/restoring-the-climate.pdf', target='_blank')
-              i.fa.fa-file-pdf-o
-              | Restoring the Climate Through Capture and Storage of Soil Carbon Through Holistic Planned Grazing (2013)
-          li
-            a(href='/assets/docs/evidence-papers/framework-for-holistic-management.pdf', target='_blank')
-              i.fa.fa-file-pdf-o
-              | Framework for Holistic Management (2012)
-          li
-            a(href='/assets/docs/evidence-papers/thundering-hooves.pdf', target='_blank')
-              i.fa.fa-file-pdf-o
-              | Thundering Hooves — Value-Added Farming (2010)
-          li
-            a(href='/assets/docs/evidence-papers/thriving-in-drought.pdf', target='_blank')
-              i.fa.fa-file-pdf-o
-              | Surviving or Thriving in Drought. In Practice. (2008)
+          .medium-4.columns
+            h5 Research by Savory Institute
+            ul.icon-list
+              li
+                a(href='/assets/docs/evidence-papers/portfolio-of-findings.pdf', target='_blank')
+                  i.fa.fa-file-pdf-o
+                  | Holistic Management: Portfolio of Scientific Findings (2014)
+              li
+                a(href='/assets/docs/evidence-papers/holistic-management-overview.pdf', target='_blank')
+                  i.fa.fa-file-pdf-o
+                  | Holistic Management Overview (2013)
+              li
+                a(href='/assets/docs/evidence-papers/exploration-of-methane.pdf', target='_blank')
+                  i.fa.fa-file-pdf-o
+                  | An Exploration of Methane and Properly Managed Livestock through Holistic Management (2013)
+              li
+                a(href='/assets/docs/evidence-papers/restoring-the-climate.pdf', target='_blank')
+                  i.fa.fa-file-pdf-o
+                  | Restoring the Climate Through Capture and Storage of Soil Carbon Through Holistic Planned Grazing (2013)
+              li
+                a(href='/assets/docs/evidence-papers/framework-for-holistic-management.pdf', target='_blank')
+                  i.fa.fa-file-pdf-o
+                  | Framework for Holistic Management (2012)
+              li
+                a(href='/assets/docs/evidence-papers/thundering-hooves.pdf', target='_blank')
+                  i.fa.fa-file-pdf-o
+                  | Thundering Hooves — Value-Added Farming (2010)
+              li
+                a(href='/assets/docs/evidence-papers/thriving-in-drought.pdf', target='_blank')
+                  i.fa.fa-file-pdf-o
+                  | Surviving or Thriving in Drought. In Practice. (2008)
 
-        h5 Research by Other Holistic Management Experts
-        ul.icon-list
-          li
-            a(href='http://planet-tech.com/blog/talking-points-regarding-savory', target='_blank')
-              i.fa.fa-external-link
-              | Talking Points Regarding Savory, Seth Itzkan (2013)
-          li
-            a(href='http://swelterdesigns.com/climate_articles/', target='_blank')
-              i.fa.fa-external-link
-              | The Fight Against Global Warming: A Failure and A Fix, Adam Sacks (2013)
-          li
-            a(href='http://www.sciencedirect.com/science/article/pii/S0140196310003460', target='_blank')
-              i.fa.fa-external-link
-              | Effect of grazing on soil-water content in semiarid rangelands of southeast Idaho, K.T. (Keith) Weber, B.S. Gokhale, <em>Journal of Arid Environments</em> (2011)
-          li
-            a(href='http://anoptimiststourofthefuture.com/?page_id=1658', target='_blank')
-              i.fa.fa-external-link
-              | “A little bit of a bloody big amount”, Mark Stevenson, chapter from the book <em>An Optimist’s Tour of the Future</em> (2011)
-          li
-            a(href='http://www.sciencedirect.com/science/article/pii/S0167880911000934', target='_blank')
-              i.fa.fa-external-link
-              | Grazing management impacts on vegetation, soil biota and soil chemical, physical and hydrological properties in tall grass prairie, Teague, R. (2011)
-          li
-            a(href='http://quiviracoalition.org/images/pdfs/2055-Journal35.pdf', target='_blank')
-              i.fa.fa-file-pdf-o
-              | Resilience on the Prairie Edge: The 777 Buffalo Ranch (2010)
-          li
-            a(href='/assets/docs/managing-grass.pdf', target='_blank')
-              i.fa.fa-file-pdf-o
-              | Managing Grass, Small Grains, and Cattle (1992)
-          li
-            a(href='/assets/docs/evidence-papers/doing-what-works.pdf', target='_blank')
-              i.fa.fa-file-pdf-o
-              | Doing What Works, Chris Gill, <em>Range Magazine</em> (2009)
-          li
-            a(href='http://quiviracoalition.org/images/pdfs/225-Newsletter_14.pdf', target='_blank')
-              i.fa.fa-file-pdf-o
-              | Profile of good stewardship: the Rafter F Cattle Company (2001)
+          .medium-4.columns
+            h5 Research by Other Holistic Management Experts
+            ul.icon-list
+              li
+                a(href='http://planet-tech.com/blog/talking-points-regarding-savory', target='_blank')
+                  i.fa.fa-external-link
+                  | Talking Points Regarding Savory, Seth Itzkan (2013)
+              li
+                a(href='http://swelterdesigns.com/climate_articles/', target='_blank')
+                  i.fa.fa-external-link
+                  | The Fight Against Global Warming: A Failure and A Fix, Adam Sacks (2013)
+              li
+                a(href='http://www.sciencedirect.com/science/article/pii/S0140196310003460', target='_blank')
+                  i.fa.fa-external-link
+                  | Effect of grazing on soil-water content in semiarid rangelands of southeast Idaho, K.T. (Keith) Weber, B.S. Gokhale, <em>Journal of Arid Environments</em> (2011)
+              li
+                a(href='http://anoptimiststourofthefuture.com/?page_id=1658', target='_blank')
+                  i.fa.fa-external-link
+                  | “A little bit of a bloody big amount”, Mark Stevenson, chapter from the book <em>An Optimist’s Tour of the Future</em> (2011)
+              li
+                a(href='http://www.sciencedirect.com/science/article/pii/S0167880911000934', target='_blank')
+                  i.fa.fa-external-link
+                  | Grazing management impacts on vegetation, soil biota and soil chemical, physical and hydrological properties in tall grass prairie, Teague, R. (2011)
+              li
+                a(href='http://quiviracoalition.org/images/pdfs/2055-Journal35.pdf', target='_blank')
+                  i.fa.fa-file-pdf-o
+                  | Resilience on the Prairie Edge: The 777 Buffalo Ranch (2010)
+              li
+                a(href='/assets/docs/managing-grass.pdf', target='_blank')
+                  i.fa.fa-file-pdf-o
+                  | Managing Grass, Small Grains, and Cattle (1992)
+              li
+                a(href='/assets/docs/evidence-papers/doing-what-works.pdf', target='_blank')
+                  i.fa.fa-file-pdf-o
+                  | Doing What Works, Chris Gill, <em>Range Magazine</em> (2009)
+              li
+                a(href='http://quiviracoalition.org/images/pdfs/225-Newsletter_14.pdf', target='_blank')
+                  i.fa.fa-file-pdf-o
+                  | Profile of good stewardship: the Rafter F Cattle Company (2001)
 
 
 
@@ -235,7 +245,7 @@ block content
 
         p The decision-making framework used in Holistic Management to ensure environmental, economic and social soundness will be a powerful tool in facilitating this change around the world. And a global network of partners can make it happen. We count among our collaborators:
 
-        ul
+        ul.inline-listing
           li The Nature Conservancy
           li Buckminster Fuller Institute
           li Rainforest Alliance
@@ -326,7 +336,7 @@ block content
                 .plus +
                 img(src='/assets/images/institute/byron.jpg')
                 figcaption Byron Shelton
-          
+
 
 
 
@@ -371,8 +381,8 @@ block content
                 .plus +
                 img(src='/assets/images/institute/allan.jpg')
                 figcaption Allan Savory
-          
-          
+
+
 
 
 

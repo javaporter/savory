@@ -101,6 +101,18 @@ section.photo-background {
   }
 }
 
+// overview section
+section.overview {
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
+
+  @media #{$medium-up} {
+    height: 400px;
+  }
+}
+
 img.section-hero {
   margin-top: -$section-padding;
   margin-bottom: 2rem;

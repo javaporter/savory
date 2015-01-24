@@ -4,6 +4,14 @@ body.institute {
     @include primary-nav-you-are-here;
   }
 
+  section.overview {
+    background-image: url('/assets/images/institute/institute-hero.jpg');
+
+    @media #{$medium-up} {
+      background-image: url('/assets/images/institute/institute-hero-lg.jpg');
+    }
+  }
+
   dl.our-team-subnav {
     @extend .clearfix;
     margin: 0;
