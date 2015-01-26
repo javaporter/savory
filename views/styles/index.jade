@@ -8,6 +8,8 @@ block content
     nav.top-bar(data-topbar='', role='navigation')
       .top-bar-section
         ul
+          li(data-magellan-arrival='top')
+            a.close-off-canvas.overview(href='/styles/#top') Overview
           li(data-magellan-arrival='core-beliefs')
             a(href='#core-beliefs') Core Beliefs
           li(data-magellan-arrival='what-sets-us-apart')
@@ -21,12 +23,6 @@ block content
           li(data-magellan-arrival='si-assets')
             a(href='#si-assets') Assets
 
-        ul.right
-          li.divider
-          li
-            a(href='#top')
-              i.fa.fa-caret-up
-              | &nbsp; Top
 
 
   section.main
