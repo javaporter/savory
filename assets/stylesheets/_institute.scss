@@ -12,14 +12,12 @@ body.institute {
     }
   }
 
-  .grasslands-info {
-    .copy-block {
-      @media #{$medium-up} {
-        border-left: $border-dashed;
-        padding-left: 1rem;
-        margin-left: 1rem;
-        margin-bottom: 1.5rem;
-      }
+  .grasslands-copy-block {
+    @media #{$medium-up} {
+      border-left: $border-dashed;
+      padding-left: 1rem;
+      margin-left: 1rem;
+      margin-bottom: 1.5rem;
     }
   }
 
