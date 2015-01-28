@@ -4,4 +4,12 @@ body.get-involved {
       @include primary-nav-you-are-here;
   }
 
+  section.overview {
+    background-image: url('/assets/images/get-involved/get-involved-hero.jpg');
+
+    @media #{$medium-up} {
+      background-image: url('/assets/images/get-involved/get-involved-hero-lg.jpg');
+    }
+  }
+
 }
