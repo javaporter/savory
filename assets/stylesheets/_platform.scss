@@ -4,6 +4,14 @@ body.platform {
     @include primary-nav-you-are-here;
   }
 
+  section.overview {
+    background-image: url('/assets/images/platform/platform-hero.jpg');
+
+    @media #{$medium-up} {
+      background-image: url('/assets/images/platform/platform-hero-lg.jpg');
+    }
+  }
+
 
   section.store-items {
 
