@@ -60,6 +60,10 @@ section.half-color {
 section.dark {
   padding: $section-padding 0;
   background: $mud url('/assets/images/noise.png');
+
+  p, li {
+    color: $smoke;
+  }
 }
 
 section.call-to-action {

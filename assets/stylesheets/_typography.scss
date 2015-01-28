@@ -57,6 +57,10 @@ ul.smaller, ol.smaller {
   li {
     margin-bottom: .7rem;
     @include avoid-break;
+
+    p {
+      @include smaller-font;
+    }
   }
 }
 

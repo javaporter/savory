@@ -12,6 +12,19 @@ body.institute {
     }
   }
 
+  section.video-overview {
+    background: url('/assets/images/paper-texture.jpg');
+
+    .video {
+      padding: 3rem;
+      background: $opaque-dark-2;
+
+      .flex-video {
+        margin-bottom: 0;
+      }
+    }
+  }
+
   .grasslands-copy-block {
     @media #{$medium-up} {
       border-left: $border-dashed;
