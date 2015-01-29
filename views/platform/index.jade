@@ -6,7 +6,6 @@ extends /layout-platform
 block content
 
   section.overview
-
   section.half-color
     .art
     .color
@@ -26,7 +25,7 @@ block content
         p Thanks to the generous support of the V.K. Rasmussen Foundation, Savory is proud to announce its refined and updated curriculum.
         p To start you off on the road to managing holistically, we have created five online, multi-media, and self-paced courses that will provide you with the solid foundation to excel in our face-to-face workshops in the future or deepen your understanding of Holistic Management if you have already taken these courses in the past.
         p The online courses include the first three of six units (the remaining units are currently taught through face-to-face, hands-on workshops). These foundational courses will prepare you for taking our face-to-face workshops where you will have the opportunity to learn the skills to master the implementation of the processes unique to Holistic Management:
-        ul
+        ul.plus
           li Building Wealth Through Holistic Financial Planning
           li Holistic Planned Grazing
           li Holistic Land Planning
@@ -287,23 +286,6 @@ block content
 
 
 
-  #donate(data-magellan-destination='donate')
-  section.main.donate
-    .overlay
-    .row
-      .medium-6.columns
-        h2 Donate
-        p Help spread our message. Donating to Savory helps to support our global impact strategy of impacting one billion hectares of land by 2025 through the establishment of 100 Savory Hubs across the globe carrying out our mission in their own holistic contexts.
-
-        .row.collapse
-          .large-6.columns
-            .row.collapse.prefix
-              .small-4.columns
-                span $
-              .small-8.columns
-                input(name='donate-amount', type='number')
-          .large-4.columns.end
-            button.primary
-              a(href='#') Add to Cart
+  include /partials/donate.jade
 
 

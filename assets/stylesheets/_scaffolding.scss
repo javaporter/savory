@@ -9,6 +9,57 @@ html, body, .inner-wrap {
   }
 }
 
+
+
+// line halfway through
+.keyline {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  border-left: $border;
+  height: 100%;
+  @extend .hide-for-small-only;
+}
+
+.key-points {
+  margin-top: 2rem;
+  position: relative;
+
+  .point {
+    border-top: $border;
+    padding: 1rem 0;
+    @include smaller-font;
+
+    @media #{$medium-up} {
+      &:first-child {
+        border-top: none;
+      }
+    }
+
+    p {
+      @include smaller-font;
+    }
+  }
+
+  .left .point {
+    @media #{$medium-up} {
+      h4, p {
+        padding-right: 1rem;
+      }
+    }
+  }
+
+  .right .point {
+    @media #{$medium-up} {
+      h4, p {
+        padding-left: 1rem;
+      }
+    }
+  }
+}
+
+
+// sections
 section {
   position: relative;
 }
@@ -61,8 +112,26 @@ section.dark {
   padding: $section-padding 0;
   background: $mud url('/assets/images/noise.png');
 
-  p, li {
+  p, li, label {
     color: $smoke;
+  }
+
+  hr {
+    border-top: $border-opaque-light;
+  }
+
+  .keyline {
+    border-left: $border-opaque-lighter;
+  }
+
+  .key-points .point {
+    border-top: $border-opaque-lighter;
+
+    @media #{$medium-up} {
+      &:first-child {
+        border-top: none;
+      }
+    }
   }
 }
 
@@ -265,7 +334,7 @@ img.section-hero {
 }
 
 .overlay-bottom {
-  background: linear-gradient(to top, rgba(black, 0.65) 10%,rgba(black, 0) 60%);
+  background: linear-gradient(to top, rgba(black, 1) 0%,rgba(black, 0) 60%);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -273,50 +342,3 @@ img.section-hero {
   left: 0;
 }
 
-
-// line halfway through
-.keyline {
-  position: absolute;
-  width: 100%;
-  left: 50%;
-  border-left: $border;
-  height: 100%;
-  @extend .hide-for-small-only;
-}
-
-.key-points {
-  margin-top: 2rem;
-  position: relative;
-
-  .point {
-    border-top: $border;
-    padding: 1rem 0;
-    @include smaller-font;
-
-    @media #{$medium-up} {
-      &:first-child {
-        border-top: none;
-      }
-    }
-
-    p {
-      @include smaller-font;
-    }
-  }
-
-  .left .point {
-    @media #{$medium-up} {
-      h4, p {
-        padding-right: 1rem;
-      }
-    }
-  }
-
-  .right .point {
-    @media #{$medium-up} {
-      h4, p {
-        padding-left: 1rem;
-      }
-    }
-  }
-}

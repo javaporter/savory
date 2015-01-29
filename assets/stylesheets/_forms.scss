@@ -4,4 +4,14 @@ form {
   .error select {
       margin-bottom: 0.94118rem;
   }
+
+  .radio-label {
+    font-size: 1rem;
+  }
+
+  .adjoined-input {
+    @media #{$medium-up} {
+      border-left: none;
+    }
+  }
 }

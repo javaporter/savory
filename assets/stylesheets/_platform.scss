@@ -95,41 +95,4 @@ body.platform {
     }
   }
 
-
-
-  section.donate {
-    @extend .photo-background;
-    background: url('/assets/images/platform/donate.jpg');
-
-    p {
-      color: white;
-      @include biggify-font;
-    }
-
-    input {
-      height: 3.25rem;
-      font-size: 2rem;
-    }
-
-    .prefix {
-      background: lighten($mud, 20%);
-      line-height: 3.25rem;
-      color: $opaque-light-2;
-      font-size: 2rem;
-      border: none;
-      font-weight: 300;
-      height: 3.25rem;
-    }
-
-    button.primary {
-      border: none;
-      height: 3.25rem;
-      margin-left: .5rem;
-
-      a {
-        height: 3.25rem;
-        line-height: 3.25rem;
-      }
-    }
-  }
 }

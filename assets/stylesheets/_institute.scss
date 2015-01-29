@@ -15,9 +15,17 @@ body.institute {
   section.video-overview {
     background: url('/assets/images/paper-texture.jpg');
 
+    .healing-the-land {
+      position: absolute;
+      opacity: .3;
+      bottom: -35px;
+      left: 0;
+    }
+
     .video {
-      padding: 3rem;
+      padding: 2rem;
       background: $opaque-dark-2;
+      position: relative;
 
       .flex-video {
         margin-bottom: 0;

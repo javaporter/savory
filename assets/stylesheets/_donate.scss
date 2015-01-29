@@ -1,0 +1,38 @@
+section.donate {
+  @extend .photo-background;
+  @extend .dark;
+  background: url('/assets/images/platform/donate.jpg') no-repeat black;
+
+  .content {
+    background: $opaque-dark-1;
+    padding: 1rem;
+    position: relative;
+
+    h2 {
+      color: $poppy;
+    }
+
+    hr {
+      border-top: $border-dashed-lighter;
+    }
+
+    em {
+      color: $elf;
+      font-style: normal;
+    }
+  }
+
+  .key-points {
+    margin: 1.5rem 0;
+  }
+
+  .donation-amounts {
+    input {
+      margin-bottom: .75rem;
+    }
+
+    h3 {
+      margin-bottom: 1rem;
+    }
+  }
+}

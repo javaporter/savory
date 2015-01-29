@@ -24,33 +24,33 @@ block content
       .small-12.columns
         h2 Join the Tribe
         p One of the best ways you can get involved is to follow us on social media. Together we can change the world.
-        ul.inline-list
+
+        hr
+        h3 Subscribe to Our Mailing List
+        p Join our e-newsletter list for periodic mailing concerning upcoming events and industry news. We promise not to spam you or sell your information and you can unsubscribe at any time.
+
+        form
+          .row.collapse
+            .small-3.columns
+              label First Name
+              input(type='text', name='first-name', id='first-name')
+            .small-3.columns
+              label Last Name
+              input(type='text', name='first-name', id='last-name', class='adjoined-input')
+            .small-4.columns
+              label Email
+              input(type='text', name='first-name', id='email', class='adjoined-input')
+            .small-2.columns
+              label &nbsp;
+              a(href='#', class='button primary postfix') Submit
+
+        hr
+        h3 Follow Us on Social Media
+        ul.inline-list.social-media
           include /partials/social.jade
 
 
-  #donate(data-magellan-destination='donate')
-  section.main.donation
-    .row
-      .small-12.columns
-        h2 Donate
-        p What if we all became investors in the success of this global network?
-        p Your investment will help more communities to become part of the Savory Hub network. More Hubs means more farmers, ranchers, and pastoralists trained, equipped, and empowered and more hectares of land being restored; and with that... 
-        ul
-          li more carbon being removed from the atmosphere and into the soil by green growing plants;
-          li more water supporting life and recharging rivers; 
-          li more prosperity and wellbeing for rural communities;
-          li more resilience for the surrounding urban populations. 
-
-        p We've made the cultivation of this global network our top priority. Your investment will help us seed its growth.
-        p It starts with each of us believing, supporting, and committing.
-        p 25 50 100
-        p I believe  $250 or 25/mo
-        p I support $500 or 50/mo
-        p I commit $1000 or 100/mo
-        p I’d like to give another amount
-
-        button.primary
-          a(href='#') Donate
+  include /partials/donate.jade
 
 
   #volunteer(data-magellan-destination='volunteer')
@@ -64,7 +64,7 @@ block content
   #careers(data-magellan-destination='careers')
   section.main.careers
     .row
-      .small-12.columns
+      .medium-6.columns
         h2 Careers
         p The Savory Institute welcomes contact and CVs from professionals in the communications, land management, and livestock management fields.
 
@@ -73,3 +73,4 @@ block content
           each career in careers
             li
               a(href='/get-involved/jobs/'+career.id)=career.getStructuredText('careers.title').asText()
+
