@@ -1,7 +1,7 @@
 block variables
   - title = 'Article'
 
-extends /layout-network
+extends /layout
 
 block content
 
@@ -11,15 +11,11 @@ block content
         figure.img-love
           img(src=article.getImage('news.image').main.url)
           figcaption!=article.getStructuredText('news.figcaption').asHtml()
+        
         header
-          .row
-            .small-2.columns
-              - date = momentDate(article.getDate('news.date'))
-              .date
-                .month=date.format('MMM')
-                .day=date.format('DD')
-                .year=date.format('YYYY')
-            .small-10.columns
-              h1
-                =article.getText('news.title')
+          h1= article.getText('news.title')
+          - date = momentDate(article.getDate('news.date'))
+            span.date
+              =date.format('MMM DD, YYYY')
+        
         !=article.getStructuredText('news.body').asHtml()
