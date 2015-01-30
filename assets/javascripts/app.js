@@ -37,6 +37,37 @@ $(function() {
     map.scrollWheelZoom.disable();
   }
 
+
+
+  // show and hide other boxes in donate section
+
+  var other_amount_holder = "#other-amount-holder";
+  var other_amount_mo_holder = "#other-amount-mo-holder";
+
+  $(other_amount_holder).hide('fast');
+
+  $('input[type=radio][name=amount]').click(function() {
+     if($(this).attr('id') == 'other') {
+      $(other_amount_holder).show('fast');
+     }
+
+     else {
+      $(other_amount_holder).hide('fast');
+     }
+   });
+
+   $(other_amount_mo_holder).hide('fast');
+
+   $('input[type=radio][name=ongoing]').click(function() {
+      if($(this).attr('id') == 'other-mo') {
+       $(other_amount_mo_holder).show('fast');
+      }
+
+      else {
+       $(other_amount_mo_holder).hide('fast');
+      }
+    });
+
 });
 
 

@@ -25,24 +25,27 @@ block content
         h2 Join the Tribe
         p One of the best ways you can get involved is to follow us on social media. Together we can change the world.
 
-        hr
-        h3 Subscribe to Our Mailing List
-        p Join our e-newsletter list for periodic mailing concerning upcoming events and industry news. We promise not to spam you or sell your information and you can unsubscribe at any time.
+        //- hr
+        //- h3 Subscribe to Our Mailing List
+        //- p Join our e-newsletter list for periodic mailing concerning upcoming events and industry news. We promise not to spam you or sell your information and you can unsubscribe at any time.
 
-        form
-          .row.collapse
-            .small-3.columns
-              label First Name
-              input(type='text', name='first-name', id='first-name')
-            .small-3.columns
-              label Last Name
-              input(type='text', name='first-name', id='last-name', class='adjoined-input')
-            .small-4.columns
-              label Email
-              input(type='text', name='first-name', id='email', class='adjoined-input')
-            .small-2.columns
-              label &nbsp;
-              a(href='#', class='button primary postfix') Submit
+        //- form('data-abide'='', class='mail-signup')
+        //-   .row.collapse
+        //-     .small-3.columns
+        //-       label First Name
+        //-       input(type='text', name='first-name', id='first-name', required)
+        //-       small.error Required
+        //-     .small-3.columns
+        //-       label Last Name
+        //-       input(type='text', name='last-name', id='last-name', class='adjoined-input', required)
+        //-       small.error Required
+        //-     .small-4.columns
+        //-       label Email
+        //-       input(type='text', name='email', id='email', class='adjoined-input', required)
+        //-       small.error Required
+        //-     .small-2.columns
+        //-       label &nbsp;
+        //-       a(href='#', class='button primary postfix') Submit
 
         hr
         h3 Follow Us on Social Media

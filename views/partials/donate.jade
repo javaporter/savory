@@ -39,8 +39,15 @@ form
                 input(type='radio', name='ongoing', id='100-mo')
                 label(for='100-mo', class='radio-label') <strong>I Commit</strong>: $100 Each Month
               div
-                input(type='radio', name='ongoing', id='other')
-                label(for='other', class='radio-label') Other Amount Each Month
+                input(type='radio', name='ongoing', id='other-mo')
+                label(for='other-mo', class='radio-label') Other Amount Each Month
+              
+              #other-amount-mo-holder.other-amount-holder
+                .row.collapse
+                  .small-1.columns
+                    span.prefix $
+                  .small-4.end.columns
+                    input(type='text', placeholder='Other Amount', name='other-amount-mo', id='other-amount')
 
             .medium-6.columns
               h3 Make a One-Time Contribution
@@ -54,8 +61,15 @@ form
                 input(type='radio', name='amount', id='100')
                 label(for='100', class='radio-label') $100
               div
-                input(type='radio', name='amount', id='other-mo')
-                label(for='other-mo', class='radio-label') Other
+                input(type='radio', name='amount', id='other')
+                label(for='other', class='radio-label') Other
+              
+              #other-amount-holder.other-amount-holder
+                .row.collapse
+                  .small-1.columns
+                    span.prefix $
+                  .small-4.end.columns
+                    input(type='text', placeholder='Other Amount', name='other-amount', id='other-amount-mo')
 
           hr
           button.primary

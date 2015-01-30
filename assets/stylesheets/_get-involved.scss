@@ -16,4 +16,20 @@ body.get-involved {
     margin-top: 1rem;
   }
 
+  .mail-signup {
+    @media #{$medium-up} {
+      input {
+        margin-bottom: 0;
+      }
+    }
+
+    small.error {
+      font-style: normal;
+      font-size: .8rem;
+      margin: 0;
+      padding: .5rem;
+      border-right: $border-opaque-lighter;
+    }
+  }
+
 }
