@@ -220,7 +220,7 @@ body.index {
 
         p {
           padding: .5rem;
-          @include smaller-font;
+          @include smallest-font;
 
           @media #{$medium-up} {
             padding: 3rem 1rem 1rem 1rem;
