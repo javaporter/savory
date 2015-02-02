@@ -81,7 +81,7 @@ block content
   section.main.store-items.consulting
     .row
       .medium-6.columns
-        a.price(href='#') $99
+        a.price(href='#') $100
         img(src='/assets/images/platform/consulting.jpg')
       .medium-6.columns
         h2 Consulting
@@ -112,7 +112,7 @@ block content
             figure
               img(src='/assets/images/platform/annual-renewal.jpg')
               figcaption
-                a.price(href='#') $399
+                a.price(href='#') $400
                 h5 Accredited Professional Annual Renewal
                 p If you are an approved Accredited Professional with Savory, you can pay your annual renewal here.
               footer
@@ -123,7 +123,7 @@ block content
             figure
               img(src='/assets/images/platform/refresher.jpg')
               figcaption
-                a.price(href='#') $29
+                a.price(href='#') $30
                 h5 Refresher Payments
                 p If you know you need to complete a refresher course that Savory has provided for the current professional educators/field professionals, please pay for them here. These were 1 hour webex calls including two from 2013 and one in 2014. This will ensure you've been exposed to the most up to date information regarding the holistic management curriculum. Once you pay, we will provide you with a link to the recording of each class.
                 .course-objectives
@@ -146,7 +146,7 @@ block content
             figure
               img(src='/assets/images/platform/ebook-package-1.jpg')
               figcaption
-                a.price(href='#') $14.95
+                a.price(href='#') $5
                 h5 Foundation of Holistic Management
                 .course-objectives
                   ul
@@ -163,7 +163,7 @@ block content
             figure
               img(src='/assets/images/platform/ebook-package-2.jpg')
               figcaption
-                a.price(href='#') $5.98
+                a.price(href='#') $6
                 h5 Building Wealth Through Holistic Management
                 .course-objectives
                   ul
@@ -177,7 +177,7 @@ block content
             figure
               img(src='/assets/images/platform/ebook-package-3.jpg')
               figcaption
-                a.price(href='#') $20.93
+                a.price(href='#') $21
                 h5 Land and Livestock Management
                 .course-objectives
                   ul
@@ -224,5 +224,29 @@ block content
 
 
   include /partials/donate.jade
+  
+  
+  #checkout.reveal-modal.small.checkout-modal('data-reveal')
+    a.close-reveal-modal
+      i.fa.fa-close
+    h4 View Cart
+    ul
+      li
+        .row.collapse
+          .small-10.columns
+            .item Item 1
+          .small-2.columns
+            .item-price $0
+      li
+        .row.collapse
+          .small-10.columns
+            .item Holistic Management Foundation Class
+          .small-2.columns
+            .item-price $100
+    .total
+      a.btn-primary(href='#')
+        span.total: strong $0 
+        | Checkout Now
+      
 
 

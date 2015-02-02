@@ -95,4 +95,22 @@ body.platform {
     }
   }
 
+
+  .checkout-modal {
+
+    ul {
+      @extend .no-bullet;
+      margin-top: 1rem;
+
+      li {
+        margin-top: .25rem;
+        padding-top: .25rem;
+        border-top: $border-dotted;
+      }
+    }
+  }
+
+  .total {
+    margin-top: 1.5rem;
+  }
 }
