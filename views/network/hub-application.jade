@@ -5,8 +5,8 @@ extends /layout-network
 
 block content
 
-  form("accept-charset"="UTF-8", :action="https://formkeep.com/f/ab746650cd85", :method="POST", 'data-abide'='')
-    input(name="utf8", type="hidden", :value="✓")
+  form(accept-charset='UTF-8', action='https://formkeep.com/f/ab746650cd85', method='POST', data-abide='')
+    input(name='utf8', type='hidden', value='✓')
 
     section.main
       .row
@@ -71,7 +71,7 @@ block content
         .small-12.columns
           #widgetContainer
             label Upload your Resumé or CV*
-            input(data-fp-apikey='AeHcbXmqNSqm3so4GBSWoz', data-fp-container='modal', data-fp-mimetypes='*/*', "data-fp-multiple"="true", :onchange="out='';for(var i=0;i<event.fpfiles.length;i++)(out+=event.fpfiles[i].url;out+=' ')", type="filepicker-dragdrop", 'data-fp-button-class'='no-link', 'data-fp-services'='COMPUTER', 'data-fp-drag-class'='filepicker-drag', required='true')
+            input(name='file-upload', data-fp-apikey='AeHcbXmqNSqm3so4GBSWoz', data-fp-container='modal', data-fp-mimetypes='*/*', "data-fp-multiple"="true", onchange="out='';for(var i=0;i<event.fpfiles.length;i++)(out+=event.fpfiles[i].url;out+=' ')", type="filepicker-dragdrop", 'data-fp-button-class'='no-link', 'data-fp-services'='COMPUTER', 'data-fp-drag-class'='filepicker-drag', required='true')
 
 
 
@@ -87,12 +87,15 @@ block content
           input(name='address', type='text', required='true')
 
       .row
-        .medium-6.columns
+        .medium-3.columns
           label City*
           input(name='city', type='text', required='true')
         .medium-3.columns
           label State/Province*
           input(name='state', type='text', required='true')
+        .medium-3.columns
+          label Country
+          input(name='country', type='text')
         .medium-3.columns
           label Postal Code*
           input(name='postal-code', type='text', required='true')
