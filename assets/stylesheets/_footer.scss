@@ -29,6 +29,10 @@ footer.site-footer {
       break-inside: avoid-column;
     }
 
+    .overview {
+      display: none;
+    }
+
     .left-submenu {
       position: relative;
       background: none;
