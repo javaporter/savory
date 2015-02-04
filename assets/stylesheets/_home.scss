@@ -104,21 +104,47 @@ body.index {
       width: 100%;
       padding: 3rem 0;
       background-size: cover;
-      background-position: center top;
       height: 414px;
 
       @media #{$medium-up} {
         height: $hero-height;
       }
+
+      img {
+        max-width: 350px;
+      }
     }
 
-    // case study 01 (Zimbabwe)
+    // case study 01 (South Dakota)
     .case-study-01 {
       @extend %case-study;
+      background-image: url('/assets/images/home/bison.jpg');
+      background-position: center bottom;
+
+      @media #{$medium-up} {
+        background-image: url('/assets/images/home/bison-lg.jpg');
+      }
+    }
+
+    // case study 02 (Zimbabwe)
+    .case-study-02 {
+      @extend %case-study;
       background-image: url('/assets/images/home/herd.jpg');
+      background-position: center top;
 
       @media #{$medium-up} {
         background-image: url('/assets/images/home/herd-lg.jpg');
+      }
+    }
+
+    // case study 03 (Chile)
+    .case-study-03 {
+      @extend %case-study;
+      background-image: url('/assets/images/home/patagonia.jpg');
+      background-position: left bottom;
+
+      @media #{$medium-up} {
+        background-image: url('/assets/images/home/patagonia-lg.jpg');
       }
     }
   }
@@ -310,5 +336,3 @@ body.index {
   }
 
 }
-
-

@@ -16,6 +16,11 @@ $(function() {
   });
 
 
+  // random hero for home page
+  var random = Math.floor(Math.random() * $('.hero-slide').length);
+  $('.hero-slide').hide().eq(random).show();
+
+
   // nav helper
   // when you click an anchor from the nav, the off-canvas bar should close
   $(".close-off-canvas").on("click.toggleCanvas", function(){
