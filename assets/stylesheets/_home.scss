@@ -83,10 +83,13 @@ body.index {
           text-align: center;
           font-family: $font-family-serif;
           font-weight: 700;
-          font-size: 3rem;
+          font-size: 2.75rem;
           line-height: 5rem;
           margin-bottom: -.5rem;
-          letter-spacing: -2px;
+
+          span {
+            font-size: 1.75rem;
+          }
         }
 
         figcaption {
