@@ -79,6 +79,10 @@ router.get('/network/hub-application', function(req, res) {
   res.render('network/hub-application', { title: 'Network' });
 });
 
+router.get('/network/hub-application-thanks', function(req, res) {
+  res.render('network/hub-application-thanks', { title: 'Network' });
+});
+
 router.get('/styles', function(req, res) {
   res.render('styles/index', { title: 'Styles' });
 });
