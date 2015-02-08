@@ -68,7 +68,34 @@ html
         //- off canvas menu
         aside.left-off-canvas-menu
           ul.site-nav.off-canvas-list
-            include /partials/nav.jade
+            li.institute-link
+              a.off-canvas-submenu-call(href='#') 
+                | Savory Institute
+                span.right +
+            ul.off-canvas-submenu
+              include /partials/subnav-si.jade
+
+            li.network-link
+              a.off-canvas-submenu-call(href='#') 
+                | Savory Network
+                span.right +
+            ul.off-canvas-submenu
+              include /partials/subnav-sn.jade
+
+            li.platform-link
+              a.off-canvas-submenu-call(href='#') 
+                | Savory Platform
+                span.right +
+            ul.off-canvas-submenu
+              include /partials/subnav-sp.jade
+
+            li.get-involved-link
+              a.off-canvas-submenu-call(href='#') 
+                | Get Involved
+                span.right +
+            ul.off-canvas-submenu
+              include /partials/subnav-gi.jade
+
         a.exit-off-canvas
 
 
@@ -76,20 +103,47 @@ html
         //- top bar nav (desktop)
         nav.primary-nav.show-for-large-up
           .row
-            ul
-              .large-12.columns
+            .large-12.columns
+              ul
                 li
                   a.header-logo(href='/') Savory
-                include /partials/nav.jade
+                li.institute-link
+                  a(href='/institute') 
+                    | Savory Institute
+                li.network-link
+                  a(href='/network') 
+                    | Savory Network
+                li.platform-link
+                  a(href='/platform') 
+                    | Savory Platform
+                li.get-involved-link
+                  a(href='/get-involved') 
+                    | Get Involved
 
         block subnav
         block content
 
         footer.site-footer
           .row
-            .large-8.medium-7.columns
-              ul.site-map
-                include /partials/nav.jade
+            .medium-2.columns.site-map
+              h5: a(href='/institute') Savory Institute
+              ul
+                include /partials/subnav-si.jade
+            
+            .medium-2.columns.site-map
+              h5: a(href='/network') Savory Network
+              ul
+                include /partials/subnav-sn.jade
+            
+            .medium-2.columns.site-map
+              h5: a(href='/platform') Savory Platform
+              ul
+                include /partials/subnav-sp.jade
+            
+            .medium-2.columns.site-map
+              h5: a(href='/get-involved') Get Involved
+              ul
+                include /partials/subnav-gi.jade
 
             .large-4.medium-5.columns
               ul.social

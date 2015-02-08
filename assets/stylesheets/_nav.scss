@@ -29,8 +29,8 @@ nav.primary-nav {
         }
       }
 
-      ul {
-        display: none;
+      &:first-child {
+        margin: 0;
       }
     }
 
@@ -62,7 +62,6 @@ nav.primary-nav {
   background: url('/assets/images/logo.svg') no-repeat left center;
   background-size: 100% auto;
   padding-right: 0;
-  margin-right: 1rem;
   position: relative;
   top: 0px;
 }
@@ -80,14 +79,20 @@ nav.primary-nav {
 
   .left-off-canvas-toggle {
     color: $terra;
-    line-height: 45px;
+    background: white;
+    padding: .35rem .5rem;
+    font-size: 1em;
+    position: relative;
+    top: .35rem;
 
     &:hover {
       color: lighten($terra, 20%);
     }
 
     i {
-      margin-right: .15rem;
+      margin-right: .5rem;
+      border-right: $border-dotted;
+      padding-right: .5rem;
     }
   }
 }
@@ -116,39 +121,25 @@ nav.primary-nav {
   }
 }
 
+.off-canvas-submenu {
+  margin: 0;
+}
 
 // style fixes for foundation off canvas
 ul.off-canvas-list li a {
   border: none;
 }
 
-.left-off-canvas-toggle {
-  i {
-    border-right: $border-dotted;
-    padding-right: .5rem;
-  }
-
-  span {
-    margin-left: .5rem;
-  }
-}
-
-@media #{$medium-up} {
-  .off-canvas-submenu-call span {
-    display: none;
-  }
-
-  .off-canvas-submenu {
-    display: none;
-    height: 0;
-  }
-}
 
 // accordian off canvas subnav
 .off-canvas-submenu {
   @extend .no-bullet;
   background: $opaque-light-3;
   margin-top: 0;
+}
+
+.move-right .exit-off-canvas {
+  box-shadow: none;
 }
 
 
