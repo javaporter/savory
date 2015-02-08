@@ -10,7 +10,7 @@ set :linked_dirs, %w{node_modules}
 namespace :deploy do
   task :restart do
     on roles(:web), in: :groups, limit: 3, wait: 10 do
-      execute :sudo, :service, :savory, :restart
+      execute :sudo, :service, fetch(:upstart_name), :restart
     end
   end
   after :publishing, :restart
