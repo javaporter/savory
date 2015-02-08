@@ -122,11 +122,6 @@ ul.off-canvas-list li a {
   border: none;
 }
 
-.left-submenu .back > a::before, .left-off-canvas-menu ul.off-canvas-list li.has-submenu > a::after {
-  top: -1px;
-  position: relative;
-}
-
 
 // fixing magellan padding
 [data-magellan-expedition] {
