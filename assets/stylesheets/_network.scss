@@ -125,7 +125,7 @@ body.network {
   .hub-overview {
     margin: 1rem 0;
 
-    .stats {
+    .stats ul {
       @extend .smaller;
       @extend .bordered-list;
     }
@@ -133,7 +133,9 @@ body.network {
     .hub-logo {
       margin-bottom: 1rem;
       padding: .5rem;
-      border: $border-light;
+      border: $border;
+      background: white;
+      border-radius: $global-radius;
     }
   }
 

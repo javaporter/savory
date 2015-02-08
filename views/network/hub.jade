@@ -8,6 +8,7 @@ block content
     .row
       .small-12.columns
         h1= hub.getText('hubs.hub')
+        hr
 
     .hub-overview
       .row
@@ -19,10 +20,12 @@ block content
                 img(src=image.main.url)
         .medium-4.columns
           .hub-logo
-            img(src='/assets/images/hub/logo.png')
+            img(src=hub.getImage('hubs.logo-image').main.url)
           .stats
             !=hub.getStructuredText('hubs.stats').asHtml()
+            !=hub.getLink('hubs.hub-website').asHtml()
 
+  section.main
     .row
       .small-12.columns
         h2 Overview
@@ -33,18 +36,15 @@ block content
     .row
       .small-4.columns
         figure.img-love
-          img(src='/assets/images/hub/leadership.jpg')
-          figcaption
-            | Maurice and Beth Robinette
+          img(src=hub.getImage('hubs.leadership-image').main.url)
+          figcaption!=hub.getText('hubs.leadership-image-caption')
+
 
       .small-8.columns
         h2 Leadership
-        p PNCHM has six accredited professional educators and field professionals. All are or have been farmers and ranchers in the region. We proudly have a father/daughter team of educators - Maurice and Beth Robinette. The majority of the team has worked together since 1996 as a result of the five year long IFS-WSU Holistic Management Project in state of Washington. We have been practicing Holistic Management since the project began in 1995. We have experience and expertise in beef, sheep, goats, yaks and other species as well as in crop production and biological monitoring. Several members live on multi-generational farms/ranches.
-        p Most of our educators have extensive training, certification and experience in consensus based group facilitation.
-        p Our university related directors have years of service in extension and research.
-        p All are dedicated to helping others become more sustainable and holistic in their practices and ultimately restoring grasslands in the Pacific Northwest.
-
-
+        !=hub.getStructuredText('hubs.leadership').asHtml()
+        
+        
   section.videos
     .row
       .small-12.columns
@@ -63,21 +63,5 @@ block content
     .row
       .small-12.columns
         h2 Services
-
-        h3 Educational Opportunities
-        p PNCHM provides workshops, field days, webinars, distance learning, and teleconferences on Holistic Management decision making, Planned Grazing, Financial Planning, Biological Monitoring, Land Planning, Policy Analysis and Development, and many more topics relevant to ranchers, farmers, land managers, organizations, agencies, and policy makers. We offer group training or we can custom tailor a workshop to fit your needs held at your location. We also train Educators, Practitioners, and Field Professionals toward certification in Holistic Management.
-
-        h3 Event Speakers
-        p Let one of our experienced and knowledgeable team members provide a keynote, presentation or workshop at your next event. Contact us for details.
-
-        h3 Consulting
-        p Our team members will work with you at your location to help you address challenges, move toward your desired landscape, improve profitability and manage your business more effectively. We can design a program to meet your specific goals and budget.
-
-        h3 Biological Monitoring
-        p Taking a detailed look at the soil, plants and biological activity over time will tell you if your management is leading you in the direction you desire and what changes may be needed. We provide biological monitoring that is best suited for your land and needs.
-
-        h3 Group Facilitation
-        p Experienced facilitators trained in consensus building techniques can guide you in planning, project development or lead your group through conflict and toward a common goal. We work with both large and small groups as well as with businesses and families.
-
-        h3 Land Management
-        p Information on Land Management Services will be coming in 2015!
+        !=hub.getStructuredText('hubs.services').asHtml()
+        
