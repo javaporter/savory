@@ -12,6 +12,7 @@ nav.primary-nav {
       display: inline-block;
       text-transform: uppercase;
       font-size: rem-calc(14);
+      margin: 0;
 
       a {
         line-height: 55px;
@@ -32,6 +33,10 @@ nav.primary-nav {
       &:first-child {
         margin: 0;
       }
+    }
+
+    li.institute-link {
+      margin-left: 1rem;
     }
 
     li.about-link {
