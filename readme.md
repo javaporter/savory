@@ -14,4 +14,7 @@ This app has livereload bundeled with the `gulp` process. To use, install the li
 
 ## Deployment
 
-This app is deployed via capistrano. You'll need the capistrano-npm gem (`gem install capistrano-npm`). To deploy: `cap deploy production`.
+This app is deployed via capistrano. You'll need the capistrano-npm gem (`gem install capistrano-npm`).
+
+- `cap dev deploy` will deploy ten dev branch to dev.savory.global
+- `cap production deploy` will deploy master to savory.global
