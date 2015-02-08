@@ -122,6 +122,13 @@ ul.off-canvas-list li a {
   border: none;
 }
 
+// accordian off canvas subnav
+.off-canvas-submenu {
+  @extend .no-bullet;
+  background: $opaque-light-3;
+  margin-top: 0;
+}
+
 
 // fixing magellan padding
 [data-magellan-expedition] {
