@@ -2,7 +2,6 @@
 lock '3.3.5'
 
 set :application, 'savory'
-set :branch, ENV['BRANCH'] || 'master'
 set :repo_url, 'savory-github:javaporter/savory.git'
 set :keep_releases, 2
 
