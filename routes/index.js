@@ -98,6 +98,11 @@ router.get('/news/:slug', function(req, res) {
     }, notFound(res));
 });
 
+// Hub index
+router.get('/network/hub/example', function(req, res) {
+  res.render('network/hub-example', { title: 'Hub' });
+});
+
 // Get hub by slug
 router.get('/network/hub/:slug', function(req, res) {
   prismic.api()
@@ -110,11 +115,6 @@ router.get('/network/hub/:slug', function(req, res) {
         hub: hub,
       });
     },notFound(res));
-});
-
-// Hub index
-router.get('/network/hub', function(req, res) {
-  res.render('network/hub', { title: 'Hub' });
 });
 
 module.exports = router;
