@@ -122,6 +122,17 @@ ul.off-canvas-list li a {
   border: none;
 }
 
+.left-off-canvas-toggle {
+  i {
+    border-right: $border-dotted;
+    padding-right: .5rem;
+  }
+
+  span {
+    margin-left: .5rem;
+  }
+}
+
 // accordian off canvas subnav
 .off-canvas-submenu {
   @extend .no-bullet;
