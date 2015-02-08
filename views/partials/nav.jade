@@ -1,6 +1,6 @@
 mixin institute-subnav
 	li(data-magellan-arrival='top')
-		a.close-off-canvas.overview(href='/institute/#top') <strong>Institute</strong>
+		a.close-off-canvas.overview(href='/institute/#top') <strong>Overview</strong>
 	li(data-magellan-arrival='our-strategy')
 		a.close-off-canvas(href='/institute/#our-strategy') Our Strategy
 	li(data-magellan-arrival='evidence')
@@ -15,7 +15,7 @@ mixin institute-subnav
 
 mixin network-subnav
 	li(data-magellan-arrival='top')
-		a.close-off-canvas.overview(href='/network/#top') <strong>Network</strong>
+		a.close-off-canvas.overview(href='/network/#top') <strong>Overview</strong>
 	li(data-magellan-arrival='savory-hub')
 		a.close-off-canvas(href='/network/#savory-hub') Savory Hub
 	li(data-magellan-arrival='hub-application')
@@ -26,7 +26,7 @@ mixin network-subnav
 
 mixin platform-subnav
 	li(data-magellan-arrival='top')
-		a.close-off-canvas.overview(href='/platform/#top') <strong>Platform</strong>
+		a.close-off-canvas.overview(href='/platform/#top') <strong>Overview</strong>
 	li(data-magellan-arrival='classes')
 		a.close-off-canvas(href='/platform/#classes') Classes
 	li(data-magellan-arrival='consulting')
@@ -43,7 +43,7 @@ mixin platform-subnav
 
 mixin get-involved-subnav
 	li(data-magellan-arrival='top')
-		a.close-off-canvas.overview(href='/get-involved/#top') <strong>Get Involved</strong>
+		a.close-off-canvas.overview(href='/get-involved/#top') <strong>Overview</strong>
 	li(data-magellan-arrival='join-the-tribe')
 		a.close-off-canvas(href='/get-involved/#join-the-tribe') Join the Tribe
 	li(data-magellan-arrival='donate')
@@ -52,33 +52,32 @@ mixin get-involved-subnav
 		a.close-off-canvas(href='/get-involved/#volunteer') Volunteer
 	li(data-magellan-arrival='careers')
 		a.close-off-canvas(href='/get-involved/#careers') Careers
+								
 
+li.institute-link
+	a.off-canvas-submenu-call(href='#') 
+		| Savory Institute
+		span.right +
+ul.off-canvas-submenu
+	+institute-subnav
 
+li.network-link
+	a.off-canvas-submenu-call(href='#') 
+		| Savory Network
+		span.right +
+ul.off-canvas-submenu
+	+network-subnav
 
-li.institute-link.has-submenu
-	a(href='/institute') Savory Institute
-	ul.left-submenu
-		li.back
-			a(href='#') Back
-		+institute-subnav
+li.platform-link
+	a.off-canvas-submenu-call(href='#') 
+		| Savory Platform
+		span.right +
+ul.off-canvas-submenu
+	+platform-subnav
 
-li.network-link.has-submenu
-	a(href='/network') Savory Network
-	ul.left-submenu
-		li.back
-			a(href='#') Back
-		+network-subnav
-
-li.platform-link.has-submenu
-	a(href='/platform') Savory Platform
-	ul.left-submenu
-		li.back
-			a(href='#') Back
-		+platform-subnav
-
-li.get-involved-link.has-submenu
-	a(href='/get-involved') Get Involved
-	ul.left-submenu
-		li.back
-			a(href='#') Back
-		+get-involved-subnav
+li.get-involved-link
+	a.off-canvas-submenu-call(href='#') 
+		| Get Involved
+		span.right +
+ul.off-canvas-submenu
+	+get-involved-subnav

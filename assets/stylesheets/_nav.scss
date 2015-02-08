@@ -122,9 +122,22 @@ ul.off-canvas-list li a {
   border: none;
 }
 
-.left-submenu .back > a::before, .left-off-canvas-menu ul.off-canvas-list li.has-submenu > a::after {
-  top: -1px;
-  position: relative;
+.left-off-canvas-toggle {
+  i {
+    border-right: $border-dotted;
+    padding-right: .5rem;
+  }
+
+  span {
+    margin-left: .5rem;
+  }
+}
+
+// accordian off canvas subnav
+.off-canvas-submenu {
+  @extend .no-bullet;
+  background: $opaque-light-3;
+  margin-top: 0;
 }
 
 
