@@ -133,6 +133,17 @@ ul.off-canvas-list li a {
   }
 }
 
+@media #{$medium-up} {
+  .off-canvas-submenu-call span {
+    display: none;
+  }
+
+  .off-canvas-submenu {
+    display: none;
+    height: 0;
+  }
+}
+
 // accordian off canvas subnav
 .off-canvas-submenu {
   @extend .no-bullet;
