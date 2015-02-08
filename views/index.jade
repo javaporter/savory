@@ -5,7 +5,7 @@ extends layout
 
 block content
   section.main.outcomes
-    
+
     //- zimbabwe
     .case-study-01.hero-slide
       .gradient
@@ -37,7 +37,7 @@ block content
                   figure
                     .number 77<span>%</span>
                     figcaption Decrease in bare ground
-      
+
     //- south dakota
     .case-study-02.hero-slide
       .gradient
@@ -69,8 +69,8 @@ block content
                   figure
                     .number 31<span>%</span>
                     figcaption Decrease in bare ground
-                    
-                    
+
+
     //- chile
     .case-study-03.hero-slide
       .gradient
@@ -78,7 +78,7 @@ block content
         .row
           .large-9.medium-8.small-10.columns
             img(src='/assets/images/home/case-study-03.svg', alt='Case Study 03')
-            p Near <strong>San Gregorio, Chile</strong>, Estancia Nevada is a ranch where sheep are raised for Merino wool. Erosion that was once evident on slopes and dry lagoons is now mostly covered and plant diversity has increased greatly in a very short time.  
+            p Near <strong>San Gregorio, Chile</strong>, Estancia Nevada is a ranch where sheep are raised for Merino wool. Erosion that was once evident on slopes and dry lagoons is now mostly covered and plant diversity has increased greatly in a very short time.
 
           //- .medium-1.small-2.columns
           //-   a.btn-simple(href='#') +
@@ -154,6 +154,7 @@ block content
             li.elf
               a(href='#', data-reveal-id='special-projects') Special Projects
 
+    script!='var hubs_geojson='+hubs_geojson+';'
     #map.hubs-map
 
 
@@ -211,7 +212,7 @@ block content
 
   #hub-candidates.reveal-modal.small(data-reveal='')
     h2 Hub Candidates
-    p Organizations or individuals chosen to participate in a vetting and application process in order to become a Savory Hub. 
+    p Organizations or individuals chosen to participate in a vetting and application process in order to become a Savory Hub.
     a.close-reveal-modal
       i.fa.fa-close
 

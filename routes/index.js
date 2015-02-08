@@ -8,14 +8,48 @@ function notFound(res) {
   }
 }
 
+// Render the hubs array to geoJSON
+function hubsGeoJSON(hubs) {
+  var out = [];
+  hubs.forEach(function(hub) {
+    var point = hub.getGeoPoint('hubs.coordinates');
+    if (point) {
+      out.push({
+        type: 'Feature',
+        geometry: {
+          type: 'Point',
+          coordinates: [point.longitude, point.latitude]
+        },
+        properties: {
+          title: hub.getText('hubs.hub')
+        }
+      });
+    }
+  });
+  return JSON.stringify(out);
+}
+
 router.get('/', function(req, res) {
+  var context = {
+    title: 'Savory'
+  }
+
   prismic.api()
     .then(function(api) {
-      return prismic.homepageNews(api);
+      context.api = api;
+      return prismic.homepageNews(context.api);
     })
     .then(function(news) {
-      res.render('index', { title: 'Savory', news: news});
+      context.news = news;
+      return prismic.hubs(context.api);
     })
+    .then(function(hubs) {
+      context.hubs_geojson = hubsGeoJSON(hubs);
+      res.render('index', context);
+    })
+    .catch(function(err) {
+      res.send(err, 500);
+    });
 });
 
 router.get('/get-involved/jobs/:id', function(req, res) {
@@ -30,7 +64,6 @@ router.get('/get-involved/jobs/:id', function(req, res) {
       });
     })
     .catch(function(err) {
-      console.log(err);
       res.send('error', 500);
     })
 });
