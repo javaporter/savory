@@ -120,6 +120,10 @@ router.get('/styles', function(req, res) {
   res.render('styles/index', { title: 'Styles' });
 });
 
+router.get('/get-involved', function(req, res) {
+  res.render('get-involved/index', { title: 'Get Involved' });
+});
+
 // News article
 router.get('/news/:slug', function(req, res) {
   prismic.api()
