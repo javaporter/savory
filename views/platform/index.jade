@@ -57,6 +57,8 @@ block content
                   h4 Quizzes and Assignments:
                 p Participate in assignments to build your capacity to manage holistically and take objective quizzes to see how well you learned the concepts of each course.
 
+        //- hr
+        //- a.btn-primary(href='http://savory-institute.myshopify.com/collections/accredited-professional-subscriptions', target="_blank") View Course Catalog
 
         hr
         ul.small-block-grid-2.medium-block-grid-3
@@ -71,9 +73,8 @@ block content
                   .course-objectives
                     !=pclass.getStructuredText('platformClasses.bulletPoints').asHtml()
                 footer
-                  a(href='#')
-                    i.fa.fa-shopping-cart
-                    | Add to Cart
+                  //- a(href="pclass.getLink('platformClasses.addToCart').asHtml()", target='_blank') View Store
+                  !=pclass.getLink('platformClasses.addToCart').asHtml()
 
 
 
@@ -81,7 +82,6 @@ block content
   section.main.store-items.consulting
     .row
       .medium-6.columns
-        a.price(href='#') $100
         img(src='/assets/images/platform/consulting.jpg')
       .medium-6.columns
         h2 Consulting
@@ -94,9 +94,7 @@ block content
             li Implementation support
             li Beginning the Holistic Management process
             li Monitoring
-          a.btn-primary(href='#')
-            i.fa.fa-shopping-cart
-            | Add to Cart
+          a.btn-primary(href='http://savory-institute.myshopify.com/collections/consultations', target='_blank') View Shop
 
 
 
@@ -106,31 +104,7 @@ block content
       .small-12.columns
         h2 Renew Accreditation
         p If you are an approved Accredited Professional with Savory and you wish to sign up and pay for your annual renewal fee, you may do so here.  If you are interested in <em>becoming</em> an accredited professional with Savory, credit will be given for participation in our Platform classes — that is where you should begin.
-        hr
-        ul.small-block-grid-2
-          li.block
-            figure
-              img(src='/assets/images/platform/annual-renewal.jpg')
-              figcaption
-                a.price(href='#') $400
-                h5 Accredited Professional Annual Renewal
-                p If you are an approved Accredited Professional with Savory, you can pay your annual renewal here.
-              footer
-                a(href='#')
-                  i.fa.fa-shopping-cart
-                  | Add to Cart
-          li.block
-            figure
-              img(src='/assets/images/platform/refresher.jpg')
-              figcaption
-                a.price(href='#') $30
-                h5 Refresher Payments
-                p If you know you need to complete a refresher course that Savory has provided for the current professional educators/field professionals, please pay for them here. These were 1 hour webex calls including two from 2013 and one in 2014. This will ensure you've been exposed to the most up to date information regarding the holistic management curriculum. Once you pay, we will provide you with a link to the recording of each class.
-                .course-objectives
-              footer
-                a(href='#')
-                  i.fa.fa-shopping-cart
-                  | Add to Cart
+        a.btn-primary(href='http://savory-institute.myshopify.com/collections/accredited-professional-subscriptions', target="_blank") View Shop
 
 
 
@@ -156,9 +130,7 @@ block content
                     li Book 4: Describing the Whole Under Management and Creating Your Holistic Context
                     li Book 5: Testing and Monitoring Decisions
               footer
-                a(href='#')
-                  i.fa.fa-shopping-cart
-                  | Add to Cart
+                a(href='http://savory-institute.myshopify.com/collections/ebook-bundles/products/ebook-bundle-one', target='_blank') View Shop
           li.block
             figure
               img(src='/assets/images/platform/ebook-package-2.jpg')
@@ -170,9 +142,7 @@ block content
                     li Book 6: Fundamentals of Holistic Financial Planning
                     li Book 7: Creating Your Holistic Financial Plan
               footer
-                a(href='#')
-                  i.fa.fa-shopping-cart
-                  | Add to Cart
+                a(href='http://savory-institute.myshopify.com/collections/ebook-bundles/products/ebook-bundle-two', target='_blank') View Shop
           li.block
             figure
               img(src='/assets/images/platform/ebook-package-3.jpg')
@@ -189,9 +159,7 @@ block content
                     li Book 13: Fundamental of Ecological Monitoring
                     li Book 14: Ecological Monitoring
               footer
-                a(href='#')
-                  i.fa.fa-shopping-cart
-                  | Add to Cart
+                a(href='http://savory-institute.myshopify.com/collections/ebook-bundles/products/land-and-livestock-management-course-e-book-bundle-unit-5', target='_blank') View Shop
 
 
 
@@ -200,26 +168,28 @@ block content
     .row
       .small-12.columns
         h2 Tools
+        p We offer a wide variety of tools that will help you better plan and organize your land via Holistic Management Practices. 
+        a.btn-primary(href='http://savory-institute.myshopify.com/collections/charts-and-worksheets', target='_blank') View Shop
 
-    .row
-      .medium-6.columns
-        p Please help yourself to some of our charts, forms, and worksheets. These forms have been developed to speed you on your way toward better Holistic Management and Planning.
-        p.fine-print Suggested donation is $1-3 each.
-
-      .medium-6.columns
-        ul.icon-list
-          li: a(href='#')
-            i.fa.fa-file-excel-o
-            | Annual Income and Expense
-          li: a(href='#')
-            i.fa.fa-file-excel-o
-            | Control Sheet
-          li: a(href='#')
-            i.fa.fa-file-word-o
-            | Ecological Monitoring Data (Basic)
-          li: a(href='#')
-            i.fa.fa-file-word-o
-            | Ecological Monitoring Analysis (Basic)
+    //- .row
+    //-   .medium-6.columns
+    //-     p Please help yourself to some of our charts, forms, and worksheets. These forms have been developed to speed you on your way toward better Holistic Management and Planning.
+    //-     p.fine-print Suggested donation is $1-3 each.
+    //- 
+    //-   .medium-6.columns
+    //-     ul.icon-list
+    //-       li: a(href='#')
+    //-         i.fa.fa-file-excel-o
+    //-         | Annual Income and Expense
+    //-       li: a(href='#')
+    //-         i.fa.fa-file-excel-o
+    //-         | Control Sheet
+    //-       li: a(href='#')
+    //-         i.fa.fa-file-word-o
+    //-         | Ecological Monitoring Data (Basic)
+    //-       li: a(href='#')
+    //-         i.fa.fa-file-word-o
+    //-         | Ecological Monitoring Analysis (Basic)
 
 
 
@@ -248,5 +218,3 @@ block content
         span.total: strong $0 
         | Checkout Now
       
-
-
