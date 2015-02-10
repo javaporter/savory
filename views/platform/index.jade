@@ -74,7 +74,7 @@ block content
                     !=pclass.getStructuredText('platformClasses.bulletPoints').asHtml()
                 footer
                   //- a(href="pclass.getLink('platformClasses.addToCart').asHtml()", target='_blank') View Store
-                  !=pclass.getLink('platformClasses.addToCart').asHtml()
+                  a(href=pclass.getLink('platformClasses.addToCart').url(), target='_blank') View Store
 
 
 

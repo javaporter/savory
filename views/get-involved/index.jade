@@ -64,16 +64,3 @@ block content
         p Due to incredible response, we are not currently accepting additional volunteers. Please check back in early 2015.
 
 
-  #careers(data-magellan-destination='careers')
-  section.main.careers
-    .row
-      .medium-6.columns
-        h2 Careers
-        p The Savory Institute welcomes contact and CVs from professionals in the communications, land management, and livestock management fields.
-
-        h3 We currently have the following openings:
-        ul.plus
-          each career in careers
-            li
-              a(href='/get-involved/jobs/'+career.id)=career.getStructuredText('careers.title').asText()
-

@@ -52,13 +52,13 @@ router.get('/', function(req, res) {
     });
 });
 
-router.get('/get-involved/jobs/:id', function(req, res) {
+router.get('/institute/jobs/:id', function(req, res) {
   prismic.api()
     .then(function(api) {
       return prismic.career(api, req.params.id);
     })
     .then(function(career) {
-      res.render('get-involved/careers-template', {
+      res.render('institute/careers-template', {
         title: career.getStructuredText('careers.title').asText(),
         career: career,
       });
@@ -68,13 +68,13 @@ router.get('/get-involved/jobs/:id', function(req, res) {
     })
 });
 
-router.get('/get-involved', function(req, res) {
+router.get('/institute', function(req, res) {
   prismic.api()
     .then(function(api) {
       return prismic.careers(api);
     })
     .then(function(careers) {
-      res.render('get-involved/index', {careers: careers});
+      res.render('institute/index', {careers: careers});
     });
 });
 
