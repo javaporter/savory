@@ -8,7 +8,12 @@ section.donate {
     margin-top: .25rem;
   }
 
-  .fine-print {
-    opacity: .4;
+  .legal {
+    border: $border-dotted;
+    border-radius: 4px;
+    padding: .5rem;
+    @include smallest-font;
+    margin-top: 1rem;
+    color: lighten($terra, 20%);
   }
 }
