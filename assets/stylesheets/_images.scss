@@ -78,12 +78,13 @@ figure.img-love {
 
   img {
     display: block;
-    margin: 0 0 .4rem 0;
+    margin: 0;
     border: 1px solid rgba(black, .1);
   }
 
   figcaption {
     line-height: 1.1rem;
+    margin-top: .4rem;
   }
 }
 
@@ -133,4 +134,3 @@ ul.image-grid {
   }
 
 }
-

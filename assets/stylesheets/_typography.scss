@@ -181,4 +181,13 @@ p {
 
 
 
-
+// special headers
+h2.section-title {
+  border-left: 4px solid $marigold;
+  padding: .35rem 0 .35rem 1rem;
+  margin-top: -.1rem;
+  color: lighten($mud, 20%);
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}

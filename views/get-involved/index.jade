@@ -23,37 +23,41 @@ block content
 
   #join-the-tribe(data-magellan-destination='join-the-tribe')
   section.main.join-the-tribe
+    header
+      .row
+        .medium-3.columns
+          h2.section-title Join the Tribe
+        .medium-9.columns
+          p One of the best ways you can get involved is to follow us on social media. <br>Together we can change the world.
+
+          
     .row
       .small-12.columns
-        h2 Join the Tribe
-        p One of the best ways you can get involved is to follow us on social media. Together we can change the world.
+          ul.inline-list.social-media
+            include /partials/social.jade
 
-        //- hr
-        //- h3 Subscribe to Our Mailing List
-        //- p Join our e-newsletter list for periodic mailing concerning upcoming events and industry news. We promise not to spam you or sell your information and you can unsubscribe at any time.
+        //
+          h3 Subscribe to Our Mailing List
+          p Join our e-newsletter list for periodic mailing concerning upcoming events and industry news. We promise not to spam you or sell your information and you can unsubscribe at any time.
 
-        //- form('data-abide'='', class='mail-signup')
-        //-   .row.collapse
-        //-     .small-3.columns
-        //-       label First Name
-        //-       input(type='text', name='first-name', id='first-name', required)
-        //-       small.error Required
-        //-     .small-3.columns
-        //-       label Last Name
-        //-       input(type='text', name='last-name', id='last-name', class='adjoined-input', required)
-        //-       small.error Required
-        //-     .small-4.columns
-        //-       label Email
-        //-       input(type='text', name='email', id='email', class='adjoined-input', required)
-        //-       small.error Required
-        //-     .small-2.columns
-        //-       label &nbsp;
-        //-       a(href='#', class='btn-primary postfix') Submit
+          form('data-abide'='', class='mail-signup')
+            .row.collapse
+              .small-3.columns
+                label First Name
+                input(type='text', name='first-name', id='first-name', required)
+                small.error Required
+              .small-3.columns
+                label Last Name
+                input(type='text', name='last-name', id='last-name', class='adjoined-input', required)
+                small.error Required
+              .small-4.columns
+                label Email
+                input(type='text', name='email', id='email', class='adjoined-input', required)
+                small.error Required
+              .small-2.columns
+                label &nbsp;
+                a(href='#', class='btn-primary postfix') Submit
 
-        hr
-        h3 Follow Us on Social Media
-        ul.inline-list.social-media
-          include /partials/social.jade
 
 
   #volunteer(data-magellan-destination='volunteer')
@@ -62,5 +66,3 @@ block content
       .small-12.columns
         h2 Volunteer
         p Due to incredible response, we are not currently accepting additional volunteers. Please check back in early 2015.
-
-

@@ -12,6 +12,26 @@ body.institute {
     }
   }
 
+
+  section.our-strategy {
+
+    @media #{$medium-up} {
+    .share-knowledge {
+        margin-top: 2rem;
+        .content {
+          border-right: $border-dotted;
+          padding-right: 1.5rem;
+        }
+
+        img {
+          padding-left: 1rem;
+          max-width: 170px;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+
   section.video-overview {
     background: url('/assets/images/paper-texture.jpg');
 
@@ -103,6 +123,29 @@ body.institute {
       }
     }
 
+  }
+
+
+  section.annual-report {
+
+    @media #{$medium-up} {
+      .image {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+        width: 50%;
+        background: url('/assets/images/institute/ar-background.jpg') no-repeat center center;
+        background-size: 50% cover;
+      }
+
+      .content {
+        width: 50%;
+        position: relative;
+        left: 50%;
+        padding-left: 1.5rem;
+      }
+    }
   }
 
 }

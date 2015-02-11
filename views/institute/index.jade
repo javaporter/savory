@@ -29,11 +29,14 @@ block content
 
 
   #our-strategy(data-magellan-destination='our-strategy')
-  section.main
-    .row
-      .small-12.columns
-        h2 Our Strategy
-        hr
+  section.main.our-strategy
+    header
+      .row
+        .medium-3.columns
+          h2.section-title Our Strategy
+        .medium-9.columns
+          p Our strategy is three-fold. We'll demonstrate our results in a diverse group of settings, we'll share our experiences in achieving success, and we'll be an advocate and catalyst — paving the way for others.
+
 
     .row
       .small-12.columns
@@ -42,12 +45,17 @@ block content
         hr
 
     .row
-      .medium-2.push-10.columns
+      .small-12.columns
+        h3 Share Knowledge
+        p One group can only do so much, a vital piece of our mission is to empower people to restore the health of the land and their livelihoods through the practice of Holistic Management via our Hub strategy. 
+        
+    .row.share-knowledge
+      .medium-3.push-9.columns
         img(src='/assets/images/savory-network.svg')
 
-      .medium-10.pull-2.columns
-        h3 Share Knowledge
-        p One group can only do so much, a vital piece of our mission is to empower people to restore the health of the land and their livelihoods through the practice of Holistic Management via our Hub strategy. Our global network of Savory Hubs train and support land managers in their own local context. Healthy soils can withstand drought, rebuild watersheds, provide habitat for wildlife, produce healthier food, absorb carbon from the atmosphere (mitigating climate change), and support livelihoods and rural traditions. To ensure a worldwide shift towards a holistic approach to agriculture, Savory Institute has set a goal of establishing 100 locally led and managed Hubs, influencing 1 billion hectares of grasslands across the continents by 2025. In 2013 and 2014, the Savory Institute, with the help of donors, established and equipped twenty Hubs around the world. Recently, ten Hub candidates were selected (out of 70+ applications) and will become accredited by the end of 2015. We have Hubs and Hub Candidates in Argentina, Chile, Costa Rica, Mexico (multiple), USA (multiple), Australia, Spain, Sweden, Turkey, Kenya (2), Ethiopia, Zimbabwe, and South Africa. Hubs are Savory’s distribution network, and the backbone of our business model. In 2014, more than 1,800 land managers were trained and more than 2.4M hectares of land influenced.
+      .medium-9.pull-3.columns
+        .content
+          p Our global network of Savory Hubs train and support land managers in their own local context. Healthy soils can withstand drought, rebuild watersheds, provide habitat for wildlife, produce healthier food, absorb carbon from the atmosphere (mitigating climate change), and support livelihoods and rural traditions. To ensure a worldwide shift towards a holistic approach to agriculture, Savory Institute has set a goal of establishing 100 locally led and managed Hubs, influencing 1 billion hectares of grasslands across the continents by 2025. In 2013 and 2014, the Savory Institute, with the help of donors, established and equipped twenty Hubs around the world. Recently, ten Hub candidates were selected (out of 70+ applications) and will become accredited by the end of 2015. We have Hubs and Hub Candidates in Argentina, Chile, Costa Rica, Mexico (multiple), USA (multiple), Australia, Spain, Sweden, Turkey, Kenya (2), Ethiopia, Zimbabwe, and South Africa. Hubs are Savory’s distribution network, and the backbone of our business model. In 2014, more than 1,800 land managers were trained and more than 2.4M hectares of land influenced.
 
     .row
       .small-12.columns
@@ -68,11 +76,17 @@ block content
 
   #evidence(data-magellan-destination='evidence')
   section.main
+    header
+      .row
+        .medium-3.columns
+          h2.section-title Evidence
+        .medium-9.columns
+          p The Savory Institute has compiled and curated a portfolio of peer reviewed papers, articles, white papers, and case studies that represent the scientific evidence of our work. 
+        
     .row
       .small-12.columns
-        h2 Evidence
-        p The Savory Institute has compiled and curated a portfolio of peer reviewed papers, articles, white papers, and case study that represents the scientific and ground-truthed evidence basis of our work. We work in collaboration with organizations, scientists, and academic institutions to collect and conduct research that will increase our understanding of how properly managed livestock in the grasslands of the world contribute to removing carbon from the atmosphere and addressing problems such as drought, poverty, hunger, and social violence.
-        h4 We are currently working in collaborations with:
+        p We work in collaboration with organizations, scientists, and academic institutions to collect and conduct research that will increase our understanding of how properly managed livestock in the grasslands of the world contribute to removing carbon from the atmosphere and addressing problems such as drought, poverty, hunger, and social violence.
+        h4 We are currently working in collaboration with:
         ul.inline-listing
           li The Nature Conservancy
           li University of Wyoming – Haub School of Natural Resources and the Environment
@@ -204,12 +218,14 @@ block content
 
   #our-team(data-magellan-destination='our-team')
   section.main.our-team
-    .row
-      .small-12.columns
-        h2 Our Team
-        p The Savory Institute was co-founded in 2009 by Allan Savory and a small group of old-time Holistic Managers.
+    header
+      .row
+        .medium-3.columns
+          h2.section-title Our Team
+        .medium-9.columns
+          p The Savory Institute was co-founded in 2009 by Allan Savory and a small group of experienced Holistic Managers.
 
-    hr
+
     .row
       .small-12.columns
         h3 Staff
@@ -260,9 +276,9 @@ block content
 
 
 
-    hr
     .row
       .small-12.columns
+        hr
         h3 Board Members
         ul.small-block-grid-2.medium-block-grid-5.image-grid
           li
@@ -302,11 +318,15 @@ block content
 
   #honors(data-magellan-destination='honors')
   section.main.honors
+    header
+      .row
+        .medium-3.columns
+          h2.section-title Honors and Recognition
+        .medium-9.columns
+          p Allan Savory, Savory Institute, and the Africa Centre for Holistic Management continually receive high-profile honors and recognition for their efforts empowering others to use Holistic Management to restore grasslands.
+
     .row
       .small-12.columns
-        h2 Honors and Recognition
-        p Allan Savory, Savory Institute, and the Africa Centre for Holistic Management continually receive high-profile honors and recognition for their efforts to empower others to use Holistic Management to restore grasslands.
-        hr
         ul.no-bullet.smaller
           li
             h5 UN Convention to Combat Desertification Land for Life Award—2013
@@ -356,32 +376,43 @@ block content
 
   #annual-report(data-magellan-destination='annual-report')
   section.main.annual-report
-    .row
-      .small-12.columns
-        h2 Annual Report
-        ul.icon-list
-          li
-            a(href='/assets/docs/annual-reports/2013-2014-ar.pdf', target='_blank')
-              i.fa.fa-file-pdf-o
-              | Annual Report (2013-2014)
-          li
-            a(href='/assets/docs/annual-reports/2013-2014-letter.pdf', target='_blank')
-              i.fa.fa-file-pdf-o
-              | Letter from our CEO (2013-2014)
-          li
-            a(href='/assets/docs/annual-reports/2012-ar.pdf', target='_blank')
-              i.fa.fa-file-pdf-o
-              | Annual Report (2012)
+    .image
+    .content
+      header
+        .row
+          .small-12.columns
+            h2.section-title Annual Report
+            
+      .row
+        .small-12.columns
+          ul.icon-list
+            li
+              a(href='/assets/docs/annual-reports/2013-2014-ar.pdf', target='_blank')
+                i.fa.fa-file-pdf-o
+                | Annual Report (2013-2014)
+            li
+              a(href='/assets/docs/annual-reports/2013-2014-letter.pdf', target='_blank')
+                i.fa.fa-file-pdf-o
+                | Letter from our CEO (2013-2014)
+            li
+              a(href='/assets/docs/annual-reports/2012-ar.pdf', target='_blank')
+                i.fa.fa-file-pdf-o
+                | Annual Report (2012)
 
 
   #careers(data-magellan-destination='careers')
   section.main.careers
+    header
+      .row
+        .medium-3.columns
+          h2.section-title Careers
+        .medium-9.columns
+          p The Savory Institute welcomes resumés and CVs from professionals in the communications, land management, and livestock management fields. We are a diverse and dedicated group of people spread out across the globe but headquarted in Boulder, Colorado.
+      
     .row
-      .small-12.columns
-        h2 Careers
-        p The Savory Institute welcomes contact and CVs from professionals in the communications, land management, and livestock management fields.
-
-        h3 We currently have the following openings:
+      .medium-6.columns
+        h4 Current openings:
+      .medium-6.columns
         ul.plus
           each career in careers
             li
