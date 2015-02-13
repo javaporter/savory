@@ -89,6 +89,11 @@ section.half-color {
     color: white;
   }
 
+  a {
+    color: white;
+    border-bottom: $border-dotted-light;
+  }
+
   .nested {
     position: absolute;
     width: 100%;
@@ -112,6 +117,7 @@ section.half-color {
       background: $stone;
       left: 50%;
     }
+
   }
 }
 

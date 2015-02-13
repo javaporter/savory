@@ -15,8 +15,7 @@ block content
         h1= title
 
       .medium-6.columns
-        p The Savory Institute facilitates the realization of a life of enduring returns for the land and all who depend on it. The Institute is the braintrust of the organization. We develop innovative tools and enhanced curricula, inform policy, establish market incentives, increase public awareness, and coordinate relevant research, cultivating relationships with aligned partners. 
-
+        p The Savory Institute facilitates the realization of a life of enduring returns for the land and all who depend on it. The Institute is the <a href='#' data-reveal-id='braintrust'>brain trust</a> of the organization. We develop innovative tools and enhanced curricula, inform policy, establish market incentives, increase public awareness, and coordinate relevant research, cultivating relationships with aligned partners. 
 
   section.main.video-overview
     .row
@@ -35,19 +34,19 @@ block content
         .medium-3.columns
           h2.section-title Our Strategy
         .medium-9.columns
-          p Our strategy is three-fold. We'll demonstrate our results in a diverse group of settings, we'll share our experiences in achieving success, and we'll be an advocate and catalyst — paving the way for others.
+          p Our strategy is three-fold: We demonstrate our results in diverse contexts; we equip and empower people and share our experiences in learning and achieving success; and we pave the way for a global movement to take off, being an advocate and catalyst of needed change.
 
 
     .row
       .small-12.columns
         h3 Demonstrate Success
-        p Demonstrating the power of Holistic Management in partnerships with aligned organizations, with the intention of building capacity and proof of concept in key strategic regions. Special Projects may evolve into Hubs once capacity is built and local leadership developed. Currently, we have special projects in the USA, New Zealand, and China, and are beginning work in the Sahel region and Swaziland in 2015. Among our strategic partners we can mention Grasslands LLC, The Nature Conservancy, and Heifer International.
+        p In partnerships with aligned organizations, with the intention of building capacity and proof of concept in key strategic regions, we demonstrate the power of Holistic Management through Special Projects. Currently, we have special projects in the USA, New Zealand, and China, and are beginning work in new regions in 2015. Among our strategic partners we can mention Grasslands LLC, The Nature Conservancy, and Heifer International. 
         hr
 
     .row
       .small-12.columns
-        h3 Share Knowledge
-        p One group can only do so much, a vital piece of our mission is to empower people to restore the health of the land and their livelihoods through the practice of Holistic Management via our Hub strategy. 
+        h3 Empower People
+        p Through a global network of entrepreneurial innovators and leaders committed to serving their regions with the highest standards of Holistic Management training and implementation support, and incubating contextually relevant, holistic solutions to accelerate the needed shifts in decision making and resource management. In the past 3 years, 30 Hubs have been established and nurtured, and we plan to welcome many more in the years to come. 
         
     .row.share-knowledge
       .medium-3.push-9.columns
@@ -60,17 +59,18 @@ block content
     .row
       .small-12.columns
         hr
-        h3 Create the Right Conditions
-        h4 Monitoring, Curating and Conducting Research
-        p The Savory Institute conducts, coordinates, and supports comprehensive social, ecological, and financial monitoring. We have compiled and curated a portfolio of peer reviewed papers, articles, white papers, and case studies that represent the scientific evidence of our work. We work in collaboration with organizations, scientists, and academic institutions to collect and conduct research that will increase our understanding of how properly managed livestock in the grasslands of the world contribute to removing carbon from the atmosphere and addressing problems such as drought, poverty, hunger, and social violence.
-
+        h3 Facilitate Improved Conditions
         h4 Informing Policy and Programs
         p Policies and development programs concerning grasslands and livestock management in many countries are often flawed – and they are a major reason why desertification is expanding so rapidly around the world. The Savory Institute informs policymakers and stakeholders of the need to shift current agriculture and land management policies and programs.
 
         h4 Identifying and Establishing Market Incentives
-        p The Savory Institute works to identify and establish strategies to create market-based incentives to encourage people to use Holistic Management to create environmental, economic and social benefits. For example, working with Patagonia Inc. and the Nature Conservancy, we have joined a collaboration of sheep producers in Argentina which represents one of our first Savory Hubs in the region. This will restore 10 million acres of the Patagonia grasslands and add value to the wool produced.
-        p The Savory Institute engages many different audiences to change public perception that livestock itself causes the degradation and/or desertification of grasslands. It is actually the way humans manage livestock that is the culprit. This fundamental shift in thinking must happen to drive needed policy and market shifts. Many different key environmental activists and thought leaders are supporting our efforts to increase public awareness such as TED, HRH Prince of Wales, Deepak Chopra, Ian Somerhalder, Hazel Henderson, Gretel Erlich, and Peter Byck among others.
-        p The Savory Institute has compiled and curated a portfolio of peer reviewed papers, articles, white papers, and case studies that represent the scientific and ground-truthed evidence basis of our work. We work in collaboration with organizations, scientists, and academic institutions to collect and conduct research that will increase our understanding of how properly managed livestock in the grasslands of the world contribute to removing carbon from the atmosphere and addressing problems such as drought, poverty, hunger and social violence.
+        p The Savory Institute works to identify and establish strategies to create market-based incentives to encourage managing holistically to create environmental, economic and social benefits. 
+
+        h4 Monitoring, Curating, and Coordinating Research
+        p The Savory Institute coordinates and supports comprehensive social, ecological, and financial monitoring and relevant research. We work in collaboration with organizations, scientists, and academic institutions to collect and conduct research that will increase our understanding of how properly managed livestock in the grasslands of the world and managing holistically contribute to increasing biological diversity, increasing soil carbon, and addressing problems such as drought, poverty, hunger, and social violence.
+
+        h4 Increasing Public Awareness
+        p The Savory Institute engages many different audiences to change public perception that livestock itself causes the degradation of grasslands. It is actually the way humans manage livestock that is the culprit. This fundamental shift in thinking must happen to drive needed policy and market shifts. Many different key environmental activists and thought leaders are supporting our efforts to increase public awareness such as TED, HRH Prince of Wales, Deepak Chopra, Ian Somerhalder, Hazel Henderson, Gretel Erlich, and Peter Byck among others.
 
 
 
@@ -81,7 +81,7 @@ block content
         .medium-3.columns
           h2.section-title Evidence
         .medium-9.columns
-          p The Savory Institute has compiled and curated a portfolio of peer reviewed papers, articles, white papers, and case studies that represent the scientific evidence of our work. 
+          p The Savory Institute has compiled and curated a portfolio of peer reviewed papers, articles, white papers, and case studies that represent the scientific evidence of our work.
         
     .row
       .small-12.columns
@@ -417,3 +417,14 @@ block content
           each career in careers
             li
               a(href='/institute/jobs/'+career.id)=career.getStructuredText('careers.title').asText()
+
+
+
+  //- braintrust modal
+  #braintrust.reveal-modal.small(data-reveal='')
+    h2 brain trust
+    p
+      em noun
+    p A group of official or unofficial advisers concerned especially with planning and strategy; a group of people who give advice to a leader about what should be done
+    a.close-reveal-modal
+      i.fa.fa-close
