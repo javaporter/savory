@@ -41,13 +41,10 @@ html
 
     //- title
     title #{title || 'Savory'} | Savory
-
-    //if lt IE 9
-      html.lt-ie9(xml:lang='en', xmlns:ng='http://angularjs.org', xmlns='http://www.w3.org/1999/xhtml')
-      script.
-        window.location = "/ie8.css"
     
-    <!--[if IE 9]><html class="ie9"><![endif]-->
+    <!--[if IE 9]>
+    <script>document.documentElement.className += ' ie9';</script>
+    <![endif]-->
     <!--[if lt IE 9]><script>window.location="/ie"</script><![endif]-->
 
 
