@@ -46,10 +46,9 @@ html
       html.lt-ie9(xml:lang='en', xmlns:ng='http://angularjs.org', xmlns='http://www.w3.org/1999/xhtml')
       script.
         window.location = "/ie8.css"
-
-
-  //if IE 9
-    body.ie9
+    
+    <!--[if IE 9]><html class="ie9"><![endif]-->
+    <!--[if lt IE 9]><script>window.location="/ie"</script><![endif]-->
 
 
   body(class=body_class)
