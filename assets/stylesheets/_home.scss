@@ -1,5 +1,10 @@
 body.index {
 
+  .hero-slide {
+    // initially hide this until js makes one random visible
+    display: none;
+  }
+
   // overview
   .key-points {
     @media #{$medium-up} {
@@ -227,7 +232,7 @@ body.index {
         padding: 0;
         position: relative;
 
-        @media #{$medium-up} {
+        @media #{$large-up} {
           &:before {
             content: counter(item, decimal);
             counter-increment: item;
@@ -251,7 +256,7 @@ body.index {
           padding: .5rem;
           @include smallest-font;
 
-          @media #{$medium-up} {
+          @media #{$large-up} {
             padding: 3rem 1rem 1rem 1rem;
           }
         }

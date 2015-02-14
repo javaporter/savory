@@ -19,7 +19,7 @@ block content
 
   #classes(data-magellan-destination='classes')
   section.main.store-items
-    header
+    header.overview-header
       .row
         .medium-3.columns
           h2.section-title Classes
@@ -41,32 +41,29 @@ block content
         h3 Each course will have various components:
         .block-row
           .row(data-equalizer='')
-            .medium-3.small-6.columns
+            .medium-3.columns
               .grid-panel(data-equalizer-watch='')
                 header
                   h4 Reading:
                 p Your reading is in the revised online e-books for each of the five courses and specific sections of Holistic Management: A New Framework for Decision Making.
-            .medium-3.small-6.columns
+            .medium-3.columns
               .grid-panel(data-equalizer-watch='')
                 header
                   h4 Videos and Animations:
                 p Each course contains many videos and animations made exclusively for the Savory Institute as well as curated videos to enhance your learning.
-            .medium-3.small-6.columns
+            .medium-3.columns
               .grid-panel(data-equalizer-watch='')
                 header
                   h4 Writing and Discussion:
                 p Reflect on what you’ve learned and share your thoughts with others in the course on the discussion board.
-            .medium-3.small-6.columns
+            .medium-3.columns
               .grid-panel(data-equalizer-watch='')
                 header
                   h4 Quizzes and Assignments:
                 p Participate in assignments to build your capacity to manage holistically and take objective quizzes to see how well you learned the concepts of each course.
 
-        //- hr
-        //- a.btn-primary(href='http://savory-institute.myshopify.com/collections/accredited-professional-subscriptions', target="_blank") View Course Catalog
-
         hr
-        ul.small-block-grid-2.medium-block-grid-3
+        ul.small-block-grid-1.medium-block-grid-3
           each pclass in platform_classes
             li.block
               figure
@@ -89,7 +86,7 @@ block content
         a.price(href='http://savory-institute.myshopify.com/collections/consultations', target='_blank') $100
         img(src='/assets/images/platform/consulting.jpg')
       .medium-6.columns
-        header
+        header.overview-header
           h2.section-title Consulting
         p A one-on-one consultation is a great way to either begin learning or to find tune the understanding you already have about Holistic Management. For more in-depth training, the Savory Institute encourages you to take online courses or contact us for onsite visits.
         .course-objectives
@@ -106,7 +103,7 @@ block content
 
   #renew(data-magellan-destination='renew')
   section.main.store-items
-    header
+    header.overview-header
       .row
         .small-12.columns
           h2.section-title Renew Accreditation
@@ -119,7 +116,7 @@ block content
 
   #ebooks(data-magellan-destination='ebooks')
   section.main.store-items
-    header
+    header.overview-header
       .row
         .medium-3.columns
           h2.section-title Ebooks
@@ -129,7 +126,7 @@ block content
 
     .row
       .small-12.columns
-        ul.small-block-grid-2.medium-block-grid-3
+        ul.small-block-grid-1.medium-block-grid-3
           li.block
             figure
               img(src='/assets/images/platform/ebook-package-1.jpg')
@@ -179,7 +176,7 @@ block content
 
   #tools(data-magellan-destination='tools')
   section.main.store-items
-    header
+    header.overview-header
       .row
         .small-12.columns
           h2.section-title Tools

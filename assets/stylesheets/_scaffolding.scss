@@ -72,7 +72,7 @@ section.main {
     background: white;
   }
 
-  header {
+  header.overview-header {
     border-bottom: $border-dashed;
     padding-bottom: 1.5rem;
     margin-bottom: 1.5rem;
@@ -277,8 +277,9 @@ img.section-hero {
   }
 
   h4 {
-    margin-bottom: .5rem;
     color: white;
+    margin: 0;
+    padding-bottom: .5rem;
   }
 
   figure {
@@ -302,31 +303,6 @@ img.section-hero {
 // be nice to have a little space between labels
 .label {
   margin: 0 .17rem;
-}
-
-
-// filepicker stuff
-.filepicker-drag {
-  line-height: $learn-more-simple-size !important;
-  background-color: white !important;
-  box-shadow: none !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  border-radius: 0 !important;
-  margin-left: .5rem !important;
-  margin-top: -1px !important;
-
-  span {
-    border-radius: 0 !important;
-    padding: 0 !important;
-    float: none !important;
-    margin: 0 0 0 .5rem !important;
-  }
-
-  div {
-    border-radius: 0 !important;
-    background: $elf !important;
-  }
 }
 
 

@@ -5,7 +5,8 @@ body.network {
   }
 
   section.overview {
-    background-image: url('/assets/images/network/hero.jpg') center top;
+    background-image: url('/assets/images/network/hero.jpg');
+    background-position: center top;
 
     @media #{$medium-up} {
       background-image: url('/assets/images/network/hero-lg.jpg');
@@ -74,16 +75,23 @@ body.network {
           h3, i {
             line-height: 3rem;
             margin: 0;
+            font-size: 1.2rem;
           }
 
           i {
+            display: none;
             float: left;
             margin-right: .5rem;
             font-size: 1.5rem;
             color: $stone;
             border-right: $border;
             padding-right: .5em;
+
+            @media #{$large-up} {
+              display: block;
+            }
           }
+
         }
 
         footer {

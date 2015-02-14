@@ -24,10 +24,17 @@ body.institute {
         }
 
         img {
-          padding-left: 1rem;
+          padding: 1rem 0;
           max-width: 170px;
-          margin-top: 1rem;
         }
+      }
+    }
+
+    img {
+      margin: 1rem 0;
+
+      @media #{$small-only} {
+        max-width: 100px;
       }
     }
   }
