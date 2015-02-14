@@ -10,12 +10,14 @@ block content
       .small-12.columns
         figure.img-love
           img(src=article.getImage('news.image').main.url)
-          figcaption!=article.getStructuredText('news.figcaption').asHtml()
-        
+          if caption = article.getStructuredText('news.figcaption')
+            figcaption!=caption.asHtml()
+
         header
           h1= article.getText('news.title')
           - date = momentDate(article.getDate('news.date'))
             span.date
               =date.format('MMM DD, YYYY')
-        
-        !=article.getStructuredText('news.body').asHtml()
+
+        if body = article.getStructuredText('news.body')
+          !=body.asHtml()
