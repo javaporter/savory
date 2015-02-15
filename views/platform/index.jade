@@ -27,9 +27,10 @@ block content
           p Thanks to the generous support of the V.K. Rasmussen Foundation, Savory is proud to announce its refined and updated curriculum.
     
     .row
-      .small-12.columns
+      .medium-8.columns
+        h3 Online Courses
         p To start you off on the road to managing holistically, we have created five online, multi-media, and self-paced courses that will provide you with the solid foundation to excel in our face-to-face workshops in the future or deepen your understanding of Holistic Management if you have already taken these courses in the past.
-        p The online courses include the first three of six units (the remaining units are currently taught through face-to-face, hands-on workshops). These foundational courses will prepare you for taking our face-to-face workshops where you will have the opportunity to learn the skills to master the implementation of the processes unique to Holistic Management:
+        p The online courses include the first three of six units (the remaining units are taught through face-to-face, hands-on workshops). These foundational courses will prepare you for taking our face-to-face workshops where you will have the opportunity to learn the skills to master the implementation of the processes unique to Holistic Management:
         ul.plus
           li Building Wealth Through Holistic Financial Planning
           li Holistic Planned Grazing
@@ -38,43 +39,37 @@ block content
 
         p All our courses are intended to be learned sequentially (Course 1 before Course 2) and build upon requisite knowledge aquired in the previous course.
 
-        h3 Each course will have various components:
-        .block-row
-          .row(data-equalizer='')
-            .medium-3.columns
-              .grid-panel(data-equalizer-watch='')
-                header
-                  h4 Reading:
-                p Your reading is in the revised online e-books for each of the five courses and specific sections of Holistic Management: A New Framework for Decision Making.
-            .medium-3.columns
-              .grid-panel(data-equalizer-watch='')
-                header
-                  h4 Videos and Animations:
-                p Each course contains many videos and animations made exclusively for the Savory Institute as well as curated videos to enhance your learning.
-            .medium-3.columns
-              .grid-panel(data-equalizer-watch='')
-                header
-                  h4 Writing and Discussion:
-                p Reflect on what you’ve learned and share your thoughts with others in the course on the discussion board.
-            .medium-3.columns
-              .grid-panel(data-equalizer-watch='')
-                header
-                  h4 Quizzes and Assignments:
-                p Participate in assignments to build your capacity to manage holistically and take objective quizzes to see how well you learned the concepts of each course.
+      .medium-4.columns
+        ul.each-course
+          li
+            i.fa.fa-bookmark
+            p Your reading is in the revised online e-books for each of the five courses and specific sections of Holistic Management: A New Framework for Decision Making.
+              
+          li
+            i.fa.fa-video-camera
+            p Each course contains many videos and animations made exclusively for the Savory Institute as well as curated videos to enhance your learning.
 
-        hr
-        ul.small-block-grid-1.medium-block-grid-4
-          each pclass in platform_classes
-            li.block
-              figure
-                img(src=pclass.getImage('platformClasses.image').main.url)
-                figcaption
-                  a.price(href=pclass.getLink('platformClasses.addToCart').url(), target='_blank')=pricify(pclass.getNumber('platformClasses.price'))
-                    i.fa.fa-shopping-cart
-                  !=pclass.getStructuredText('platformClasses.name').asHtml()
-                  //- !=pclass.getStructuredText('platformClasses.description').asHtml()
-                  //- .course-objectives
-                    //- !=pclass.getStructuredText('platformClasses.bulletPoints').asHtml()
+          li
+            i.fa.fa-comments
+            p Reflect on what you’ve learned and share your thoughts with others in the course on the discussion board.
+
+          li
+            i.fa.fa-tasks
+            p Participate in assignments to build your capacity to manage holistically and take objective quizzes to see how well you learned the concepts of each course.
+
+    .row.course-listing
+      ul.small-block-grid-1.medium-block-grid-4
+        each pclass in platform_classes
+          li.block
+            figure
+              img(src=pclass.getImage('platformClasses.image').main.url)
+              figcaption
+                a.price(href=pclass.getLink('platformClasses.addToCart').url(), target='_blank')=pricify(pclass.getNumber('platformClasses.price'))
+                  i.fa.fa-shopping-cart
+                !=pclass.getStructuredText('platformClasses.name').asHtml()
+                //- !=pclass.getStructuredText('platformClasses.description').asHtml()
+                //- .course-objectives
+                  //- !=pclass.getStructuredText('platformClasses.bulletPoints').asHtml()
 
 
   #consulting(data-magellan-destination='consulting')
