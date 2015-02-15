@@ -15,17 +15,11 @@ body.institute {
 
   section.our-strategy {
 
-    @media #{$medium-up} {
     .share-knowledge {
-        margin-top: 2rem;
-        .content {
-          border-right: $border-dotted;
-          padding-right: 1.5rem;
-        }
-
+      @media #{$medium-up} {
         img {
-          padding: 1rem 0;
-          max-width: 170px;
+          margin: 0;
+          max-width: 120px;
         }
       }
     }
