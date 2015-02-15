@@ -17,22 +17,50 @@ body.platform {
 
     figure {
       background: white;
-      border: $border;
-      padding-bottom: 50px;
+      // border: $border;
+
+      img {
+        margin-bottom: 0;
+      }
 
       figcaption {
-        padding: .5rem;
+        padding: 0;
+
+        h5 {
+          position: absolute;
+          bottom: 0rem;
+          left: 1rem;
+          background: $opaque-dark-1;
+          width: 100%;
+          left: 0;
+          padding: .5rem;
+          // padding-right: 2.5rem;
+          color: $opaque-light-1;
+          margin: 0;
+          font-size: 1rem;
+          font-weight: 300;
+        }
+      }
+
+      .shopping-cart-icon {
+        position: absolute;
+        right: .65rem;
+        bottom: 0rem;
+        font-size: 1.1rem;
+        border-left: $border-opaque-light;
+        padding-left: .5rem;
+        padding-top: .35rem;
+        color: $opaque-light-2;
+        transition: color .2s;
+
+        &:hover {
+          color: white;
+          transition: color .2s;
+        }
       }
 
       footer {
-        border-top: $border;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-
-        i {
-          margin-right: .5rem;
-        }
+        display: none;
 
         a, {
           color: white;
@@ -46,10 +74,6 @@ body.platform {
             background: $verdant;
             transition: background .2s;
           }
-        }
-
-        h5 {
-          margin-bottom: .25rem;
         }
       }
     }
@@ -85,6 +109,12 @@ body.platform {
       background: black;
       color: white;
       transition: all .2s;
+    }
+
+    i {
+      padding-left: .5rem;
+      margin-left: .5rem;
+      border-left: $border-dotted-lighter;
     }
   }
 

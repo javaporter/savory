@@ -63,20 +63,18 @@ block content
                 p Participate in assignments to build your capacity to manage holistically and take objective quizzes to see how well you learned the concepts of each course.
 
         hr
-        ul.small-block-grid-1.medium-block-grid-3
+        ul.small-block-grid-1.medium-block-grid-4
           each pclass in platform_classes
             li.block
               figure
                 img(src=pclass.getImage('platformClasses.image').main.url)
                 figcaption
                   a.price(href=pclass.getLink('platformClasses.addToCart').url(), target='_blank')=pricify(pclass.getNumber('platformClasses.price'))
+                    i.fa.fa-shopping-cart
                   !=pclass.getStructuredText('platformClasses.name').asHtml()
-                  !=pclass.getStructuredText('platformClasses.description').asHtml()
-                  .course-objectives
-                    !=pclass.getStructuredText('platformClasses.bulletPoints').asHtml()
-                footer
-                  a(href=pclass.getLink('platformClasses.addToCart').url(), target='_blank') View Store
-
+                  //- !=pclass.getStructuredText('platformClasses.description').asHtml()
+                  //- .course-objectives
+                    //- !=pclass.getStructuredText('platformClasses.bulletPoints').asHtml()
 
 
   #consulting(data-magellan-destination='consulting')
@@ -97,7 +95,9 @@ block content
             li Implementation support
             li Beginning the Holistic Management process
             li Monitoring
-          a.btn-primary(href='http://savory-institute.myshopify.com/collections/consultations', target='_blank') View Shop
+          a.btn-primary(href='http://savory-institute.myshopify.com/collections/consultations', target='_blank')
+            i.fa.fa-shopping-cart
+            | Store
 
 
 
@@ -110,7 +110,9 @@ block content
     .row
       .small-12.columns
         p If you are an approved Accredited Professional with Savory and you wish to sign up and pay for your annual renewal fee, you may do so here. If you are interested in <em>becoming</em> an accredited professional with Savory, credit will be given for participation in our <a href='#classes'>Platform classes</a> — that is where you should begin.
-        a.btn-primary(href='http://savory-institute.myshopify.com/collections/accredited-professional-subscriptions', target="_blank") View Shop
+        a.btn-primary(href='http://savory-institute.myshopify.com/collections/accredited-professional-subscriptions', target="_blank")
+          i.fa.fa-shopping-cart
+          | Store
 
 
 
@@ -123,54 +125,31 @@ block content
         .medium-9.columns
           p Our ebooks are sold to you in bundles as they are related to each other. We have bundled them to help inform you which ebooks go together and are best read together in your journey on the roadmap to Managing Holistically.
 
-
+  
     .row
-      .small-12.columns
-        ul.small-block-grid-1.medium-block-grid-3
-          li.block
-            figure
-              img(src='/assets/images/platform/ebook-package-1.jpg')
-              figcaption
-                a.price(href='#') $5
-                h5 Foundation of Holistic Management
-                .course-objectives
-                  ul
-                    li Book 1: The Foundation of Holistic Management
-                    li Book 2: The Ecosystem Processes that Sustain Us
-                    li Book 3: Tools to Influence the Ecosystem Processes
-                    li Book 4: Describing the Whole Under Management and Creating Your Holistic Context
-                    li Book 5: Testing and Monitoring Decisions
-              footer
-                a(href='http://savory-institute.myshopify.com/collections/ebook-bundles/products/ebook-bundle-one', target='_blank') View Shop
-          li.block
-            figure
-              img(src='/assets/images/platform/ebook-package-2.jpg')
-              figcaption
-                a.price(href='#') $6
-                h5 Building Wealth Through Holistic Management
-                .course-objectives
-                  ul
-                    li Book 6: Fundamentals of Holistic Financial Planning
-                    li Book 7: Creating Your Holistic Financial Plan
-              footer
-                a(href='http://savory-institute.myshopify.com/collections/ebook-bundles/products/ebook-bundle-two', target='_blank') View Shop
-          li.block
-            figure
-              img(src='/assets/images/platform/ebook-package-3.jpg')
-              figcaption
-                a.price(href='#') $21
-                h5 Land and Livestock Management
-                .course-objectives
-                  ul
-                    li Book 8: Fundamentals of Holistic Planned Grazing
-                    li Book 9: Growing Season Aide Memoire
-                    li Book 10: Non-Growing Season Aide Memoire
-                    li Book 11: Fundamentals of Holistic Land Planning
-                    li Book 12: Creating Your Land Plan
-                    li Book 13: Fundamental of Ecological Monitoring
-                    li Book 14: Ecological Monitoring
-              footer
-                a(href='http://savory-institute.myshopify.com/collections/ebook-bundles/products/land-and-livestock-management-course-e-book-bundle-unit-5', target='_blank') View Shop
+      .medium-4.columns
+        figure
+          img(src='/assets/images/platform/ebook-package-1.jpg')
+          figcaption
+            a.price(href='http://savory-institute.myshopify.com/collections/ebook-bundles/products/ebook-bundle-one', target='_blank') $15
+              i.fa.fa-shopping-cart
+            h5 Books 1-5: Foundation of Holistic Management
+        
+      .medium-4.columns
+        figure
+          img(src='/assets/images/platform/ebook-package-2.jpg')
+          figcaption
+            a.price(href='http://savory-institute.myshopify.com/collections/ebook-bundles/products/ebook-bundle-two', target='_blank') $6
+              i.fa.fa-shopping-cart
+            h5 Books 6-7: Building Wealth Through Holistic Management
+        
+      .medium-4.columns
+        figure
+          img(src='/assets/images/platform/ebook-package-3.jpg')
+          figcaption
+            a.price(href='http://savory-institute.myshopify.com/collections/ebook-bundles/products/land-and-livestock-management-course-e-book-bundle-unit-5', target='_blank') $21
+              i.fa.fa-shopping-cart
+            h5 Books 8-14: Land and Livestock Management
 
 
 
@@ -183,7 +162,9 @@ block content
     .row
       .small-12.columns
         p We offer a wide variety of tools that will help you better plan and organize your land via Holistic Management Practices. 
-        a.btn-primary(href='http://savory-institute.myshopify.com/collections/charts-and-worksheets', target='_blank') View Shop
+        a.btn-primary(href='http://savory-institute.myshopify.com/collections/charts-and-worksheets', target='_blank') 
+          i.fa.fa-shopping-cart
+          | Store
 
     //- .row
     //-   .medium-6.columns
@@ -209,26 +190,3 @@ block content
 
   include /partials/donate.jade
   
-  
-  #checkout.reveal-modal.small.checkout-modal('data-reveal')
-    a.close-reveal-modal
-      i.fa.fa-close
-    h4 View Cart
-    ul
-      li
-        .row.collapse
-          .small-10.columns
-            .item Item 1
-          .small-2.columns
-            .item-price $0
-      li
-        .row.collapse
-          .small-10.columns
-            .item Holistic Management Foundation Class
-          .small-2.columns
-            .item-price $100
-    .total
-      a.btn-primary(href='#')
-        span.total: strong $0 
-        | Checkout Now
-      
