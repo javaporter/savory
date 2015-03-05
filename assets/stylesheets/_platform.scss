@@ -12,6 +12,91 @@ body.platform {
     }
   }
 
+
+  section.technology-platform {
+
+    .tech-platform-points {
+      margin-top: 1rem;
+
+      .panel {
+        position: relative;
+        padding-top: 4rem;
+        padding-bottom: 2.5rem;
+        margin-bottom: 1.5rem;
+
+        @media #{$medium-up} {
+          margin-bottom: 0;
+        }
+
+        header, footer {
+          position: absolute;
+          width: 100%;
+          left: 0;
+        }
+
+        header {
+          padding: 0 1rem;
+          border-bottom: $border;
+          top: 0;
+          background: $smoke;
+          height: 3rem;
+
+          h3, i {
+            line-height: 3rem;
+            margin: 0;
+            font-size: 1.2rem;
+          }
+
+          i {
+            display: none;
+            float: left;
+            margin-right: .5rem;
+            font-size: 1.5rem;
+            color: $stone;
+            border-right: $border;
+            padding-right: .5em;
+
+            @media #{$large-up} {
+              display: block;
+            }
+          }
+
+        }
+
+        footer {
+          bottom: 0;
+          height: 2rem;
+          line-height: 2rem;
+
+          a {
+            display: block;
+            background: $elf;
+            transition: background .2s;
+            color: white;
+            padding: 0 1rem;
+
+            &:hover {
+              background: darken($elf, 10%);
+              transition: background .2s;
+            }
+          }
+
+          i {
+            margin-right: .5rem;
+          }
+
+          a.no-link {
+            background: lighten($elf, 20%);
+          }
+        }
+
+        p, li {
+          @include smaller-font;
+        }
+      }
+    }
+  }
+
   .each-course {
     @extend .no-bullet;
 
