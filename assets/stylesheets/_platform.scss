@@ -50,33 +50,6 @@ body.platform {
   }
 
 
-  // prices
-  .price {
-    position: absolute;
-    top: .5rem;
-    right: .5rem;
-    padding: .5rem;
-    background: $opaque-dark-1;
-    transition: all .2s;
-    font-size: rem-calc(22);
-    border-radius: .3rem;
-    line-height: 1rem;
-    color: $opaque-light-1;
-
-    &:hover {
-      background: black;
-      color: white;
-      transition: all .2s;
-    }
-
-    i {
-      padding-left: .5rem;
-      margin-left: .5rem;
-      border-left: $border-dotted-lighter;
-    }
-  }
-
-
   section.consulting {
     .price {
       right: 1.5rem;
