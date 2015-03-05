@@ -400,6 +400,7 @@ block content
       .small-12.columns
         h4 Current openings:
         ul.plus
+          li Sorry, right now we have no openings. Please check back at a later date, this is updated as needed.
           each career in careers
             li
               a(href='/institute/jobs/'+career.id)=career.getStructuredText('careers.title').asText()
