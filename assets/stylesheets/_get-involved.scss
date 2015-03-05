@@ -13,7 +13,25 @@ body.get-involved {
   }
 
   .social-media {
-    margin-top: 1rem;
+    margin: 0;
+    margin-top: .75rem;
+    display: inline-block;
+    font-size: 1.5rem;
+
+    a {
+      color: $terra;
+    }
+
+    li {
+      margin: 0 1.5rem 0 0;
+      line-height: 1em;
+    }
+  }
+
+  .social-icon-holder {
+    border: $border;
+    text-align: center;
+    padding: 1rem;
   }
 
   .mail-signup {
