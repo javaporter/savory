@@ -37,7 +37,7 @@ block content
           li Holistic Land Planning
           li Holistic Ecological Monitoring
 
-        p All our courses are intended to be learned sequentially (Course 1 before Course 2) and build upon requisite knowledge aquired in the previous course.
+        p All our courses are intended to be learned sequentially (Course 1 before Course 2) and build upon requisite knowledge acquired in the previous course.
 
       .medium-4.columns
         ul.each-course
@@ -67,9 +67,7 @@ block content
                 a.price(href=pclass.getLink('platformClasses.addToCart').url(), target='_blank')=pricify(pclass.getNumber('platformClasses.price'))
                   i.fa.fa-shopping-cart
                 !=pclass.getStructuredText('platformClasses.name').asHtml()
-                //- !=pclass.getStructuredText('platformClasses.description').asHtml()
-                //- .course-objectives
-                  //- !=pclass.getStructuredText('platformClasses.bulletPoints').asHtml()
+
 
 
   #consulting(data-magellan-destination='consulting')
