@@ -111,7 +111,7 @@ section.half-color {
 
   .color {
     @extend .nested;
-    background: lighten($stone, 20%);
+    background: darken($stone, 20%);
 
     @media #{$medium-up} {
       background: $stone;
