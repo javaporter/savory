@@ -104,6 +104,7 @@ nav.primary-nav {
 
 
 .left-off-canvas-menu {
+  @extend .hide-for-large-up;
 
   ul.site-nav li {
     border-bottom: $border-opaque-lighter;
