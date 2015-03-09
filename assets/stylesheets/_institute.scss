@@ -13,6 +13,28 @@ body.institute {
   }
 
 
+  section.history {
+    @media #{$medium-up} {
+      .image {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+        width: 50%;
+        background: url('/assets/images/institute/allan-and-jody.jpg') no-repeat center right;
+        background-size: cover;
+      }
+
+      .content {
+        width: 50%;
+        position: relative;
+        left: 50%;
+        padding-left: 1.5rem;
+      }
+    }
+  }
+
+
   section.our-strategy {
 
     .share-knowledge {
