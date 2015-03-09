@@ -82,6 +82,10 @@ router.get('/institute', function(req, res) {
   res.render('institute/index', { title: 'Institute' });
 });
 
+router.get('/ie', function(req, res) {
+  res.render('ie', { title: 'IE' });
+});
+
 router.get('/institute/our-team', function(req, res) {
   res.render('institute/our-team', { title: 'Our Team' });
 });

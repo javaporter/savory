@@ -13,85 +13,135 @@ body.platform {
   }
 
 
-  section.store-items {
+  section.technology-platform {
 
-    figure {
-      background: white;
-      border: $border;
-      padding-bottom: 50px;
+    .tech-platform-points {
+      margin-top: 1rem;
 
-      figcaption {
-        padding: .5rem;
-      }
+      .panel {
+        position: relative;
+        padding-top: 4rem;
+        padding-bottom: 2.5rem;
+        margin-bottom: 1.5rem;
 
-      footer {
-        border-top: $border;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-
-        i {
-          margin-right: .5rem;
+        @media #{$medium-up} {
+          margin-bottom: 0;
         }
 
-        a, {
-          color: white;
-          padding: .5em;
-          background: $elf;
-          transition: background .2s;
-          display: block;
+        header, footer {
+          position: absolute;
           width: 100%;
+          left: 0;
+        }
 
-          &:hover {
-            background: $verdant;
+        header {
+          padding: 0 1rem;
+          border-bottom: $border;
+          top: 0;
+          background: $smoke;
+          height: 3rem;
+
+          h3, i {
+            line-height: 3rem;
+            margin: 0;
+            font-size: 1.2rem;
+          }
+
+          i {
+            display: none;
+            float: left;
+            margin-right: .5rem;
+            font-size: 1.5rem;
+            color: $stone;
+            border-right: $border;
+            padding-right: .5em;
+
+            @media #{$large-up} {
+              display: block;
+            }
+          }
+
+        }
+
+        footer {
+          bottom: 0;
+          height: 2rem;
+          line-height: 2rem;
+
+          a {
+            display: block;
+            background: $elf;
             transition: background .2s;
+            color: white;
+            padding: 0 1rem;
+
+            &:hover {
+              background: darken($elf, 10%);
+              transition: background .2s;
+            }
+          }
+
+          i {
+            margin-right: .5rem;
+          }
+
+          a.no-link {
+            background: lighten($elf, 20%);
           }
         }
 
-        h5 {
-          margin-bottom: .25rem;
-        }
-      }
-    }
-
-    .course-objectives {
-      ul {
-        @extend .plus;
-        @include half-space(top);
-        border-top: $border-dashed;
-
-        li {
-          font-size: .85rem;
+        p, li {
+          @include smaller-font;
         }
       }
     }
   }
 
+  .each-course {
+    @extend .no-bullet;
 
-  // prices
-  .price {
-    position: absolute;
-    top: .5rem;
-    right: .5rem;
-    padding: .5rem;
-    background: $opaque-dark-1;
-    transition: all .2s;
-    font-size: rem-calc(22);
-    border-radius: .3rem;
-    line-height: 1rem;
-    color: $opaque-light-1;
+    li {
+      margin-bottom: 1rem;
+      padding-left: 3.5rem;
 
-    &:hover {
-      background: black;
-      color: white;
-      transition: all .2s;
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
+
+    li p {
+      @include smaller-font;
+    }
+
+    i {
+      font-size: 1.4rem;
+      padding: .5rem;
+      float: left;
+      margin-top: .15rem;
+      margin-left: -3.5rem;
+      border: $border;
+
+    }
+
+    @media #{$medium-up} {
+      border-left: $border;
+      padding-left: 1rem;
+    }
+
+  }
+
+  .course-listing {
+    margin-top: 2rem;
   }
 
 
   section.consulting {
     .price {
       right: 1.5rem;
+    }
+
+    @media #{$small-only} {
+      img { margin-bottom: 1rem; }
     }
   }
 

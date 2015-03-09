@@ -14,71 +14,108 @@ block content
         h1= title
 
       .medium-6.columns
-        p Our e-learning platform handles all aspects of the educational process. We use a state-of-the-art, open platform which handles registration, course administration, and progress tracking through each course. Our program is far from the traditional material you may have come across in the past.
+        p Savory’s technology platform has been developed to provide online support and training for farmers and land managers. This platform provides specific tools that enhance your understanding of Holistic Management as well as assisting in the implementation. Our focus areas are online education, data management, and collaboration.
 
 
-  #classes(data-magellan-destination='classes')
+
+
+  #tech-platform(data-magellan-destination='tech-platform')
+  section.main.technology-platform
+    .row
+      .small-12.columns
+        figure.img-love
+          img(data-interchange='[/assets/images/network/app.jpg, (default)], [/assets/images/network/app-lg.jpg, (medium)]')
+        
+    
+    .tech-platform-points
+      .row(data-equalizer='')
+        .medium-4.columns
+          .panel(data-equalizer-watch='')
+            header
+              i.fa.fa-book
+              h3 Online Education
+            p The Savory Institute will help you describe your context for achieving objectives while integrating each individual’s cultural, material, and spiritual needs with their environment.
+            p Holistic Management is about proactively managing this type of complexity and making sure that managers have all the tools to address cash flow and profit, environmental vigor, and social factors as one inseparable whole when making decisions.
+            footer
+              a(href='http://savory-institute.myshopify.com/collections/online-courses', target='_blank')
+                i.fa.fa-shopping-cart
+                | Online Courses
+
+        .medium-4.columns
+          .panel(data-equalizer-watch='')
+            header
+              i.fa.fa-database
+              h3 Data Management
+            p Our data management platform allows for land managers to create and manage their farm or ranch using Holistic Management and allows for the collection of ecological data to monitor changes and progress on the land.
+            ul.plus
+              li Land mapping
+              li Integrated with Holistic Management planning and materials
+              li Advanced data collection for ecological and animal performance indicators
+            footer
+              a.no-link Coming Mid 2015
+
+        .medium-4.columns
+          .panel(data-equalizer-watch='')
+            header
+              i.fa.fa-comment-o
+              h3 Collaboration Forum
+            p An online forum that allows for the global collaboration of farmers, professionals, and Hubs. This forum will incorporate the sharing of resources, ideas, challenges, successes as well as the opportunity to facilitate meaningful conversations that enable long-term success on the land.
+            footer
+              a.no-link Coming Late 2015
+                
+                
+                
+                
+  #courses(data-magellan-destination='courses')
   section.main.store-items
-    header
+    header.overview-header
       .row
         .medium-3.columns
-          h2.section-title Classes
+          h2.section-title Courses
         .medium-9.columns
           p Thanks to the generous support of the V.K. Rasmussen Foundation, Savory is proud to announce its refined and updated curriculum.
     
     .row
-      .small-12.columns
+      .medium-8.columns
+        h3 Online Courses
         p To start you off on the road to managing holistically, we have created five online, multi-media, and self-paced courses that will provide you with the solid foundation to excel in our face-to-face workshops in the future or deepen your understanding of Holistic Management if you have already taken these courses in the past.
-        p The online courses include the first three of six units (the remaining units are currently taught through face-to-face, hands-on workshops). These foundational courses will prepare you for taking our face-to-face workshops where you will have the opportunity to learn the skills to master the implementation of the processes unique to Holistic Management:
+        p The online courses include the first three of six units (the remaining units are taught through face-to-face, hands-on workshops). These foundational courses will prepare you for taking our face-to-face workshops where you will have the opportunity to learn the skills to master the implementation of the processes unique to Holistic Management:
         ul.plus
           li Building Wealth Through Holistic Financial Planning
           li Holistic Planned Grazing
           li Holistic Land Planning
           li Holistic Ecological Monitoring
 
-        p All our courses are intended to be learned sequentially (Course 1 before Course 2) and build upon requisite knowledge aquired in the previous course.
+        p All our courses are intended to be learned sequentially (Course 1 before Course 2) and build upon requisite knowledge acquired in the previous course.
 
-        h3 Each course will have various components:
-        .block-row
-          .row(data-equalizer='')
-            .medium-3.small-6.columns
-              .grid-panel(data-equalizer-watch='')
-                header
-                  h4 Reading:
-                p Your reading is in the revised online e-books for each of the five courses and specific sections of Holistic Management: A New Framework for Decision Making.
-            .medium-3.small-6.columns
-              .grid-panel(data-equalizer-watch='')
-                header
-                  h4 Videos and Animations:
-                p Each course contains many videos and animations made exclusively for the Savory Institute as well as curated videos to enhance your learning.
-            .medium-3.small-6.columns
-              .grid-panel(data-equalizer-watch='')
-                header
-                  h4 Writing and Discussion:
-                p Reflect on what you’ve learned and share your thoughts with others in the course on the discussion board.
-            .medium-3.small-6.columns
-              .grid-panel(data-equalizer-watch='')
-                header
-                  h4 Quizzes and Assignments:
-                p Participate in assignments to build your capacity to manage holistically and take objective quizzes to see how well you learned the concepts of each course.
+      .medium-4.columns
+        ul.each-course
+          li
+            i.fa.fa-bookmark
+            p Your reading is in the revised online e-books for each of the five courses and specific sections of Holistic Management: A New Framework for Decision Making.
+              
+          li
+            i.fa.fa-video-camera
+            p Each course contains many videos and animations made exclusively for the Savory Institute as well as curated videos to enhance your learning.
 
-        //- hr
-        //- a.btn-primary(href='http://savory-institute.myshopify.com/collections/accredited-professional-subscriptions', target="_blank") View Course Catalog
+          li
+            i.fa.fa-comments
+            p Reflect on what you’ve learned and share your thoughts with others in the course on the discussion board.
 
-        hr
-        ul.small-block-grid-2.medium-block-grid-3
-          each pclass in platform_classes
-            li.block
-              figure
-                img(src=pclass.getImage('platformClasses.image').main.url)
-                figcaption
-                  a.price(href=pclass.getLink('platformClasses.addToCart').url(), target='_blank')=pricify(pclass.getNumber('platformClasses.price'))
-                  !=pclass.getStructuredText('platformClasses.name').asHtml()
-                  !=pclass.getStructuredText('platformClasses.description').asHtml()
-                  .course-objectives
-                    !=pclass.getStructuredText('platformClasses.bulletPoints').asHtml()
-                footer
-                  a(href=pclass.getLink('platformClasses.addToCart').url(), target='_blank') View Store
+          li
+            i.fa.fa-tasks
+            p Participate in assignments to build your capacity to manage holistically and take objective quizzes to see how well you learned the concepts of each course.
+
+    .row.course-listing
+      ul.small-block-grid-1.medium-block-grid-4
+        each pclass in platform_classes
+          li.block
+            figure
+              img(src=pclass.getImage('platformClasses.image').main.url)
+              figcaption
+                a.price(href=pclass.getLink('platformClasses.addToCart').url(), target='_blank')=pricify(pclass.getNumber('platformClasses.price'))
+                  i.fa.fa-shopping-cart
+                !=pclass.getStructuredText('platformClasses.name').asHtml()
 
 
 
@@ -89,7 +126,7 @@ block content
         a.price(href='http://savory-institute.myshopify.com/collections/consultations', target='_blank') $100
         img(src='/assets/images/platform/consulting.jpg')
       .medium-6.columns
-        header
+        header.overview-header
           h2.section-title Consulting
         p A one-on-one consultation is a great way to either begin learning or to find tune the understanding you already have about Holistic Management. For more in-depth training, the Savory Institute encourages you to take online courses or contact us for onsite visits.
         .course-objectives
@@ -100,138 +137,100 @@ block content
             li Implementation support
             li Beginning the Holistic Management process
             li Monitoring
-          a.btn-primary(href='http://savory-institute.myshopify.com/collections/consultations', target='_blank') View Shop
+          a.btn-primary(href='http://savory-institute.myshopify.com/collections/consultations', target='_blank')
+            i.fa.fa-shopping-cart
+            | Store
 
 
 
   #renew(data-magellan-destination='renew')
   section.main.store-items
-    header
+    header.overview-header
       .row
         .small-12.columns
           h2.section-title Renew Accreditation
     .row
       .small-12.columns
         p If you are an approved Accredited Professional with Savory and you wish to sign up and pay for your annual renewal fee, you may do so here. If you are interested in <em>becoming</em> an accredited professional with Savory, credit will be given for participation in our <a href='#classes'>Platform classes</a> — that is where you should begin.
-        a.btn-primary(href='http://savory-institute.myshopify.com/collections/accredited-professional-subscriptions', target="_blank") View Shop
+        a.btn-primary(href='http://savory-institute.myshopify.com/collections/accredited-professional-subscriptions', target="_blank")
+          i.fa.fa-shopping-cart
+          | Store
 
 
 
   #ebooks(data-magellan-destination='ebooks')
   section.main.store-items
-    header
+    header.overview-header
       .row
         .medium-3.columns
           h2.section-title Ebooks
         .medium-9.columns
           p Our ebooks are sold to you in bundles as they are related to each other. We have bundled them to help inform you which ebooks go together and are best read together in your journey on the roadmap to Managing Holistically.
 
-
+  
     .row
-      .small-12.columns
-        ul.small-block-grid-2.medium-block-grid-3
-          li.block
-            figure
-              img(src='/assets/images/platform/ebook-package-1.jpg')
-              figcaption
-                a.price(href='#') $5
-                h5 Foundation of Holistic Management
-                .course-objectives
-                  ul
-                    li Book 1: The Foundation of Holistic Management
-                    li Book 2: The Ecosystem Processes that Sustain Us
-                    li Book 3: Tools to Influence the Ecosystem Processes
-                    li Book 4: Describing the Whole Under Management and Creating Your Holistic Context
-                    li Book 5: Testing and Monitoring Decisions
-              footer
-                a(href='http://savory-institute.myshopify.com/collections/ebook-bundles/products/ebook-bundle-one', target='_blank') View Shop
-          li.block
-            figure
-              img(src='/assets/images/platform/ebook-package-2.jpg')
-              figcaption
-                a.price(href='#') $6
-                h5 Building Wealth Through Holistic Management
-                .course-objectives
-                  ul
-                    li Book 6: Fundamentals of Holistic Financial Planning
-                    li Book 7: Creating Your Holistic Financial Plan
-              footer
-                a(href='http://savory-institute.myshopify.com/collections/ebook-bundles/products/ebook-bundle-two', target='_blank') View Shop
-          li.block
-            figure
-              img(src='/assets/images/platform/ebook-package-3.jpg')
-              figcaption
-                a.price(href='#') $21
-                h5 Land and Livestock Management
-                .course-objectives
-                  ul
-                    li Book 8: Fundamentals of Holistic Planned Grazing
-                    li Book 9: Growing Season Aide Memoire
-                    li Book 10: Non-Growing Season Aide Memoire
-                    li Book 11: Fundamentals of Holistic Land Planning
-                    li Book 12: Creating Your Land Plan
-                    li Book 13: Fundamental of Ecological Monitoring
-                    li Book 14: Ecological Monitoring
-              footer
-                a(href='http://savory-institute.myshopify.com/collections/ebook-bundles/products/land-and-livestock-management-course-e-book-bundle-unit-5', target='_blank') View Shop
+      .medium-4.columns
+        figure
+          img(src='/assets/images/platform/ebook-package-1.jpg')
+          figcaption
+            a.price(href='http://savory-institute.myshopify.com/collections/ebook-bundles/products/ebook-bundle-one', target='_blank') $15
+              i.fa.fa-shopping-cart
+            h5 Books 1-5: Foundation of Holistic Management
+        
+      .medium-4.columns
+        figure
+          img(src='/assets/images/platform/ebook-package-2.jpg')
+          figcaption
+            a.price(href='http://savory-institute.myshopify.com/collections/ebook-bundles/products/ebook-bundle-two', target='_blank') $6
+              i.fa.fa-shopping-cart
+            h5 Books 6-7: Building Wealth Through Holistic Management
+        
+      .medium-4.columns
+        figure
+          img(src='/assets/images/platform/ebook-package-3.jpg')
+          figcaption
+            a.price(href='http://savory-institute.myshopify.com/collections/ebook-bundles/products/land-and-livestock-management-course-e-book-bundle-unit-5', target='_blank') $21
+              i.fa.fa-shopping-cart
+            h5 Books 8-14: Land and Livestock Management
 
 
 
   #tools(data-magellan-destination='tools')
   section.main.store-items
-    header
+    header.overview-header
       .row
         .small-12.columns
           h2.section-title Tools
     .row
       .small-12.columns
         p We offer a wide variety of tools that will help you better plan and organize your land via Holistic Management Practices. 
-        a.btn-primary(href='http://savory-institute.myshopify.com/collections/charts-and-worksheets', target='_blank') View Shop
+        a.btn-primary(href='http://savory-institute.myshopify.com/collections/ebooks-and-materials', target='_blank') 
+          i.fa.fa-shopping-cart
+          | Store
 
-    //- .row
-    //-   .medium-6.columns
-    //-     p Please help yourself to some of our charts, forms, and worksheets. These forms have been developed to speed you on your way toward better Holistic Management and Planning.
-    //-     p.fine-print Suggested donation is $1-3 each.
-    //- 
-    //-   .medium-6.columns
-    //-     ul.icon-list
-    //-       li: a(href='#')
-    //-         i.fa.fa-file-excel-o
-    //-         | Annual Income and Expense
-    //-       li: a(href='#')
-    //-         i.fa.fa-file-excel-o
-    //-         | Control Sheet
-    //-       li: a(href='#')
-    //-         i.fa.fa-file-word-o
-    //-         | Ecological Monitoring Data (Basic)
-    //-       li: a(href='#')
-    //-         i.fa.fa-file-word-o
-    //-         | Ecological Monitoring Analysis (Basic)
+
+  //
+    .row
+      .medium-6.columns
+        p Please help yourself to some of our charts, forms, and worksheets. These forms have been developed to speed you on your way toward better Holistic Management and Planning.
+        p.fine-print Suggested donation is $1-3 each.
+    
+      .medium-6.columns
+        ul.icon-list
+          li: a(href='#')
+            i.fa.fa-file-excel-o
+            | Annual Income and Expense
+          li: a(href='#')
+            i.fa.fa-file-excel-o
+            | Control Sheet
+          li: a(href='#')
+            i.fa.fa-file-word-o
+            | Ecological Monitoring Data (Basic)
+          li: a(href='#')
+            i.fa.fa-file-word-o
+            | Ecological Monitoring Analysis (Basic)
 
 
 
   include /partials/donate.jade
   
-  
-  #checkout.reveal-modal.small.checkout-modal('data-reveal')
-    a.close-reveal-modal
-      i.fa.fa-close
-    h4 View Cart
-    ul
-      li
-        .row.collapse
-          .small-10.columns
-            .item Item 1
-          .small-2.columns
-            .item-price $0
-      li
-        .row.collapse
-          .small-10.columns
-            .item Holistic Management Foundation Class
-          .small-2.columns
-            .item-price $100
-    .total
-      a.btn-primary(href='#')
-        span.total: strong $0 
-        | Checkout Now
-      

@@ -15,19 +15,20 @@ body.institute {
 
   section.our-strategy {
 
-    @media #{$medium-up} {
     .share-knowledge {
-        margin-top: 2rem;
-        .content {
-          border-right: $border-dotted;
-          padding-right: 1.5rem;
-        }
-
+      @media #{$medium-up} {
         img {
-          padding-left: 1rem;
-          max-width: 170px;
-          margin-top: 1rem;
+          margin: 0;
+          max-width: 120px;
         }
+      }
+    }
+
+    img {
+      margin: 1rem 0;
+
+      @media #{$small-only} {
+        max-width: 100px;
       }
     }
   }

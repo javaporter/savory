@@ -41,15 +41,11 @@ html
 
     //- title
     title #{title || 'Savory'} | Savory
-
-    //if lt IE 9
-      html.lt-ie9(xml:lang='en', xmlns:ng='http://angularjs.org', xmlns='http://www.w3.org/1999/xhtml')
-      script.
-        window.location = "/ie8.css"
-
-
-  //if IE 9
-    body.ie9
+    
+    <!--[if IE 9]>
+    <script>document.documentElement.className += ' ie9';</script>
+    <![endif]-->
+    <!--[if lt IE 9]><script>window.location="/ie"</script><![endif]-->
 
 
   body(class=body_class)
@@ -145,7 +141,7 @@ html
               ul
                 include /partials/subnav-gi.jade
 
-            .large-4.medium-5.columns
+            .medium-4.columns
               ul.social
                 include /partials/social.jade
 

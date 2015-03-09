@@ -16,4 +16,11 @@ section.donate {
     margin-top: 1rem;
     color: lighten($terra, 20%);
   }
+
+  .donation-callouts {
+    margin: 2rem 0;
+    padding: 2rem 0;
+    border-top: $border-dashed;
+    border-bottom: $border-dashed;
+  }
 }
