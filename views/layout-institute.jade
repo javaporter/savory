@@ -1,8 +1,17 @@
 extends /layout
 
 block subnav
-	.contain-to-grid.show-for-large-up(data-magellan-expedition='fixed')
-		nav.top-bar(data-topbar, role='navigation')
-			.top-bar-section
-				ul
-					include /partials/subnav-si.jade
+	.site-subnav.show-for-large-up(data-magellan-expedition='fixed')
+		.row
+			.small-12.columns
+				ul.sub-nav.no-bullet
+					//- don't forget to change in both places
+					li(data-magellan-arrival='overview'): a(href='#overview') Overview
+					li(data-magellan-arrival='history'): a(href='#history') History
+					li(data-magellan-arrival='our-strategy'): a(href='#our-strategy') Our Strategy
+					li(data-magellan-arrival='evidence'): a(href='#evidence') Evidence
+					li(data-magellan-arrival='our-team'): a(href='#our-team') Our Team
+					li(data-magellan-arrival='honors'): a(href='#honors') Honors
+					li(data-magellan-arrival='annual-report'): a(href='#annual-report') Annual Report
+					li(data-magellan-arrival='careers'): a(href='#careers') Careers
+					li.top-arrow: a(href='#top'): i.fa.fa-arrow-circle-up
