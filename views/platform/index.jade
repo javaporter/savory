@@ -88,6 +88,10 @@ block content
           li Holistic Ecological Monitoring
 
         p All our courses are intended to be learned sequentially (Course 1 before Course 2) and build upon requisite knowledge acquired in the previous course.
+        
+        a.btn-primary(href='http://webh2o-1.savoryinstitute.org/site/myobservatory/ci/welcome/login', target='_blank') 
+          i.fa.fa-user
+          | Login
 
       .medium-4.columns
         ul.each-course
@@ -108,15 +112,16 @@ block content
             p Participate in assignments to build your capacity to manage holistically and take objective quizzes to see how well you learned the concepts of each course.
 
     .row.course-listing
-      ul.small-block-grid-1.medium-block-grid-4
-        each pclass in platform_classes
-          li.block
-            figure
-              img(src=pclass.getImage('platformClasses.image').main.url)
-              figcaption
-                a.price(href=pclass.getLink('platformClasses.addToCart').url(), target='_blank')=pricify(pclass.getNumber('platformClasses.price'))
-                  i.fa.fa-shopping-cart
-                !=pclass.getStructuredText('platformClasses.name').asHtml()
+      .small-12.columns
+        ul.small-block-grid-1.medium-block-grid-4
+          each pclass in platform_classes
+            li.block
+              figure
+                img(src=pclass.getImage('platformClasses.image').main.url)
+                figcaption
+                  a.price(href=pclass.getLink('platformClasses.addToCart').url(), target='_blank')=pricify(pclass.getNumber('platformClasses.price'))
+                    i.fa.fa-shopping-cart
+                  !=pclass.getStructuredText('platformClasses.name').asHtml()
 
 
 
