@@ -4,23 +4,37 @@ block variables
 extends /layout-platform
 
 block content
-  if prev
-    p
-      a(href=prev) << Newer
 
-  if next
-    p
-      a(href=next) Older >>
+  section.main
+    .row
+      .small-12.columns
+        h1= title
 
-  .row
-    .small-12.columns
-      h1= title
+        ul.news-archives
+          each article in news.results
+            li
+              .row
+                .small-3.columns
+                  a(href='/news/'+article.getText('news.slug'))
+                    img(src=article.getImage('news.image').views['homepage'].url)
+                .small-9.columns
+                  h2= article.getText('news.title')
+                  - date = momentDate(article.getDate('news.date'))
+                    .date
+                      =date.format('MMM DD, YYYY')
+                  !=article.getStructuredText('news.shortlede').asHtml()
+                  a.button.small(href='/news/'+article.getText('news.slug')) Read Full Article
+                  
 
-      ul
-        each article in news.results
-          li
-            a(href='/news/'+article.getText('news.slug'))
-              .marker
-              img(src=article.getImage('news.image').views['homepage'].url)
-              !=article.getStructuredText('news.shortlede').asHtml()
-
+    .row.prev-next
+      .small-6.columns
+        if next
+          p: a.btn-primary(href=next)
+            i.fa.fa-backward 
+            | Older
+      
+      .small-6.columns
+        if prev
+          p.newer: a.btn-primary(href=prev) 
+            | Newer
+            i.fa.fa-forward 
