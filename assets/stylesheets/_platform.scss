@@ -12,6 +12,13 @@ body.platform {
     }
   }
 
+  .store-divider {
+    border-top: $border-dotted;
+    margin-top: 2rem;
+    @include space(bottom);
+    height: 1px;
+  }
+
 
   section.technology-platform {
 
@@ -124,7 +131,7 @@ body.platform {
     }
 
     @media #{$medium-up} {
-      border-left: $border;
+      border-left: $border-dotted;
       padding-left: 1rem;
     }
 

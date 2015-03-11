@@ -49,6 +49,13 @@
 }
 
 
+
+// for graphic grids (like courses in platforms)
+.graphic-thumbs {
+  margin-top: 1rem;
+}
+
+
 // if we want the paragraph to animate as well
 figure.hover-effect-std {
   @extend %hover-effect;

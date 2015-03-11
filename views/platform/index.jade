@@ -20,7 +20,6 @@ block content
 
 
 
-  #tech-platform(data-magellan-destination='tech-platform')
   section.main.technology-platform
     .row
       .small-12.columns
@@ -38,9 +37,7 @@ block content
             p The Savory Institute will help you describe your context for achieving objectives while integrating each individual’s cultural, material, and spiritual needs with their environment.
             p Holistic Management is about proactively managing this type of complexity and making sure that managers have all the tools to address cash flow and profit, environmental vigor, and social factors as one inseparable whole when making decisions.
             footer
-              a(href='http://savory-institute.myshopify.com/collections/online-courses', target='_blank')
-                i.fa.fa-shopping-cart
-                | Online Courses
+              a(href='#store') Online Courses
 
         .medium-4.columns
           .panel(data-equalizer-watch='')
@@ -67,18 +64,16 @@ block content
                 
                 
                 
-  #courses(data-magellan-destination='courses')
+  #online-ed(data-magellan-destination='online-ed')
   section.main.store-items
     header.overview-header
       .row
         .medium-3.columns
-          h2.section-title Courses
+          h2.section-title Online Education
         .medium-9.columns
-          p Thanks to the generous support of the V.K. Rasmussen Foundation, Savory is proud to announce its refined and updated curriculum.
     
     .row
       .medium-8.columns
-        h3 Online Courses
         p To start you off on the road to managing holistically, we have created five online, multi-media, and self-paced courses that will provide you with the solid foundation to excel in our face-to-face workshops in the future or deepen your understanding of Holistic Management if you have already taken these courses in the past.
         p The online courses include the first three of six units (the remaining units are taught through face-to-face, hands-on workshops). These foundational courses will prepare you for taking our face-to-face workshops where you will have the opportunity to learn the skills to master the implementation of the processes unique to Holistic Management:
         ul.plus
@@ -88,10 +83,6 @@ block content
           li Holistic Ecological Monitoring
 
         p All our courses are intended to be learned sequentially (Course 1 before Course 2) and build upon requisite knowledge acquired in the previous course.
-        
-        a.btn-primary(href='http://webh2o-1.savoryinstitute.org/site/myobservatory/ci/welcome/login', target='_blank') 
-          i.fa.fa-lock
-          | User Login for Courses
 
       .medium-4.columns
         ul.each-course
@@ -110,10 +101,53 @@ block content
           li
             i.fa.fa-tasks
             p Participate in assignments to build your capacity to manage holistically and take objective quizzes to see how well you learned the concepts of each course.
-
-    .row.course-listing
+    
+    .row
       .small-12.columns
-        ul.small-block-grid-1.medium-block-grid-4
+        
+        a.btn-primary(href='#store', target='_blank') 
+          i.fa.fa-book
+          | Available Courses
+        
+        a.btn-primary(href='http://webh2o-1.savoryinstitute.org/site/savory/ci/welcome/login/si', target='_blank') 
+          i.fa.fa-lock
+          | User Login for Courses
+  
+  
+  
+  
+  #data-management(data-magellan-destination='data-management')
+  section.main
+    .row
+      .small-12.columns
+        h2.section-title Data Management
+        p Coming Mid 2015
+      
+    
+  
+  #forum(data-magellan-destination='forum')
+  section.main
+    .row
+      .small-12.columns
+        h2.section-title Forum
+        p Coming Late 2015
+
+
+
+  #store(data-magellan-destination='store')
+  section.main.store-items.consulting
+    header.overview-header
+      .row
+        .medium-3.columns
+          h2.section-title Store
+        .medium-9.columns
+          p We offer an extensive collection of courses and tools that aid in training, management, and continued education. All of our e-commerce is handled securely by Shopify.
+    
+    
+    .row
+      .small-12.columns
+        h3 Courses
+        ul.graphic-thumbs.small-block-grid-1.medium-block-grid-4
           each pclass in platform_classes
             li.block
               figure
@@ -122,18 +156,15 @@ block content
                   a.price(href=pclass.getLink('platformClasses.addToCart').url(), target='_blank')=pricify(pclass.getNumber('platformClasses.price'))
                     i.fa.fa-shopping-cart
                   !=pclass.getStructuredText('platformClasses.name').asHtml()
-
-
-
-  #consulting(data-magellan-destination='consulting')
-  section.main.store-items.consulting
+                      
+    
+    .store-divider            
     .row
       .medium-6.columns
         a.price(href='http://savory-institute.myshopify.com/collections/consultations', target='_blank') $100
         img(src='/assets/images/platform/consulting.jpg')
       .medium-6.columns
-        header.overview-header
-          h2.section-title Consulting
+        h3 Consulting
         p A one-on-one consultation is a great way to either begin learning or to find tune the understanding you already have about Holistic Management. For more in-depth training, the Savory Institute encourages you to take online courses or contact us for onsite visits.
         .course-objectives
           ul
@@ -147,34 +178,15 @@ block content
             i.fa.fa-shopping-cart
             | Store
 
-
-
-  #renew(data-magellan-destination='renew')
-  section.main.store-items
-    header.overview-header
-      .row
-        .small-12.columns
-          h2.section-title Renew Accreditation
+    
+    .store-divider
     .row
       .small-12.columns
-        p If you are an approved Accredited Professional with Savory and you wish to sign up and pay for your annual renewal fee, you may do so here. If you are interested in <em>becoming</em> an accredited professional with Savory, credit will be given for participation in our <a href='#classes'>Platform classes</a> — that is where you should begin.
-        a.btn-primary(href='http://savory-institute.myshopify.com/collections/accredited-professional-subscriptions', target="_blank")
-          i.fa.fa-shopping-cart
-          | Store
-
-
-
-  #ebooks(data-magellan-destination='ebooks')
-  section.main.store-items
-    header.overview-header
-      .row
-        .medium-3.columns
-          h2.section-title Ebooks
-        .medium-9.columns
-          p Our ebooks are sold to you in bundles as they are related to each other. We have bundled them to help inform you which ebooks go together and are best read together in your journey on the roadmap to Managing Holistically.
+        h3 Ebooks
+        p Our ebooks are sold to you in bundles as they are related to each other. We have bundled them to help inform you which ebooks go together and are best read together in your journey on the roadmap to Managing Holistically.
 
   
-    .row
+    .row.graphic-thumbs
       .medium-4.columns
         figure
           img(src='/assets/images/platform/ebook-package-1.jpg')
@@ -200,15 +212,10 @@ block content
             h5 Books 8-14: Land and Livestock Management
 
 
-
-  #tools(data-magellan-destination='tools')
-  section.main.store-items
-    header.overview-header
-      .row
-        .small-12.columns
-          h2.section-title Tools
+    .store-divider
     .row
       .small-12.columns
+        h3 Tools
         p We offer a wide variety of tools that will help you better plan and organize your land via Holistic Management Practices. 
         a.btn-primary(href='http://savory-institute.myshopify.com/collections/ebooks-and-materials', target='_blank') 
           i.fa.fa-shopping-cart
