@@ -4,6 +4,14 @@ block variables
 extends /layout-platform
 
 block content
+  if prev
+    p
+      a(href=prev) << Newer
+
+  if next
+    p
+      a(href=next) Older >>
+
   .row
     .small-12.columns
       h1= title
@@ -15,3 +23,4 @@ block content
               .marker
               img(src=article.getImage('news.image').views['homepage'].url)
               !=article.getStructuredText('news.shortlede').asHtml()
+

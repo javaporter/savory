@@ -1,6 +1,9 @@
 var express = require('express');
 var router = express.Router();
 var prismic = require('../lib/prismic');
+var _ = require('lodash');
+var url = require('url');
+var qs = require('querystring');
 
 function notFound(res) {
   return function(err) {
@@ -27,6 +30,27 @@ function hubsGeoJSON(hubs) {
     }
   });
   return JSON.stringify(out);
+}
+
+function paginate(req, results, page) {
+  var query = _.clone(req.query),
+      page = parseInt(page),
+      path = req.path,
+      next,
+      prev;
+
+  if (results.next_page) {
+    query.page = page + 1;
+    next = path+'?'+qs.stringify(query);
+  }
+  if (results.prev_page) {
+    query.page = page - 1;
+    prev = path+'?'+qs.stringify(query);
+  }
+  return {
+    next: next,
+    prev: prev
+  };
 }
 
 router.get('/', function(req, res) {
@@ -137,6 +161,8 @@ router.get('/news', function(req, res) {
     })
     .then(function(news) {
       context.news = news;
+      context.page = page;
+      _.assign(context, paginate(req, news, page));
       res.render('news/index', context);
     });
 });
