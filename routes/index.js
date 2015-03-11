@@ -128,6 +128,19 @@ router.get('/get-involved', function(req, res) {
   res.render('get-involved/index', { title: 'Get Involved' });
 });
 
+router.get('/news', function(req, res) {
+  var context = {},
+      page = req.query.page || '1';
+  prismic.api()
+    .then(function(api) {
+      return prismic.news(api, null, page);
+    })
+    .then(function(news) {
+      context.news = news;
+      res.render('news/index', context);
+    });
+});
+
 // News article
 router.get('/news/:slug', function(req, res) {
   prismic.api()
