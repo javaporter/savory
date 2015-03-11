@@ -174,7 +174,8 @@ block content
                 .marker
                 img(src=article.getImage('news.image').views['homepage'].url)
                 !=article.getStructuredText('news.shortlede').asHtml()
-        a(href='/news') Older Posts
+        
+        a.button.small.archived-posts(href='/news') + View Archived Posts
         
 
   section.main.get-involved-and-tools

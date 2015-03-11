@@ -205,6 +205,10 @@ body.index {
 
   // news
   section.news {
+    .archived-posts {
+      margin-top: 1rem;
+    }
+
     border-bottom: $border;
 
     h2 small {
