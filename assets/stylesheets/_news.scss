@@ -46,6 +46,10 @@ body.news {
       border-radius: 4px;
       overflow: hidden;
 
+      @media #{$small-only} {
+        padding: 1rem;
+      }
+
       img {
         margin-left: -1px;
         border-right: $border;

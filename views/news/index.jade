@@ -14,10 +14,10 @@ block content
           each article in news.results
             li
               .row
-                .small-3.columns
+                .large-3.medium-5.columns.hide-for-small-only
                   a(href='/news/'+article.getText('news.slug'))
                     img(src=article.getImage('news.image').views['homepage'].url)
-                .small-9.columns
+                .large-9.medium-7.columns
                   h2= article.getText('news.title')
                   - date = momentDate(article.getDate('news.date'))
                     .date
