@@ -89,6 +89,7 @@ nav.primary-nav {
     font-size: 1em;
     position: relative;
     top: .35rem;
+    border: $border;
 
     &:hover {
       color: lighten($terra, 20%);
@@ -104,6 +105,7 @@ nav.primary-nav {
 
 
 .left-off-canvas-menu {
+  @extend .hide-for-large-up;
 
   ul.site-nav li {
     border-bottom: $border-opaque-lighter;
@@ -153,7 +155,25 @@ ul.off-canvas-list li a {
   padding: 0 !important;
 }
 
+[data-magellan-expedition] .sub-nav a {
+  line-height: 2rem;
+}
 
-.cart-items {
-  background: blue;
+.site-subnav {
+  background: $terra;
+
+  li:first-child {
+    margin-left: 0px;
+  }
+
+
+  .row {
+    position: relative;
+  }
+
+  .top-arrow {
+    position: absolute;
+    right: .5rem;
+    border-left: $border-dashed-lighter;
+  }
 }

@@ -1,8 +1,13 @@
 extends /layout
 
 block subnav
-	.contain-to-grid.hide-for-small(data-magellan-expedition='fixed')
-		nav.top-bar(data-topbar, role='navigation')
-			.top-bar-section
-				ul
-					include /partials/subnav-gi.jade
+	.site-subnav.show-for-large-up(data-magellan-expedition='fixed')
+		.row
+			.small-12.columns
+				ul.sub-nav.no-bullet
+					//- don't forget to change in both places
+					li(data-magellan-arrival='overview'): a(href='#overview') Overview
+					li(data-magellan-arrival='join-the-tribe'): a(href='#join-the-tribe') Join the Tribe
+					li(data-magellan-arrival='newsletter-subscription'): a(href='#newsletter-subscription') Newsletter Subscription
+					li(data-magellan-arrival='donate'): a(href='#donate') Donate
+					li.top-arrow: a(href='#top'): i.fa.fa-arrow-circle-up

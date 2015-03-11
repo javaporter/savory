@@ -111,7 +111,7 @@ section.half-color {
 
   .color {
     @extend .nested;
-    background: lighten($stone, 20%);
+    background: darken($stone, 20%);
 
     @media #{$medium-up} {
       background: $stone;
@@ -150,7 +150,7 @@ section.dark {
 
 section.call-to-action {
   padding: $section-padding*.7 0;
-  background: lighten($mud, 70%);
+  background: $opaque-light-2;
   border-top: $border-dashed;
   margin-top: -2rem;
 }
@@ -195,7 +195,7 @@ section.overview {
   height: 250px;
 
   @media #{$medium-up} {
-    height: 400px;
+    height: 500px;
   }
 }
 
