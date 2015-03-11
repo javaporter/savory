@@ -1,5 +1,5 @@
 block variables
-  - title = 'Article'
+  - title = 'News'
 
 extends /layout
 
@@ -7,7 +7,7 @@ block content
 
   section.main.news-post
     .row
-      .small-12.columns
+      .medium-8.medium-centered.columns
         figure.img-love
           img(src=article.getImage('news.image').main.url)
           if caption = article.getStructuredText('news.figcaption')
@@ -21,3 +21,37 @@ block content
 
         if body = article.getStructuredText('news.body')
           !=body.asHtml()
+  
+  
+  
+  
+  - videos = [article.getText('news.youtube')]
+  for video in videos
+    if video
+      section.main.video
+        .row
+          .medium-8.medium-centered.columns
+            .video
+              .flex-video.widescreen.youtube
+                iframe(width='640', height='360',src='//www.youtube.com/embed/'+video+'?rel=0', frameborder='0', allowfullscreen='')
+  
+  
+  
+  if quote = article.getText('news.quote')
+    section.main.callout-quote
+      .row
+        .small-12.columns
+          blockquote= article.getText('news.quote')
+  
+  
+  
+  
+  if secondaryBody = article.getStructuredText('news.secondaryBody')
+    section.main.news-post
+      .row
+        .medium-8.medium-centered.columns
+          !=secondaryBody.asHtml()
+
+      
+
+          

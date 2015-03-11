@@ -43,6 +43,9 @@ p.fine-print {
 
 
 // lists
+h3+ul {
+  margin-top: .5rem;
+}
 
 ul, ol {
   h2, h3, h4, h5, h6 {
@@ -53,15 +56,6 @@ ul, ol {
 
 ul.smaller, ol.smaller {
   @include smaller-font;
-
-  li {
-    margin-bottom: .7rem;
-    @include avoid-break;
-
-    p {
-      @include smaller-font;
-    }
-  }
 }
 
 ul.plus {
