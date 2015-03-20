@@ -44,6 +44,10 @@ nav.primary-nav {
       margin-left: .5rem;
     }
 
+    li.store-link {
+      @extend .right;
+    }
+
     li.get-involved-link {
       @extend .right;
       margin-right: -.75rem;
