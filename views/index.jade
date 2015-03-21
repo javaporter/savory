@@ -4,91 +4,60 @@ block variables
 extends layout
 
 block content
-  section.main.outcomes
-
-    //- zimbabwe
-    .case-study-01.hero-slide
-      .gradient
-      .case-study-content
-        .row
-          .large-9.medium-8.small-10.end.columns
-            img(src='/assets/images/home/case-study-01.svg', alt='Case Study 01')
-            p At the 777 Ranch in <strong>South Dakota, USA</strong>, Holistic Management practices are bringing back the native vegetation and wildlife. 28,000 acres house 1,700 bison which rely on the original diversity of flora and fauna to thrive.
-
-
-          .large-2.medium-3.stats-column.columns
-            .stats
-              ul(data-orbit='')
-                li
-                  figure
-                    .number 0<span>%</span>
-                    figcaption Soil erosion — it has stopped completely
-                li
-                  figure
-                    .number 40<span>%</span>
-                    figcaption Decrease in space between plants
-                li
-                  figure
-                    .number 48<span>%</span>
-                    figcaption Decrease in less desirable annual grasses
-                li
-                  figure
-                    .number 77<span>%</span>
-                    figcaption Decrease in bare ground
-
-    //- south dakota
-    .case-study-02.hero-slide
-      .gradient
-      .case-study-content
-        .row
-          .large-9.medium-8.small-10.end.columns
-            img(src='/assets/images/home/case-study-02.svg', alt='Case Study 02')
-            p In <strong>Victoria Falls, Zimbabwe</strong>, the Africa Center for Holistic Management is a model of sustainable resource management that can be replicated in the region and elsewhere. People working together are steadily making a difference to restore land productivity, diversity of wildlife, and local livelihoods by learning how to manage their natural resources in a regenerative fashion.
+  section.main.grasslands
+    .row
+      .medium-6.medium-centered.columns
+        img(src='/assets/images/home/one-third.svg')
+  
+  
+  
+  section.tagline
+    .row
+      .medium-8.medium-centered.columns
+        img(src='/assets/images/home/tagline.svg')
+  
+  
+  section.main.site-overview 
+    .row
+      .medium-4.columns
+        h3 Savory Institute
+        p The Savory Institute develops innovative tools and enhanced curricula, informs policy, establishes market incentives, increases public awareness, and coordinates relevant research, cultivating relationships with aligned partners.
+      
+      .medium-4.columns
+        h3 Savory Network
+        p A global network of entrepreneurial leaders committed to serving their regions with Holistic Management training and implementation support. Our Network Hubs and Accredited Professionals are taking Holistic Management from theory to practice, with resounding success in real communities.
+      
+      .medium-4.columns
+        h3 Savory Platform
+        p Savory’s technology platform has been developed to provide online support and training for farmers and land managers with education, data management, and collaboration.
+    
+    .row
+      .small-12.columns
+        .what-is
+          h2 What Is Holistic Management?
+          p Holistic Management is fundamentally a process of decision-making and planning that gives people the insights and management tools needed to understand nature and work with it, resulting in better, more informed decisions that balance key social, environmental and financial considerations. 
+          p In the context of the ecological restoration of grasslands worldwide; managers implement Holistic Planned Grazing to properly manage livestock, mimicking the predator/prey relationships in which these environments evolved. 
 
 
-          .large-2.medium-3.stats-column.columns
-            .stats
-              ul(data-orbit='')
-                li
-                  figure
-                    .number 370<span>%</span>
-                    figcaption Increase in forage production
-                li
-                  figure
-                    .number 440<span>%</span>
-                    figcaption Increase in crop yield
-                li
-                  figure
-                    .number 12<span>%</span>
-                    figcaption Increase in more desirable annual grasses
-                li
-                  figure
-                    .number 31<span>%</span>
-                    figcaption Decrease in bare ground
 
 
-    //- chile
-    .case-study-03.hero-slide
-      .gradient
-      .case-study-content
-        .row
-          .large-9.medium-8.small-10.end.columns
-            img(src='/assets/images/home/case-study-03.svg', alt='Case Study 03')
-            p Near <strong>San Gregorio, Chile</strong>, Estancia Nevada is a ranch where sheep are raised for Merino wool. Erosion that was once evident on slopes and dry lagoons is now mostly covered and plant diversity has increased greatly in a very short time.
+  section.main.about
+    .row.allan-savory-quote
+      .medium-3.medium-offset-1.small-6.columns
+        figure
+          img(src='/assets/images/home/allan-savory.jpg')
+          figcaption
+            .hidden-content
+              h2 Our History
+            a.btn-simple(href='/institute/#history') +
 
-          .large-2.medium-3.stats-column.columns
-            .stats
-              ul(data-orbit='')
-                li
-                  figure
-                    .number 25<span>%</span>
-                    figcaption Increase in stocking rate
-                li
-                  figure
-                    .number 60<span>%</span>
-                    figcaption Increase in forage production
-
-
+      .medium-7.end.small-6.columns
+        blockquote
+          | Ultimately, the only wealth that can sustain any community, economy or nation is derived from the photosynthetic process—green plants growing on regenerating soil.
+          footer Allan Savory
+          
+          
+          
 
   section.main
     header.overview-header
@@ -122,22 +91,6 @@ block content
                   h4 Facilitate Improved Conditions
                   p We act as a catalyst to inform policy, establish market incentives, and increase public awareness.
 
-
-
-  section.main.about
-    .row.allan-savory-quote
-      .medium-3.medium-offset-1.small-6.columns
-        figure
-          img(src='/assets/images/home/allan-savory.jpg')
-          figcaption
-            .hidden-content
-              h2 Our History
-            a.btn-simple(href='/institute/#history') +
-
-      .medium-7.end.small-6.columns
-        blockquote
-          | Ultimately, the only wealth that can sustain any community, economy or nation is derived from the photosynthetic process—green plants growing on regenerating soil.
-          footer Allan Savory
 
 
 

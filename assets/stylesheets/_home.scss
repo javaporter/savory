@@ -1,5 +1,41 @@
 body.index {
 
+  section.grasslands {
+    background: url('/assets/images/home/grasslands.jpg') no-repeat center bottom;
+    min-height: 550px;
+    background-size: cover;
+    padding-top: 13rem;
+    padding-bottom: 2rem;
+  }
+
+  section.tagline {
+    background: url('/assets/images/noise.png') $terra;
+    padding: 3rem 0;
+  }
+
+  section.site-overview {
+    background: $stone;
+
+    p {
+      color: white;
+      @include smaller-font;
+    }
+
+    .columns {
+      border-right: $border-dotted-light;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+
+    .what-is {
+      padding-top: 2rem;
+      margin-top: 3rem;
+      border-top: $border-opaque-lighter;
+    }
+  }
+
   .hero-slide {
     // initially hide this until js makes one random visible
     display: none;
