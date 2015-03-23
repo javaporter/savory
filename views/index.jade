@@ -5,38 +5,50 @@ extends layout
 
 block content
   section.main.grasslands
-    .row
-      .medium-6.medium-centered.columns
-        img(src='/assets/images/home/one-third.svg')
+    .one-third
+      .row
+        .small-12.columns
+          img(src='/assets/images/home/one-third.svg')
   
   
   
-  section.tagline
-    .row
-      .medium-8.medium-centered.columns
-        img(src='/assets/images/home/tagline.svg')
+  section.main.mission
+    .tag-background
+    .map
+    .row.flex-row
+      .marker
+      .medium-6.columns.tagline.left-side
+        p <strong>Loss of grasslands</strong> leads to <span>climate change</span>, <span>floods</span>, <span>droughts</span>, <span>famine</span>, and <span>worldwide poverty</span>. 
+      .medium-6.columns.right-side
+        p.biggify It's our mission to <span class='promote'>promote large-scale restoration</span> of the world's grasslands through Holistic Management.
   
   
-  section.main.site-overview 
-    .row
+  section.main.holistic-management 
+    .row.flex-row
       .medium-4.columns
-        h3 Savory Institute
-        p The Savory Institute develops innovative tools and enhanced curricula, informs policy, establishes market incentives, increases public awareness, and coordinates relevant research, cultivating relationships with aligned partners.
-      
-      .medium-4.columns
-        h3 Savory Network
-        p A global network of entrepreneurial leaders committed to serving their regions with Holistic Management training and implementation support. Our Network Hubs and Accredited Professionals are taking Holistic Management from theory to practice, with resounding success in real communities.
-      
-      .medium-4.columns
-        h3 Savory Platform
-        p Savory’s technology platform has been developed to provide online support and training for farmers and land managers with education, data management, and collaboration.
+        img.hm-header(src='/assets/images/holistic-management.svg')
+      .medium-8.columns
+        h2 Holistic Management
+        p Holistic Management is a process of decision-making and planning that gives people the insights and management tools needed to understand nature: resulting in better, more informed decisions that balance key social, environmental, and financial considerations. 
+        p In the context of the ecological restoration of grasslands worldwide, managers implement Holistic Planned Grazing to properly manage livestock — mimicking the predator/prey relationships in which these environments evolved. 
     
+  section.main.nav-overview
     .row
-      .small-12.columns
-        .what-is
-          h2 What Is Holistic Management?
-          p Holistic Management is fundamentally a process of decision-making and planning that gives people the insights and management tools needed to understand nature and work with it, resulting in better, more informed decisions that balance key social, environmental and financial considerations. 
-          p In the context of the ecological restoration of grasslands worldwide; managers implement Holistic Planned Grazing to properly manage livestock, mimicking the predator/prey relationships in which these environments evolved. 
+      .medium-4.columns
+        h3: a(href='/institute/') Savory Institute
+        p The Savory Institute develops innovative tools and curricula, informs policy, establishes market incentives, increases public awareness, and coordinates research: cultivating relationships with aligned partners.
+        a(href='/institute') More ( + ) 
+      
+      .medium-4.columns.center-column
+        h3: a(href='/network/') Savory Network
+        p A global network of entrepreneurial leaders committed to serving their regions with Holistic Management training and implementation support. 
+        p Our Network Hubs and Accredited Professionals are taking Holistic Management from theory to practice, with resounding success in real communities.
+        a(href='/network') More ( + ) 
+      
+      .medium-4.columns
+        h3: a(href='/platform/') Savory Platform
+        p Savory’s technology platform has been developed to provide online support and training for ranchers and land managers via education, data management, and collaboration.
+        a(href='/platform') More ( + ) 
 
 
 
@@ -62,34 +74,31 @@ block content
   section.main
     header.overview-header
       .row
-        .medium-6.columns.push-6
+        .medium-3.columns
           h2.section-title Promoting the Restoration <br>of Grasslands
-        .medium-6.columns.pull-6
-          p.biggify It's our mission to promote the large-scale restoration of the world's grasslands through Holistic Management. 
+        .medium-9.columns
+          p Grasslands aren't just important to ranchers, but have a wide-ranging effect on the greater community. Agriculture is the foundation of civilization and any stable economy. Our grasslands can be the genesis of an incredibly strong economy, more self-sufficient communities, and the basis of miraculously renewable food production. 
     
     .row
       .small-12.columns
-        p Grasslands aren't just important to ranchers, but have a wide-ranging effect on the greater community. Agriculture is the foundation of civilization and any stable economy. Our grasslands can be the genesis of an incredibly strong economy, more self-sufficient communties, and the basis of miraculously renewable food production.
+        h3 Our Strategy is Simple:
+        .key-points
+          .keyline
+          .row.collapse
+            .medium-6.columns.left
+              .point
+                h4 Demonstrate Success
+                p Wild claims are easy; our Holistic Management process is already working through various international special projects in a wide variety of climate and terrain. Among our strategic partners we can mention Grasslands LLC, The Nature Conservancy, and Heifer International.
+                p We're creating sustainable solutions to the pressing problems tied to a failing agriculture, desertification, and climate change.
 
-        .strategy
-          h3 Our Strategy is Simple:
-          .key-points
-            .keyline
-            .row.collapse
-              .medium-6.columns.left
-                .point
-                  h4 Demonstrate Success
-                  p Wild claims are easy; our Holistic Management process is already working through various international special projects in a wide variety of climate and terrain. Among our strategic partners we can mention Grasslands LLC, The Nature Conservancy, and Heifer International.
-                  p We're creating sustainable solutions to the pressing problems tied to a failing agriculture, desertification, and climate change.
-
-              .medium-6.columns.right
-                .point
-                  h4 Empower People
-                  p Through a network of international Hubs, we're training people to better protect and restore their grasslands, which in turn protects and restores their community.
-                  p We are at a tipping point and feel excited about our burgeoning global network leading transformation in their regions. 
-                .point
-                  h4 Facilitate Improved Conditions
-                  p We act as a catalyst to inform policy, establish market incentives, and increase public awareness.
+            .medium-6.columns.right
+              .point
+                h4 Empower People
+                p Through a network of international Hubs, we're training people to better protect and restore their grasslands, which in turn protects and restores their community.
+                p We are at a tipping point and feel excited about our burgeoning global network leading transformation in their regions. 
+              .point
+                h4 Facilitate Improved Conditions
+                p We act as a catalyst to inform policy, establish market incentives, and increase public awareness.
 
 
 
@@ -147,7 +156,7 @@ block content
 
       .medium-6.columns
         figure
-          img(src='/assets/images/home/field.jpg')
+          img(src='/assets/images/home/donate.jpg')
           figcaption
             .hidden-content
               p As Shakespeare put it: "Words are easy, like the wind; faithful friends are hard to find." Take the next step and help us to spread the word.

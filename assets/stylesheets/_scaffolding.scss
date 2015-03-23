@@ -10,6 +10,24 @@ html, body, .inner-wrap {
 }
 
 
+.flex-row {
+  display: flex;
+  align-items: center;
+}
+
+
+// triangle marker
+.marker {
+  position: absolute;
+  border-style: solid;
+  border-width: $tri-size $tri-size $tri-size 0;
+  border-color: transparent white transparent transparent;
+  top: 50%;
+  left: 50%;
+  margin-top: -$tri-size;
+  margin-left: -$tri-size;
+  @extend .hide-for-small;
+}
 
 // line halfway through
 .keyline {
