@@ -6,6 +6,7 @@ body.platform {
 
   section.overview {
     background-image: url('/assets/images/platform/platform-hero.jpg');
+    background-position: bottom center;
 
     @media #{$medium-up} {
       background-image: url('/assets/images/platform/platform-hero-lg.jpg');
