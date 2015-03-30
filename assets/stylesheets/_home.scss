@@ -2,7 +2,7 @@ body.index {
 
   section.grasslands {
     background: url('/assets/images/home/grasslands.jpg') no-repeat center bottom;
-    min-height: 550px;
+    min-height: $hero-height;
     background-size: cover;
 
     .one-third {
@@ -14,7 +14,6 @@ body.index {
         max-width: 470px;
         margin: 0 auto;
         display: block;
-        // margin-left: -27px;
       }
     }
   }

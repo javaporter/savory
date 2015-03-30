@@ -213,7 +213,7 @@ section.overview {
   height: 250px;
 
   @media #{$medium-up} {
-    height: 600px;
+    height: $hero-heigh;
   }
 }
 
