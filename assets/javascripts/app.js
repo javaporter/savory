@@ -16,7 +16,7 @@ $(function() {
   });
 
 
-  // random hero for home page
+  // random hero for case studies
   var random = Math.floor(Math.random() * $('.hero-slide').length);
   $('.hero-slide').hide().eq(random).show();
 
