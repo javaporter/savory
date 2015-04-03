@@ -2,7 +2,7 @@
 lock '3.3.5'
 
 set :application, 'savory'
-set :repo_url, 'savory-github:javaporter/savory.git'
+set :repo_url, 'savory-github:savoryinstitute/savory.git'
 set :keep_releases, 2
 
 set :linked_dirs, %w{node_modules}
