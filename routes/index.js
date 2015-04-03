@@ -11,27 +11,6 @@ function notFound(res) {
   }
 }
 
-// Render the hubs array to geoJSON
-function hubsGeoJSON(hubs) {
-  var out = [];
-  hubs.forEach(function(hub) {
-    var point = hub.getGeoPoint('hubs.coordinates');
-    if (point) {
-      out.push({
-        type: 'Feature',
-        geometry: {
-          type: 'Point',
-          coordinates: [point.longitude, point.latitude]
-        },
-        properties: {
-          title: hub.getText('hubs.hub')
-        }
-      });
-    }
-  });
-  return JSON.stringify(out);
-}
-
 function paginate(req, results, page) {
   var query = _.clone(req.query),
       page = parseInt(page),
@@ -65,11 +44,8 @@ router.get('/', function(req, res) {
     })
     .then(function(news) {
       context.news = news;
-      return prismic.hubs(context.api);
-    })
-    .then(function(hubs) {
-      context.hubs_geojson = hubsGeoJSON(hubs);
       res.render('index', context);
+      return prismic.hubs(context.api);
     })
     .catch(function(err) {
       res.send(err, 500);

@@ -9,46 +9,46 @@ block content
       .row
         .small-12.columns
           img(src='/assets/images/home/one-third.svg')
-  
-  
-  
+
+
+
   section.main.mission
     .tag-background
     .map
     .row.flex-row
       .marker
       .medium-6.columns.tagline.left-side
-        p <strong>Loss of grasslands</strong> leads to <span>climate change</span>, <span>floods</span>, <span>droughts</span>, <span>famine</span>, and <span>worldwide poverty</span>. 
+        p <strong>Loss of grasslands</strong> leads to <span>climate change</span>, <span>floods</span>, <span>droughts</span>, <span>famine</span>, and <span>worldwide poverty</span>.
       .medium-6.columns.right-side
         p.biggify It's our mission to <span class='promote'>promote large-scale restoration</span> of the world's grasslands through Holistic Management.
-  
-  
-  section.main.holistic-management 
+
+
+  section.main.holistic-management
     .row.flex-row
       .medium-4.columns
         img.hm-header(src='/assets/images/holistic-management.svg')
       .medium-8.columns
         h2 Holistic Management
-        p Holistic Management is a process of decision-making and planning that gives people the insights and management tools needed to understand nature: resulting in better, more informed decisions that balance key social, environmental, and financial considerations. 
-        p In the context of the ecological restoration of grasslands worldwide, managers implement Holistic Planned Grazing to properly manage livestock — mimicking the predator/prey relationships in which these environments evolved. 
-    
+        p Holistic Management is a process of decision-making and planning that gives people the insights and management tools needed to understand nature: resulting in better, more informed decisions that balance key social, environmental, and financial considerations.
+        p In the context of the ecological restoration of grasslands worldwide, managers implement Holistic Planned Grazing to properly manage livestock — mimicking the predator/prey relationships in which these environments evolved.
+
   section.main.nav-overview
     .row
       .medium-4.columns
         h3: a(href='/institute/') Savory Institute
         p The Savory Institute develops innovative tools and curricula, informs policy, establishes market incentives, increases public awareness, and coordinates research: cultivating relationships with aligned partners.
-        a(href='/institute') More ( + ) 
-      
+        a(href='/institute') More ( + )
+
       .medium-4.columns.center-column
         h3: a(href='/network/') Savory Network
-        p A global network of entrepreneurial leaders committed to serving their regions with Holistic Management training and implementation support. 
+        p A global network of entrepreneurial leaders committed to serving their regions with Holistic Management training and implementation support.
         p Our Network Hubs and Accredited Professionals are taking Holistic Management from theory to practice, with resounding success in real communities.
-        a(href='/network') More ( + ) 
-      
+        a(href='/network') More ( + )
+
       .medium-4.columns
         h3: a(href='/platform/') Savory Platform
         p Savory’s technology platform has been developed to provide online support and training for ranchers and land managers via education, data management, and collaboration.
-        a(href='/platform') More ( + ) 
+        a(href='/platform') More ( + )
 
 
 
@@ -67,9 +67,9 @@ block content
         blockquote
           | Ultimately, the only wealth that can sustain any community, economy or nation is derived from the photosynthetic process—green plants growing on regenerating soil.
           footer Allan Savory
-          
-          
-          
+
+
+
 
   section.main
     header.overview-header
@@ -77,8 +77,8 @@ block content
         .medium-3.columns
           h2.section-title Promoting the Restoration <br>of Grasslands
         .medium-9.columns
-          p Grasslands aren't just important to ranchers, but have a wide-ranging effect on the greater community. Agriculture is the foundation of civilization and any stable economy. Our grasslands can be the genesis of an incredibly strong economy, more self-sufficient communities, and the basis of miraculously renewable food production. 
-    
+          p Grasslands aren't just important to ranchers, but have a wide-ranging effect on the greater community. Agriculture is the foundation of civilization and any stable economy. Our grasslands can be the genesis of an incredibly strong economy, more self-sufficient communities, and the basis of miraculously renewable food production.
+
     .row
       .small-12.columns
         h3 Our Strategy is Simple:
@@ -95,7 +95,7 @@ block content
               .point
                 h4 Empower People
                 p Through a network of international Hubs, we're training people to better protect and restore their grasslands, which in turn protects and restores their community.
-                p We are at a tipping point and feel excited about our burgeoning global network leading transformation in their regions. 
+                p We are at a tipping point and feel excited about our burgeoning global network leading transformation in their regions.
               .point
                 h4 Facilitate Improved Conditions
                 p We act as a catalyst to inform policy, establish market incentives, and increase public awareness.
@@ -116,7 +116,6 @@ block content
             li.elf
               a(href='#', data-reveal-id='special-projects') Special Projects
 
-    script!='var hubs_geojson='+hubs_geojson+';'
     #map.hubs-map
 
 
@@ -126,7 +125,7 @@ block content
       .row
         .small-12.columns
           h2.section-title What's New
-          
+
     .row
       .small-12.columns
         ol.news-grid
@@ -136,9 +135,9 @@ block content
                 .marker
                 img(src=article.getImage('news.image').views['homepage'].url)
                 !=article.getStructuredText('news.shortlede').asHtml()
-        
+
         a.button.small.archived-posts(href='/news') + View Archived Posts
-        
+
 
   section.main.get-involved-and-tools
     .row
