@@ -27,11 +27,6 @@ body.index {
       }
     }
 
-    img {
-      margin-left: -2px;
-      margin-bottom: 2rem;
-    }
-
     @media #{$medium-up} {
       background: url('/assets/images/home/grasslands-lg.jpg') no-repeat center bottom;
       min-height: $hero-height;
@@ -45,6 +40,11 @@ body.index {
       position: absolute;
       bottom: 1rem;
       width: 100%;
+
+      img {
+        margin-left: -2px;
+        margin-bottom: 2rem;
+      }
     }
   }
 
