@@ -11,8 +11,10 @@ html, body, .inner-wrap {
 
 
 .flex-row {
-  display: flex;
-  align-items: center;
+  @media #{$medium-up} {
+    display: flex;
+    align-items: center;
+  }
 }
 
 

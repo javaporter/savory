@@ -2,18 +2,27 @@ body.index {
 
   section.grasslands {
     background: url('/assets/images/home/grasslands.jpg') no-repeat center bottom;
-    min-height: $hero-height;
+    height: 400px;
     background-size: cover;
 
-    .one-third {
-      position: absolute;
-      bottom: 2rem;
-      width: 100%;
+    img {
+      margin-left: -7px;
+    }
+
+    @media #{$medium-up} {
+      background: url('/assets/images/home/grasslands-lg.jpg') no-repeat center bottom;
+      min-height: $hero-height;
 
       img {
         max-width: 430px;
         margin-left: -20px;
       }
+    }
+
+    .one-third {
+      position: absolute;
+      bottom: 2rem;
+      width: 100%;
     }
   }
 
@@ -27,6 +36,11 @@ body.index {
     @media #{$medium-up} {
       .left-side p { padding-right: 1.5rem; }
       .right-side p { padding-left: 1.5rem; }
+    }
+
+    @media #{$small-only} {
+      padding-top: 0;
+      padding-bottom: 2rem;
     }
 
   }
@@ -66,6 +80,13 @@ body.index {
     span.promote {
       color: white;
     }
+
+    @media #{$small-only} {
+      background: $mud;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      margin-bottom: 2rem;
+    }
   }
 
 
@@ -79,6 +100,12 @@ body.index {
 
     .hm-header {
       max-width: 230px;
+    }
+
+    @media #{$small-only} {
+      img {
+        margin-bottom: 2rem;
+      }
     }
 
   }
@@ -105,8 +132,14 @@ body.index {
     p { @include smaller-font; }
 
     .center-column {
-      border-right: $border-dotted;
-      border-left: $border-dotted;
+
+      margin: 2rem 0;
+
+      @media #{$medium-up} {
+        border-right: $border-dotted;
+        border-left: $border-dotted;
+        margin: 0;
+      }
     }
   }
 
