@@ -11,12 +11,21 @@ var routes = require('./routes/index');
 
 var app = express();
 
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 app.use(favicon(__dirname + '/public/assets/favicons/favicon.ico'));
-app.use(logger('dev'));
+
+// Logging
+if (app.get('env') === 'development') {
+  app.use(logger('dev'));
+}
+else {
+  app.use(logger('combined'));
+}
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
