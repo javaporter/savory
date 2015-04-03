@@ -5,18 +5,31 @@ body.index {
     height: 400px;
     background-size: cover;
 
-    p {
+    p, ul {
       color: $opaque-light-1;
-      font-size: 1.3rem;
-      margin-top: 2rem;
+      font-size: 1.35rem;
+      line-height: 1.2em;
+      margin: 0;
 
       span {
+        color: white;
+        font-weight: 400;
+      }
+    }
+
+    ul {
+      list-style-type: none;
+
+      li {
         color: rgba($marigold, .7);
+        margin-top: 0;
+        display: inline;
       }
     }
 
     img {
       margin-left: -2px;
+      margin-bottom: 2rem;
     }
 
     @media #{$medium-up} {
@@ -30,7 +43,7 @@ body.index {
 
     .one-third {
       position: absolute;
-      bottom: 2rem;
+      bottom: 1rem;
       width: 100%;
     }
   }
@@ -137,7 +150,18 @@ body.index {
     }
 
 
-    p { @include smaller-font; }
+    p {
+      @include smaller-font;
+
+      &:last-of-type {
+        margin: 0;
+      }
+    }
+
+    a {
+      @include smaller-font;
+      margin-top: .5rem;
+    }
 
     .center-column {
 

@@ -1,0 +1,13 @@
+// home page callout
+.event-callout {
+  bottom: 0;
+  min-height: 100px;
+  width: 100%;
+  position: absolute;
+
+  .event {
+    border-left: $border-dashed-lighter;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+}
