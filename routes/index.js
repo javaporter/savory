@@ -173,6 +173,8 @@ router.get('/network/hub/:slug', function(req, res) {
     },notFound(res));
 });
 
+
+
 // Redirects
 router.get('/courses', function(req, res) {
   res.redirect(301, '/platform/#courses-services');
