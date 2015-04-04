@@ -12,7 +12,7 @@
     "express": "~4.10.6",
     "jade": "~1.8.2",
     "morgan": "~1.5.1",
-    "prismic.io": "^1.1.4",
+    "prismic.io": "bshelton229/javascript-kit#cache-json",
     "serve-favicon": "~2.2.0",
     "moment": "^2.9.0",
     "q": "^1.1.2",
