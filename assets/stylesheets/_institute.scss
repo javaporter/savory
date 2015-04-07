@@ -94,6 +94,10 @@ body.institute {
       .flex-video {
         margin-bottom: 0;
       }
+
+      @media #{$small-only} {
+        margin-bottom: 1.5rem;
+      }
     }
   }
 

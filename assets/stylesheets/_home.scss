@@ -61,9 +61,10 @@ body.index {
       position: relative;
     }
 
+    .right-side p { padding: 0 1.5rem; }
+
     @media #{$medium-up} {
       .left-side p { padding-right: 1.5rem; }
-      .right-side p { padding-left: 1.5rem; }
     }
 
     @media #{$small-only} {
