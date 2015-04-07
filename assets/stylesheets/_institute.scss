@@ -13,6 +13,27 @@ body.institute {
   }
 
 
+  section.holistic-management {
+    background: url('/assets/images/noise.png') $stone;
+    color: white;
+
+    h2 {
+      color: lighten($elf, 20%);
+    }
+
+    .hm-header {
+      max-width: 230px;
+    }
+
+    @media #{$small-only} {
+      img {
+        margin-bottom: 2rem;
+      }
+    }
+
+  }
+
+
   section.history {
     @media #{$medium-up} {
       .image {

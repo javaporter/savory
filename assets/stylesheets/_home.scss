@@ -54,6 +54,13 @@ body.index {
       color: $stone;
     }
 
+    .hm-logo {
+      padding-left: 1.5rem;
+      display: inline-block;
+      z-index: 10;
+      position: relative;
+    }
+
     @media #{$medium-up} {
       .left-side p { padding-right: 1.5rem; }
       .right-side p { padding-left: 1.5rem; }
@@ -108,27 +115,6 @@ body.index {
       padding-bottom: 2rem;
       margin-bottom: 2rem;
     }
-  }
-
-
-  section.holistic-management {
-    background: url('/assets/images/noise.png') $stone;
-    color: white;
-
-    h2 {
-      color: lighten($elf, 20%);
-    }
-
-    .hm-header {
-      max-width: 230px;
-    }
-
-    @media #{$small-only} {
-      img {
-        margin-bottom: 2rem;
-      }
-    }
-
   }
 
   section.nav-overview {

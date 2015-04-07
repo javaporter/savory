@@ -1,9 +1,10 @@
-// home page callout
+// home page hero
 .event-callout {
   bottom: 0;
   min-height: 100px;
   width: 100%;
   position: absolute;
+  @extend .hide-for-small-only;
 
   .event {
     border-left: $border-dashed-lighter;
@@ -24,39 +25,46 @@
   }
 }
 
+// home page event section and hero for interior
+
+section.artisans-event-overview {
+  background-image: url('/assets/images/event/artisans-hero.jpg');
+  min-height: 600px;
+
+  @media #{$medium-up} {
+    background-image: url('/assets/images/event/artisans-hero-lg.jpg');
+  }
+
+  header {
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+
+    h1, h2 {
+      color: $opaque-light-1;
+      font-size: 2rem;
+      line-height: 1em;
+    }
+
+    h3 {
+      color: $opaque-light-2;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+  }
+
+  .btn-simple {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
 
 
 
 // interior page
 body.artisans-of-the-grasslands {
-
-  section.overview {
-    background-image: url('/assets/images/event/artisans-hero.jpg');
-    min-height: 600px;
-
-    @media #{$medium-up} {
-      background-image: url('/assets/images/event/artisans-hero-lg.jpg');
-    }
-
-    header {
-      position: absolute;
-      bottom: 1rem;
-      width: 100%;
-
-      h1 {
-        color: $opaque-light-1;
-        font-size: 2rem;
-        line-height: 1em;
-      }
-
-      h3 {
-        color: $opaque-light-2;
-        text-transform: uppercase;
-      }
-    }
-  }
-
-
 
   section.food {
     background: url('/assets/images/event/food.jpg') no-repeat center center;
@@ -92,7 +100,7 @@ body.artisans-of-the-grasslands {
   section.tickets {
     .sf {
       position: absolute;
-      width: 50%;
+      width: 48%;
       height: 100%;
       left: 0;
       top: 0;
@@ -104,6 +112,23 @@ body.artisans-of-the-grasslands {
       border: $border-dotted;
       padding: .5rem;
       margin-bottom: 2rem;
+    }
+
+    strong {
+      background: $stone;
+      padding: .25rem;
+      color: white;
+      font-weight: 300;
+      font-size: .8rem;
+      border-radius: .15rem;
+      display: inline-block;
+      width: 65px;
+      text-align: center;
+      margin-right: .25rem;
+    }
+
+    li {
+      margin-bottom: .5rem;
     }
   }
 }

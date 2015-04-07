@@ -284,6 +284,14 @@ img.section-hero {
 }
 
 
+// video fixes
+.video {
+  iframe {
+    border: $border-opaque-lighter;
+  }
+}
+
+
 
 // panels
 .grid-panel {
