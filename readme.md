@@ -1,5 +1,5 @@
 # Savory
-Savory.global is a node.js web app/site using Expressjs with Jade and Sass. Stylesheets are edited in /assets/stylesheets (everything compiled from app) and they automagically compile in /public/assets/stylesheets/app.css.
+Savory.global is a node.js web app/site using Express (http://expressjs.com) with Jade and Sass. Stylesheets are edited in /assets/stylesheets (everything compiled from app) and they automagically compile in /public/assets/stylesheets/app.css.
 
 ---
 
@@ -12,9 +12,15 @@ This app has livereload bundeled with the `gulp` process. To use, install the li
 
 ---
 
+## Asset Pipeline
+
+The asset pipeline is fairly std except that images (which don't have to compile) live in /public/assets/images.
+
+---
+
 ## Deployment
 
-This app is deployed via capistrano. You'll need the capistrano-npm gem (`gem install capistrano-npm`).
+This app is deployed via capistrano. You'll need the capistrano-npm gem (`gem install capistrano-npm`). This of course assumes you have the proper keys installed on the host.
 
 - `cap dev deploy` will deploy the dev branch to dev.savory.global
 - `cap production deploy` will deploy the master to savory.global
