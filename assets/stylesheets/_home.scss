@@ -17,16 +17,6 @@ body.index {
       }
     }
 
-    ul {
-      list-style-type: none;
-
-      li {
-        color: rgba($marigold, .7);
-        margin-top: 0;
-        display: inline;
-      }
-    }
-
     @media #{$medium-up} {
       background: url('/assets/images/home/grasslands-lg.jpg') no-repeat center bottom;
       min-height: $hero-height;
@@ -38,12 +28,11 @@ body.index {
 
     .one-third {
       position: absolute;
-      bottom: 1rem;
+      bottom: .5rem;
       width: 100%;
 
       img {
         margin-left: -2px;
-        margin-bottom: 2rem;
       }
     }
   }
@@ -52,6 +41,7 @@ body.index {
 
     p {
       color: $stone;
+      font-size: 1.4rem;
     }
 
     .hm-logo {
@@ -95,7 +85,7 @@ body.index {
 
     p {
       color: $opaque-light-2;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
     }
 
     span {
@@ -116,6 +106,27 @@ body.index {
       padding-bottom: 2rem;
       margin-bottom: 2rem;
     }
+  }
+
+
+  section.holistic-management {
+    background: url('/assets/images/noise.png') $stone;
+    color: white;
+
+    h2 {
+      color: lighten($elf, 20%);
+    }
+
+    .hm-header {
+      max-width: 230px;
+    }
+
+    @media #{$small-only} {
+      img {
+        margin-bottom: 2rem;
+      }
+    }
+
   }
 
   section.nav-overview {
