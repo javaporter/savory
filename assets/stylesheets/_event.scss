@@ -26,7 +26,6 @@
 }
 
 // home page event section and hero for interior
-
 section.artisans-event-overview {
   background-image: url('/assets/images/event/artisans-hero.jpg');
   min-height: 600px;
@@ -47,7 +46,7 @@ section.artisans-event-overview {
     }
 
     h3 {
-      color: $opaque-light-2;
+      color: white;
       text-transform: uppercase;
       margin-bottom: 0;
     }
@@ -57,6 +56,17 @@ section.artisans-event-overview {
     position: absolute;
     bottom: 0;
     right: 0;
+  }
+}
+
+
+// event main title (the type treatment)
+.event-main-title {
+  max-width: 350px;
+  margin-bottom: 1rem;
+
+  @media #{$medium-up} {
+    margin-left: -2rem;
   }
 }
 
