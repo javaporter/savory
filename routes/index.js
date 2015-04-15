@@ -86,6 +86,10 @@ router.get('/ie', function(req, res) {
   res.render('ie', { title: 'IE' });
 });
 
+router.get('/artisans-of-the-grasslands', function(req, res) {
+  res.render('artisans-of-the-grasslands', { title: 'Artisans of the Grasslands' });
+});
+
 router.get('/institute/our-team', function(req, res) {
   res.render('institute/our-team', { title: 'Our Team' });
 });

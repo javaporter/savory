@@ -1,13 +1,145 @@
-// home page callout
+// home page hero
 .event-callout {
   bottom: 0;
   min-height: 100px;
   width: 100%;
   position: absolute;
+  @extend .hide-for-small-only;
 
   .event {
     border-left: $border-dashed-lighter;
     padding-left: 1rem;
     padding-bottom: 1rem;
+  }
+
+  h2 {
+    color: $opaque-light-2;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin: 0 0 .3rem 0;
+  }
+
+  a img:hover {
+    opacity: .85;
+    transition: .2s opacity;
+  }
+}
+
+// home page event section and hero for interior
+section.artisans-event-overview {
+  background-image: url('/assets/images/event/artisans-hero.jpg');
+  min-height: 600px;
+
+  @media #{$medium-up} {
+    background-image: url('/assets/images/event/artisans-hero-lg.jpg');
+  }
+
+  header {
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+
+    h1, h2 {
+      color: $opaque-light-1;
+      font-size: 2rem;
+      line-height: 1em;
+    }
+
+    h3 {
+      color: white;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+  }
+
+  .btn-simple {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+
+// event main title (the type treatment)
+.event-main-title {
+  max-width: 350px;
+
+  @media #{$medium-up} {
+    margin-left: -1rem;
+  }
+}
+
+
+
+
+// interior page
+body.artisans-of-the-grasslands {
+
+  section.food {
+    background: url('/assets/images/event/food.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 5rem 0;
+
+    .content {
+      background: $opaque-dark-1;
+      padding: 1rem;
+    }
+
+    p {
+      color: white;
+    }
+  }
+
+
+
+  section.speakers {
+    ul {
+      list-style-type: none;
+      margin: 0;
+
+      li {
+        display: inline-block;
+        margin-right: 1rem;
+      }
+    }
+  }
+
+
+
+  section.tickets {
+    .sf {
+      position: absolute;
+      width: 48%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: url('/assets/images/event/sf.jpg') no-repeat center center;
+      background-size: cover;
+      @extend .hide-for-small-only;
+    }
+
+    .fine-print {
+      border: $border-dotted;
+      padding: .5rem;
+      margin-bottom: 2rem;
+    }
+
+    strong {
+      background: $stone;
+      padding: .25rem;
+      color: white;
+      font-weight: 300;
+      font-size: .8rem;
+      border-radius: .15rem;
+      display: inline-block;
+      width: 65px;
+      text-align: center;
+      margin-right: .25rem;
+    }
+
+    li {
+      margin-bottom: .5rem;
+      @include smaller-font;
+    }
   }
 }

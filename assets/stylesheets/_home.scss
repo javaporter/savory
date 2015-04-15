@@ -17,34 +17,19 @@ body.index {
       }
     }
 
-    ul {
-      list-style-type: none;
-
-      li {
-        color: rgba($marigold, .7);
-        margin-top: 0;
-        display: inline;
-      }
-    }
-
-    img {
-      margin-left: -2px;
-      margin-bottom: 2rem;
-    }
-
     @media #{$medium-up} {
       background: url('/assets/images/home/grasslands-lg.jpg') no-repeat center bottom;
       min-height: $hero-height;
-
-      img {
-        margin-left: -6px;
-      }
     }
 
     .one-third {
       position: absolute;
-      bottom: 1rem;
+      bottom: .5rem;
       width: 100%;
+
+      img {
+        margin-bottom: 1rem;
+      }
     }
   }
 
@@ -52,11 +37,20 @@ body.index {
 
     p {
       color: $stone;
+      font-size: 1.4rem;
     }
+
+    .hm-logo {
+      padding-left: 1.5rem;
+      display: inline-block;
+      z-index: 10;
+      position: relative;
+    }
+
+    .right-side p { padding: 0 1.5rem; }
 
     @media #{$medium-up} {
       .left-side p { padding-right: 1.5rem; }
-      .right-side p { padding-left: 1.5rem; }
     }
 
     @media #{$small-only} {
@@ -87,7 +81,7 @@ body.index {
 
     p {
       color: $opaque-light-2;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
     }
 
     span {
