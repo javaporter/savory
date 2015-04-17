@@ -8,7 +8,7 @@ Savory.global is a node.js web app/site using Express (http://expressjs.com) wit
 - `npm install`
 - `gulp`
 
-This app has livereload bundeled with the `gulp` process. To use, install the livereload browser extension and turn it on.
+Gulp runs on localhost:3000. This app has livereload bundeled with the `gulp` process. To use, install the livereload browser extension and turn it on.
 
 ---
 
@@ -24,3 +24,9 @@ This app is deployed via capistrano. You'll need the capistrano-npm gem (`gem in
 
 - `cap dev deploy` will deploy the dev branch to dev.savory.global
 - `cap production deploy` will deploy the master to savory.global
+- 
+---
+
+## Prismic.io
+
+The parts of this site that are updated often are pulling content from Prismic. As the site matures, more content can be moved in that direction. The initial goal with this site was to keep a lot of it as static to make it easier to continue to design the site and let it grow organically. And that parts that are meant to be changed quite often (like news) have a way for the end-user to update them within a templated environment. The prismic templates (like news) will absolutely have to be refined as more content is added and new design challenges present themselves. As of now, Prismic's only serious competitor is Contentful, and depending on when this is next updated, it may be worth taking a second look at Contentful before any additional development goes into the Prismic integration. 
