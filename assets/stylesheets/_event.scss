@@ -143,3 +143,50 @@ body.artisans-of-the-grasslands {
     }
   }
 }
+
+
+section.speaker-bios {
+  figure {
+    position: relative;
+    background: none;
+    transition: all .2s;
+
+    .plus {
+      color: white;
+      text-align: center;
+      font-size: 1.5rem;
+      line-height: 1.85rem;
+      font-weight: 300;
+      height: 1.75rem;
+      width: 1.75rem;
+      top: .5rem;
+      right: .5rem;
+      position: absolute;
+      background: $opaque-dark-1;
+      border: $border-opaque-lighter;
+      transition: all .2s;
+    }
+
+    img {
+      transition: all .2s;
+      position: relative;
+      z-index: -1;
+    }
+
+    &:hover {
+      transition: all .2s;
+
+      img {
+        filter: blur(3px);
+        transition: all .2s;
+      }
+
+      .plus {
+        border: $border-opaque-light;
+        background: $opaque-dark-2;
+        transition: all .2s;
+      }
+    }
+  }
+
+}
