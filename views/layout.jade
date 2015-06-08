@@ -34,14 +34,14 @@ html
     //- fonts
     link(href='//fonts.googleapis.com/css?family=Roboto+Slab:400,300,700', rel='stylesheet', type='text/css')
     link(href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', rel='stylesheet', type='text/css')
-    script(src='//use.typekit.net/tye8vow.js')
+    script(src='//use.typekit.net/jii7kyc.js')
     script.
       try{Typekit.load();}catch(e){}
 
 
     //- title
     title #{title || 'Savory'} | Savory
-    
+
     <!--[if IE 9]>
     <script>document.documentElement.className += ' ie9';</script>
     <![endif]-->
@@ -66,35 +66,35 @@ html
         aside.left-off-canvas-menu
           ul.site-nav.off-canvas-list
             li.institute-link
-              a.off-canvas-submenu-call(href='#') 
+              a.off-canvas-submenu-call(href='#')
                 | Savory Institute
                 span.right +
             ul.off-canvas-submenu
               include /partials/subnav-si.jade
 
             li.network-link
-              a.off-canvas-submenu-call(href='#') 
+              a.off-canvas-submenu-call(href='#')
                 | Savory Network
                 span.right +
             ul.off-canvas-submenu
               include /partials/subnav-sn.jade
 
             li.platform-link
-              a.off-canvas-submenu-call(href='#') 
+              a.off-canvas-submenu-call(href='#')
                 | Savory Platform
                 span.right +
             ul.off-canvas-submenu
               include /partials/subnav-sp.jade
 
             li.get-involved-link
-              a.off-canvas-submenu-call(href='#') 
+              a.off-canvas-submenu-call(href='#')
                 | Get Involved
                 span.right +
             ul.off-canvas-submenu
               include /partials/subnav-gi.jade
-            
+
             li.store-link
-              a(href='//savory-institute.myshopify.com/', target='_blank') 
+              a(href='//savory-institute.myshopify.com/', target='_blank')
                 | Store
 
         a.exit-off-canvas
@@ -107,19 +107,19 @@ html
                 li
                   a.header-logo(href='/') Savory
                 li.institute-link
-                  a(href='/institute') 
+                  a(href='/institute')
                     | Savory Institute
                 li.network-link
-                  a(href='/network') 
+                  a(href='/network')
                     | Savory Network
                 li.platform-link
-                  a(href='/platform') 
+                  a(href='/platform')
                     | Savory Platform
                 li.get-involved-link
-                  a(href='/get-involved') 
+                  a(href='/get-involved')
                     | Get Involved
                 li.store-link
-                  a(href='//savory-institute.myshopify.com/', target='_blank') 
+                  a(href='//savory-institute.myshopify.com/', target='_blank')
                     | Store
 
         block subnav
@@ -131,17 +131,17 @@ html
               h5: a(href='/institute') Savory Institute
               ul
                 include /partials/subnav-si.jade
-            
+
             .medium-2.columns.site-map
               h5: a(href='/network') Savory Network
               ul
                 include /partials/subnav-sn.jade
-            
+
             .medium-2.columns.site-map
               h5: a(href='/platform') Savory Platform
               ul
                 include /partials/subnav-sp.jade
-            
+
             .medium-2.columns.site-map
               h5: a(href='/get-involved') Get Involved
               ul
