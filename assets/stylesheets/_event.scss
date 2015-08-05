@@ -145,7 +145,7 @@ body.artisans-of-the-grasslands {
 }
 
 
-section.speaker-bios {
+section.speaker-bios, section.sponsors {
   figure {
     position: relative;
     background: none;
@@ -188,5 +188,16 @@ section.speaker-bios {
       }
     }
   }
-
 }
+
+section.sponsors {
+  .sponsor-title {
+    text-align: center;
+    margin-top: 2em;
+    padding-bottom: 0.25em;
+    margin-bottom: 0.25em;
+    border-bottom: $border-dashed;
+  }
+}
+
+
