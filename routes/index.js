@@ -90,6 +90,10 @@ router.get('/artisans-of-the-grasslands', function(req, res) {
   res.render('artisans-of-the-grasslands', { title: 'Artisans of the Grasslands' });
 });
 
+router.get('/artisans-of-the-grasslands/speakers', function(req, res) {
+  res.render('artisans-of-the-grasslands/speakers', { title: 'Artisans of the Grasslands Speakers' });
+});
+
 router.get('/institute/our-team', function(req, res) {
   res.render('institute/our-team', { title: 'Our Team' });
 });
