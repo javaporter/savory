@@ -256,6 +256,7 @@ section.schedule {
     .accordion-tabs-minimal a.tab-link.is-active {
       border: 1px solid gainsboro;
       border-bottom-color: white;
+      margin-bottom: -1px;
     }
   }
 
