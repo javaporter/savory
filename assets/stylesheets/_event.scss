@@ -72,7 +72,7 @@ section.artisans-event-overview {
 // interior page
 body.artisans-of-the-grasslands {
 
-  section.food {
+  section.food, section.farm-tour {
     background: url('/assets/images/event/food.jpg') no-repeat center center;
     background-size: cover;
     padding: 5rem 0;
@@ -85,6 +85,11 @@ body.artisans-of-the-grasslands {
     p {
       color: white;
     }
+  }
+
+  section.farm-tour {
+    background: url('/assets/images/event/tour.jpg') no-repeat center center;
+    background-size: cover;
   }
 
 
@@ -195,6 +200,10 @@ section.sponsors {
     margin-bottom: 0.25em;
     border-bottom: $border-dashed;
   }
+}
+
+.main.sponsors {
+  background: white;
 }
 
 section.schedule {
