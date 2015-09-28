@@ -90,6 +90,12 @@ body.artisans-of-the-grasslands {
   section.farm-tour {
     background: url('/assets/images/event/tour.jpg') no-repeat center center;
     background-size: cover;
+    position: relative;
+    .sold-out-image {
+      position: absolute;
+      top: -25px;
+      left: 284px;
+    }
   }
 
 
