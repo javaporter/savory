@@ -1,0 +1,1428 @@
+block variables
+  - title = 'Artisans of the Grasslands'
+
+extends layout
+
+block content
+  section.overview.artisans-event-overview
+    header
+      .row
+        .medium-6.columns
+          img.event-main-title(src='/assets/images/event/white-header.png')
+          h1 Crafting the Future for <br>Food and Agriculture
+          h3
+            | October 2&ndash;4, 2015
+            small San Francisco
+
+  section.main.copy-overview
+    .row
+      .small-12.columns
+<<<<<<< HEAD
+        p This unprecedented event will be a venue for producers and consumers to come together and celebrate the cadre of people embracing the holistic paradigm shift in ecology, health, and diet. Join us, along with all thirty Savory Institute Hubs and everyone from gauchos, to Massai, to cowboys — all of whom are actively engaged in this movement. These artisans, who have built their livelihood on fostering an intimate relationship with the land, will commune with passionate families striving to feed their children clean, healthy food that helps rejuvenate the environment on which we all depend.
+        blockquote Grasslands are being healed all over the world as pastoralists of all races, genders, religions, and ages band together in a unified effort to regenerate the land and paint a brighter future for all humanity. Holistic Management practitioners use existing resources to sculpt degraded terrain and transform it into thriving working landscapes.
+=======
+        p This unprecedented event will be a venue for producers and consumers to come together and celebrate the cadre of people embracing the holistic paradigm shift in ecology, health, and diet. Join us, along with all thirty Savory Institute Hubs and everyone from gauchos, to Masai, to cowboys — all of whom are actively engaged in this movement. These artisans, who have built their livelihood on fostering an intimate relationship with the land, will commune with passionate families striving to feed their children clean, healthy food that helps rejuvenate the environment on which we all depend.
+        blockquote Grasslands are being healed all over the world as pastoralists of all races, genders, religions, and ages band together in a unified effort to regenerate the land and paint a brighter future for all humanity. Holistic Management practitioners use existing resources to sculpt degraded terrain and transform it into thriving working landscapes. 
+>>>>>>> 8d4457b3c700e04d1e970a78191d2d8d9a38317f
+        h3 A new era of food production and healthy living is upon us
+        p We've seen a new awakening among people to embrace living in harmony with their environment — making healthier food choices, and staying active. As we blaze forward, our next step is to engage urbanites. As the incredible poet Wendell Berry was quoted, “Eating is an agricultural act,” and we must meet people where they are — their daily food choices.
+
+        a.btn-primary(href='https://www.eventbrite.com/e/san-francisco-international-conference-registration-16374858643', target='_blank') Buy Tickets
+
+  section.main
+    .row
+      .medium-6.columns
+        figure.img-love
+          img(src='/assets/images/event/hyatt.jpg')
+      .medium-6.columns
+        h2 Conference Venue
+        p The conference will be hosted at the Hyatt Regency Burlingame.
+
+        p San Francisco is an ideal location for our partners and collaborators from around the globe to join us for this year’s annual international conference. This unique location with easy fly-in-fly-out access to the San Francisco International Airport provides all the modern amenities to host our world-gathering.
+
+        ul.icon-list
+          li: a(href='http://sanfranciscoairport.hyatt.com/en/hotel/home.html', target='_blank')
+            i.fa.fa-external-link
+            | Hyatt Regency Burlingame
+          li: a(href='https://goo.gl/maps/asD7l', target='_blank')
+            i.fa.fa-map-marker
+            | Map
+          li: a(href='https://aws.passkey.com/g/45196125', target='_blank')
+            i.fa.fa-bed
+            | Lodging at a discounted rate
+
+  section.main.food
+    .row
+      .medium-8.medium-centered.small-12.columns
+        .content
+          h2 Conference Food
+          p Your ticket includes many amenities including lunch and dinner banquet on Saturday, lunch on Sunday, as well as a complementary Friday night reception and small plates dinner. All meals will be made from organic, gluten-free ingredients, and sourced from local, holistically-managed farms where possible.
+          p
+            a(href='/artisans-of-the-grasslands/menu') To see the full menu click here.
+
+  section.main.speaker-bios
+    header.overview-header
+      .row
+        .medium-3.columns
+          h2.section-title Speaker Bios
+        .medium-9.columns
+          p This year's conference will include an engaging and dynamic line-up of speakers from multiple industries and spaces. These presenters will include experts in the fields of soil science, climate change, permaculture, range science, the local food movement, human health, conservation biology, and alternative finance.  Prepare to interface with some of the world's thought leaders in everything from the food we eat, to being profitable land managers. We will also be announcing our newly accredited 2015 Hub Leaders and hearing from the Savory Institute Executive Team, as well as Allan Savory himself.
+
+
+    .row
+      .small-12.columns
+        h3 Speaker Bios
+        ul.small-block-grid-2.medium-block-grid-4.image-grid
+          li
+            a(href='/artisans-of-the-grasslands/speakers#allan')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/allan.jpg')
+                figcaption Allan Savory
+          li
+            a(href='/artisans-of-the-grasslands/speakers#allison')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/allison.jpg')
+                figcaption Allison Ball
+          li
+            a(href='/artisans-of-the-grasslands/speakers#anya')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/anya.jpg')
+                figcaption Anya Fernald
+          li
+            a(href='/artisans-of-the-grasslands/speakers#birju')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/birju.jpg')
+                figcaption Birju Pandya
+          li
+            a(href='/artisans-of-the-grasslands/speakers#brock')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/brock.jpg')
+                figcaption Brock Dolman
+          li
+            a(href='/artisans-of-the-grasslands/speakers#bryan')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/bryan.jpg')
+                figcaption Bryan Welch
+          li
+            a(href='/artisans-of-the-grasslands/speakers#colin')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/colin.jpg')
+                figcaption Colin Seis
+          li
+            a(href='/artisans-of-the-grasslands/speakers#courtney')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/courtney.jpg')
+                figcaption Courtney White
+          li
+            a(href='/artisans-of-the-grasslands/speakers#cindy')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/cindy.jpg')
+                figcaption Dr. Cindy Daley
+          li
+            a(href='/artisans-of-the-grasslands/speakers#richard')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/richard.png')
+                figcaption Dr. Richard Teague
+          li
+            a(href='/artisans-of-the-grasslands/speakers#diana')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/diana.jpg')
+                figcaption Diana Rodgers
+          li
+            a(href='/artisans-of-the-grasslands/speakers#don')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/don.jpg')
+                figcaption Don Shaffer
+          li
+            a(href='/artisans-of-the-grasslands/speakers#taylor')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/taylor.jpg')
+                figcaption Taylor Collins
+          li
+            a(href='/artisans-of-the-grasslands/speakers#durukan')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/durukan.jpg')
+                figcaption Durukan Dudu
+          li
+            a(href='/artisans-of-the-grasslands/speakers#spencer')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/spencer.jpg')
+                figcaption Spencer Smith
+          li
+            a(href='/artisans-of-the-grasslands/speakers#abbey')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/abbey.jpg')
+                figcaption Abbey Smith
+          li
+            a(href='/artisans-of-the-grasslands/speakers#hilary')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/hilary.png')
+                figcaption Hilary Bromberg
+          li
+            a(href='/artisans-of-the-grasslands/speakers#marty')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/marty.png')
+                figcaption Marty McDonald
+          li
+            a(href='/artisans-of-the-grasslands/speakers#tim-casswell')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/tim-casswell.jpg')
+                figcaption Tim Casswell
+          li
+            a(href='/artisans-of-the-grasslands/speakers#jim')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/jim.jpg')
+                figcaption Jim Howell
+          li
+            a(href='/artisans-of-the-grasslands/speakers#beth')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/beth.jpg')
+                figcaption Beth Robinette
+          li
+            a(href='/artisans-of-the-grasslands/speakers#finian')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/finian.png')
+                figcaption Finian Makepeace
+          li
+            a(href='/artisans-of-the-grasslands/speakers#haven')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/haven.jpg')
+                figcaption Haven Bourque
+          li
+            a(href='/artisans-of-the-grasslands/speakers#ivan')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/ivan.jpg')
+                figcaption Ivan Aguirre
+          li
+            a(href='/artisans-of-the-grasslands/speakers#jason')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/jason.png')
+                figcaption Jason Rowntree
+          li
+            a(href='/artisans-of-the-grasslands/speakers#jared')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/jared.jpg')
+                figcaption Jared Stone
+          li
+            a(href='/artisans-of-the-grasslands/speakers#jenni')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/jenni.jpg')
+                figcaption Jenni Harris
+          li
+            a(href='/artisans-of-the-grasslands/speakers#jenny')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/jenny.jpg')
+                figcaption Jenny McGruther
+          li
+            a(href='/artisans-of-the-grasslands/speakers#jody')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/jody.jpg')
+                figcaption Jody Butterfield
+          li
+            a(href='/artisans-of-the-grasslands/speakers#jonah')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/jonah.jpg')
+                figcaption Jonah Sachs
+          li
+            a(href='/artisans-of-the-grasslands/speakers#judy')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/judy.jpg')
+                figcaption Judith Schwartz
+          li
+            a(href='/artisans-of-the-grasslands/speakers#kat')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/kat.jpg')
+                figcaption Kat Taylor
+          li
+            a(href='/artisans-of-the-grasslands/speakers#kelly')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/kelly.jpg')
+                figcaption Kelly Mulville
+          li
+            a(href='/artisans-of-the-grasslands/speakers#nicolette')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/nicolette.jpg')
+                figcaption Nicolette Niman
+          li
+            a(href='/artisans-of-the-grasslands/speakers#nora')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/nora.jpg')
+                figcaption Nora Gedgaudas
+          li
+            a(href='/artisans-of-the-grasslands/speakers#paul-phyllis')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/paul-phyllis.jpg')
+                figcaption Phyllis and Paul Van Amburgh
+          li
+            a(href='/artisans-of-the-grasslands/speakers#peter')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/peter.jpg')
+                figcaption Peter Byck
+          li
+            a(href='/artisans-of-the-grasslands/speakers#precious')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/precious.jpg')
+                figcaption Precious Phiri
+          li
+            a(href='/artisans-of-the-grasslands/speakers#robb')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/robb.jpg')
+                figcaption Robb Wolf
+          li
+            a(href='/artisans-of-the-grasslands/speakers#sally')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/sally.jpg')
+                figcaption Sally Fallon Morell
+          li
+            a(href='/artisans-of-the-grasslands/speakers#sara')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/sara.jpg')
+                figcaption Sara Scherr
+          li
+            a(href='/artisans-of-the-grasslands/speakers#seth')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/seth.jpg')
+                figcaption Seth Itzkan
+          li
+            a(href='/artisans-of-the-grasslands/speakers#tom')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/tom.jpg')
+                figcaption Tom Newmark
+          li
+            a(href='/artisans-of-the-grasslands/speakers#tim')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/tim.jpg')
+                figcaption Tim Joseph
+          li
+            a(href='/artisans-of-the-grasslands/speakers#tony')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/tony.jpg')
+                figcaption Tony Malmberg
+          li
+            a(href='/artisans-of-the-grasslands/speakers#will')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/will.jpg')
+                figcaption Will Harris
+          li
+            a(href='/artisans-of-the-grasslands/speakers#andrea')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/andrea.jpg')
+                figcaption Andrea Malmberg
+          li
+            a(href='/artisans-of-the-grasslands/speakers#byron')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/byron.jpg')
+                figcaption Byron Shelton
+          li
+            a(href='/artisans-of-the-grasslands/speakers#chris')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/chris.jpg')
+                figcaption Chris Kerston
+          li
+            a(href='/artisans-of-the-grasslands/speakers#tre')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/tre.jpg')
+                figcaption Tre' Cates
+          li
+            a(href='/artisans-of-the-grasslands/speakers#daniela')
+              figure
+                .plus +
+                img(src='/assets/images/event/speakers/daniela.jpg')
+                figcaption Daniela Ibarra-Howell
+
+  section.main.schedule
+      header.overview-header
+        .row
+          .medium-3.columns
+            h2.section-title Schedule
+          .medium-9.columns
+            h2
+              a.tab-link.is-active(href='/assets/docs/schedule.pdf') Click this link to view the visual program.
+
+        .row
+          ul.accordion-tabs-minimal
+            li.tab-header-and-content
+              a.tab-link.is-active(href='#') Friday, Oct 2nd
+              .tab-content
+                .row
+                  .time 9:00am – 10:00am
+                  .details
+                    h4 AG PRODUCER TRACKS
+                    p.text Focusing on issues specifically for producers. Anyone is welcome to attend, but the conversations will be geared towards production whereas the keynotes and breakout tracks throughout the rest of the conference will have broader topics for a broader audience of educated consumers, investors, alternative health practitioners, and researchers.
+                    h4 Holistic Management Track
+                    p
+                      | Foundations of Holistic Management
+                      br
+                      i Byron Shelton
+
+                    h4 Ag-Business Track
+                    p
+                      | The Brains of the Buyer-Food Craft Institute
+                      br
+                      i Allison Ball
+
+                    h4 Advanced Media Training Track
+                    p
+                     | Media Spokesperson Training (runs until 11:00am)
+                     br
+                     i Haven Bourque
+
+                    h4 Human Nutrition Intensive Track
+                    p
+                     i Robb Wolf  (runs until 12:00pm)
+
+                .row
+                  .time 10:00am – 11:00am
+                  .details
+                    h4 Holistic Management Track
+                    p
+                      | Holistic Financial Planning
+                      br
+                      i Brian Marshall
+
+                    h4 Ag-Business Track
+                    p
+                      | Mission Driven Leadership-Food Craft Institute
+                      br
+                      i Allison Ball
+
+                .row
+                  .time 11:00am – 12:00pm
+                  .details
+                    h4 Holistic Management Track
+                    p
+                      | Ecological Monitoring and Land Planning
+                      br
+                      i Pablo Borelli
+
+                    h4 Ag-Business Track
+                    p
+                      | Propaganda for Good: A Crash Course in the Black Arts of Marketing, Brand and Product Development, Design and Market Research-Hilary Bromberg
+                      br
+                      i Hilary Bromberg
+
+                    h4 Advanced Media Training Track
+                    p
+                      | Do-it-yourself PR and Social Media Intro (runs until 1:00pm)
+                      br
+                      i Haven Bourque
+                .row
+                  .time 12:00pm – 1:00pm:
+                  .details
+                      h4 Holistic Management Track
+                      p
+                        | Holistic Grazing Planning
+                        br
+                        i Spencer Smith
+
+                      h4 Ag-Business Track
+                      p
+                        | Build a Business From Your Passion
+                        br
+                        i EPIC Provisions
+
+                      h4 Human Nutrition Intensive Track
+                      p
+                        i Sally Fallon  (runs until 1:00pm)
+                .row
+                  .time 1:00pm – 2:00pm
+                  .details
+                    h4 BREAK
+                .row
+                  .time 2:00pm – 3:00pm
+                  .details
+                      h4 Holistic Management Track
+                      p
+                        | Holistically Managing a Vineyard
+                        br
+                        i Kelly Mulville
+
+                      h4 Ag-Business Track
+                      p
+                        | Connecting with Customers
+                        br
+                        i Anya Fernald
+
+                      h4 Advanced Media Training Track
+                      p
+                        | Media Panel
+                        br
+                        i Haven Borque
+
+                      h4 Human Nutrition Intensive Track
+                      p
+                        i Sally Fallon  (runs until 4:00pm)
+                .row
+                  .time 3:00pm – 4:00pm
+                  .details
+                      h4 Holistic Management Track
+                      p
+                        | Holistically Managing a Dairy
+                        br
+                        i Dr. Cindy Daley &amp; Phyllis Van Amburgh
+
+                      h4 Ag-Business Track
+                      p
+                        | Intercropping
+                        i Colin Seis
+
+                      h4 Advanced Media Training Track
+                      p
+                        | Blogging and Social Media
+                        br
+                        i Jenny McGruther
+
+                .row
+                  hr
+                  h4 MAIN CONFERENCE BEGINS
+                .row
+                  .time 4:00pm – 6:00pm
+                  .details
+                      h4 Mixer in Sponsorship Lobby &amp; Small Plates Dinner, Wine Tasting, Cash Bar
+
+                .row
+                  .time 6:00 – 6:35pm:
+                  .details
+                    h4 Opening Message
+                    p
+                      i Daniela Howell, CEO, Savory Institute
+                .row
+                  .time 6:35pm – 6:55pm
+                  .details
+                    h4 Forming Event Holistic Context
+                    p
+                      i Tim Casswell
+                .row
+                  .time 6:55pm – 7:10pm:
+                  .details
+                    h4 Wine Tasting Presentation
+                    p
+                      i Kelly Mulville
+                .row
+                  .time 7:10pm – 7:45pm:
+                  .details
+                    h4 Celebrating the Art of Story
+                    p
+                      i Jonah Sachs
+                .row
+                  .time 7:45pm – 8:15pm:
+                  .details
+                    h4 Kiss the Ground
+                    p
+                      i Finian Makepeace
+                .row
+                  .time 8:15pm – 9:00pm:
+                  .details
+                    p
+                      i Allan Savory
+
+            li.tab-header-and-content
+              a.tab-link(href='#') Saturday, Oct 3rd
+              .tab-content
+                .row
+                  .time 7:00am – 8:00am
+                  .details
+                    h4 Morning Yoga
+
+                .row
+                  .time 9:00am – 9:15am
+                  .details
+                    h4 Historical Change
+                    p
+                      i Tim Casswell
+
+                .row
+                  .time 9:15am – 9:40am
+                  .details
+                    h4 Robb Wolf
+
+                .row
+                  .time 9:40am – 10:10am
+                  .details
+                    h4 Nicolette Hahn Niman
+
+                .row
+                  .time 10:10am – 10:30am
+                  .details
+                    h4 BREAK
+
+                .row
+                  .time 10:30am – 11:30am
+                  .details
+                    h4 Panel Discussion Track
+                    p
+                      | Getting to Market
+                      br
+                      i Jenny McGruther, Diana Rodgers, Will Harris, Phyllis Van Amburgh, Nicolette Hahn Niman, Doniga Markegard
+                      br
+                      | Moderator: Chris Kerston
+
+
+                    h4 Hub Track
+                    p
+                      | Communities
+                      br
+                      i Precious Phiri
+
+                    h4 Health Track
+                    p
+                      i Robb Wolf
+
+                    h4 Financial Track
+                    p
+                      i Don Shaffer
+
+                    h4 Science Track
+                    p
+                      i Dr. Richard Teague &amp; Peter Byck
+
+                .row
+                  .time 11:30am – 12:30pm
+                  .details
+
+                    h4 Panel Discussion Track
+                    p
+                      | Dealing with Drought
+                      br
+                      i Joe Morris, Judy Schwartz, Courtney White, Spencer Smith, Colin Seis, Zachary Jones
+                      br
+                      | Moderator: Chris Kerston
+
+
+                    h4 Hub Track
+                    p
+                      | Operating a Hub
+                      br
+                      i Abbey & Spencer Smith
+
+
+                    h4 Health Track
+                    p
+                      i Nicolette Hahn Niman
+
+                    h4 Financial Track
+                    p
+                      i Jim Howell
+
+                    h4 Science Track
+                    p
+                      i Dr. Cindy Daley
+
+                .row
+                  .time 12:30pm – 1:30pm
+                  .details
+                    h4 LUNCH
+
+                .row
+                  .time 1:30pm – 2:30pm
+                  .details
+                    h4 Savory Network Hubs
+                    p
+                      i Tre’ Cates
+
+                .row
+                  .time 2:30pm – 3:30pm
+                  .details
+                    h4 Wool Demonstration
+                    p
+                     i Pablo Borelli
+
+                .row
+                  .time 3:30pm – 5:30pm
+                  .details
+
+                    h4 Holistic Policy Workshop
+                    p
+                      i Allan Savory &amp; Tre’ Cates
+
+                .row
+                  .time 3:30pm – 4:30pm
+                  .details
+
+                    h4 Hub Track
+                    p
+                      i Phyllis Van Amburgh & Tim Joseph
+
+                    h4 Health Track
+                    p
+                      i Nora Gedgaudus
+
+                    h4 Financial Track
+                    p
+                      i Sara Scherr
+
+                    h4 Science Track
+                    p
+                      i Dr. Jason Rowntree
+
+                .row
+                  .time 4:30pm – 5:30pm
+                  .details
+                    h4 Hub Track
+                    p
+                      | Managing For Drought
+                      br
+                      i Beth Robinette
+
+                  .details
+                    h4 Health Track
+                    p
+                      i Sally Fallon Morell
+
+                  .details
+                    h4 Financial Track
+                    p
+                      i Birju Pandya
+
+                  .details
+                    h4 Science Track
+                    p
+                      i Tom Newmark &amp;
+
+                .row
+                  .time 5:30pm – 7:00pm
+                  .details
+                    h4 BREAK
+
+                .row
+                  .time 7:00pm – 7:45pm
+                  .details
+                    h4 BANQUET DINNER BEGINS
+                    p Welcome
+
+                .row
+                  .time 7:05pm – 7:30pm
+                  .details
+                    h4 Terroir of Meat
+                    p
+                      i Anya Fernald
+
+                .row
+                  .time 7:30pm – 7:50pm
+                  .details
+                    h4 Affinity Keynote Exercise
+
+                .row
+                  .time 7:50pm – 9:00pm
+                  .details
+                    h4 Dinner
+
+            li.tab-header-and-content
+              a.tab-link(href='#') Sunday, Oct 4th
+              .tab-content
+                .row
+                  .time 7:00am – 8:00am
+                  .details
+                    h4 Morning Yoga
+
+                .row
+                  .time 7:00am – 8:00am
+                  .details
+                    h4 Morning Run hosted by EPIC Provisions
+
+                .row
+                  .time 9:00am – 9:15am
+                  .details
+                    h4 Personal Change
+                    p
+                      i Tim Casswell
+
+                .row
+                  .time 9:15am – 9:40am
+                  .details
+                    h4 Traditional Diets of the World
+                    p
+                      i Sally Fallon Morell
+
+                .row
+                  .time 9:40am – 10:00am
+                  .details
+                    h4 Carbon Underground
+                    p
+                      i Tom Newmark
+
+                .row
+                  .time 10:00am – 10:10am
+                  .details
+                    h4
+                    p
+                      i Seth Itzkan
+
+                .row
+                  .time 10:10am – 10:30am
+                  .details
+                    h4 BREAK
+
+                .row
+                  .time 10:30am – 11:30am
+                  .details
+
+                    h4 Panel Discussion Track
+                    p
+                      | Reversing Climate Change
+                      br
+                      i Dr. Jason Rowntree, Tom Newmark, Dr. Richard Teague, Seth Itzkan, Nicolette Hahn Niman, Peter Byck
+                      br
+                      | Moderator: Chris Kerston
+
+                    h4 Hub Track
+                    p
+                      i Ivan Aguirre
+
+                    h4 Celebrating Soil Track
+                    p
+                      i Colin Seis
+
+                    h4 Building Community Track
+                    p
+                      i Judith Schwartz
+
+                    h4 Holistic Wellbeing Track
+                    p
+                      | Positive Outcomes in Communities
+                      br
+                      i Jody Butterfield
+
+                .row
+                  .time 11:30am – 12:30pm
+                  .details
+                    h4 Panel Discussion Track
+                    p
+                      | Going Past the Choir, Communicating Regenerative Agriculture Effectively
+                      br
+                      i Jared Stone, Bryan Welch, Durukan Dudu, Finian Makepeace, Sara Scherr
+                      br
+                      | Moderator: Chris Kerston
+
+                    h4 Hub Track
+                    p
+                      | Open Hands Project for Youth
+                      br
+                      i Durukan Dudu
+
+                    h4 Celebrating Soil Track
+                    p
+                      i Courtney White
+
+                    h4 Holistic Wellbeing
+                    p
+                      i Andrea Malmberg
+
+                .row
+                  .time 12:30 – 2:00pm
+                  .details
+                    h4 Lunch and Book Signing Break
+
+                .row
+                  .time 2:00pm – 2:45pm
+                  .details
+                    h4 What is Holistic Management
+                    p
+                      i Tony Malmberg
+
+                .row
+                  .time 2:45pm – 3:00pm
+                  .details
+                    h4 Setting Our Sights
+                    p
+                      i Tim Casswell
+
+                .row
+                  .time 3:00pm – 4:00pm
+                  .details
+                    h4 Panel Discussion Track
+                    p
+                      | How Much Meat Should We Eat
+                      br
+                      i Nicolette Hahn Niman, Sally Fallon Morell, Robb Wolf, Andrea Malmberg
+                      br
+                      | Moderator: Chris Kerston
+
+                    h4 Hub Track
+                    p
+                      i Will and Jenni Harris
+
+                    h4 Celebrating Soil Track
+                    p
+                     i Jim Howell
+
+                    h4 Building Community Track
+                    p
+                      i Bryan Welch
+
+                    h4 Technology
+                    p
+                      i Tre’ Cates
+
+                .row
+                  .time 4:00pm – 4:30pm
+                  .details
+                    h4 Kat Taylor
+
+                .row
+                  .time 4:30pm – 5:00pm
+                  .details
+                    h4 Brock Dolman
+
+                .row
+                  .time 5:00pm – 5:20pm
+                  .details
+                    h4 Brock Dolman
+                    p
+                      | Become a Newsense
+                      br
+                      i Tim Casswell
+
+                .row
+                  .time 5:20pm – 5:30pm
+                  .details
+                    h4 Closing
+                    p
+                      i Daniela Howell
+
+                .row
+                  .time 7:00pm – 9:00pm
+                  .details
+                    h4 Movie Screening: Earth a New Wild
+
+  section.main.tickets
+    .sf
+    .row
+      .medium-6.push-6.columns
+        h2 Tickets
+        p Please note, all tickets purchased before July 7 qualify for early-bird pricing.
+        hr
+        h3 Early Bird Pricing (Ends July 7)
+        ul.no-bullet
+          li <strong>$499</strong> Standard Ticket
+          li <strong>$425/ea</strong> Qty Discount (buy 5 tickets and get 15% off)
+          li <strong>$350/ea</strong> Qty Discount (buy 10 tickets and get 30% off)
+          li <strong>$299</strong> Savory Institute Accredited Professionals/Hub Leaders
+          li <strong>$299</strong> Students/Educators
+
+        h3 July 7 - September 7
+        ul.no-bullet
+          li <strong>$549</strong> standard ticket
+          li <strong>$425/ea</strong> qty discount (buy 5 tickets and get 15% off)
+          li <strong>$350/ea</strong> qty discount (buy 10 tickets and get 30% off)
+          li <strong>$349</strong> Savory Institute Accredited Professionals/Hub Leaders
+          li <strong>$349</strong> Students/Educators
+
+        h3 September 8 - October 2
+        ul.no-bullet
+          li <strong>$599</strong> standard ticket
+          li Bulk Discounts not Available
+          li <strong>$399</strong> Savory Institute Accredited Professionals/Hub Leaders
+          li <strong>$399</strong> Students/Educators
+
+        p.fine-print All tickets include meals as listed above in <em>conference food</em>.
+
+        a.btn-primary(href='https://www.eventbrite.com/e/san-francisco-international-conference-registration-16374858643', target='_blank') Buy Tickets
+
+  section.main.farm-tour
+      .row
+        .medium-8.medium-centered.small-12.columns
+          .content
+
+            h2 CONFERENCE FARM TOUR
+            .sold-out-image
+              img(src='/assets/images/event/sold-out.png')
+            p We are pleased to announce a very special farm tour that will take place on Monday the 5th, the day after the conference ends. This bus tour will go to 3 farms in the Pescadero area right along the beautiful California Coast. These are 3 spectacular operations that are shaping the future of agriculture in the region.
+
+            p The all-day farm tour tickets are $80 per person and feature a fantastic catered lunch, provided by TomKat Ranch, highlighting local ingredients and grassfed beef.
+
+<<<<<<< HEAD
+  section.main#schedule
+    .container
+      h2 Program
+      p In addition to other keynotes, you can also be sure to expect our founder Allan Savory, updates from our returning 2013 Hub Leaders as well as introducing new 2014 Hub Leaders, the Savory Institute Executive Team, and the Grasslands LLC Executive Team. Keep in mind that we have many big surprises planned.
+      .schedule
+        ul.accordion-tabs-minimal
+          li.tab-header-and-content
+            //- =link_to 'Fri, Aug 1', '#', :class => 'tab-link is-active'
+            .tab-content
+              .row
+                .time 8:00 - 8:30 am
+                .details
+                  h4 Coffee, Tea, Pastries
+              .row
+                .time 8:30 - 9:00 am
+                .details
+                  h4 Introduction: Putting Grasslands to Work...Let our Conversation Begin
+                  p.speaker Daniela Ibarra-Howell, CEO, Savory Institute
+              .row
+                .time 9:00 - 10:00 am
+                .details
+                  h4 Keynote Address: Putting Grasslands to Work: Uniting Team Humanity
+                  p.speaker Allan Savory, President, Savory Institute
+              .row
+                .time 10:00 - 10:20 am
+                .details
+                  h4 Break
+              .row
+                .time 10:20 - 12:00 pm
+                .details
+                  h4 Putting Grasslands to Work: A Conversation About the Power of Regenerative Agriculture
+                  ul
+                    li Darren Doherty, Creator of Regrarians, Ltd.
+                    li Patrick Holden, Founding Director, The Sustainable Food Trust
+                  h5 Panel of Producers:
+                  ul
+                    li Ricardo Fenton, Estancia Monte Dinero
+                    li Mimi Hillenbrand, 777 Buffalo Ranch
+                    li Jim Howell, CEO, Grasslands, LLC
+                    li Brittany Cole Bush, Sheperdess, Star Creek Land Stewards
+                    li <strong>Moderator:</strong> Chris Kerston, Dir. Communications and Marketing, Savory Institute
+              .row
+                .time 12:00 - 1:00 pm
+                .details
+                  h4 Lunch
+              .row
+                .time 1:00 - 2:00 pm
+                .details
+                  h4 Putting Grasslands to Work: A Conversation About Savory Hubs, a Movement to Influence the World's Grasslands
+                  h5 Panel of Hub Leaders:
+                  ul
+                    li Jorgen Anderssen, Nordic Hub, Sweden
+                    li Huggins Matanga, ACHM Hub, Zimbabwe
+                    li José Manuel Gartazar, Chile Hub, Chile
+                    li Ivan Aguirre, Sonoran Hub, Mexico
+                    li <strong>Moderator:</strong> Tré Cates, COO/CFO, Savory Institute
+              .row
+                .time 2:00 - 2:40 pm
+                .details
+                  h4 Putting Grasslands to Work: Conversation Tracks
+                  h5 CT #1: The Untapped Potential of Soil (runs until 3:30 pm)
+                  ul
+                    li Elaine Ingham, Founder, Soil Foodweb, Inc.
+                    li Courtney White, Quivira Coalition
+                    li Seth Itzkan, Planet Tech
+                    li Judith Schwartz, Author, Cows Save the Planet
+                    li John D. Liu, Filmmaker and Director, Environmental Education Media Project
+                    li <strong>Moderator:</strong> Peter Byck, Producer of Carbon Nation
+                  h5 CT #2: Ballet in the Pasture (runs until 3:30 pm)
+                  ul
+                    li Joel Salatin, Polyface Farm
+                  h5 CT #3: What is a Savory Hub?
+                  ul
+                    li Tré Cates, COO/CFO, Savory Institute
+                    li Rolf Pretorius, South Africa Hub
+                  h5 CT #4: Biomimicry in Markets
+                  ul
+                    li Katherine Collins, Founder and CEO, Honeybee Capital
+                    li Victoria Keziah, Brand and Business strategist, NETgenerative
+                    li Chris Kerston, Director Communications and Marketing, Savory Institute
+                  h5 CT #5: Language of the Land
+                  ul
+                    li Darren Doherty, Creator of Regrarians, Ltd.
+                    li Owen Hablutzel, Specialist, Permaculture and Holistic Management
+                    li Tony Malmberg, Co-Founder of the Savory Institute
+                  h5 CT #6: Life, Community Mobilization, and Holistic Management in the African Savannas
+                  ul
+                    li Jody Butterfield, Director of South Africa Programs, Savory Institute
+                    li Huggins Matanga, Executive Director, ACHM Hub, Zimbabwe
+                  h5 CT #7: Investing in Biological Gigaton Solutions for Climate
+                  ul
+                    li David Addison, Manager, Virgin Earth Challenge
+                    li Mark Stevenson, Author, Optimist's Tour of the Future, UK
+                    li Daniela Ibarra-Howell, CEO, Savory Institute
+                  h5 CT #8: Connection Between Soil Health and Human Health
+                  ul
+                    li Martien Lankester, Executive Director, Avalon Netherlands
+                    li Andrea Malmberg, Director Research and Knowledge Management, Savory Institute
+              .row
+                .time 2:50 - 3:30 pm
+                .details
+                  h4 Putting Grasslands to Work: Conversation Tracks - Round 2
+
+                  h5 CT #1: The Untapped Potential of Soil (Cont.)
+
+                  h5 CT #2: Ballet in the Pasture (Cont.)
+
+                  h5 CT #3: The Art and Science of Holistic Planned Grazing
+                  ul
+                    li Byron Shelton, Program Director, Savory Institute
+
+                  h5 CT #4: Marketing Holistically Managed Products to Consumers
+                  ul
+                    li Taylor Collins, Co-founder, Epic Bar
+                    li Cameron Smith, Investor
+                    li Chris Kerston, Director Communications and Marketing, Savory Institute
+
+                  h5 CT #5: Science Power
+                  ul
+                    li Richard Teague, Texas AandM
+                    li Hannah Gosnell, Oregon State University
+                    li Andrea Malmberg, Dir. Research and Knowledge Management, Savory Institute
+
+                  h5 CT #6: The True Cost of Food
+                  ul
+                    li Patrick Holden, Founding Director, The Sustainable Food Trust
+                    li Daniela Ibarra-Howell, CEO, Savory Institute
+
+                  h5 CT #7: Scaling Regenerative Agriculture Through Market-Based Solutions
+                  ul
+                    li Charles de Liedekerke, Soil Capital
+                    li Jim Howell, CEO, Grasslands, LLC
+                    li Tony Lovell, CEO, SLM
+
+                  h5 CT #8: Technology Tools for Farmers
+                  ul
+                    li Tré Cates, COO, Savory Institute
+              .row
+                .time 3:30 - 4:00 pm
+                .details
+                  h4 Break (Afternoon Tea in Foyer)
+              .row
+                .time 4:00 - 4:30 pm
+                .details
+                  h4 Putting Grasslands to Work: A Conversation About Soil
+                  p.speaker Elaine Ingham, Founder, Soil Foodweb Inc.
+              .row
+                .time 4:30 - 5:30 pm
+                .details
+                  h4 Putting Grasslands to Work: A Conversation About the Role of Science in Informing Management
+                  h5 Panel
+                  ul
+                    li Richard Teague, Texas A&M
+                    li Jason RownTree, Michigan State University, USA
+                    li Chad Krueger, Washington State University, USA
+                    li Hannah Gosnell, Oregon State University
+                    li <strong>Moderator:</strong> Peter Byck, Producer of Carbon Nation
+              .row
+                .time .details
+                  h4 Closing by Justin Adams “If You Want To Go Fast Go Alone, If You Want To Go Far, Go Together” — Justin Adams — TNC Managing Director of Global Lands
+              .row
+                .time 5:30 - 6:30 pm
+                .details
+                  h4 Keynote Address: A Conversation About Inspiring a New Generation of Farmers Who Want to Feed the Future
+                  p.speaker Joel Salatin, Polyface Farm, Author, <em>Fields of Farmers</em>
+              .row
+                .time 6:30 - 7:30 pm
+                .details
+                  h4 Cocktail Reception and Book Signing
+              .row
+                .time 7:30 pm
+                .details
+                  h4 Evening Film TBD
+
+
+          li.tab-header-and-content
+            //- =link_to 'Sat, Aug 2', '#', :class => 'tab-link'
+            .tab-content
+              .row
+                .time 8:00 - 8:30 am
+                .details
+                  h4 Coffee, Tea, Pastries
+              .row
+                .time 8:30 - 9:30 am
+                .details
+                  h4 A Celebration of Genius — Tribute to Bruce Ward
+                  ul
+                    li Allan Savory, President, Savory Institute
+                    li Suzie Ward, Co-Founder, Holistic Results
+                    li Tony Lovell, CEO, SLM
+
+              .row
+                .time 9:30 - 10:30 am
+                .details
+                  h4 Putting Grasslands to Work: Investing in People and Land
+                  ul
+                    li Hunter Lovins, Founder and President, Natural Capital Solutions
+                    li Katherine Collins, Founder and CEO, Honeybee Capital
+              .row
+                .time 10:30 - 11:00 am
+                .details
+                  h4 Break
+              .row
+                .time 11:00 - 12:00 pm
+                .details
+                  h4 Putting Grasslands to Work: Connecting the Public with Regeneration
+                  ul
+                    li John D. Liu, Filmmaker and Director, Environmental Education Media Project
+                    li Slow Food International, Speaker TBD
+              .row
+                .time 12:00 - 1:00 pm
+                .details
+                  h4 Lunch
+              .row
+                .time 1:00 - 2:00 pm
+                .details
+                  h4 Putting Grasslands to Work: A Conversation About Innovation in Farming
+                  ul
+                    li Peter Byck, Producer, Carbon Nation
+                    li Graham Harvey, Pasture Promise TV
+                    li Tim May, farmer, Kingsclere Estate
+              .row
+                .time 2:00 - 2:40 pm
+                .details
+                  h4 Putting Grasslands to Work: A Conversation About Agriculture's Role in Human Health
+                  ul
+                    li Daphne Miller, Author, <em>Farmacology</em>
+              .row
+                .time 2:40 - 3:00 pm
+                .details
+                  h4 Break
+              .row
+                .time 3:00- 3:45 pm
+                .details
+                  h4 Putting Grasslands to Work: Breakout Conversations
+
+                  h5 CT#1: It's All About Soil Life
+                  ul
+                    li Elaine Ingham, Founder, Soil Foodweb Inc.
+                    li Byron Shelton, Program Director, Savory Institute
+
+                  h5 CT#2: Doctor Turned Farmer: Understanding How Gut Flora Affects Overall Well-Being
+                  ul
+                    li Dr. Natasha Campbell McBride, Neurologist and Author, Developer of the GAPS Diet
+                    li Judith Schwartz, author, <em>Cows Save the Planet</em>
+
+                  h5 CT#3: What is a Savory Hub?
+                  ul
+                    li Tré Cates, COO/CFO, Savory Institute
+                    li Doug Warnock, USA PNW Hub
+
+                  h5 CT#4 Putting Grasslands to Work: Large-Scale Shepherding on Public Lands in Urban Areas
+                  ul
+                    li Brittany Cole Bush, Modern Day Urban Shepherdess, Star Creek Co. Land Stewards
+                    li Beth Robinette, Director of Marketing, Lazy R Ranch Grassfed Beef
+
+                  h5 CT#5: Nature Functions in Wholes
+                  ul
+                    li Owen Hablutzel, Specialist in Permaculture and Holistic Management
+                    li Jim Howell, CEO, Grasslands, LLC
+
+                  h5 CT#6: Human Health: A Cooking Demonstration
+                  ul
+                    li Sarah Fragoso, Author, Everyday Paleo
+                    li Taylor Collins, Co-founder, Epic Bar
+
+                  h5 CT #7: Using Livestock to Sequester Carbon
+                  ul
+                    li Courtney White, Author, Grass, Soil, Hope
+                    li Daniela Ibarra-Howell, CEO, Savory Institution
+
+                  h5 CT #8: The Hard Science and Citizen Science View of Climate Change
+                  ul
+                    li Seth Itzkan, Planet Tech
+                    li Jason RownTree, Michigan State University
+
+              .row
+                .time 3:45 - 4:00 pm
+                .details
+                  h4 Break
+
+              .row
+                .time 4:00 - 5:00 pm
+                .details
+                  h4 Demonstration: Traditional Old-World Meat Cutting
+                  ul
+                    li Brandon Sheard, Farmstead Meatsmith
+
+              .row
+                .time 5:00 - 5:30 pm
+                .details
+                  h4 Putting Grasslands to Work: The Next Generation of Savory Hubs
+                  h5 Introduce Next 2014 Savory Hubs
+                  ul
+                    li <strong>Moderator:</strong> Tré Cates, COO/CFO, Savory Institute
+              .row
+                .time 5:30 - 6:30 pm
+                .details
+                  h4 Putting Grasslands to Work: A Conversation About HOPE and OPTIMISM
+                  ul
+                    li Mark Stevenson, Author, <em>Optimist's Tour of the Future</em>, UK
+                    li Allan Savory, President and Co-Founder, Savory Institute
+              .row
+                .time 6:30 - 7:00 pm
+                .details
+                  h4 Closing: Putting Grasslands to Work...the Conversations Must Continue
+                  ul
+                    li Daniela Ibarra-Howell, CEO, Savory Institute
+                    li Tré Cates, COO/CFO, Savory Institute
+
+=======
+            p Even if you've already got your tickets to the conference, you can still <a href="https://www.eventbrite.com/e/artisans-of-the-grasslands-savory-institute-international-conference-registration-16374858643" target="_blank">get tickets to the farm tour</a>.
+
+            p This tour is sponsored by the McConnell Foundation
+            p
+              a(href='/artisans-of-the-grasslands/farm-tour', target='_blank') View Farm Tour details and agenda.
+>>>>>>> 8d4457b3c700e04d1e970a78191d2d8d9a38317f
+
+  section.main.sponsors
+      header.overview-header
+        .row
+          .medium-3.columns
+            h2.section-title Sponsors
+          .medium-9.columns
+            p If you would like to sponsor this special event please reference our <a href="/assets/docs/savory-international-conference-sponsorship-packages.pdf">sponsorship package (PDF)</a>. If you are a farmer or rancher and are interested in donating food, please contact Paul Frank at paul@ptfassociates.com.
+      .row
+        .small-12.columns
+          h2.sponsor-title Soil Level Sponsorship
+          img(src='/assets/images/event/sponsors/epic.png')
+
+      .row
+        .small-12.columns
+          h2.sponsor-title Grass Level Sponsorship
+          img(src='/assets/images/event/sponsors/TMFSimpleWeb.jpg')
+      .row
+        .small-12.columns
+          h2.sponsor-title Hub Level Sponsorship
+          ul.small-block-grid-2.medium-block-grid-4.image-grid
+            li
+              img(src='/assets/images/event/sponsors/hub_sponsor1.jpg')
+            li
+              img(src='/assets/images/event/sponsors/hub_sponsor2.png')
+            li
+              img(src='/assets/images/event/sponsors/hub_sponsor3.png')
+            li
+              img(src='/assets/images/event/sponsors/hub_sponsor4.jpg')
+            li
+              img(src='/assets/images/event/sponsors/hub_sponsor5.jpg')
+            li
+              img(src='/assets/images/event/sponsors/hub_sponsor6.png')
+            li
+              img(src='/assets/images/event/sponsors/hub_sponsor7.jpg')
+            li
+              img(src='/assets/images/event/sponsors/hub_sponsor8.jpg')
+            li
+              img(src='/assets/images/event/sponsors/hub_sponsor9.png')
+            li
+              img(src='/assets/images/event/sponsors/hub_sponsor10.png')
+            li
+              img(src='/assets/images/event/sponsors/hub_sponsor11.jpg')
+            li
+              img(src='/assets/images/event/sponsors/hub_sponsor12.png')
+            li
+              img(src='/assets/images/event/sponsors/hub_sponsor13.jpg')
+            li
+              img(src='/assets/images/event/sponsors/hub_sponsor14.png')
+<<<<<<< HEAD
+=======
+            li
+              img(src='/assets/images/event/sponsors/hub_sponsor15.jpg')
+            li
+              img(src='/assets/images/event/sponsors/hub_sponsor16.png')
+            li
+              img(src='/assets/images/event/sponsors/hub_sponsor17.jpg')
+            li
+              img(src='/assets/images/event/sponsors/hub_sponsor18.jpg')
+            li
+              img(src='/assets/images/event/sponsors/hub_sponsor19.jpg')
+      .row
+        .small-12.columns
+          p These sponsoring organizations do not necessarily represent the views, policies or strategies of the Savory Institute.
+
+  section.main.sponsors
+    header.overview-header
+      .row
+        .medium-3.columns
+          h2.section-title Food Donors
+        .medium-9.columns
+          p
+    .row
+      .small-12.columns
+        ul.small-block-grid-6.medium-block-grid-6.image-grid
+          li
+            img(src='/assets/images/event/sponsors/food_donor1.png')
+          li
+            img(src='/assets/images/event/sponsors/food_donor2.jpg')
+          li
+            img(src='/assets/images/event/sponsors/food_donor3.jpg')
+          li
+            img(src='/assets/images/event/sponsors/food_donor4.jpeg')
+          li
+            img(src='/assets/images/event/sponsors/food_donor5.jpg')
+          li
+            img(src='/assets/images/event/sponsors/food_donor6.jpg')
+          li
+            img(src='/assets/images/event/sponsors/food_donor7.jpg')
+          li
+            img(src='/assets/images/event/sponsors/food_donor8.png')
+          li
+            img(src='/assets/images/event/sponsors/food_donor10.jpg')
+          li
+            img(src='/assets/images/event/sponsors/food_donor11.png')
+          li
+            img(src='/assets/images/event/sponsors/food_donor12.gif')
+          li
+            img(src='/assets/images/event/sponsors/food_donor13.png')
+          li
+            img(src='/assets/images/event/sponsors/food_donor14.png')
+          li
+            img(src='/assets/images/event/sponsors/food_donor15.jpg')
+          li
+            img(src='/assets/images/event/sponsors/food_donor16.png')
+          li
+            img(src='/assets/images/event/sponsors/food_donor17.png')
+
+  section.main.sponsors
+      header.overview-header
+        .row
+          .medium-3.columns
+            h2.section-title Cornerstone Donors
+          .medium-9.columns
+            p We want to thank the following donors for their ongoing support of the Savory Institute and our mission.
+      .row
+        .small-12.columns
+          ul.small-block-grid-4.medium-block-grid-4.image-grid
+            li
+              img(src='/assets/images/event/sponsors/cornerstone_1.png')
+            li
+              img(src='/assets/images/event/sponsors/cornerstone_2.png')
+            li
+              img(src='/assets/images/event/sponsors/cornerstone_3.png')
+            li
+              img(src='/assets/images/event/sponsors/cornerstone_4.jpg')
+>>>>>>> 8d4457b3c700e04d1e970a78191d2d8d9a38317f

@@ -92,6 +92,14 @@ router.get('/artisans-of-the-grasslands/speakers', function(req, res) {
   res.render('artisans-of-the-grasslands/speakers', { title: 'Artisans of the Grasslands Speakers' });
 });
 
+router.get('/artisans-of-the-grasslands/menu', function(req, res) {
+  res.render('artisans-of-the-grasslands/menu', { title: 'Artisans of the Grasslands Menu' });
+});
+
+router.get('/artisans-of-the-grasslands/farm-tour', function(req, res) {
+  res.render('artisans-of-the-grasslands/farm-tour', { title: 'Artisans of the Grasslands Farm Tour' });
+});
+
 router.get('/institute/our-team', function(req, res) {
   res.render('institute/our-team', { title: 'Our Team' });
 });

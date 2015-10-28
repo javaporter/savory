@@ -103,22 +103,21 @@ UserVoice.push(['addTrigger', { mode: 'contact', trigger_position: 'bottom-right
 // Autoprompt for Satisfaction and SmartVote (only displayed under certain conditions)
 UserVoice.push(['autoprompt', {}]);
 
-// when clicked on newroom tab show or hide its related content 
-$('.newsroom-tab').on('click', function(e){
-  $('.newsroom-tab').removeClass('active');
-  $('.newsroom-tab-content').hide();
+$(document).ready(function () {
+  $('.accordion-tabs-minimal').each(function(index) {
+    $(this).children('li').first().children('a').addClass('is-active').next().addClass('is-open').show();
+  });
+  $('.accordion-tabs-minimal').on('click', 'li > a.tab-link', function(event) {
+    if (!$(this).hasClass('is-active')) {
+      event.preventDefault();
+      var accordionTabs = $(this).closest('.accordion-tabs-minimal');
+      accordionTabs.find('.is-open').removeClass('is-open').hide();
 
-  $(this).addClass('active');
-
-  var tabName = e.currentTarget.innerText.toLowerCase();
-  tabName = tabName.split(' ').join('-');
-
-  if (tabName.match(/&/)) { 
-    tabName = tabName.replace('&', 'n');
-  }
-
-  $('#' + tabName).show();
-
+      $(this).next().toggleClass('is-open').toggle();
+      accordionTabs.find('.is-active').removeClass('is-active');
+      $(this).addClass('is-active');
+    } else {
+      event.preventDefault();
+    }
+  });
 });
-
-
