@@ -69,13 +69,7 @@ router.get('/institute/jobs/:id', function(req, res) {
 });
 
 router.get('/institute', function(req, res) {
-  prismic.api()
-    .then(function(api) {
-      return prismic.careers(api);
-    })
-    .then(function(careers) {
-      res.render('institute/index', {careers: careers});
-    });
+  res.render('institute/index', { title: 'Institute' });
 });
 
 router.get('/institute', function(req, res) {
@@ -132,8 +126,30 @@ router.get('/styles', function(req, res) {
   res.render('styles/index', { title: 'Styles' });
 });
 
+router.get('/get-involved/jobs/:id', function(req, res) {
+  prismic.api()
+    .then(function(api) {
+      return prismic.career(api, req.params.id);
+    })
+    .then(function(career) {
+      res.render('get-involved/careers-template', {
+        title: career.getStructuredText('careers.title').asText(),
+        career: career
+      });
+    })
+    .catch(function(err) {
+      res.send('error', 500);
+    })
+});
+
 router.get('/get-involved', function(req, res) {
-  res.render('get-involved/index', { title: 'Get Involved' });
+  prismic.api()
+    .then(function(api) {
+      return prismic.careers(api);
+    })
+    .then(function(careers){
+      res.render('get-involved/index', { title: 'Get Involved', careers: careers });
+  });
 });
 
 router.get('/news', function(req, res) {
