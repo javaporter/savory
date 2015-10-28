@@ -1,0 +1,74 @@
+block variables
+  - title = 'Newsroom'
+
+extends /layout
+
+block content
+  #overview(data-magellan-destination='overview')
+  section.overview
+
+  section.half-color
+    .art
+    .color
+    .row
+      .medium-6.columns
+        h1= title
+
+      .medium-6.columns
+        p The Savory Newsroom contains up-to-date, relevant and comprehensive online files of press releases, articles, frequently asked questions, and media resources regarding the restoration of the world's grasslands through the implementation of holistic management.
+
+  section.main
+    .row
+      .small-12.columns
+        h3 FOR JOURNALIST
+        p
+          strong Savory Office Media Contact
+          <br>
+          <br>
+          strong Sarah Gleason
+          <br>Marketing and Communications Director
+          <br>
+          a sgleason@savory.global
+          <br> +1 303-327-9764
+
+  //- section.main
+  //-   nav.primary-nav.newsroom-nav
+  //-     .row.alternative-width
+  //-         ul
+  //-           li.newsroom-tab.small-2.columns.active
+  //-             a.active
+  //-               span 
+  //-                 strong IN THE NEWS
+  //-           li.newsroom-tab.small-2.columns 
+  //-             a
+  //-               span
+  //-                 strong PRESS RELEASES
+  //-           li.newsroom-tab.small-2 
+  //-             a
+  //-               span
+  //-                 strong HONORS & RECOGNITION
+  //-           li.newsroom-tab.small-2.columns 
+  //-             a 
+  //-               span
+  //-                 strong FAQs
+  //-           li.newsroom-tab.small-2 
+  //-             a
+  //-               span
+  //-                 strong SAVORY BLOG
+  //-           li.newsroom-tab.small-2.columns 
+  //-             a 
+  //-               span
+  //-                 strong PARTNERS
+
+  //-   .tab-content#in-the-news.show
+  //-     | In the news content
+  //-   .tab-content#press-releases.hide
+  //-     | press release content
+  //-   .tab-content#honors-n-recognition.hide
+  //-     | honors & RECOGNIT
+  //-   .tab-content#faqs.hide
+  //-     | faqs
+  //-   .tab-content#savory-blog.hide
+  //-     | savory blog
+  //-   .tab-content#partners.hide
+  //-     | partners

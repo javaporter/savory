@@ -1,0 +1,19 @@
+body.newsroom {
+  .primary-nav .network-link  {
+      @include primary-nav-you-are-here;
+  }
+
+  section.overview {
+    background-image: url('/assets/images/institute/newsroom-hero.jpg');
+    background-position: center center;
+
+    @media #{$medium-up} {
+      background-image: url('/assets/images/institute/newsroom-hero-lg.jpg');
+    }
+  }
+}
+
+li.newsroom-tab.active {
+  background: $poppy;
+}
+
