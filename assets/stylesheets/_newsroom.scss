@@ -17,3 +17,28 @@ li.newsroom-tab.active {
   background: $poppy;
 }
 
+// newsroom nav
+.primary-nav ul .newsroom-tab {
+  background: $verdant;
+  text-align: center;
+  padding: 0;
+
+  &:first-child {
+  }
+
+  &:hover {
+    background: $poppy;
+
+    a {
+      color: $terra;
+    }
+  }
+}
+
+section nav.primary-nav.newsroom-nav {
+  border: none;
+}
+
+.alternative-width {
+  max-width: 90%;
+}

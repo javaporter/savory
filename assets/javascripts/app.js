@@ -102,3 +102,23 @@ UserVoice.push(['addTrigger', { mode: 'contact', trigger_position: 'bottom-right
 
 // Autoprompt for Satisfaction and SmartVote (only displayed under certain conditions)
 UserVoice.push(['autoprompt', {}]);
+
+// when clicked on newroom tab show or hide its related content 
+$('.newsroom-tab').on('click', function(e){
+  $('.newsroom-tab').removeClass('active');
+  $('.newsroom-tab-content').hide();
+
+  $(this).addClass('active');
+
+  var tabName = e.currentTarget.innerText.toLowerCase();
+  tabName = tabName.split(' ').join('-');
+
+  if (tabName.match(/&/)) { 
+    tabName = tabName.replace('&', 'n');
+  }
+
+  $('#' + tabName).show();
+
+});
+
+
