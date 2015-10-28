@@ -1,0 +1,44 @@
+body.newsroom {
+  .primary-nav .network-link  {
+      @include primary-nav-you-are-here;
+  }
+
+  section.overview {
+    background-image: url('/assets/images/institute/newsroom-hero.jpg');
+    background-position: center center;
+
+    @media #{$medium-up} {
+      background-image: url('/assets/images/institute/newsroom-hero-lg.jpg');
+    }
+  }
+}
+
+li.newsroom-tab.active {
+  background: $poppy;
+}
+
+// newsroom nav
+.primary-nav ul .newsroom-tab {
+  background: $verdant;
+  text-align: center;
+  padding: 0;
+
+  &:first-child {
+  }
+
+  &:hover {
+    background: $poppy;
+
+    a {
+      color: $terra;
+    }
+  }
+}
+
+section nav.primary-nav.newsroom-nav {
+  border: none;
+}
+
+.alternative-width {
+  max-width: 90%;
+}

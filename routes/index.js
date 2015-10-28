@@ -69,17 +69,15 @@ router.get('/institute/jobs/:id', function(req, res) {
 });
 
 router.get('/institute', function(req, res) {
-  prismic.api()
-    .then(function(api) {
-      return prismic.careers(api);
-    })
-    .then(function(careers) {
-      res.render('institute/index', {careers: careers});
-    });
+  res.render('institute/index', { title: 'Institute' });
 });
 
 router.get('/institute', function(req, res) {
   res.render('institute/index', { title: 'Institute' });
+});
+
+router.get('/institute/newsroom', function(req, res) {
+  res.render('institute/newsroom', { title: 'Newsroom' });
 });
 
 router.get('/ie', function(req, res) {
@@ -92,6 +90,14 @@ router.get('/artisans-of-the-grasslands', function(req, res) {
 
 router.get('/artisans-of-the-grasslands/speakers', function(req, res) {
   res.render('artisans-of-the-grasslands/speakers', { title: 'Artisans of the Grasslands Speakers' });
+});
+
+router.get('/artisans-of-the-grasslands/menu', function(req, res) {
+  res.render('artisans-of-the-grasslands/menu', { title: 'Artisans of the Grasslands Menu' });
+});
+
+router.get('/artisans-of-the-grasslands/farm-tour', function(req, res) {
+  res.render('artisans-of-the-grasslands/farm-tour', { title: 'Artisans of the Grasslands Farm Tour' });
 });
 
 router.get('/institute/our-team', function(req, res) {
@@ -132,8 +138,30 @@ router.get('/styles', function(req, res) {
   res.render('styles/index', { title: 'Styles' });
 });
 
+router.get('/get-involved/jobs/:id', function(req, res) {
+  prismic.api()
+    .then(function(api) {
+      return prismic.career(api, req.params.id);
+    })
+    .then(function(career) {
+      res.render('get-involved/careers-template', {
+        title: career.getStructuredText('careers.title').asText(),
+        career: career
+      });
+    })
+    .catch(function(err) {
+      res.send('error', 500);
+    })
+});
+
 router.get('/get-involved', function(req, res) {
-  res.render('get-involved/index', { title: 'Get Involved' });
+  prismic.api()
+    .then(function(api) {
+      return prismic.careers(api);
+    })
+    .then(function(careers){
+      res.render('get-involved/index', { title: 'Get Involved', careers: careers });
+  });
 });
 
 router.get('/news', function(req, res) {

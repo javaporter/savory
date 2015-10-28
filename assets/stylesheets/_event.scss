@@ -69,13 +69,10 @@ section.artisans-event-overview {
   }
 }
 
-
-
-
 // interior page
 body.artisans-of-the-grasslands {
 
-  section.food {
+  section.food, section.farm-tour {
     background: url('/assets/images/event/food.jpg') no-repeat center center;
     background-size: cover;
     padding: 5rem 0;
@@ -87,6 +84,17 @@ body.artisans-of-the-grasslands {
 
     p {
       color: white;
+    }
+  }
+
+  section.farm-tour {
+    background: url('/assets/images/event/tour.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    .sold-out-image {
+      position: absolute;
+      top: -25px;
+      left: 284px;
     }
   }
 
@@ -200,59 +208,98 @@ section.sponsors {
   }
 }
 
+.main.sponsors {
+  background: white;
+}
 
+section.schedule {
 
-.schedule {
-  margin-top: 2.5em;
-  h3 {
-    border-bottom: $border;
-    padding-bottom: 0.5em;
-  }
-  p, .time, li {
-    font-size: 0.9rem;
-  }
-  ul {
-    margin: 0.2em 0;
+  .accordion-tabs-minimal {
+    line-height: 1.5;
     padding: 0;
+  }
+
+  .accordion-tabs-minimal::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+
+  .accordion-tabs-minimal li.tab-header-and-content {
     list-style: none;
   }
-  .row {
-    @include outer-container;
-    &:nth-child(odd) {
-      background: $pale-horse;
+
+  @media screen and (min-width: 600px) {
+    .accordion-tabs-minimal li.tab-header-and-content {
+      display: inline;
     }
-    @include media($baby-bear) {
-      margin-bottom: 1em;
-      ul {
-        margin-bottom: 0;
+  }
+
+  .accordion-tabs-minimal a.tab-link {
+    background-color: white;
+    border-top: 1px solid gainsboro;
+    color: #333;
+    display: block;
+    padding: 0.75em 1em;
+    text-decoration: none;
+  }
+
+  @media screen and (min-width: 600px) {
+    .accordion-tabs-minimal a.tab-link {
+      display: inline-block;
+      vertical-align: baseline;
+      zoom: 1;
+      *display: inline;
+      *vertical-align: auto;
+      border-top: 0;
+    }
+  }
+
+  .accordion-tabs-minimal a.tab-link:hover {
+    color: #477DCA;
+  }
+
+  .accordion-tabs-minimal a.tab-link:focus {
+    outline: none;
+  }
+
+  .accordion-tabs-minimal a.tab-link.is-active {
+    border-bottom: 0;
+  }
+
+  @media screen and (min-width: 600px) {
+    .accordion-tabs-minimal a.tab-link.is-active {
+      border: 1px solid gainsboro;
+      border-bottom-color: white;
+      margin-bottom: -1px;
+    }
+  }
+
+  .accordion-tabs-minimal .tab-content {
+    display: none;
+    padding: 1.5em 1em;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 600px) {
+    .accordion-tabs-minimal .tab-content {
+      border-top: 1px solid gainsboro;
+      float: left;
+      .row {
+        margin-top: 35px;
+        &:first-child { margin-top: 0; }
+      }
+
+      .time {
+        display: block;
+        float: left;
+        width: 18%;
+        margin-top: 6px;
+      }
+      .details {
+        float: right;
+        width: 78%;
       }
     }
-  }
-  .time, .details {
-    padding: 0.7em 0.3em;
-    vertical-align: top;
-  }
-  .time {
-    padding-right: 1em;
-    @include span-columns(2);
-    @include media($baby-bear) {
-      @include span-columns(12);
-      padding-left: 0.5em;
-      border-left: 7px solid $mustard;
-      border-bottom: $border-dotted;
-      padding-right: 0;
-    }
-  }
-  .details {
-    @include span-columns(10);
-    @include omega;
-    @include media($baby-bear) {
-      @include span-columns(12);
-    }
-  }
-  h5 {
-    border-top: $border-dotted;
-    padding-top: 0.3em;
-    margin-top: 0.3em;
   }
 }
