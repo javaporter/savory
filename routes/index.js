@@ -76,7 +76,7 @@ router.get('/institute', function(req, res) {
   res.render('institute/index', { title: 'Institute' });
 });
 
-router.get('/newsroom', function(req, res) {
+router.get('/institute/newsroom', function(req, res) {
   res.render('institute/newsroom', { title: 'Newsroom' });
 });
 
