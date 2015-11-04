@@ -52,6 +52,27 @@ router.get('/', function(req, res) {
     });
 });
 
+router.get('/newsroom', function(req, res) {
+  var context = {
+    title: 'Savory'
+  };
+
+  prismic.api()
+    .then(function(api) {
+      context.api = api;
+      return prismic.homepageNews(context.api);
+    })
+    .then(function(news) {
+      context.news = news;
+      res.render('newsroom/index', context);
+      return prismic.hubs(context.api);
+    })
+    .catch(function(err) {
+      res.send(err, 500);
+    });
+});
+
+
 router.get('/institute/jobs/:id', function(req, res) {
   prismic.api()
     .then(function(api) {
@@ -80,10 +101,6 @@ router.get('/institute', function(req, res) {
 
 router.get('/institute', function(req, res) {
   res.render('institute/index', { title: 'Institute' });
-});
-
-router.get('/newsroom', function(req, res) {
-  res.render('newsroom/index', { title: 'NEWSROOM' });
 });
 
 router.get('/ie', function(req, res) {

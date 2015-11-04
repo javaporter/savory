@@ -54,25 +54,6 @@ block content
         p Savory’s technology platform has been developed to provide online support and training for ranchers and land managers via education, data management, and collaboration.
         a(href='/platform') More ( + )
 
-
-
-  section.overview.artisans-event-overview
-    header
-      .row
-        .small-12.columns
-          a(href='/artisans-of-the-grasslands')
-            img.event-main-title(src='/assets/images/event/white-header.png')
-
-          h2 Crafting the Future for <br>Food and Agriculture
-          h3
-            | October 2&ndash;5, 2015
-            small San Francisco
-
-          a.btn-simple.hide-for-small-only(href='/artisans-of-the-grasslands') +
-
-
-
-
   section.main.about
     .row.allan-savory-quote
       .medium-3.medium-offset-1.small-6.columns
@@ -138,25 +119,6 @@ block content
 
     #map.hubs-map
 
-
-
-  section.main.news
-    header.overview-header
-      .row
-        .small-12.columns
-          h2.section-title What's New
-
-    .row
-      .small-12.columns
-        ol.news-grid
-          each article in news
-            li
-              a(href='/news/'+article.getText('news.slug'))
-                .marker
-                img(src=article.getImage('news.image').views['homepage'].url)
-                !=article.getStructuredText('news.shortlede').asHtml()
-
-        a.button.small.archived-posts(href='/news') + View Archived Posts
 
 
   section.main.get-involved-and-tools
