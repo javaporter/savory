@@ -31,7 +31,6 @@ block content
             a(href="mailto:sgleason@savory.global") sgleason@savory.global
           p +1 303-327-9764
 
-
   section.main.schedule
       header.overview-header
         //- .row
@@ -202,8 +201,18 @@ block content
             li.tab-header-and-content
               a.tab-link(href='#') SAVORY BLOG
               .tab-content
-                .row
-                  h4 Coming soon.
+                section.news
+                   .row
+                     .small-12.columns
+                       ol.news-grid
+                         each article in news
+                           li
+                             a(href='/news/'+article.getText('news.slug'))
+                               .marker
+                               img(src=article.getImage('news.image').views['homepage'].url)
+                               !=article.getStructuredText('news.shortlede').asHtml()
+
+                       a.button.small.archived-posts(href='/news') + View Archived Posts
 
             li.tab-header-and-content
               a.tab-link(href='#') PARTNERS
