@@ -111,6 +111,10 @@ router.get('/artisans-of-the-grasslands', function(req, res) {
   res.render('artisans-of-the-grasslands', { title: 'Artisans of the Grasslands' });
 });
 
+router.get('/soilforchange', function(req, res) {
+  res.render('soilforchange', { title: 'Soil for Climate Change' });
+});
+
 router.get('/artisans-of-the-grasslands/speakers', function(req, res) {
   res.render('artisans-of-the-grasslands/speakers', { title: 'Artisans of the Grasslands Speakers' });
 });
