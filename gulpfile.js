@@ -7,12 +7,13 @@ var server = require('gulp-express');
 var nodemon = require('gulp-nodemon');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
+var bourbonPaths = require('node-bourbon').includePaths;
 
 
 // Extra sass include paths
-var sass_include_paths = [
-  'assets/bower_components/foundation/scss',
-]
+var sass_include_paths = bourbonPaths.concat(
+  'assets/bower_components/foundation/scss'
+);
 
 // JS assets
 var js_assets = [

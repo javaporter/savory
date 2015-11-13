@@ -83,6 +83,15 @@ $(function() {
       $(this).find("span").text(icon);
     });
 
+    // Content toggles
+    $('[data-content-toggle]').on('click', function(event) {
+      event.preventDefault();
+      var $this = $(this);
+      var id = $this.attr('href');
+      var $target = $(id);  // $('#alan-bio-content')
+      $target.toggle();
+      $this.hide();
+    });
 });
 
 
@@ -121,3 +130,4 @@ $(document).ready(function () {
     }
   });
 });
+
