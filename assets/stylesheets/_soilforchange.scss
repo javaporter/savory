@@ -3,6 +3,7 @@ section.soilforchange {
   background-repeat: no-repeat;
   min-height: 300px;
   width: 100%;
+  position: relative;
 
   @media #{$medium-up} {
   min-height: 600px;
@@ -10,16 +11,22 @@ section.soilforchange {
   }
 
   .photo-copy {
-    color: rgba(255, 255, 255, 0.9);
-    padding-left: 2.3em;
-    padding-top: 6em;
-    width: 82%;
-    font-size: 1em;
+    background: rgba(255,255,255,0.75);
+    position: absolute;
+    left: 15px;
+    top: 138px;
+    width: 24em;
+    font-size: 0.9em;
+    padding: 0.5em;
+    color: rgb(0, 0, 0);
+    line-height: 22px;
     @media #{$medium-up} {
-      padding-left: 7em;
-      padding-top: 13em;
+      left: 120px;
+      top: 260px;
       width: 60%;
-      font-size: 1.25em;
+      font-size: 1.05em;
+      padding: 1em;
+      line-height: 27px;
     }
   }
 }
@@ -36,7 +43,7 @@ section.sfc-second-hero {
   width: 100%;
 
   @media #{$medium-up} {
-  min-height: 1020px;
+  min-height: 600px;
     background-image: url('/assets/images/soilforchange/sfc2.jpg');
   }
 
@@ -53,4 +60,29 @@ section.sfc-second-hero {
       font-size: 1.25em;
     }
   }
+}
+
+.extra-content {
+  display: none;
+  animation: contentReveal 0.2s ease-out;
+}
+
+@include keyframes(contentReveal) {
+  0% {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+section.main.manifesto .row {
+  margin-top: -60px;
+}
+
+h1.printable-manifesto {
+  text-align: center;
 }
