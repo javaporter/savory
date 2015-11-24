@@ -1,8 +1,26 @@
 body.index {
 
+  section.greeting {
+    padding: 2em;
+    .donate {
+
+    }
+    .button {
+      margin-top: 7em;
+      margin-left: 9em;
+      background: #e35825;
+      a {
+        color: white;
+        width: 100%;
+        font-size: 3em;
+        padding: 1em;
+      }
+     }
+  }
+
   section.grasslands {
     background: url('/assets/images/home/grasslands.jpg') no-repeat center bottom;
-    height: 400px;
+    height: 200px;
     background-size: cover;
 
     p, ul {
@@ -19,16 +37,30 @@ body.index {
 
     @media #{$medium-up} {
       background: url('/assets/images/home/grasslands-lg.jpg') no-repeat center bottom;
-      min-height: $hero-height;
+      min-height: 320px;
     }
 
-    .one-third {
+    .one-third, .event-callout {
       position: absolute;
-      bottom: .5rem;
-      width: 100%;
-
+      bottom: 2rem;
       img {
         margin-bottom: 1rem;
+      }
+
+    }
+    .one-third {
+      width: 50%;
+      img {
+        margin-left: 10rem;
+      }
+    }
+
+    .event-callout {
+      left: 15rem;
+      width: 60%;
+
+      img {
+        margin-left: 1rem;
       }
     }
   }
