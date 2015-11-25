@@ -1,13 +1,16 @@
 body.index {
 
   section.greeting {
-    padding: 2em;
+    position: relative;
     .donate {
+      z-index: 1;
 
     }
     .button {
-      margin-top: 7em;
-      margin-left: 9em;
+      z-index: 10;
+      position: absolute;
+      top: 6em;
+      right: 10em;
       background: #e35825;
       a {
         color: white;
