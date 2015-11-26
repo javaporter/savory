@@ -2,23 +2,26 @@ body.index {
 
   section.greeting {
     position: relative;
-    .donate {
-      z-index: 1;
-
-    }
-    .button {
-      z-index: 10;
-      position: absolute;
-      top: 6em;
-      right: 10em;
-      background: #e35825;
-      a {
-        color: white;
-        width: 100%;
-        font-size: 3em;
+    .donate { z-index: 1; }
+    a {
+      .button {
+        position: absolute;
+        top: 2em;
+        right: 3em;
+        z-index: 10;
         padding: 1em;
+        text-align: center;
+        color: white;
+        background: #e35825;
+
+        @media #{$medium-up} {
+          font-size: 3em;
+          top: 1.5em;
+          right: 4em;
+          padding: 0.5em 1.5em;
+        }
       }
-     }
+    }
   }
 
   section.grasslands {
