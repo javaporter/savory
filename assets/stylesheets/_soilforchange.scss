@@ -36,30 +36,44 @@ section.sfc-colorblock {
   color: white;
 }
 
-section.sfc-second-hero {
-  background-image: url('/assets/images/soilforchange/sfc_m2.jpg');
-  background-repeat: no-repeat;
-  min-height: 300px;
-  width: 100%;
+// section.sfc-second-hero {
+//   background-image: url('/assets/images/soilforchange/sfc_m2.jpg');
+//   background-repeat: no-repeat;
+//   min-height: 300px;
+//   width: 100%;
 
-  @media #{$medium-up} {
-  min-height: 600px;
-    background-image: url('/assets/images/soilforchange/sfc2.jpg');
-  }
+//   @media #{$medium-up} {
+//   min-height: 600px;
+//     background-image: url('/assets/images/soilforchange/sfc2.jpg');
+//   }
 
-  .photo-copy {
-    color: rgba(255, 255, 255, 0.9);
-    padding-left: 2.3em;
-    padding-top: 6em;
-    width: 82%;
-    font-size: 1em;
-    @media #{$medium-up} {
-      padding-left: 7em;
-      padding-top: 13em;
-      width: 60%;
-      font-size: 1.25em;
+//   .photo-copy {
+//     color: rgba(255, 255, 255, 0.9);
+//     padding-left: 2.3em;
+//     padding-top: 6em;
+//     width: 82%;
+//     font-size: 1em;
+//     @media #{$medium-up} {
+//       padding-left: 7em;
+//       padding-top: 13em;
+//       width: 60%;
+//       font-size: 1.25em;
+//     }
+//   }
+// }
+
+section.sfc-greetings {
+  padding: 2em;
+  .button {
+    margin-top: 2em;
+    background: #e35825;
+    a {
+      color: white;
+      width: 100%;
+      font-size: 3em;
+      padding: 1em;
     }
-  }
+   }
 }
 
 .extra-content {
