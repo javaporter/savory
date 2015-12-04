@@ -36,6 +36,22 @@ section.sfc-colorblock {
   color: white;
 }
 
+.soil-supporters {
+  ul {
+    width: 100%;
+  }
+  li {
+    width: 12%;
+    display: inline-block;
+    margin-left: 2%;
+    &:first-child {
+      margin-left: 16%;
+    }
+  }
+}
+
+.center { text-align: center !important; }
+
 // section.sfc-second-hero {
 //   background-image: url('/assets/images/soilforchange/sfc_m2.jpg');
 //   background-repeat: no-repeat;
@@ -97,6 +113,6 @@ section.main.manifesto .row {
   margin-top: -60px;
 }
 
-h1.printable-manifesto {
-  text-align: center;
+.terra {
+  color: #4f483f !important;
 }
