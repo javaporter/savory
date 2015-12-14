@@ -60,20 +60,30 @@ block content
       .small-12.columns
         #mc_embed_signup
           form#mc-embedded-subscribe-form.mail-signup( action='//savoryinstitute.us10.list-manage.com/subscribe/post?u=8067c5756934c846542e0a0f5&amp;id=df3e15967e' method='post' name='mc-embedded-subscribe-form' autocomplete='on' novalidate data-abide)
-            .row.collapse#mc_embed_signup_scroll
-              .medium-3.columns
-                label First Name
-                input#mce-FNAME(type='text', name='FNAME')
-              .medium-3.columns
-                label Last Name
-                input#mce-LNAME.adjoined-input(type='text', name='LNAME')
-              .medium-4.columns
-                label Email
-                input#mce-EMAIL.adjoined-input(type='email', name='EMAIL', required)
-                small.error Required
-              .medium-2.columns
-                label &nbsp;
-                input#mc-embedded-subscribe.btn-primary.postfix.mc-subscribe-btn(type='submit', value='Subscribe', name='subscribe')
+            .row.collapse
+              .medium-9(style='margin: 0 auto')
+                .row.collapse
+                  .medium-5.columns
+                    label First Name
+                    input#mce-FNAME(type='text', name='FNAME')
+                  .medium-5.columns
+                    label Last Name
+                    input#mce-LNAME(type='text', name='LNAME')
+                .row.collapse
+                  .medium-5.columns
+                    label City
+                    input#mce-CITY(type='text', name='CITY')
+                  .medium-5.columns
+                    label Country
+                    input#mce-COUNTRY(type='text',name='COUNTRY')
+                .row.collapse
+                  .medium-5.columns
+                    label Email
+                    input#mce-EMAIL(type='email', name='EMAIL', required)
+                    small.error Required
+                  .medium-5.columns
+                    label &nbsp;
+                    input#mc-embedded-subscribe.btn-primary.postfix.mc-subscribe-btn(type='submit', value='Subscribe', name='subscribe')
           
             #mce-responses.clear
               #mce-error-response.response(style='display:none')
