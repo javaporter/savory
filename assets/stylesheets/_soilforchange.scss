@@ -37,16 +37,11 @@ section.sfc-colorblock {
 }
 
 .soil-supporters {
-  ul {
-    width: 100%;
-  }
-  li {
-    width: 12%;
-    display: inline-block;
-    margin-left: 2%;
-    &:first-child {
-      margin-left: 6%;
-    }
+  padding-bottom: 5%;
+  padding-left: 5%;
+  a {
+    padding-left: 1%;
+    img { width: calc(100% / 8) }
   }
 }
 
