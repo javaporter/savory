@@ -1,18 +1,22 @@
 body.index {
 
-  section.greeting {
-    position: relative;
-    .donate { z-index: 1; }
-    a {
-      .button {
-        position: absolute;
-        top: 2em;
-        right: 3em;
-        z-index: 10;
-        padding: 1em;
-        text-align: center;
+  section.grasslands {
+    background: url('/assets/images/home/grasslands.jpg') no-repeat center bottom;
+    height: 400px;
+    background-size: cover;
+
+    p, ul {
+      color: $opaque-light-1;
+      font-size: 1.35rem;
+      line-height: 1.2em;
+      margin: 0;
+
+      span {
         color: white;
-        background: #e35825;
+        font-weight: 400;
+      }
+    }
+
 
         @media #{$medium-up} {
           font-size: 3em;
