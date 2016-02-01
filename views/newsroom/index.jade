@@ -43,17 +43,34 @@ block content
         .row
           ul.accordion-tabs-minimal
             li.tab-header-and-content
+              a.tab-link(href='#') SAVORY BLOG
+              .tab-content
+                section.news
+                   .row
+                     .small-12.columns
+                       ol.news-grid
+                         each article in news
+                           li
+                             a(href='/news/'+article.getText('news.slug'))
+                               .marker
+                               img(src=article.getImage('news.image').views['homepage'].url)
+                               !=article.getStructuredText('news.shortlede').asHtml()
+
+                       a.button.small.archived-posts(href='/news') + View Archived Posts
+            
+            li.tab-header-and-content
+              a.tab-link(href='#') PRESS RELEASES
+              .tab-content
+                .row
+                  h4 Coming soon.
+
+            li.tab-header-and-content
               a.tab-link.is-active(href='#') IN THE NEWS
               .tab-content
                 .row
                   h4 Coming soon.
 
 
-            li.tab-header-and-content
-              a.tab-link(href='#') PRESS RELEASES
-              .tab-content
-                .row
-                  h4 Coming soon.
 
             li.tab-header-and-content
               a.tab-link(href='#') HONORS & RECOGNITION
@@ -195,23 +212,6 @@ block content
                     h3 CAN HOLISTIC MANAGEMENT IMPROVE THE POVERTY AND SOCIAL ISSUES WE ARE SEEING THROUGHOUT THE WORLD?
 
                     p Managing livestock holistically to mimic the behavior of wild herds, results in healthier soils, that can absorb rainfall, and grow more food for people and animals.  In the world’s vast grasslands, livestock production is the primary source of livelihood and cultural pride. Healthier land means more livestock, and more livestock, means more wealth.  The grasslands are also where most grains are grown and when we include holistically managed livestock in the mix with crops, we have demonstrated substantially increased yields as a result of better soil health.  Improvements in the effectiveness of the water cycle on any area of land, such as reduced evaporation and runoff, means that water sources are more secure and people, livestock (and wildlife) can stay healthy and resilient. Healthy people and healthy livestock are productive rather than impoverished.
-
-
-            li.tab-header-and-content
-              a.tab-link(href='#') SAVORY BLOG
-              .tab-content
-                section.news
-                   .row
-                     .small-12.columns
-                       ol.news-grid
-                         each article in news
-                           li
-                             a(href='/news/'+article.getText('news.slug'))
-                               .marker
-                               img(src=article.getImage('news.image').views['homepage'].url)
-                               !=article.getStructuredText('news.shortlede').asHtml()
-
-                       a.button.small.archived-posts(href='/news') + View Archived Posts
 
             li.tab-header-and-content
               a.tab-link(href='#') PARTNERS
