@@ -60,6 +60,10 @@ router.get('/newsroom', function(req, res) {
   prismic.api()
     .then(function(api) {
       context.api = api;
+      return prismic.allanSavoryBlog(context.api);
+    })
+    .then(function(allanUncensored) {
+      context.allanUncensored = allanUncensored;
       return prismic.homepageNews(context.api);
     })
     .then(function(news) {

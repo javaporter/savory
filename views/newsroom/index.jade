@@ -47,6 +47,22 @@ block content
                        a.button.small.archived-posts(href='/news') + View Archived Posts
 
             li.tab-header-and-content
+              a.tab-link(href='#') ALLAN SAVORY UNCENSORED
+              .tab-content
+                section.news
+                   .row
+                     .small-12.columns
+                       ol.news-grid
+                         each article in allanUncensored
+                           li
+                             a(href='/news/'+article.getText('AllanUncensored.slug'))
+                               .marker
+                               img(src=article.getImage('AllanUncensored.image').views['homepage'].url)
+                               !=article.getStructuredText('AllanUncensored.shortlede').asHtml()
+
+                       a.button.small.archived-posts(href='/news') + View Archived Posts
+
+            li.tab-header-and-content
               a.tab-link(href='#') FAQs
               .tab-content
                 header.overview-header
