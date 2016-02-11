@@ -10073,16 +10073,11 @@ section {
 
 section.main {
     padding: 4rem 0;
-    z-index: 0;
-    background: white;
+    z-index: 0
 }
 
 section.main:nth-of-type(even) {
     background: white
-}
-
-section.main.our-strategy {
-	background: gainsboro;
 }
 
 section.main header.overview-header {
@@ -12431,6 +12426,10 @@ body.news .prev-next .newer i {
     top: -330px
 }
 
+#disqus_thread {
+    padding: 3em;
+}
+
 .section-title-alt {
     color: #4f483f;
     margin-top: 1em;
@@ -13002,7 +13001,7 @@ section.schedule .accordion-tabs-minimal a.tab-link.is-active {
     section.schedule .accordion-tabs-minimal a.tab-link.is-active {
         border: 1px solid gainsboro;
         border-bottom-color: white;
-        margin-bottom: 0;
+        margin-bottom: -1px
     }
 }
 

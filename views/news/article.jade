@@ -52,6 +52,17 @@ block content
         .medium-8.medium-centered.columns
           !=secondaryBody.asHtml()
 
-      
+  #disqus_thread      
+  script(type='text/javascript').
+    (function() {
+    var d = document, s = d.createElement('script');
 
-          
+    s.src = '//savoryglobal.disqus.com/embed.js';
+
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+  noscript
+    p Please enable JavaScript to view the
+    a(href='http://disqus.com/?ref_noscript') comments powered by Disqus.
+            
