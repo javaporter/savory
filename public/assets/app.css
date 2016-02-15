@@ -377,7 +377,13 @@ select {
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
-    max-width: 58.82353rem
+    max-width: 58.82353rem; 
+}
+
+.newsroom .row {
+    width: 90%;
+    max-width: initial; 
+
 }
 
 .row:before,
@@ -12426,6 +12432,16 @@ body.news .prev-next .newer i {
     top: -330px
 }
 
+.newsroom section.schedule {
+    background: white;
+}
+
+.newsroom section.our-strategy {
+    background: #efefef;
+    max-width: 58.82353rem; 
+    margin-left: 13%;
+}
+
 #disqus_thread {
     padding: 3em;
 }
@@ -12572,6 +12588,7 @@ section.news .news-grid li a {
     background: white;
     display: inline-block;
     height: 100%;
+    width: 100%;
     position: relative;
     color: #4f483f
 }
@@ -12981,7 +12998,8 @@ section.schedule .accordion-tabs-minimal a.tab-link {
         zoom: 1;
         *display: inline;
         *vertical-align: auto;
-        border-top: 0
+        border-top: 0;
+        margin-bottom: 1px;
     }
 }
 
