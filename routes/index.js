@@ -60,6 +60,18 @@ router.get('/newsroom', function(req, res) {
   prismic.api()
     .then(function(api) {
       context.api = api;
+      return prismic.allanSavoryBlog(context.api);
+    })
+    .then(function(allanUncensored) {
+      context.allanUncensored = allanUncensored;
+      return prismic.inTheNews(context.api);
+    })
+    .then(function(inTheNews) {
+      context.inTheNews = inTheNews;
+      return prismic.pressReleases(context.api);
+    })
+    .then(function(pressReleases) {
+      context.pressReleases = pressReleases;
       return prismic.homepageNews(context.api);
     })
     .then(function(news) {
@@ -194,6 +206,18 @@ router.get('/news/:slug', function(req, res) {
       res.render('news/article', {article: article});
     }, notFound(res));
 });
+
+// News article
+router.get('/allanUncensored/:slug', function(req, res) {
+  prismic.api()
+    .then(function(api) {
+      return prismic.allanArticle(api, req.params.slug);
+    })
+    .then(function(article) {
+      res.render('news/allanArticle', {article: article});
+    }, notFound(res));
+});
+
 
 // Hub index
 router.get('/network/hub/example', function(req, res) {

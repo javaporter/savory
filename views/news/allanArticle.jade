@@ -1,5 +1,5 @@
 block variables
-  - title = article.getText('news.title')
+  - title = article.getText('AllanUncensored.title')
 
 extends /layout
 
@@ -9,23 +9,23 @@ block content
     .row
       .medium-8.medium-centered.columns
         figure.img-love
-          img(src=article.getImage('news.image').main.url)
-          if caption = article.getStructuredText('news.figcaption')
+          img(src=article.getImage('AllanUncensored.image').main.url)
+          if caption = article.getStructuredText('AllanUncensored.figcaption')
             figcaption!=caption.asHtml()
 
         header
-          h1= article.getText('news.title')
-          - date = momentDate(article.getDate('news.date'))
+          h1= article.getText('AllanUncensored.title')
+          - date = momentDate(article.getDate('AllanUncensored.date'))
             span.date
               =date.format('MMM DD, YYYY')
 
-        if body = article.getStructuredText('news.body')
+        if body = article.getStructuredText('AllanUncensored.body')
           !=body.asHtml()
   
   
   
   
-  - videos = [article.getText('news.youtube')]
+  - videos = [article.getText('AllanUncensored.youtube')]
   for video in videos
     if video
       section.main.video
@@ -37,16 +37,16 @@ block content
   
   
   
-  if quote = article.getText('news.quote')
+  if quote = article.getText('AllanUncensored.quote')
     section.main.callout-quote
       .row
         .small-12.columns
-          blockquote= article.getText('news.quote')
+          blockquote= article.getText('AllanUncensored.quote')
   
   
   
   
-  if secondaryBody = article.getStructuredText('news.secondaryBody')
+  if secondaryBody = article.getStructuredText('AllanUncensored.secondaryBody')
     section.main.news-post
       .row
         .medium-8.medium-centered.columns

@@ -129,5 +129,43 @@ $(document).ready(function () {
       event.preventDefault();
     }
   });
+
+
+  /* Change the styling of MailChimp subscriber sign-up popup */
+
+  // wait for 2 seconds before starting the timer
+
+  // check the presence of the iframe every 0.5s 
+  // once detected iframe, change the css of some of the
+  // elements inside iframe, then kill the process
+
+  // if iframe has not show up in 30 seconds, kill the process
+
+  setTimeout(function(){
+    var fn = setInterval(function(){
+      var a = $('iframe').contents();
+      if(a.length) {
+        a.find('#mc-EMAIL').css('margin-bottom', '5px');
+        a.find('#mc-FNAME').css('margin-bottom', '5px');
+        a.find('#mc-LNAME').css('margin-bottom', '5px');
+        a.find('#mc-CITY').css('margin-bottom', '5px');
+        a.find('#mc-COUNTRY').css('margin-bottom', '5px');
+
+        a.find('.modalContent__image').css('height', '500px');
+        a.find('.content__titleDescription span').css('white-space', 'normal');
+
+        // var c = document.querySelector('style').textContent +=
+        // "@media only screen and (max-width:800px) {.modalContent__image { height: 400px }}";
+        //   console.log(c)
+        clearInterval(fn);
+      }
+
+      setTimeout(function(){
+        clearInterval(fn);
+      }, 30000);
+
+    }, 500);
+  }, 2000);
+
 });
 
