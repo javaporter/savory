@@ -64,6 +64,14 @@ router.get('/newsroom', function(req, res) {
     })
     .then(function(allanUncensored) {
       context.allanUncensored = allanUncensored;
+      return prismic.inTheNews(context.api);
+    })
+    .then(function(inTheNews) {
+      context.inTheNews = inTheNews;
+      return prismic.pressReleases(context.api);
+    })
+    .then(function(pressReleases) {
+      context.pressReleases = pressReleases;
       return prismic.homepageNews(context.api);
     })
     .then(function(news) {

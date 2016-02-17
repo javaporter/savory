@@ -12976,6 +12976,12 @@ section.schedule .accordion-tabs-minimal li.tab-header-and-content {
     list-style: none
 }
 
+ul.in-the-news li, ul.press-releases li {
+    border-bottom : 1px dotted lightgray;
+    margin-bottom:1em;
+    padding-bottom: 1em;
+}
+
 @media screen and (min-width: 600px) {
     section.schedule .accordion-tabs-minimal li.tab-header-and-content {
         display: inline

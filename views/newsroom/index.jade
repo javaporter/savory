@@ -53,23 +53,14 @@ block content
                    .row
                      .small-12.columns
                        ol.news-grid
-                         each article in news
+                         each article in allanUncensored
                            li
-                             a(href='/news/'+article.getText('news.slug'))
+                             a(href='/news/'+article.getText('AllanUncensored.slug'))
                                .marker
-                               img(src=article.getImage('news.image').views['homepage'].url)
-                               !=article.getStructuredText('news.shortlede').asHtml()
+                               img(src=article.getImage('AllanUncensored.image').views['homepage'].url)
+                               !=article.getStructuredText('AllanUncensored.shortlede').asHtml()
 
                        a.button.small.archived-posts(href='/news') + View Archived Posts
-                         //
-                           each article in allanUncensored
-                             li
-                               a(href='/news/'+article.getText('AllanUncensored.slug'))
-                                 .marker
-                                 img(src=article.getImage('AllanUncensored.image').views['homepage'].url)
-                                 !=article.getStructuredText('AllanUncensored.shortlede').asHtml()
-
-                         a.button.small.archived-posts(href='/news') + View Archived Posts
 
             li.tab-header-and-content
               a.tab-link(href='#') FAQs
@@ -159,13 +150,30 @@ block content
               a.tab-link(href='#') PRESS RELEASES
               .tab-content
                 .row
-                  h4 Coming soon.
+                  ul.press-releases
+                    each article in pressReleases
+                      li
+                        a(href=article.getLink('press-releases.weblink').asText())
+                          h3 #{article.getText('press-releases.title')}
+                        h4 #{article.getStructuredText('press-releases.location').asText()}
+                        h4 #{article.getDate('press-releases.date').toDateString()}
+                        br
+                        a(href=article.getLink('press-releases.weblink').asText())
+                          h3 Learn More >
 
             li.tab-header-and-content
               a.tab-link(href='#') IN THE NEWS
               .tab-content
                 .row
-                  h4 Coming soon.
+                  ul.in-the-news
+                    each article in inTheNews
+                      li
+                        a(href=article.getLink('in-the-news.weblink').asText())
+                          h3 #{article.getText('in-the-news.title')}
+                        h4 #{article.getStructuredText('in-the-news.body').asText()}
+                        h4 #{article.getDate('in-the-news.date').toDateString()}
+                        br
+                        h4 #{article.getStructuredText('in-the-news.shortlede').asText()}
 
             li.tab-header-and-content
               a.tab-link(href='#') HONORS & RECOGNITION
