@@ -207,6 +207,18 @@ router.get('/news/:slug', function(req, res) {
     }, notFound(res));
 });
 
+// News article
+router.get('/allanUncensored/:slug', function(req, res) {
+  prismic.api()
+    .then(function(api) {
+      return prismic.allanArticle(api, req.params.slug);
+    })
+    .then(function(article) {
+      res.render('news/allanArticle', {article: article});
+    }, notFound(res));
+});
+
+
 // Hub index
 router.get('/network/hub/example', function(req, res) {
   res.render('network/hub-example', { title: 'Hub' });

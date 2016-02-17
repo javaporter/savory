@@ -55,7 +55,7 @@ block content
                        ol.news-grid
                          each article in allanUncensored
                            li
-                             a(href='/news/'+article.getText('AllanUncensored.slug'))
+                             a(href='/allanUncensored/'+article.getText('AllanUncensored.slug'))
                                .marker
                                img(src=article.getImage('AllanUncensored.image').views['homepage'].url)
                                !=article.getStructuredText('AllanUncensored.shortlede').asHtml()
