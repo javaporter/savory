@@ -1,3 +1,24 @@
+ul.in-the-news li, ul.press-releases li { 
+    border-bottom : 1px dotted lightgray; 
+    margin-bottom:1em; 
+    padding-bottom: 1em; 
+} 
+
+.newsroom .row {
+   width: 90%;
+   max-width: initial; 
+}
+
+.newsroom section.schedule {
+    background: white;
+}
+ 
+ .newsroom section.our-strategy {
+    background: #efefef;
+   max-width: 58.82353rem; 
+   margin-left: 13%;
+}
+
 .newsroom-hero-image {
   overflow: hidden;
   height: 570px;
@@ -40,6 +61,8 @@
     }
 
     .news-grid {
+
+      width:115%;
 
       @include block-grid(1, 0);
       counter-reset: item;
@@ -87,6 +110,7 @@
           background: white;
           display: inline-block;
           height: 100%;
+          width: 100%;
           position: relative;
           color: $terra;
 

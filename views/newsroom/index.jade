@@ -19,18 +19,6 @@ block content
       .medium-6.columns
         p The Savory Newsroom contains up-to-date, relevant and comprehensive online files of press releases, articles, frequently asked questions, and media resources regarding the restoration of the world's grasslands through the implementation of holistic management.
 
-  section.main.our-strategy
-    header.overview-header
-      .row
-        .medium-12.columns
-          h2.section-title FOR JOURNALISTS
-          h3.section-title-alt Savory Office Media Contact
-          h4 Sarah Gleason
-          h5.description Marketing and Communications Director
-          p
-            a(href="mailto:sgleason@savory.global") sgleason@savory.global
-          p +1 303-327-9764
-
   section.main.schedule
       header.overview-header
         //- .row
@@ -43,73 +31,34 @@ block content
         .row
           ul.accordion-tabs-minimal
             li.tab-header-and-content
-              a.tab-link(href='#') IN THE NEWS
+              a.tab-link.is-active(href='#') SAVORY BLOG
               .tab-content
-                .row
-                  h4 Coming soon.
+                section.news
+                   .row
+                     .small-12.columns
+                       ol.news-grid
+                         each article in news
+                           li
+                             a(href='/news/'+article.getText('news.slug'))
+                               .marker
+                               img(src=article.getImage('news.image').views['homepage'].url)
+                               !=article.getStructuredText('news.shortlede').asHtml()
+
+                       a.button.small.archived-posts(href='/news') + View Archived Posts
 
             li.tab-header-and-content
-              a.tab-link(href='#') PRESS RELEASES
+              a.tab-link(href='#') ALLAN SAVORY UNCENSORED
               .tab-content
-                .row
-                  h4 Coming soon.
-
-            li.tab-header-and-content
-              a.tab-link(href='#') HONORS & RECOGNITION
-              .tab-content
-                header.overview-header
-                  .row
-                    .large-3.medium-6.columns
-                      h2.section-title Honors and Recognition
-                    .large-9.medium-6.columns
-                      p Allan Savory, Savory Institute, and the Africa Centre for Holistic Management continually receive high-profile honors and recognition for their efforts empowering others to use Holistic Management to restore grasslands.
-
-                .row
-                  .small-12.columns
-                    ul.no-bullet.smaller
-                      li
-                        h5 UN Convention to Combat Desertification Land for Life Award—2013
-                        p Savory Institute was named a semi-finalist for the UNCCD Land for Life Award for the second straight year. The award recognizes excellence and innovation in sustainable land management and provides winners with visibility and support to expand their work.
-
-                      li
-                        h5 40 Organizations That Are Shaking Up the Food System
-                        p In 2013 FoodTank included Savory Institute among their list of 40 Organizations That Are Shaking Up the Food System. The groups in the list "... are doing invaluable work to change the way we eat, grow, cook, buy, and sell food."
-
-                      li
-                        h5 Sustainia 100
-                        p Savory Institute has been selected for inclusion in the Sustainia 100 guide, and entered the field of nominees for international 2013 Sustainia Award.
-
-                      li
-                        h5 TED2013 Conference
-                        p Allan Savory was chosen to present at the TED2013 global conference “The Young. The Wise. The Undiscovered” in the Sustain! category. His presentation was titled “How to green the world’s deserts and reverse climate change.”
-
-                      li
-                        h5 UN Convention to Combat Desertification Land for Life Award
-                        p Allan Savory was a semi-finalist for the 2012 Land for Life Award. The award recognizes excellence and innovation in sustainable land management and provides winners with visibility and support to expand their work.
-
-                      li
-                        h5 Virgin Earth Challenge
-                        p The Savory Institute is among a dozen remaining groups nominated for the 2012 Virgin Earth Challenge. Our organization emerged from an extensive review process of over 2,600 submissions.
-
-                      li
-                        h5 Buckminster Fuller Challenge Award
-                        p The Savory Institute’s sister organization, the Africa Centre for Holistic Management, won the 2010 Buckminster Fuller Challenge Award for the organization performing work that has significant potential to solve humanity’s most pressing problems.
-
-                      li
-                        h5 Banksia International Award
-                        p In 2003, Allan Savory won this award given to the person doing the most for the environment on a global scale.
-
-                      li
-                        h5 USAID Office of Foreign Disaster Assistance
-                        p This organization identified Holistic Management as a way to empower people to reverse the Africa-wide cycle of failing surface and ground water, failing land productivity, massive drought, livestock deaths, famine, food aid and destocking.
-
-                      li
-                        h5 TED’s <em>Ads Worth Spreading</em>
-                        p Allan Savory was featured in a video selected as one of TED’s “Ads Worth Spreading” in 2010, based on his ability “to engage in a dialog with [his] audience based on creativity, authenticity, and a shared pursuit of a better future.”
-
-                      li
-                        h5 Keynote Address at United Nations Framework Convention on Climate Change
-                        p In 2011, Allan Savory gave the keynote address at the United Nations Land Day 4 during the United Nations Framework Convention on Climate Change in Bonn, Germany.
+                section.news
+                   .row
+                     .small-12.columns
+                       ol.news-grid
+                         each article in allanUncensored
+                           li
+                             a(href='/allanUncensored/'+article.getText('AllanUncensored.slug'))
+                               .marker
+                               img(src=article.getImage('AllanUncensored.image').views['homepage'].url)
+                               !=article.getStructuredText('AllanUncensored.shortlede').asHtml()
 
             li.tab-header-and-content
               a.tab-link(href='#') FAQs
@@ -196,25 +145,105 @@ block content
                     p Managing livestock holistically to mimic the behavior of wild herds, results in healthier soils, that can absorb rainfall, and grow more food for people and animals.  In the world’s vast grasslands, livestock production is the primary source of livelihood and cultural pride. Healthier land means more livestock, and more livestock, means more wealth.  The grasslands are also where most grains are grown and when we include holistically managed livestock in the mix with crops, we have demonstrated substantially increased yields as a result of better soil health.  Improvements in the effectiveness of the water cycle on any area of land, such as reduced evaporation and runoff, means that water sources are more secure and people, livestock (and wildlife) can stay healthy and resilient. Healthy people and healthy livestock are productive rather than impoverished.
 
             li.tab-header-and-content
-              a.tab-link(href='#') SAVORY BLOG
+              a.tab-link(href='#') PRESS RELEASES
               .tab-content
-                section.news
-                   .row
-                     .small-12.columns
-                       ol.news-grid
-                         each article in news
-                           li
-                             a(href='/news/'+article.getText('news.slug'))
-                               .marker
-                               img(src=article.getImage('news.image').views['homepage'].url)
-                               !=article.getStructuredText('news.shortlede').asHtml()
+                .row
+                  ul.press-releases
+                    each article in pressReleases
+                      li
+                        a(href=article.getLink('press-releases.weblink').asText())
+                          h3 #{article.getText('press-releases.title')}
+                        h4 #{article.getStructuredText('press-releases.location').asText()}
+                        h4 #{article.getDate('press-releases.date').toDateString()}
+                        br
+                        a(href=article.getLink('press-releases.weblink').asText())
+                          h3 Learn More >
 
-                       a.button.small.archived-posts(href='/news') + View Archived Posts
-            
-        
+            li.tab-header-and-content
+              a.tab-link(href='#') IN THE NEWS
+              .tab-content
+                .row
+                  ul.in-the-news
+                    each article in inTheNews
+                      li
+                        a(href=article.getLink('in-the-news.weblink').asText())
+                          h3 #{article.getText('in-the-news.title')}
+                        h4 #{article.getStructuredText('in-the-news.body').asText()}
+                        h4 #{article.getDate('in-the-news.date').toDateString()}
+                        br
+                        h4 #{article.getStructuredText('in-the-news.shortlede').asText()}
+
+            li.tab-header-and-content
+              a.tab-link(href='#') HONORS & RECOGNITION
+              .tab-content
+                header.overview-header
+                  .row
+                    .large-3.medium-6.columns
+                      h2.section-title Honors and Recognition
+                    .large-9.medium-6.columns
+                      p Allan Savory, Savory Institute, and the Africa Centre for Holistic Management continually receive high-profile honors and recognition for their efforts empowering others to use Holistic Management to restore grasslands.
+
+                .row
+                  .small-12.columns
+                    ul.no-bullet.smaller
+                      li
+                        h5 UN Convention to Combat Desertification Land for Life Award—2013
+                        p Savory Institute was named a semi-finalist for the UNCCD Land for Life Award for the second straight year. The award recognizes excellence and innovation in sustainable land management and provides winners with visibility and support to expand their work.
+
+                      li
+                        h5 40 Organizations That Are Shaking Up the Food System
+                        p In 2013 FoodTank included Savory Institute among their list of 40 Organizations That Are Shaking Up the Food System. The groups in the list "... are doing invaluable work to change the way we eat, grow, cook, buy, and sell food."
+
+                      li
+                        h5 Sustainia 100
+                        p Savory Institute has been selected for inclusion in the Sustainia 100 guide, and entered the field of nominees for international 2013 Sustainia Award.
+
+                      li
+                        h5 TED2013 Conference
+                        p Allan Savory was chosen to present at the TED2013 global conference “The Young. The Wise. The Undiscovered” in the Sustain! category. His presentation was titled “How to green the world’s deserts and reverse climate change.”
+
+                      li
+                        h5 UN Convention to Combat Desertification Land for Life Award
+                        p Allan Savory was a semi-finalist for the 2012 Land for Life Award. The award recognizes excellence and innovation in sustainable land management and provides winners with visibility and support to expand their work.
+
+                      li
+                        h5 Virgin Earth Challenge
+                        p The Savory Institute is among a dozen remaining groups nominated for the 2012 Virgin Earth Challenge. Our organization emerged from an extensive review process of over 2,600 submissions.
+
+                      li
+                        h5 Buckminster Fuller Challenge Award
+                        p The Savory Institute’s sister organization, the Africa Centre for Holistic Management, won the 2010 Buckminster Fuller Challenge Award for the organization performing work that has significant potential to solve humanity’s most pressing problems.
+
+                      li
+                        h5 Banksia International Award
+                        p In 2003, Allan Savory won this award given to the person doing the most for the environment on a global scale.
+
+                      li
+                        h5 USAID Office of Foreign Disaster Assistance
+                        p This organization identified Holistic Management as a way to empower people to reverse the Africa-wide cycle of failing surface and ground water, failing land productivity, massive drought, livestock deaths, famine, food aid and destocking.
+
+                      li
+                        h5 TED’s <em>Ads Worth Spreading</em>
+                        p Allan Savory was featured in a video selected as one of TED’s “Ads Worth Spreading” in 2010, based on his ability “to engage in a dialog with [his] audience based on creativity, authenticity, and a shared pursuit of a better future.”
+
+                      li
+                        h5 Keynote Address at United Nations Framework Convention on Climate Change
+                        p In 2011, Allan Savory gave the keynote address at the United Nations Land Day 4 during the United Nations Framework Convention on Climate Change in Bonn, Germany.
 
             li.tab-header-and-content
               a.tab-link(href='#') PARTNERS
               .tab-content
                 .row
                   h4 Coming soon.
+
+  section.main.our-strategy
+    header.overview-header
+      .row
+        .medium-12.columns
+          h2.section-title FOR JOURNALISTS
+          h3.section-title-alt Savory Office Media Contact
+          h4 Sarah Gleason
+          h5.description Marketing and Communications Director
+          p
+            a(href="mailto:sgleason@savory.global") sgleason@savory.global
+          p +1 303-327-9764

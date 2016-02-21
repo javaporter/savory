@@ -1,22 +1,18 @@
 body.index {
 
-  section.grasslands {
-    background: url('/assets/images/home/grasslands.jpg') no-repeat center bottom;
-    height: 400px;
-    background-size: cover;
-
-    p, ul {
-      color: $opaque-light-1;
-      font-size: 1.35rem;
-      line-height: 1.2em;
-      margin: 0;
-
-      span {
+  section.greeting {
+    position: relative;
+    .donate { z-index: 1; }
+    a {
+      .button {
+        position: absolute;
+        top: 2em;
+        right: 3em;
+        z-index: 10;
+        padding: 1em;
+        text-align: center;
         color: white;
-        font-weight: 400;
-      }
-    }
-
+        background: #e35825;
 
         @media #{$medium-up} {
           font-size: 3em;
@@ -47,7 +43,7 @@ body.index {
 
     @media #{$medium-up} {
       background: url('/assets/images/home/grasslands-lg.jpg') no-repeat center bottom;
-      min-height: 600px;
+      min-height: 320px;
     }
 
     .one-third, .event-callout {
