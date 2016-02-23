@@ -243,11 +243,16 @@ ul.in-the-news li, ul.press-releases li {
 
   .accordion-tabs-minimal a.tab-link {
     background-color: white;
-    border-top: 1px solid gainsboro;
+    border-top: 1px solid gainsboro !important;
+    border-right:1px solid gainsboro;
     color: #333;
     display: block;
-    padding: 0.75em 1em;
+    padding: 0.75em .5%;
     text-decoration: none;
+  }
+
+  .accordion-tabs-minimal .tab-header-and-content:first-of-type a.tab-link{
+    border-left: 1px solid gainsboro;
   }
 
   @media screen and (min-width: 600px) {
@@ -272,12 +277,12 @@ ul.in-the-news li, ul.press-releases li {
 
   .accordion-tabs-minimal a.tab-link.is-active {
     border-bottom: 0;
+    color: #477DCA;
   }
 
   @media screen and (min-width: 600px) {
     .accordion-tabs-minimal a.tab-link.is-active {
-      border: 1px solid gainsboro;
-      border-bottom-color: white;
+      border-bottom: 1px solid white;
       margin-bottom: -1px;
     }
   }
