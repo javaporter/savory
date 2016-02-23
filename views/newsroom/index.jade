@@ -42,7 +42,8 @@ block content
                              a(href='/news/'+article.getText('news.slug'))
                                .marker
                                img(src=article.getImage('news.image').views['homepage'].url)
-                               !=article.getStructuredText('news.shortlede').asHtml()
+                               if article.getStructuredText('news.shortlede')
+                                  !=article.getStructuredText('news.shortlede').asHtml()
 
                        a.button.small.archived-posts(href='/news') + View Archived Posts
 
@@ -58,7 +59,8 @@ block content
                              a(href='/allanUncensored/'+article.getText('AllanUncensored.slug'))
                                .marker
                                img(src=article.getImage('AllanUncensored.image').views['homepage'].url)
-                               !=article.getStructuredText('AllanUncensored.shortlede').asHtml()
+                               if article.getStructuredText('AllanUncensored.shortlede')
+                                 !=article.getStructuredText('AllanUncensored.shortlede').asHtml()
 
             li.tab-header-and-content
               a.tab-link(href='#') FAQs
