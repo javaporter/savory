@@ -147,31 +147,40 @@ block content
             li.tab-header-and-content
               a.tab-link(href='#') PRESS RELEASES
               .tab-content
+                header.overview-header
+                  .row
+                    .medium-9.columns
+                      h2.section-title Press Releases
+
                 .row
                   ul.press-releases
                     each article in pressReleases
                       li
                         a(href=article.getLink('press-releases.weblink').asText())
                           h3 #{article.getText('press-releases.title')}
-                        h4 #{article.getStructuredText('press-releases.location').asText()}
-                        h4 #{article.getDate('press-releases.date').toDateString()}
-                        br
+                        p #{article.getStructuredText('press-releases.location').asText()}
+                        p #{article.getDate('press-releases.date').toDateString()}
                         a(href=article.getLink('press-releases.weblink').asText())
                           h3 Learn More >
 
             li.tab-header-and-content
               a.tab-link(href='#') IN THE NEWS
               .tab-content
+                header.overview-header
+                  .row
+                    .medium-9.columns
+                      h2.section-title In the News
+
                 .row
                   ul.in-the-news
                     each article in inTheNews
                       li
                         a(href=article.getLink('in-the-news.weblink').asText())
                           h3 #{article.getText('in-the-news.title')}
-                        h4 #{article.getStructuredText('in-the-news.body').asText()}
-                        h4 #{article.getDate('in-the-news.date').toDateString()}
+                        p #{article.getStructuredText('in-the-news.body').asText()}
+                        p #{article.getDate('in-the-news.date').toDateString()}
                         br
-                        h4 #{article.getStructuredText('in-the-news.shortlede').asText()}
+                        p #{article.getStructuredText('in-the-news.shortlede').asText()}
 
             li.tab-header-and-content
               a.tab-link(href='#') HONORS & RECOGNITION

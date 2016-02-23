@@ -22,7 +22,8 @@ block content
                   - date = momentDate(article.getDate('news.date'))
                     .date
                       =date.format('MMM DD, YYYY')
-                  !=article.getStructuredText('news.shortlede').asHtml()
+                  if article.getStructuredText('news.shortlede')
+                    !=article.getStructuredText('news.shortlede').asHtml()
                   a.button.small(href='/news/'+article.getText('news.slug')) Read Full Article
                   
 

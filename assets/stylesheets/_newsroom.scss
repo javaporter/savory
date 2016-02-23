@@ -4,6 +4,10 @@ ul.in-the-news li, ul.press-releases li {
     padding-bottom: 1em; 
 } 
 
+.press-releases h3, .in-the-news h3 {
+  margin-bottom: .5rem;
+}
+
 .newsroom .row {
    width: 90%;
    max-width: initial; 
