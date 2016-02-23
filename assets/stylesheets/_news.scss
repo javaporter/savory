@@ -1,9 +1,10 @@
-body.news {
+#disqus_thread {
+    width: 85%;
+    margin:0 auto !important;
+    padding: 1em;
+}
 
-  #disqus_thread {
-      width: 85%;
-      margin:0 auto !important;
-  }
+body.news {
 
   .date {
     padding: .25rem .55rem;
