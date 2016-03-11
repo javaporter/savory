@@ -181,6 +181,10 @@ router.get('/get-involved', function(req, res) {
   res.render('get-involved/index', { title: 'Get Involved' });
 });
 
+router.get('/savory-journeys', function(req, res) {
+  res.render('savory-journeys', { title: 'Savory Journeys' });
+});
+
 router.get('/news', function(req, res) {
   var context = {},
       page = req.query.page || '1';

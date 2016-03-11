@@ -1,0 +1,22 @@
+block variables
+  - title = 'Savory Institute'
+
+extends /layout-savory-journeys
+
+block content
+  #overview(data-magellan-destination='overview')
+  section.overview
+
+  section.half-color
+    .art
+    .color
+    .row
+      .medium-6.columns
+        h1= title
+
+      .medium-6.columns
+        p Welcome to the new Savory Journeys page!!
+
+  section.main.savory-journeys
+    header.overview-header
+      a.button.small(href='/assets/docs/terms-and-conditions-for-journey-participants.pdf') + View Terms and Conditions

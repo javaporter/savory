@@ -1,0 +1,13 @@
+body.savory-journeys {
+  section.overview {
+    background-image: url('/assets/images/get-involved/savory-journeys-lg.jpg');
+
+    @media #{$medium-up} {
+      background-image: url('/assets/images/get-involved/savory-journeys-lg.jpg');
+    }
+  }
+
+  section.main.savory-journeys {
+  	text-align: center;
+  }
+}
