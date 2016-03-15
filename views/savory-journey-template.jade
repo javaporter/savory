@@ -1,0 +1,16 @@
+block variables
+	- title = 'Savory Institute'
+
+extends /layout-savory-journeys
+
+block content
+	#overview(data-magellan-destination='overview')
+	section.overview
+
+	section.main.savory-journey-template
+		h1 #{journeyTitle}
+		h3 #{journeySubtitle}
+		h3 #{journeyDate}
+		p #{journeyDescription}
+		h3 #{journeyAvailability}
+		a.btn-primary(href='http://savory-institute.myshopify.com/collections/savory-journeys') Find Tickets
