@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var prismic = require('../lib/prismic');
+var journeys = require('../lib/savory-journey-list');
 var _ = require('lodash');
 var url = require('url');
 var qs = require('querystring');
@@ -179,6 +180,19 @@ router.get('/styles', function(req, res) {
 
 router.get('/get-involved', function(req, res) {
   res.render('get-involved/index', { title: 'Get Involved' });
+});
+
+router.get('/savory-journeys', function(req, res) {
+  res.render('savory-journeys', { title: 'Savory Journeys' });
+});
+
+router.get('/savory-journeys/:journey', function(req,res){
+  var journey = req.params.journey;
+
+  res.render('savory-journey-template', {journeyTitle : journeys[journey]['title'],
+    journeysubtitle : journeys[journey]['subtitle'], journeyDate : journeys[journey]['date'],
+    journeyAvailability : journeys[journey]['availability'], 
+    journeyDescription : journeys[journey]['description']});
 });
 
 router.get('/news', function(req, res) {
