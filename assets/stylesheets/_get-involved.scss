@@ -50,15 +50,13 @@ body.get-involved {
     }
   }
 
-  #champion-headline {
-    color:lightgray;
-    font-size: 3.5em;
-    line-height: 1em;
-    font-weight: 100;
-  }
-  #champions-program {
-    background-image: url("/assets/images/background.jpg");
-    background-size: cover;
-  }
+  .champions-section .row {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: none;
 
+    .champions-right-column {
+      margin-top: 2em;
+    }
+  }
 }
