@@ -9,12 +9,25 @@ body.savory-journeys {
 
   section.main.savory-journeys {
   	text-align: center;
-
   }
 
   section.main {
   	.panel {
   	}
-
+    .panel header {
+    }
+    .panel footer {
+      position: absolute;
+      bottom:0;
+    }
+    .panel-body {
+      position:relative;
+      height:24rem;
+    }
+    @media #{$medium-up} {
+      .panel header img {
+        height:12rem;
+      }
+    }
   }
 }

@@ -96,8 +96,24 @@ block content
 
   include /partials/donate.jade
 
+  #champions-program(data-magellan-destination='champions-program')
+  section.main.champions-section
+    .content
+      .row
+        .medium-6.columns.champions-left-column
+          img(src='/assets/images/wheat-field.jpg', alt='Champions Program')
+        .medium-6.columns.champions-right-column
+          header.overview-header
+            .row
+              .small-12.columns
+                h2.section-title Champions Program
+                p Our Savory Champions Program creates engagement with non-agricultural enthusiasts of the Savory Institute. The program includes opportunities to be informed and equipped for influencing local policies, programs and strategies around food, water, and land, as well as advancing public awareness and education.
+                a.btn-primary(href='http://savory-institute.myshopify.com/products/champions-program-2?variant=16897425669') Become a Champion
+
+
   #savory-journeys(data-magellan-destination='savory-journeys')
-  img(data-interchange='[/assets/images/get-involved/savory-journeys.jpg, (default)], [/assets/images/get-involved/savory-journeys-lg.jpg, (medium)]')
+  //
+    img(data-interchange='[/assets/images/get-involved/savory-journeys.jpg, (default)], [/assets/images/get-involved/savory-journeys-lg.jpg, (medium)]')
   section.main
     header
       .row
@@ -107,7 +123,7 @@ block content
           p Savory journeys explore the work of the global network of savory hubs with a focus on educating and connecting visitors to the practices, learning, and success of holistic management throughout the world.
           p These tours immerse guests in the communities, land, production models, markets, food, and culture of each host you will visit. Savory journeys are committed to creating meaningful, informative, and memorable experiences.
 
-          a.btn-primary(href='http://savory-institute.myshopify.com/collections/savory-journeys', target='_blank') View Upcoming Trips
+          a.btn-primary(href='/savory-journeys') View Upcoming Trips
 
   #careers(data-magellan-destination='careers')
   img(data-interchange='[/assets/images/water_buffalo.png, (default)], [/assets/images/water_buffalo.png, (medium)]')

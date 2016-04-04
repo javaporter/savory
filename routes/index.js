@@ -191,8 +191,19 @@ router.get('/savory-journeys/:journey', function(req,res){
 
   res.render('savory-journey-template', {journeyTitle : journeys[journey]['title'],
     journeysubtitle : journeys[journey]['subtitle'], journeyDate : journeys[journey]['date'],
-    journeyAvailability : journeys[journey]['availability'], 
-    journeyDescription : journeys[journey]['description']});
+    journeyAvailability : journeys[journey]['availability'],
+    journeyDescription : journeys[journey]['description'],
+    highlights : journeys[journey]['highlights'],
+    highlightText : journeys[journey]['highlightText'],
+    itinTitle : journeys[journey]['itinTitle'],
+    itinerary : journeys[journey]['itinerary'],
+    costTitle : journeys[journey]['costTitle'],
+    costText : journeys[journey]['costText'],
+    expectTitle : journeys[journey]['expectTitle'],
+    expectText : journeys[journey]['expectText'],
+    questionsTitle : journeys[journey]['questionsTitle'],
+    questionsText : journeys[journey]['questionsText']
+  });
 });
 
 router.get('/news', function(req, res) {

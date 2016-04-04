@@ -50,4 +50,21 @@ body.get-involved {
     }
   }
 
+  .champions-section {
+    padding:0;
+    .row {
+      margin-left: 0;
+      margin-right: 0;
+      max-width: none;
+
+      .champions-left-column {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .champions-right-column {
+        margin-top: 2em;
+        padding-left:1em;
+      }
+    }
+  }
 }
