@@ -58,12 +58,21 @@ body.get-involved {
       max-width: none;
 
       .champions-left-column {
+        background: url("/assets/images/wheat-field.jpg");
+        background-size: cover;
+        height: 100%;
+        width: 50%;
+        position: absolute;        
         padding-left: 0;
         padding-right: 0;
       }
       .champions-right-column {
         margin-top: 2em;
         padding-left:1em;
+
+        .overview-header {
+          border-bottom: none;
+        }
       }
     }
   }
