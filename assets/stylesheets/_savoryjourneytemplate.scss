@@ -1,9 +1,8 @@
 body.savory-journeys {
   section.overview {
-    background-image: url('/assets/images/get-involved/savory-journeys-lg.jpg');
-
+      background-size: cover;
+      background-position: center bottom;
     @media #{$medium-up} {
-      background-image: url('/assets/images/get-involved/savory-journeys-lg.jpg');
     }
   }
 
