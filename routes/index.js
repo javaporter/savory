@@ -189,7 +189,10 @@ router.get('/savory-journeys', function(req, res) {
 router.get('/savory-journeys/:journey', function(req,res){
   var journey = req.params.journey;
 
-  res.render('savory-journey-template', {journeyTitle : journeys[journey]['title'],
+  res.render('savory-journey-template', {
+    fbURL : req.protocol + '://' + req.get('host') + req.originalUrl,
+
+    journeyTitle : journeys[journey]['title'],
     headerPicture : journeys[journey]['headerPicture'],
     journeysubtitle : journeys[journey]['subtitle'], journeyDate : journeys[journey]['date'],
     journeyAvailability : journeys[journey]['availability'],

@@ -2,12 +2,16 @@ block variables
 doctype html
 html
   head
-    meta(property="og:url" content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html")
-    meta(property="og:type" content="article")
-    meta(property="og:title" content="When Great Minds Don’t Think Alike")
-    meta(property="og:description" content="How much does culture influence creative thinking?")
-    meta(property="og:image" content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg")
-      
+    if fbURL
+      meta(property="og:url" content="#{fbURL}")
+      meta(property="og:type" content="article")
+    if journeyTitle
+      meta(property="og:title" content="#{journeyTitle}")
+    if journeyDescription
+      meta(property="og:description" content="#{journeyDescription}")
+    if headerPicture
+      meta(property="og:image" content="#{headerPicture}")
+
     meta(charset='utf-8')
     meta(content='width=device-width, initial-scale=1', name='viewport')
     meta(content='IE=Edge', http-equiv='X-UA-Compatible')
