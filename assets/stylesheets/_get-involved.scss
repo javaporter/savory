@@ -50,4 +50,32 @@ body.get-involved {
     }
   }
 
+  .soil-manifesto-section {
+    padding:0;
+    .row {
+      margin-left: 0;
+      margin-right: 0;
+      max-width: none;
+
+      .soil-manifesto-left-column {
+        background: url("/assets/images/get-involved/soil-manifesto.jpg");
+        background-size: cover;
+        height: 100%;
+        width: 50%;
+        position: absolute;        
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .soil-manifesto-right-column {
+        margin-top: 2em;
+        padding-left:1em;
+
+        .overview-header {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+
 }
