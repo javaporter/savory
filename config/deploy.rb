@@ -2,7 +2,7 @@
 lock '3.4.0'
 
 set :application, 'savory'
-set :repo_url, 'savory-github:savoryinstitute/savory.git'
+set :repo_url, 'https://github.com/savoryinstitute/savory.git'
 set :keep_releases, 2
 
 set :linked_dirs, %w{node_modules}
