@@ -1,0 +1,42 @@
+block variables
+  - title = 'Allan Savory Uncensored'
+  - metaDesc = ""
+
+extends /layout-platform
+
+block content
+
+  section.main
+    .row
+      .small-12.columns
+        h1= title
+
+        ul.news-archives
+          each article in news.results
+            li
+              .row
+                .large-3.medium-5.columns.hide-for-small-only
+                  a(href='/allanUncensored/'+article.getText('news.slug'))
+                    img(src=article.getImage('AllanUncensored.image').views['homepage'].url)
+                .large-9.medium-7.columns
+                  h2= article.getText('AllanUncensored.title')
+                  - date = momentDate(article.getDate('AllanUncensored.date'))
+                    .date
+                      =date.format('MMM DD, YYYY')
+                  if article.getStructuredText('AllanUncensored.shortlede')
+                    !=article.getStructuredText('AllanUncensored.shortlede').asHtml()
+                  a.button.small(href='/allanUncensored/'+article.getText('AllanUncensored.slug')) Read Full Article
+                  
+
+    .row.prev-next
+      .small-6.columns
+        if next
+          p: a.btn-primary(href=next)
+            i.fa.fa-backward 
+            | Older
+      
+      .small-6.columns
+        if prev
+          p.newer: a.btn-primary(href=prev) 
+            | Newer
+            i.fa.fa-forward 

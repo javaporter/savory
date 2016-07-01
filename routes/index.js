@@ -225,6 +225,22 @@ router.get('/news', function(req, res) {
     });
 });
 
+router.get('/savory-uncensored', function(req, res) {
+  var context = {},
+      page = req.query.page || '1';
+  prismic.api()
+    .then(function(api) {
+      return prismic.savoryUncensored(api, null, page);
+    })
+    .then(function(news) {
+      context.news = news;
+      context.page = page;
+      _.assign(context, paginate(req, news, page));
+      res.render('news/savoryUncensored', context);
+    });
+});
+
+
 // News article
 router.get('/news/:slug', function(req, res) {
   prismic.api()
