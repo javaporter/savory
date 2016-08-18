@@ -1,0 +1,9 @@
+deployment:
+  staging:
+    branch: develop
+    commands:
+      - ./config/deploy.sh staging
+  production:
+    branch: master
+    commands:
+      - ./config/deploy.sh production
