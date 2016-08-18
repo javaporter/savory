@@ -17,3 +17,4 @@ ROOT_DIRECTORY="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && cd .. && pwd )"
 
 echo "Deploying to $ENVIRONMENT at root@savory.global:$DEPLOYMENT_DIRECTORY"
 rsync -rltDz --exclude-from="$ROOT_DIRECTORY/config/rsync-exclusions.txt" --delete --delete-delay "$ROOT_DIRECTORY/" root@savory.global:$DEPLOYMENT_DIRECTORY
+ssh root@savory.global pm2 restart $ENVIRONMENT
