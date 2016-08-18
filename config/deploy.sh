@@ -3,7 +3,7 @@
 # Grab the environment from the first argument. If no arguments, then default to staging deployments
 ENVIRONMENT=${1:-staging}
 
-DEPLOYMENT_DIRECTORY=/var/www/
+DEPLOYMENT_DIRECTORY=/var/www
 
 if [ "$ENVIRONMENT" == "staging" ]
 then
