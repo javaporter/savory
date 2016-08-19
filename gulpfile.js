@@ -73,7 +73,7 @@ gulp.task('default', ['sass', 'js', 'watch'], function() {
   nodemon({
     ext: 'js',
     ignore: ['public/**',  'views/**', 'assets/**', 'bin/**'],
-    script: 'bin/dev-server'
+    script: 'bin/localhost'
   })
   .on('restart', function() {
     console.log('Restarted server');
