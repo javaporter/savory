@@ -23,8 +23,12 @@ block content
 		if itinTitle
 			h3 #{itinTitle}
 			each val in itinerary
-				h5= val[0]
-				p !{val[1]}
+				h5(style="clear: both")= val.title
+				p
+					if val.image
+						img(src=val.image.src align=val.image.align style="margin-left: 10px; margin-right: 10px;")
+					!{val.text}
+					
 		if costTitle
 			h3 #{costTitle}
 			each val in costText
