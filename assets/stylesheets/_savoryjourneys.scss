@@ -26,10 +26,14 @@ body.savory-journeys {
     }
     .panel-body {
       position:relative;
-      height:24rem;
+
+      .organization, .location, .date {
+          margin: 0;
+          line-height: 1.5em;
+      }
     }
     @media #{$medium-up} {
-      .panel header img {
+      .panel-body img {
         height:12rem;
       }
     }

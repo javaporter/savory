@@ -64,20 +64,6 @@ body.institute {
       left: -200px;
       z-index: 10;
     }
-
-    .video {
-      padding: 1.5rem;
-      background: $opaque-dark-2;
-      position: relative;
-
-      .flex-video {
-        margin-bottom: 0;
-      }
-
-      @media #{$small-only} {
-        margin-bottom: 1.5rem;
-      }
-    }
   }
 
   .grasslands-copy-block {

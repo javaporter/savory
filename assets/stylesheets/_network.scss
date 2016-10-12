@@ -9,7 +9,7 @@ body.network {
     background-position: center center;
 
     @media #{$medium-up} {
-      background-image: url('/assets/images/network/hero-lg.jpg');
+      background-image: url('http://placehold.it/1400x400');
     }
 
     .content {
@@ -27,8 +27,42 @@ body.network {
       float: left;
       margin-right: 1rem;
     }
+
+    .apply {
+        display: block;
+        width: 6em;
+        margin: 0 auto;
+    }
   }
 
+  section.what {
+      .callout {
+          background-color: $stone;
+          color: $smoke;
+          padding: 2rem;
+
+          h3 {
+              color: $smoke;
+              font-weight: bold;
+              text-transform: uppercase;
+          }
+      }
+  }
+
+  section.signature-stories {
+      .signature-video {
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+      }
+  }
+
+  section.news {
+      .content {
+          .row {
+              margin-bottom: 2rem;
+          }
+      }
+  }
 
   ul.application-process {
     @extend .no-bullet;
@@ -82,7 +116,7 @@ body.network {
         background-size: cover;
         height: 100%;
         width: 50%;
-        position: absolute;        
+        position: absolute;
         padding-left: 0;
         padding-right: 0;
       }

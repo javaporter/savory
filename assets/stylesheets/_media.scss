@@ -142,7 +142,21 @@ ul.image-grid {
 
 }
 
+// video embeds
 
+section .video {
+  padding: 1.5rem;
+  background: $opaque-dark-2;
+  position: relative;
+
+  .flex-video {
+    margin-bottom: 0;
+  }
+
+  @media #{$small-only} {
+    margin-bottom: 1.5rem;
+  }
+}
 
 // for store stuff
 section.store-items {

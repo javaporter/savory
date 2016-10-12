@@ -6,266 +6,133 @@ extends /layout-network
 
 block content
 
-  #overview(data-magellan-destination='overview')
-  section.main.overview
-    .content
-      .row
-        .small-12.columns
-          img(src='/assets/images/savory-network-light.svg', class='network-logo' alt='holistic training')
+    #overview(data-magellan-destination='overview')
+    section.main.overview
+        .content
+            .row
+                .small-12.columns
+                    a(href='#hub-application', class='btn-primary apply')
+                        i(class='fa fa-mail-forward')
+                        span Apply
 
-  section.half-color
-    .art
-    .color
-    .row
-      .medium-6.columns
-        h1= 'Savory Network'
-
-      .medium-6.columns
-        p The Network is the lifeblood of the organization — a global network of entrepreneurial leaders committed to serving their regions with Holistic Management training and implementation support. Our growing network of regional Hubs and Accredited Professionals is taking Holistic Management from theory to practice, with resounding success in real communities.
-
-
-
-  #savory-hub(data-magellan-destination='savory-hub')
-  section.main
-    header.overview-header
-      .row
-        .medium-3.columns
-          h2.section-title Savory Hub
-        .medium-9.columns
-          p Our goal is to partner with local individuals and organizations to establish self-sustaining Savory Hubs. Hubs provide Holistic Management training and implementation support for farmers, ranchers, and land managers.
-
-    .row
-      .small-12.columns
-        p By 2025, we will establish 100 Savory Hubs around the world, providing local capacity and infrastructure to train — and support — thousands of practitioners. This will influence the management of 1 billion hectares of land; <em> that's &frac15; of the grasslands of the world.</em>
-
-        h3 Services
-        p Supported by Savory Institute, each Savory Hub will be responsible for marketing and implementing the following programs and services for local practitioners, NGOs, and government agencies:
+    section.main.what
+        .content
+            .row
+                .medium-8.medium-centered.columns
+                    div.callout
+                        h3 What is Savory Global Network?
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 
-        .key-points
-          .keyline
-          .row.collapse
-            .medium-6.columns.left
-              .point
-                h4 Professional Training
-                p Each Savory Hub will offer training in Holistic Management for both commercial and communal land-based practitioners, as well as NGOs and governments working with pastoralists. It will have access to land that can be used to provide practical hands-on experience as part of the training curriculum. Furthermore, each Hub will offer formal accreditation for professionals who desire to train or consult with practitioners on the implementation of Holistic Management.
-
-              .point
-                h4 Project Consulting
-                p Each Savory Hub will offer custom training, education, and consulting services to land managers, organizations and governments who are influencing the management of large areas of grasslands or degraded dry lands.
-
-              .point
-                h4 Full Spectrum Monitoring
-                p Each Savory Hub will offer biological, social, and financial monitoring services to land managers, organizations and governments to ensure long-term sustainability of their projects and initiatives.
-
-            .medium-6.columns.right
-              .point
-                h4 Educational Programs
-                p Each Savory Hub will offer opportunities for local youth and community members to learn more about Holistic Management and the business, policy, and scientific issues involved in sustainable land management.
-
-              .point
-                h4 Auditing Services
-                p Each Savory Hub will offer auditing services to land managers who are interested in accessing established market incentives or premium prices for their products under specific sustainable land and livestock management standards.
-
-              .point
-                h4 Entrepreneurial Incubator
-                p Each Savory Hub will serve as a regional incubator for innovative land-based enterprises that could enhance triple bottom line returns to land managers, including innovative approaches to monetizing ecosystem services.
-
-
-
-
-  section.main.hubs
-    .legend
-      .row
-        .small-12.columns
-          ul
-            li.poppy
-              a(href='#', data-reveal-id='accredited-hubs') Accredited Hubs
-            li.verdant
-              a(href='#', data-reveal-id='hub-candidates') Hub Candidates
-            li.elf
-              a(href='#', data-reveal-id='special-projects') Special Projects
-
-    script!='var hubs_geojson='+hubs_geojson+';'
-    #map.hubs-map
-
-
-  #hub-application(data-magellan-destination='hub-application')
-  section.main
-    .row
-      .small-12.columns
-        figure.img-love
-          img(data-interchange='[/assets/images/network/hub.jpg, (default)], [/assets/images/network/hub-lg.jpg, (medium)]')
-
-    header.overview-header
-      .row
-        .medium-3.columns
-          h2.section-title Hub Application
-        .medium-9.columns
-          p Are you interested in becoming a Hub? The Savory Institute accepts applications for individuals or organizations interested in starting a Savory Hub in their region.
-
-    .row
-      .small-12.columns
-        p We are looking for entrepreneurial, innovative and passionate organizations or individuals who desire to create local solutions to land degradation. Hubs can be an extension of an existing organization or a completely new organization. We encourage for-profits, NGOs, and cooperatives to apply. All Hubs should be financially sustainable through providing local product and service solutions for land degradation, food and water security, and community empowerment.
-        p Since 2012, the Savory Institute has received over 200 applications for the establishment of local Hubs — we choose 10 individuals or organizations to become Hub Candidates every year. We have local Hubs or Candidates in over 20+ countries.
-
-        hr
-
-    .row
-      .medium-6.columns
-        img(data-interchange='[/assets/images/network/hexagon.png, (default)], [/assets/images/network/hexagon-lg.png, (medium)]')
-      .medium-6.columns
-        h3 Application Process:
-        p The Savory Institute will evaluate every application in three major categories: impact, scale, and financial sustainability.  We will narrow all the applications to the top 20 applicants. These top 20 applications will be required to complete the following process to guide Savory in choosing the 10 Hub Candidates.
-
-        ul.application-process
-          li
-            h4 Interview
-            p Every Hub applicant chosen is required to complete a phone interview with Savory team. This interview will be important in making a final decision. You will be given an opportunity to present your proposal for becoming a Hub. We are available to answer any questions about the selection process.
-
-          li
-            h4 Hub Business Plan
-            p Every Hub is required to submit a final business plan providing the specifics of implementation relevant to the existing region. This implementation will involve managing the local demonstration site, offering training and consulting services, and providing monitoring and data management services for site management.
-
-          li
-            h4 Promotional Video
-            p In addition, each applicant should provide a short (3-5 minute) inspirational video on why they should be selected as a Hub. We encourage creativity! Each video should include the following key points:
-
-            ul.bordered-list
-              li Vision for the local Hub
-              li Footage of the local area’s landscape and communities
-              li Insights into the people who will be impacted
-              li Local challenges and issues
-              li Why here and why now?
-              li Tell us about your team and who will be leading these efforts
-
-    .row
-      .small-12.columns
-        hr
-        h3 Hub Candidates:
-        p After being selected as a Hub Candidate, each individual Hub will begin the process of accreditation with the Savory Institute.
-
-        .key-points
-          .keyline
-          .row.collapse
-            .medium-6.columns.left
-              .point
-                h4 Demonstration Site
-                p Maintain management influence or control of a local demonstration site for the purpose of education, training and research. This site must be managed using Holistic Management. The site must use the core Holistic Management planning procedures for operating. Each Hub will use the local site for providing workshops and demonstrations on how the practice of Holistic Management works on site. The actual planning procedures and baseline monitoring must be on file before the organization can be recognized as an accredited Hub. The Hub demonstration site may be audited to confirm compliance of the requirements.
-
-              .point
-                h4 Savory Institute Accredited Professionals
-                p To maintain quality and consistency amongst the Hub network and special projects, we require that all Hubs use Savory Institute accredited professionals in training and consulting. Each Hub will have access to the network of accredited professionals to provide these services. Each Hub can hire accredited professionals as staff or provide staff to be accredited by Savory Institute or another accredited Hub. Holistic Management Training will be provided to Hubs interested in having accredited professionals on staff.
-
-              .point
-                h4 Hub Leadership Bootcamp
-                p Two leaders from each Hub will be required to attend the Hub Leadership Bootcamp. The typical format includes 8-10 days of training addressing organizational development, brand and marketing support, networking, a Holistic Management overview, and field training and support. The training will be facilitated by Savory Institute staff, including a few sessions with Allan Savory.
-
-            .medium-6.columns.right
-              .point
-                h4 Funding
-                p Based upon the business plan submitted, each Hub will need to raise the financial resources needed for execution. Those resources will need to be confirmed before official accreditation. The Savory Institute will provide assistance in fundraising for grants and investments. Savory Institute encourages each candidate to seek out the necessary funding for implementation of the business plan. We cannot guarantee funding will be available to existing candidates.
-
-              .point
-                h4 Fees and Expenses
-                p Each Hub is required to provide funding for the fees and expenses of the following activities. In the past, Savory Institute has been able to contribute donor funds to cover the majority of expenses associated with the Leadership Bootcamp. Future funding is not guaranteed and a $5,000 deposit is required. Your deposit covers the expenses of the Hub Leadership Bootcamp (2 people for 8-10 days including food, accommodations, and travel within Zimbabwe*). *International travel to Zimbabwe is not included. Each Hub will make the decision if they need an Accredited Professional as a member of the Hub core team. If needed, Savory Institute will provide a specific training in the first quarter of 2015. This training will be a total of 8 days. The cost is $2,000 and can include 2 people. If an existing team member is already an Accredited Professional this is not needed.
-
-  section.call-to-action
-    .row
-      .small-12.columns
-        h3 Apply to become a Savory Hub
-        p Are you ready to begin to change your world, to help others realize the benefits of healthier grasslands through Holistic Management practices?
-        a.btn-primary(href='https://docs.google.com/forms/d/1C_6xhPn0I7dA9xF2wgPx3UExsBNtkyQpLTjEYRrpGYw/viewform', target='_blank') Apply Now
-
-
-
-
-  #accredited-pros(data-magellan-destination='accredited-pros')
-  section.main
-    header.overview-header
-      .row
-        .medium-3.columns
-          h2.section-title Accredited Professionals
-        .medium-9.columns
-          p Savory Institute supports a worldwide network of accredited professionals that train, support, and work with local Savory Hubs, farmers, ranchers, consumers, government agencies, non-governmental organizations, and managers of communal lands. These professionals provide training, consulting and support in holistic management. These professionals are trained to provide support on ecologically regenerative, financially viable and socially meaningful outcomes.
-
-    .row
-      .small-12.columns
-        h3 Accredited Professionals
-        p Accredited Professionals include two recognized categories: Professional Educators and Field Professionals.
+    #signature-stories(data-magellan-destination='signature-stories')
+    section.main.signature-stories
+        header.overview-header
+            .row
+                .medium-12.columns
+                    h2.section-title Signature Stories
+        .row.signature-video
+            .medium-6.medium-offset-3.columns
+                .video
+                    .flex-video.widescreen.youtube
+                        iframe(src='//www.youtube.com/embed/5LHoh-OKUfU?rel=0&amp;controls=0&amp;showinfo=0')
 
         .row
-          .medium-6.columns
-            h4 Professional Educator (Level 1)
-            p Individual has demonstrated knowledge and ability to train in all aspects of Holistic Management content and has completed training in all aspects of Holistic Management content including:
-            ul.plus
-              li Foundations of Holistic Management – 3 day course
-              li Holistic Financial Planning – 3 days course
-              li Holistic Planned Grazing – 3 day course
-              li Holistic Land Planning – 2 day course
-              li Ecological Monitoring – 2 day course
-
-          .medium-6.columns
-            h4 Field Professional (Level 2)
-            p In addition to the requirements of the Professional Educator, the Field professional:
-            ul.plus
-              li Has a minimum of one year's demonstrated knowledge, ability, and field experience to train content and implement all aspects of Holistic Management on diverse applications based on actual experience in managing a ranch/farm/communal land holistically
-              li Has a minimum of three years' experience in managing and working on a farm or ranch
-
-
-        hr
-        h3 Accreditation Benefits
-        p Savory Institute Professional Educators/Field Professionals benefits include:
-        ul.plus
-          li <span>Updated Curriculum:</span> Enhanced materials including state-of-the-art multi-media curriculum and tools for delivery.
-          li <span>Continuing Education:</span> Two annual continuing education courses.
-          li <span>Quarterly Meetings:</span> Four quarterly updates with Savory Institute.
-          li <span>Enhanced Marketing:</span> Networked on The Holistic Platform (THP) with Savory Hubs, Professional Educators, and Field Professionals.
-          li <span>Contract Opportunities:</span> Contracting opportunities through Savory Institute and its network of Savory Hubs. Savory and its network of Hubs are required to use Savory Accredited Professionals in all training, consulting, and project work.
-          li <span>Increase Demand:</span> Feedback/rating of your work by clients and Hubs, through THP (the network platform) &mdash; allowing Savory Institute accredited professionals to earn merit points or reputation points that will increase demand for their services.
-          li <span>Discounts:</span> Access to discounted tickets to all Savory Institute events including the International Annual. In addition, discounts on all products and services being offered through Savory or its network.
-
-        hr
-        h3 Accreditation Process
-        p By design, the accreditation process is thorough, but it is well-worth the effort. To become an Accredited Professional, you must:
-        ol.smaller
-          li Provide a letter of application stating you would like to be accredited with Savory Institute and at what accreditation level
-          li Provide evidence of completion of training in Savory Holistic Management Professional Educator curriculum
-          li Provide evidence of one year's experience in managing land and livestock holistically if applying for Field Professional
-          li Provide evidence of three years' experience in managing and working on a farm or ranch if applying for Field Professional
-          li For Professional Educator accreditation, provide references from one Savory Institute Accredited Professional Educator or Field Professional
-          li For Field Professional accreditation, provide references from two on-site farm/ranch clients
-          li Provide resumé or CV with Holistic Management and farm/ranch experience
-          li Pay Savory Institute the Exit Review Fee, then request to schedule an Exit Review with Savory Institute
-          li Complete and pass exit interview with Savory Institute or Authorized Savory Institute Professional Educator/Field Professional
-          li Pay Savory Institute annual Professional Educator/Field Professional fee
-        p To get started, start with step one and send your letter of application to us at <a href='mailto:contact@savoryinstitute.org.'>contact@savoryinstitute.org.</a>
-
-        hr
-        h3 Accredited Professional Exit Fee
-        p Upon completion of the requirements to become an Accredited Professional, an Exit Review will be conducted with Savory Institute to ensure the individual meets the standards to present/market themselves as a Savory Institute Accredited Professional either at the Professional Educator or Field Professional level. 
-        a.btn-primary(href='http://savory-institute.myshopify.com/collections/accredited-professional-subscriptions/products/accredited-professional-exit-review-fee?variant=11106054917', target="_blank")
-          i.fa.fa-shopping-cart
-          | Pay Exit Fee
+            .medium-4.columns
+                .panel
+                    header
+                        i.fa.fa-book
+                        h3 Header 1
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            .medium-4.columns
+                .panel
+                    header
+                        i.fa.fa-book
+                        h3 Header 2
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            .medium-4.columns
+                .panel
+                    header
+                        i.fa.fa-book
+                        h3 Header 3
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 
-        hr
-        h3 Renew Accreditation
-        p If you are an approved Accredited Professional with Savory and you wish to sign up and pay for your annual renewal fee, you may do so here. If you are interested in <em>becoming</em> an accredited professional with Savory, credit will be given for participation in our <a href='/platform/#online-ed'>Online Education</a> — that is where you should begin.
-        a.btn-primary(href='http://savory-institute.myshopify.com/collections/accredited-professional-subscriptions', target="_blank")
-          i.fa.fa-shopping-cart
-          | Renew Accreditation
+    section.main.consulting
+        .row
+            .small-12.columns
+                .key-points
+                    .keyline
+                    .row.collapse
+                        .medium-6.columns.left
+                          .point
+                            h4 Professional Training
+                            p Each Savory Hub will offer training in Holistic Management for both commercial and communal land-based practitioners, as well as NGOs and governments working with pastoralists. It will have access to land that can be used to provide practical hands-on experience as part of the training curriculum. Furthermore, each Hub will offer formal accreditation for professionals who desire to train or consult with practitioners on the implementation of Holistic Management.
 
-  #champions-program(data-magellan-destination='champions-program')
-  section.main.champions-section
-    .content
-      .row
-        .medium-6.columns.champions-left-column
-        .medium-6.columns.champions-right-column
-          header.overview-header
+                          .point
+                            h4 Auditing Services
+                            p Each Savory Hub will offer auditing services to land managers who are interested in accessing established market incentives or premium prices for their products under specific sustainable land and livestock management standards.
+
+                        .medium-6.columns.right
+                            .point
+                                h4 Project Consulting
+                                p Each Savory Hub will offer custom training, education, and consulting services to land managers, organizations and governments who are influencing the management of large areas of grasslands or degraded dry lands.
+                                p
+                                    a(href='#hub-application', class='btn-primary apply')
+                                        i(class='fa fa-mail-forward')
+                                        span Apply
+
+    section.main.hubs
+        .legend
+            ul
+                li.poppy
+                    a(href='#', data-reveal-id='accredited-hubs') Accredited Hubs
+                li.verdant
+                    a(href='#', data-reveal-id='hub-candidates') Hub Candidates
+                li.elf
+                    a(href='#', data-reveal-id='special-projects') Special Projects
+        script!='var hubs_geojson='+hubs_geojson+';'
+        #map.hubs-map
+
+    section.main.news
+        header.overview-header
             .row
-              .small-12.columns
-                h2.section-title Champions Program
-                p Are you a foodie, urbanite, teacher, or other professional who recognizes the power in supporting a regenerative movement? 
-                p The Savory Champions program includes opportunities to be informed and equipped to advocate for a transformation of agriculture that results in climate-smart food production, restored ecosystems, and economic prosperity.
-                a.btn-primary(href='http://savory-institute.myshopify.com/products/champions-program-2?variant=16897425669') Become a Champion
+                .medium-12.columns
+                    h2.section-title Network News
+        .content
+            .row
+                .medium-3.columns
+                    figure.img-love
+                        img(src='https://placehold.it/200x150')
+                .medium-3.columns
+                    figure.img-love
+                        img(src='https://placehold.it/200x150')
+                .medium-3.columns
+                    figure.img-love
+                        img(src='https://placehold.it/200x150')
+                .medium-3.columns
+                    figure.img-love
+                        img(src='https://placehold.it/200x150')
+            .row
+                .medium-6.columns
+                    p
+                        img(src='https://placehold.it/125x100', align='left')
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                .medium-6.columns
+                    p
+                        img(src='https://placehold.it/125x100', align='left')
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            .row
+                .medium-6.columns
+                    p
+                        img(src='https://placehold.it/125x100', align='right')
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                .medium-6.columns
+                    p
+                        img(src='https://placehold.it/125x100', align='right')
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+    section.main.footer
+        .content
+            .row
+                .medium-12.columns
+                    img(src='http://placehold.it/1400x300')
