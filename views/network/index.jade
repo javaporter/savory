@@ -33,8 +33,8 @@ block content
         .row.signature-video
             .medium-10.medium-offset-1.columns
                 .video
-                    .flex-video.widescreen.youtube
-                        iframe(src='//www.youtube.com/embed/5LHoh-OKUfU?rel=0&amp;controls=0&amp;showinfo=0')
+                    .flex-video.widescreen.vimeo
+                        iframe(src='https://player.vimeo.com/video/179280081?title=0&byline=0&portrait=0')
 
         .row
             .medium-4.columns
@@ -57,6 +57,7 @@ block content
                     p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 
+    #consulting(data-magellan-destination='accredited-pros')
     section.main.consulting
         .row
             .small-12.columns
@@ -65,21 +66,72 @@ block content
                     .row.collapse
                         .medium-6.columns.left
                           .point
-                            h4 Professional Training
-                            p Each Savory Hub will offer training in Holistic Management for both commercial and communal land-based practitioners, as well as NGOs and governments working with pastoralists. It will have access to land that can be used to provide practical hands-on experience as part of the training curriculum. Furthermore, each Hub will offer formal accreditation for professionals who desire to train or consult with practitioners on the implementation of Holistic Management.
-
-                          .point
-                            h4 Auditing Services
-                            p Each Savory Hub will offer auditing services to land managers who are interested in accessing established market incentives or premium prices for their products under specific sustainable land and livestock management standards.
+                            h4 Accredited Professional
+                            p Accredited professionals lead training and implementation of Holistic Management. Equipped with accreditation in the complete and current Holistic Management body of knowledge, they teach, train and support Holistic Management practitioners. Some add Savory Institute credentials to their existing profession and others focus their career on Holistic Management education. Either way, training from Allan Savory himself and other Holistic Management pioneers and innovative thinkers, make Savory Institute Accredited Professionals truly outstanding in their field.
+                            p
+                                a(href='mailto:asmith@savory.global', class='btn-primary apply')
+                                    i(class='fa fa-mail-forward')
+                                    span Apply
 
                         .medium-6.columns.right
                             .point
-                                h4 Project Consulting
-                                p Each Savory Hub will offer custom training, education, and consulting services to land managers, organizations and governments who are influencing the management of large areas of grasslands or degraded dry lands.
+                                h4 Savory Global Network Hub
+                                p Hubs have a unique place in the Global Network. They are key to achieving large-scale restoration of the world’s grasslands. Hubs create a flexible and quick-moving global network of ordinary, entrepreneurial people who are driven to create abundance for the people and places that matter most to them. Hubs are proxies for the Savory Institute in given region of the world. It is through Savory Global hubs that Holistic Management education, training, events, special projects, research and experiences are realized. A hub coordinates all Savory Institute Holistic Management activities and developments in their defined region of the world.
                                 p
-                                    a(href='#hub-application', class='btn-primary apply')
+                                    a.btn-primary.apply(href='https://docs.google.com/forms/d/e/1FAIpQLSdEf3mM7FUkntWw_KcaxIY33a5MgQLo67Ny85HvDGmxXlH_qQ/viewform', target='_blank')
                                         i(class='fa fa-mail-forward')
                                         span Apply
+
+    #forum(data-magellan-destination='champions-program')
+    section.main
+        header.overview-header
+            .row
+                .medium-5.columns
+                    h2.section-title SAVORY CHAMPION
+                .medium-7.columns
+        .row
+            .medium-6.columns
+                p The Savory Champion is the advocate for Holistic Management and regenerative agriculture. Champions understand that perceptions, beliefs and actions of institutions cannot change until public opinion changes first. The Savory Champions drive a shift in public opinion toward awareness of Holistic Management and its role in regenerating our land, communities, food and health. Supported by the Savory Institute and Global Network, Champions organize, speak about, coordinate and promote the application of Holistic Management to social, economic and environmental challenges in their region.
+                h4 DIGITAL LIBRARIES:
+                ul.plus
+                    li Savory Scientific Portfolio
+                    li Savory White Papers
+                    li Savory Holistic Management ebooks (Spanish and English versions)
+                    li Savory Products & Services Marketing Collateral
+                    li Webinar Recordings
+                    li All Savory Holistic Management Forms & Charts
+            .medium-6.columns
+                h4 EVERYTHING IN ONE PLACE:
+                p The Savory Champion program includes:
+                ul.each-course
+                    li
+                        i.fa.fa-clock-o
+                        h3 Meetings
+                        p Meetings, webinars, and access to the Collaboration Forum
+                    li
+                        i.fa.fa-comments
+                        h3 Discounts
+                        p On all Savory products, events, and speaking engagements
+                    li
+                        i.fa.fa-envelope
+                        h3 Training
+                        p Online courses and content training in Holistic Management
+                    li
+                        i.fa.fa-archive
+                        h3 Provided Materials
+                        p Access to online materials and research
+                    li
+                        i.fa.fa-user-secret
+                        h3 Promotional
+                        p Recognized as crucial partners at all Savory events
+        .row
+            .small-12.columns
+                br
+                p Members of Savory Hubs, Savory Accredited Professionals, and Savory Champions have access to the Collaboration Forum.  Please join one of these groups to receive your login information.
+                p
+                    a.btn-primary(href='/network#champions-program', target='_blank')
+                        i.fa.fa-book
+                        | Become a Champion
 
     section.main.hubs
         .legend
@@ -100,39 +152,10 @@ block content
                     h2.section-title Network News
         .content
             .row
-                .medium-3.columns
-                    figure.img-love
-                        img(src='https://placehold.it/200x150')
-                .medium-3.columns
-                    figure.img-love
-                        img(src='https://placehold.it/200x150')
-                .medium-3.columns
-                    figure.img-love
-                        img(src='https://placehold.it/200x150')
-                .medium-3.columns
-                    figure.img-love
-                        img(src='https://placehold.it/200x150')
-            .row
-                .medium-6.columns
-                    p
-                        img(src='https://placehold.it/125x100', align='left')
-                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                .medium-6.columns
-                    p
-                        img(src='https://placehold.it/125x100', align='left')
-                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            .row
-                .medium-6.columns
-                    p
-                        img(src='https://placehold.it/125x100', align='right')
-                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                .medium-6.columns
-                    p
-                        img(src='https://placehold.it/125x100', align='right')
-                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-    section.main.footer
-        .content
-            .row
-                .medium-12.columns
-                    img(src='http://placehold.it/970x200')
+                each article, i in news
+                    .medium-6.columns
+                        p
+                            img(src=article.getImage('news.image').views['homepage'].url, align='left', width='125', height='125')
+                            !=article.getText('news.title')
+                        p
+                            a.button.small(href='/news/'+article.getText('news.slug')) Read Full Article

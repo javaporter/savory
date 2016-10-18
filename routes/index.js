@@ -159,11 +159,21 @@ router.get('/platform', function(req, res) {
 });
 
 router.get('/network', function(req, res) {
-  res.render('network/index', { title: 'Network' });
-});
+  var context = { title: 'Network' };
 
-router.get('/network', function(req, res) {
-  res.render('network/index', { title: 'Network' });
+  prismic.api()
+    .then(function(api) {
+      context.api = api;
+      return prismic.homepageNews(context.api, null, 4);
+    })
+    .then(function(news) {
+      context.news = news;
+      res.render('network/index', context);
+    })
+    .catch(function(err) {
+        console.log(err);
+      res.send(err, 500);
+    });
 });
 
 router.get('/network/hub-application', function(req, res) {
@@ -291,5 +301,3 @@ router.get('/courses', function(req, res) {
 });
 
 module.exports = router;
-
-

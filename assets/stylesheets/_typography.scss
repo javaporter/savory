@@ -303,3 +303,37 @@ h2.section-title {
     @include smaller-font;
   }
 }
+
+
+  .each-course {
+    @extend .no-bullet;
+
+    li {
+      margin-bottom: 1rem;
+      padding-left: 3.5rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    li p {
+      @include smaller-font;
+    }
+
+    i {
+      font-size: 1.4rem;
+      padding: .5rem;
+      float: left;
+      margin-top: .15rem;
+      margin-left: -3.5rem;
+      border: $border;
+
+    }
+
+    @media #{$medium-up} {
+      border-left: $border-dotted;
+      padding-left: 1rem;
+    }
+
+  }
