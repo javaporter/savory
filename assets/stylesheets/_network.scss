@@ -9,7 +9,7 @@ body.network {
     background-position: center center;
 
     @media #{$medium-up} {
-      background-image: url('http://placehold.it/1400x400');
+      background-image: url('/assets/images/network/hero.png');
     }
 
     .content {

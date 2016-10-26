@@ -6,7 +6,6 @@ extends /layout-network
 
 block content
 
-    #overview(data-magellan-destination='overview')
     section.main.overview
         .content
             .row
@@ -15,21 +14,22 @@ block content
                         i(class='fa fa-mail-forward')
                         span Apply
 
+    #global-network(data-magellan-destination='global-network')
     section.main.what
         .content
             .row
                 .medium-8.medium-centered.columns
                     div.callout
                         h3 What is Savory Global Network?
-                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        p The Savory Global Network is a thriving community of people working to advance Holistic Management. The network is comprised of Savory Hubs, Accredited Professionals, and Savory Champions. Together, the global network advocates, trains, implements, and facilitates Holistic Management and regenerative agriculture practices in their own contexts to create enduring returns for the land and all who depend upon it.
 
 
-    #signature-stories(data-magellan-destination='signature-stories')
+    #network-stories(data-magellan-destination='network-stories')
     section.main.signature-stories
         header.overview-header
             .row
                 .medium-12.columns
-                    h2.section-title Signature Stories
+                    h2.section-title Hub Signature Stories
         .row.signature-video
             .medium-10.medium-offset-1.columns
                 .video
@@ -44,8 +44,8 @@ block content
                         h3 Jefferson Center
                     p: img(src='/assets/images/network/signature-stories-jefferson.png')
                     p: strong: em By Abbey Smith
-                    p We enjoy field walks with our friends. On this late summer afternoon, Spencer takes a break from checking pasture, cattle and soil conditions to share this information with us. He is joined by our beloved cow Belle (really it is our daughter Maezy’s cow) and other relaxed cattle enjoying the warm, peaceful afternoon on the ranch.
-                    p Please take three minutes to share in this September walk with us through Springs Ranch and learn more about Grazing for Change: Igniting a Consumer Revolution.
+                    p On this late summer afternoon, Spencer takes a break from checking pasture, cattle and soil conditions to share this information with us. He is joined by our beloved cow Belle and other relaxed cattle enjoying the warm, peaceful afternoon on the ranch.
+                    p Please take 3 minutes to share in this September walk with us through Springs Ranch and learn more about Grazing for Change: Igniting a Consumer Revolution.
                     footer
                         a(href='http://jeffersonhub.com/grazing-for-change-2016-learn-about-the-savory-land-to-market-program/' target='_blank') Learn More
             .medium-4.columns
@@ -66,13 +66,18 @@ block content
                         h3 Tallgrass Network
                     p: img(src='/assets/images/network/signature-stories-tallgrass.png')
                     p: strong: em By Chloe Burns
-                    p The human side of climate change.
                     p I'm the Tallgrass Network youth outreach coordinator. This video describes the trip I took to Zimbabwe and how it changed the way I viewed the climate justice movement.
+                    p During my trip, I saw firsthand the effects of how Holistic Management has transformed the area I visited to provide sustainable farming practices. This is about The Human Side of Climate Justice.
                     footer
-                        a(href='http://www.tallgrassnetwork.com/news/2016/5/30/the-human-side-of-climate-change?rq=video' target='_blank') Watch Video
+                        a(href='http://www.tallgrassnetwork.com/news/2016/5/30/the-human-side-of-climate-change?rq=video' target='_blank') Learn More
 
-    #consulting(data-magellan-destination='accredited-pros')
+    #applications(data-magellan-destination='applications')
     section.main.consulting
+        header.overview-header
+            .row
+                .medium-5.columns
+                    h2.section-title JOIN THE NETWORK
+                .medium-7.columns
         .row
             .small-12.columns
                 .key-points
@@ -80,8 +85,8 @@ block content
                     .row.collapse
                         .medium-6.columns.left
                           .point
-                            h4 Accredited Professional
-                            p Accredited professionals lead training and implementation of Holistic Management. Equipped with accreditation in the complete and current Holistic Management body of knowledge, they teach, train and support Holistic Management practitioners. Some add Savory Institute credentials to their existing profession and others focus their career on Holistic Management education. Either way, training from Allan Savory himself and other Holistic Management pioneers and innovative thinkers, make Savory Institute Accredited Professionals truly outstanding in their field.
+                            h4 Accredited Professional?
+                            p What is a Savory Accredited Professional? Accredited professionals lead training and implementation of Holistic Management. Equipped with accreditation in the complete and current Savory Holistic Management body of knowledge, they teach, train, and support Holistic Management practitioners. Training from Allan Savory himself and other Holistic Management pioneers and innovative thinkers, make Savory Institute Accredited Professionals truly outstanding in their field.
                             p
                                 a(href='mailto:asmith@savory.global', class='btn-primary apply')
                                     i(class='fa fa-mail-forward')
@@ -89,14 +94,14 @@ block content
 
                         .medium-6.columns.right
                             .point
-                                h4 Savory Global Network Hub
-                                p Hubs have a unique place in the Global Network. They are key to achieving large-scale restoration of the world’s grasslands. Hubs create a flexible and quick-moving global network of ordinary, entrepreneurial people who are driven to create abundance for the people and places that matter most to them. Hubs are proxies for the Savory Institute in given region of the world. It is through Savory Global hubs that Holistic Management education, training, events, special projects, research and experiences are realized. A hub coordinates all Savory Institute Holistic Management activities and developments in their defined region of the world.
+                                h4 Network Hub
+                                p What is a Savory Global Network Hub? Hubs have a unique place in the Global Network. They are key to achieving large-scale restoration of the world’s grasslands. Hubs create a flexible and quick-moving global network of entrepreneurial people who are driven to create abundance for the people and places of their region and in their context. It is through Savory Global hubs that Holistic Management education, training, events, special projects, consulting, research, and experiences are realized. A hub coordinates all Savory Institute Holistic Management activities and developments in their defined region of the world.
                                 p
                                     a.btn-primary.apply(href='https://docs.google.com/forms/d/e/1FAIpQLSdEf3mM7FUkntWw_KcaxIY33a5MgQLo67Ny85HvDGmxXlH_qQ/viewform', target='_blank')
                                         i(class='fa fa-mail-forward')
                                         span Apply
 
-    #forum(data-magellan-destination='champions-program')
+    #champions-program(data-magellan-destination='champions-program')
     section.main
         header.overview-header
             .row
@@ -105,47 +110,37 @@ block content
                 .medium-7.columns
         .row
             .medium-6.columns
-                p The Savory Champion is the advocate for Holistic Management and regenerative agriculture. Champions understand that perceptions, beliefs and actions of institutions cannot change until public opinion changes first. The Savory Champions drive a shift in public opinion toward awareness of Holistic Management and its role in regenerating our land, communities, food and health. Supported by the Savory Institute and Global Network, Champions organize, speak about, coordinate and promote the application of Holistic Management to social, economic and environmental challenges in their region.
-                h4 DIGITAL LIBRARIES:
-                ul.plus
-                    li Savory Scientific Portfolio
-                    li Savory White Papers
-                    li Savory Holistic Management ebooks (Spanish and English versions)
-                    li Savory Products & Services Marketing Collateral
-                    li Webinar Recordings
-                    li All Savory Holistic Management Forms & Charts
-            .medium-6.columns
-                h4 EVERYTHING IN ONE PLACE:
-                p The Savory Champion program includes:
-                ul.each-course
-                    li
-                        i.fa.fa-clock-o
-                        h3 Meetings
-                        p Meetings, webinars, and access to the Collaboration Forum
-                    li
-                        i.fa.fa-comments
-                        h3 Discounts
-                        p On all Savory products, events, and speaking engagements
-                    li
-                        i.fa.fa-envelope
-                        h3 Training
-                        p Online courses and content training in Holistic Management
-                    li
-                        i.fa.fa-archive
-                        h3 Provided Materials
-                        p Access to online materials and research
-                    li
-                        i.fa.fa-user-secret
-                        h3 Promotional
-                        p Recognized as crucial partners at all Savory events
-        .row
-            .small-12.columns
-                br
+                p The purpose of the Champions program is to equip and deploy passionate advocates of holistic management to propel a paradigm shift in public opinion and ignite the movement of regenerative agriculture.
+                p The Savory Champions program includes opportunities to be informed and equipped to advocate for a transformation of agriculture that results in climate-smart food production, restored ecosystems, and economic prosperity.
                 p Members of Savory Hubs, Savory Accredited Professionals, and Savory Champions have access to the Collaboration Forum.  Please join one of these groups to receive your login information.
                 p
                     a.btn-primary(href='/network#champions-program', target='_blank')
                         i.fa.fa-book
                         | Become a Champion
+            .medium-6.columns
+                h4 PROGRAM BENEFITS:
+                ul.each-course
+                    li
+                        i.fa.fa-clock-o
+                        h3 Meetings
+                        p Quarterly meetings with Savory staff and other Champions, annual webinar with Allan Savory, and access to the Collaboration Forum
+                    li
+                        i.fa.fa-envelope
+                        h3 Training
+                        p Online course: "Foundations of Holistic Management" and content training on Holistic Management and how to influence decision-makers on regenerative practices
+                    li
+                        i.fa.fa-comments
+                        h3 Discounts
+                        p Discounts to all Savory products and events and 25% discount for Allan Savory or Savory staff speaking engagement
+                    li
+                        i.fa.fa-user-secret
+                        h3 Promotional
+                        p Recognition at Savory events
+                    li
+                        i.fa.fa-archive
+                        h3 Provided Materials
+                        p Materials to present at local meetings and access to online materials including slide decks, research, case studies
+
 
     section.main.hubs
         .legend
@@ -159,6 +154,7 @@ block content
         script!='var hubs_geojson='+hubs_geojson+';'
         #map.hubs-map
 
+    #network-news(data-magellan-destination='network-news')
     section.main.news
         header.overview-header
             .row
