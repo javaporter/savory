@@ -27,17 +27,11 @@ body.network {
       float: left;
       margin-right: 1rem;
     }
-
-    .apply {
-        display: block;
-        width: 6em;
-        margin: 0 auto;
-    }
   }
 
-  section.what {
+  section.overview {
       .callout {
-          background-color: $stone;
+          background-color: rgba(0, 0, 0, 0.5);
           color: $smoke;
           padding: 2rem;
 

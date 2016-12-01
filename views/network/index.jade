@@ -6,16 +6,8 @@ extends /layout-network
 
 block content
 
-    section.main.overview
-        .content
-            .row
-                .small-12.columns
-                    a.btn-primary.apply(href='https://docs.google.com/forms/d/e/1FAIpQLSdEf3mM7FUkntWw_KcaxIY33a5MgQLo67Ny85HvDGmxXlH_qQ/viewform', target='_blank')
-                        i(class='fa fa-mail-forward')
-                        span Apply
-
     #global-network(data-magellan-destination='global-network')
-    section.main.what
+    section.main.overview
         .content
             .row
                 .medium-8.medium-centered.columns
@@ -71,35 +63,66 @@ block content
                     footer
                         a(href='http://www.tallgrassnetwork.com/news/2016/5/30/the-human-side-of-climate-change?rq=video' target='_blank') Learn More
 
+
     #applications(data-magellan-destination='applications')
-    section.main.consulting
+    section.main.network-hub
         header.overview-header
             .row
                 .medium-5.columns
-                    h2.section-title JOIN THE NETWORK
+                    h2.section-title NETWORK HUB
                 .medium-7.columns
         .row
-            .small-12.columns
-                .key-points
-                    .keyline
-                    .row.collapse
-                        .medium-6.columns.left
-                          .point
-                            h4 Accredited Professional
-                            p What is a Savory Accredited Professional? Accredited professionals lead training and implementation of Holistic Management. Equipped with accreditation in the complete and current Savory Holistic Management body of knowledge, they teach, train, and support Holistic Management practitioners. Training from Allan Savory himself and other Holistic Management pioneers and innovative thinkers, make Savory Institute Accredited Professionals truly outstanding in their field.
-                            p
-                                a(href='mailto:asmith@savory.global', class='btn-primary apply')
-                                    i(class='fa fa-mail-forward')
-                                    span Apply
+            .medium-6.columns
+                p What is a Savory Global Network Hub? Hubs have a unique place in the Global Network. They are key to achieving large-scale restoration of the world’s grasslands. Hubs create a flexible and quick-moving global network of entrepreneurial people who are driven to create abundance for the people and places of their region and in their context. It is through Savory Global hubs that Holistic Management education, training, events, special projects, consulting, research, and experiences are realized. A hub coordinates all Savory Institute Holistic Management activities and developments in their defined region of the world.
+                p
+                    a.btn-primary.apply(href='https://docs.google.com/forms/d/e/1FAIpQLSdEf3mM7FUkntWw_KcaxIY33a5MgQLo67Ny85HvDGmxXlH_qQ/viewform', target='_blank')
+                        i(class='fa fa-mail-forward')
+                        span Become a Savory Hub
+            .medium-6.columns
+                h4 HUB SERVICES:
+                ul.each-course
+                    li
+                        i.fa.fa-check-square-o
+                        h3 Accreditation
+                        p Offering regional Savory Accredited workshops and programs in Holistic Management.
+                    li
+                        i.fa.fa-graduation-cap
+                        h3 Consulting
+                        p Custom training, education, and consulting services to land managers, organizations and governments who are influencing the management of large areas of grasslands or degraded dry lands.
+                    li
+                        i.fa.fa-eye
+                        h3 Full Spectrum Monitoring
+                        p Biological, social, and financial monitoring services to land managers, organizations and governments to ensure long-term sustainability of their projects and initiatives.
+                    li
+                        i.fa.fa-balance-scale
+                        h3 Auditing/Verification Services
+                        p Auditing and verification services to land managers who are interested in accessing established market incentives or premium prices for their products.
 
-                        .medium-6.columns.right
-                            .point
-                                h4 Network Hub
-                                p What is a Savory Global Network Hub? Hubs have a unique place in the Global Network. They are key to achieving large-scale restoration of the world’s grasslands. Hubs create a flexible and quick-moving global network of entrepreneurial people who are driven to create abundance for the people and places of their region and in their context. It is through Savory Global hubs that Holistic Management education, training, events, special projects, consulting, research, and experiences are realized. A hub coordinates all Savory Institute Holistic Management activities and developments in their defined region of the world.
-                                p
-                                    a.btn-primary.apply(href='https://docs.google.com/forms/d/e/1FAIpQLSdEf3mM7FUkntWw_KcaxIY33a5MgQLo67Ny85HvDGmxXlH_qQ/viewform', target='_blank')
-                                        i(class='fa fa-mail-forward')
-                                        span Apply
+    #applications(data-magellan-destination='applications')
+    section.main.accredited-professional
+        header.overview-header
+            .row
+                .medium-5.columns
+                    h2.section-title ACCREDITED PROFESSIONAL
+                .medium-7.columns
+            .row
+                .medium-6.columns
+                    p What is a Savory Accredited Professional? Accredited professionals lead training and implementation of Holistic Management. Equipped with accreditation in the complete and current Savory Holistic Management body of knowledge, they teach, train, and support Holistic Management practitioners. Training from Allan Savory himself and other Holistic Management pioneers and innovative thinkers, make Savory Institute Accredited Professionals truly outstanding in their field.
+                    p
+                        a(href='mailto:asmith@savory.global', class='btn-primary apply')
+                            i(class='fa fa-mail-forward')
+                            span Become an Accredited Professional
+                .medium-6.columns
+                    h4 ACCREDITED PROFESSIONAL SERVICES:
+                    ul.each-course
+                        li
+                            i.fa.fa-users
+                            h3 Professional Training
+                            p Training in Holistic Management for commercial practitioners, private land-managers, and communal land-based practitioners, as well as NGOs and governments working with pastoralists.
+                        li
+                            i.fa.fa-handshake-o
+                            h3 Implementation Support
+                            p On-the-ground support for land managers and Holistic Management practitioners.
 
     #champions-program(data-magellan-destination='champions-program')
     section.main
