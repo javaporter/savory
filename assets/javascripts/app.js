@@ -42,8 +42,6 @@ $(function() {
     map.scrollWheelZoom.disable();
   }
 
-
-
   // show and hide other boxes in donate section
 
   var other_amount_holder = "#other-amount-holder";
@@ -73,8 +71,6 @@ $(function() {
       }
     });
 
-
-
     // off canvas accordion
     $(".off-canvas-submenu").hide();
     $(".off-canvas-submenu-call").click(function() {
@@ -92,50 +88,45 @@ $(function() {
       $target.toggle();
       $this.hide();
     });
-});
 
-
-// user voice stuff
-// https://www.uservoice.com/o/javascript-sdk
-UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/Rs5HAgInY34TobrNnCxSDQ.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})();
-
-// Set colors
-UserVoice.push(['set', {
-  accent_color: '#808283',
-  trigger_color: 'white',
-  trigger_background_color: 'rgba(46, 49, 51, 0.6)'
-}]);
-
-// Add default trigger to the bottom-right corner of the window:
-UserVoice.push(['addTrigger', { mode: 'contact', trigger_position: 'bottom-right' }]);
-
-// Autoprompt for Satisfaction and SmartVote (only displayed under certain conditions)
-UserVoice.push(['autoprompt', {}]);
-
-$(document).ready(function () {
   $('.accordion-tabs-minimal').each(function(index) {
     $(this).children('li').first().children('a').addClass('is-active').next().addClass('is-open').show();
   });
+
   $('.accordion-tabs-minimal').on('click', 'li > a.tab-link', function(event) {
-    if (!$(this).hasClass('is-active')) {
-      event.preventDefault();
-      var accordionTabs = $(this).closest('.accordion-tabs-minimal');
-      accordionTabs.find('.is-open').removeClass('is-open').hide();
+        if (!$(this).hasClass('is-active')) {
+          event.preventDefault();
+          var accordionTabs = $(this).closest('.accordion-tabs-minimal');
+          accordionTabs.find('.is-open').removeClass('is-open').hide();
 
-      $(this).next().toggleClass('is-open').toggle();
-      accordionTabs.find('.is-active').removeClass('is-active');
-      $(this).addClass('is-active');
-    } else {
-      event.preventDefault();
-    }
-  });
+          $(this).next().toggleClass('is-open').toggle();
+          accordionTabs.find('.is-active').removeClass('is-active');
+          $(this).addClass('is-active');
+        } else {
+          event.preventDefault();
+        }
+    });
 
+    $('.video .controls a').on('click', function(evt) {
+        var control = $(evt.target);
+        if (control.hasClass('active')) {
+            return false;
+        }
+
+        $('.video .controls a').removeClass('active');
+        control.addClass('active');
+
+        $('.videos').html($('.videos').html());
+        $('.videos iframe').hide();
+        $($('.videos iframe').get(control.index())).show();
+        return false;
+    });
 
   /* Change the styling of MailChimp subscriber sign-up popup */
 
   // wait for 2 seconds before starting the timer
 
-  // check the presence of the iframe every 0.5s 
+  // check the presence of the iframe every 0.5s
   // once detected iframe, change the css of some of the
   // elements inside iframe, then kill the process
 
@@ -169,3 +160,17 @@ $(document).ready(function () {
 
 });
 
+UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/Rs5HAgInY34TobrNnCxSDQ.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})();
+
+// Set colors
+UserVoice.push(['set', {
+  accent_color: '#808283',
+  trigger_color: 'white',
+  trigger_background_color: 'rgba(46, 49, 51, 0.6)'
+}]);
+
+// Add default trigger to the bottom-right corner of the window:
+UserVoice.push(['addTrigger', { mode: 'contact', trigger_position: 'bottom-right' }]);
+
+// Autoprompt for Satisfaction and SmartVote (only displayed under certain conditions)
+UserVoice.push(['autoprompt', {}]);

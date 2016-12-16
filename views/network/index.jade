@@ -4,6 +4,9 @@ block variables
 
 extends /layout-network
 
+block styles
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.css")
+
 block content
 
     section.main.overview
@@ -28,8 +31,18 @@ block content
             .medium-10.medium-offset-1.columns
                 .video
                     .flex-video.widescreen.vimeo
-                        iframe(src='https://player.vimeo.com/video/179280081?title=0&byline=0&portrait=0')
-
+                        .videos
+                            iframe(src='https://player.vimeo.com/video/179280081?title=0&byline=0&portrait=0')
+                            iframe(src='https://player.vimeo.com/video/192274864?title=0&byline=0&portrait=0', style='display: none')
+                            iframe(src='https://player.vimeo.com/video/189757156?title=0&byline=0&portrait=0', style='display: none')
+                            iframe(src='https://player.vimeo.com/video/189765823?title=0&byline=0&portrait=0', style='display: none')
+                            iframe(src='https://player.vimeo.com/video/189759286?title=0&byline=0&portrait=0', style='display: none')
+                    .controls
+                        <a href='#' class='fa fa-circle active'></a>
+                        <a href='#' class='fa fa-circle'></a>
+                        <a href='#' class='fa fa-circle'></a>
+                        <a href='#' class='fa fa-circle'></a>
+                        <a href='#' class='fa fa-circle'></a>
         .row
             .medium-4.columns
                 .panel

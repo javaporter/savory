@@ -91,12 +91,7 @@ body.network {
   }
 
 
-  section.videos {
-    @extend .dark;
-
-    .flex-video {
-      margin-bottom: 0;
-    }
+  .videos {
   }
   .champions-section {
     padding:0;

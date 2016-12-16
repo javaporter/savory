@@ -153,6 +153,19 @@ section .video {
     margin-bottom: 0;
   }
 
+  .controls {
+      margin-top: .5em;
+      text-align: center;
+      a {
+          color: #DEDEDE;
+          margin: 0 .1em;
+      }
+
+      a.active {
+          color: $marigold;
+      }
+  }
+
   @media #{$small-only} {
     margin-bottom: 1.5rem;
   }

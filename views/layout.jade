@@ -23,6 +23,9 @@ html
     script(src='//api.tiles.mapbox.com/mapbox.js/v2.1.2/mapbox.js', type='text/javascript')
     link(href='//api.tiles.mapbox.com/mapbox.js/v2.1.2/mapbox.css', rel='stylesheet', type='text/css')
 
+    block scripts
+    block styles
+
     //- favicons
     link(rel='apple-touch-icon', sizes='57x57', href='/assets/favicons/apple-touch-icon-57x57.png')
     link(rel='apple-touch-icon', sizes='114x114', href='/assets/favicons/apple-touch-icon-114x114.png')
@@ -172,4 +175,5 @@ html
 
     script(src='/assets/app.js')
     script(src='/assets/analytics.js')
+
     //- script(type="text/javascript" src="//my.hellobar.com/594fcdd71f0bcf05b7ea02f0c7812618f21fa83f.js" async="async")
