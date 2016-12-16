@@ -122,6 +122,27 @@ $(function() {
         return false;
     });
 
+    $('.video .navigator.back, .video .navigator.forward').on('click', function(evt) {
+        var increment = 1;
+        var element = $(evt.target);
+        if (element.parent().hasClass('back')) {
+            increment = -1;
+        }
+
+        var index = $('.video .controls a.active').index();
+        var videoCount = $('.video .controls a').length;
+
+        index += increment;
+        if (index + 1 > videoCount) {
+            index = 0;
+        } else if (index < 0) {
+            index = videoCount - 1;
+        }
+
+        $('.video .controls a').get(index).click();
+        return false;
+    });
+
   /* Change the styling of MailChimp subscriber sign-up popup */
 
   // wait for 2 seconds before starting the timer

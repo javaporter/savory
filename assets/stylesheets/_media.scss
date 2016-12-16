@@ -145,9 +145,28 @@ ul.image-grid {
 // video embeds
 
 section .video {
-  padding: 1.5rem;
+  padding: 1.5rem 2.5rem;
   background: $opaque-dark-2;
   position: relative;
+
+  .navigator {
+      position: absolute;
+      font-size: 5em;
+      top: 40%;
+
+      a {
+          color: #EEE;
+          opacity: .8;
+      }
+  }
+
+  .navigator.back {
+      left: .1em;
+  }
+
+  .navigator.forward {
+      right: .1em;
+  }
 
   .flex-video {
     margin-bottom: 0;
@@ -169,6 +188,10 @@ section .video {
   @media #{$small-only} {
     margin-bottom: 1.5rem;
   }
+}
+
+section .video:hover .navigator a {
+    opacity: 1;
 }
 
 // for store stuff
