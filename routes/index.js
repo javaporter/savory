@@ -121,7 +121,11 @@ router.get('/ie', function(req, res) {
 });
 
 router.get('/artisans-of-the-grasslands', function(req, res) {
-  res.render('artisans-of-the-grasslands', { title: 'Artisans of the Grasslands' });
+    if (req.originalUrl == '/artisans-of-the-grasslands?utm_source=Savory+Institute+Newsletter&utm_campaign=52c0fa9668-EMAIL_CAMPAIGN_2017_01_20&utm_medium=email&utm_term=0_df3e15967e-52c0fa9668-18684009&ct=t(Savory_Monthly_News_January1_20_2017)&goal=0_df3e15967e-52c0fa9668-18684009&mc_cid=52c0fa9668&mc_eid=f5a9c5f427') {
+        res.redirect('https://www.facebook.com/pg/savory.global/events/');
+    } else {
+        res.render('artisans-of-the-grasslands', { title: 'Artisans of the Grasslands' });
+    }
 });
 
 router.get('/soilforclimate', function(req, res) {
