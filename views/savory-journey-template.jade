@@ -14,7 +14,7 @@ block content
 		h1 #{journeyTitle}
 		h3 #{journeySubtitle}
 		h3 #{journeyDate}
-		p #{journeyDescription}
+		p !{journeyDescription}
 		if highlights
 			h3 #{highlights}
 			ul.highlights
@@ -28,7 +28,7 @@ block content
 					if val.image
 						img(src=val.image.src align=val.image.align style="margin-left: 10px; margin-right: 10px;")
 					!{val.text}
-					
+
 		if costTitle
 			h3 #{costTitle}
 			each val in costText
@@ -42,7 +42,7 @@ block content
 			h3 #{questionsTitle}
 			each val in questionsText
 				p !{val}
-			a.button.small(href='/assets/docs/terms-and-conditions-for-journey-participants.pdf') Terms and Conditions		
+			a.button.small(href='/assets/docs/terms-and-conditions-for-journey-participants.pdf') Terms and Conditions
 		h3 #{journeyAvailability}
 		if( journeyAvailability == 'Now Open')
 			a.btn-primary(href='http://savory-institute.myshopify.com/collections/savory-journeys') Find Tickets
